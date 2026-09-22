@@ -88,7 +88,7 @@ on a SIGReg encoder even at 35M and even on a **non-collapsed steelman** — the
 de-confound holds at the headline scale.
 
 Artifacts (big): `results_probe_dual_lewm_big.json`, `results_suite_dual_lewm_big.json`. Ckpts:
-local `runs/big_dual_lewm_h/` (steelman) + `runs/big_dual_lewm/` (collapsing) + HF `fbdeme/jepa-pfn`.
+local `runs/big_dual_lewm_h/` (steelman) + `runs/big_dual_lewm/` (collapsing) + HF (private archive).
 
 Artifacts (base): `results_probe_dual_lewm.json`, `results_suite_dual_lewm.json`,
-`configs/base_dual_lewm.yaml`. Ckpt: local `runs/base_dual_lewm/` + HF `fbdeme/jepa-pfn`.
+`configs/base_dual_lewm.yaml`. Ckpt: local `runs/base_dual_lewm/` + HF (private archive).
