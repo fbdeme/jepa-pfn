@@ -1,0 +1,25 @@
+# Issue #23 PO-1: partial-observability belief-niche test, DUAL (JEPA) arm (temporal_design S16.4).
+# = t1a_dual (single-step teacher-forced consumption) + one hidden variable. Consumption training
+# de-confounds the oracle: it trains the SAME inject path oracle_latent uses (true observed-cell
+# latent), so oracle_latent becomes a fair measure of the latent's INFORMATION -- not degraded by
+# nan-jeom B as in PO-0 (S16.1). Question: does oracle_latent < oracle_value now, i.e. does the
+# true latent carry belief about the hidden state that the true scalar can't? (In full-obs T1a the
+# oracle gap merely closed; a STRICT win here = the belief niche.)
+run_name: po1_dual
+base: jepa
+consume_mode: single       # teacher-forced (trains oracle_latent's path); not rollout (T1b)
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+seed: 0
+steps: 20000
+batch_size: 8              # consumption training: extra encodes OOM at 16 on 8GB (T1a lesson)
+lambda_ppd: 0.1
+consume_weight: 1.0
+prior:
+  temporal: [3, 6]
+  temporal_squash: true    # match T1a (tail-stabilized) so the oracle contrast is like-for-like
+  temporal_hidden: [1, 1]  # 1 hidden variable (POMDP): the belief-state manipulation
+  p_missing_table: 0.0

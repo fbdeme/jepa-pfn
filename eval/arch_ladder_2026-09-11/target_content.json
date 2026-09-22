@@ -1,0 +1,70 @@
+{
+ "protocol": {
+  "prior": "run cfg (probe_prior, rows ctx+50)",
+  "policy": "any_cell",
+  "ctx": 128,
+  "n_batches": 8,
+  "batch": 8,
+  "seed": 30000,
+  "fit": "ridge on half, R2 on the other half; EMA record for comparison = eval/ijepa_split_2026-09-08 (.93-.95 value-decodable)"
+ },
+ "runs": {
+  "TabularJEPA_v3_tabicl2_headenc_s0": {
+   "n": 41805,
+   "mode": "ema",
+   "step": 20000,
+   "pred": {
+    "col": -0.024,
+    "z": 0.051,
+    "z_from_pred": 0.397,
+    "erank": 45.2
+   },
+   "target": {
+    "col": -0.015,
+    "z": 0.141,
+    "z_from_target": 0.897,
+    "erank": 99.3
+   }
+  },
+  "TabularJEPA_v3_tabicl2_dae_headenc_s0": {
+   "n": 41805,
+   "mode": "dae",
+   "step": 20000,
+   "pred": {
+    "col": -0.028,
+    "z": 0.04,
+    "z_from_pred": 0.413,
+    "erank": 42.6
+   },
+   "target": {
+    "col": -0.021,
+    "z": 0.119,
+    "z_from_target": 0.865,
+    "erank": 94.4
+   },
+   "target_noise_free": {
+    "col": -0.029,
+    "z": 0.078,
+    "z_from_target": 0.95,
+    "erank": 89.6
+   }
+  },
+  "TabularJEPA_v3_tabicl2_sigreg_headenc_s0": {
+   "n": 41805,
+   "mode": "sigreg",
+   "step": 20000,
+   "pred": {
+    "col": -0.05,
+    "z": -0.0,
+    "z_from_pred": -0.004,
+    "erank": 38.7
+   },
+   "target": {
+    "col": -0.026,
+    "z": -0.0,
+    "z_from_target": -0.012,
+    "erank": 103.8
+   }
+  }
+ }
+}

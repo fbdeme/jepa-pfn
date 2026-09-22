@@ -1,0 +1,84 @@
+{
+ "protocol": {
+  "source": "eval/probe_masked_all.py (prior, seed, policies, selection, clamp, ridge alpha, half/half split)",
+  "across_table": "fair competitor: one ridge, must generalize across tables",
+  "per_table": "UPPER REFERENCE, not a competitor: refits per table and reads ground-truth f for the rows it fits, which no trained arm sees",
+  "sigma": 1.0,
+  "n_batches": 8,
+  "batch": 8,
+  "ctx": 128
+ },
+ "by_k": {
+  "1": {
+   "any_cell": {
+    "per_table": 0.1341,
+    "across_table": 0.5274
+   },
+   "mixed": {
+    "per_table": 0.1745,
+    "across_table": 0.5616
+   }
+  },
+  "2": {
+   "any_cell": {
+    "per_table": 0.1977,
+    "across_table": 0.5203
+   },
+   "mixed": {
+    "per_table": 0.234,
+    "across_table": 0.5395
+   }
+  },
+  "4": {
+   "any_cell": {
+    "per_table": 0.2878,
+    "across_table": 0.5265
+   },
+   "mixed": {
+    "per_table": 0.3026,
+    "across_table": 0.5103
+   }
+  },
+  "6": {
+   "any_cell": {
+    "per_table": 0.3381,
+    "across_table": 0.5108
+   },
+   "mixed": {
+    "per_table": 0.3547,
+    "across_table": 0.5131
+   }
+  },
+  "8": {
+   "any_cell": {
+    "per_table": 0.386,
+    "across_table": 0.5305
+   },
+   "mixed": {
+    "per_table": 0.4034,
+    "across_table": 0.5297
+   }
+  },
+  "12": {
+   "any_cell": {
+    "per_table": 0.4422,
+    "across_table": 0.5275
+   },
+   "mixed": {
+    "per_table": 0.4382,
+    "across_table": 0.5046
+   }
+  },
+  "scm": {
+   "any_cell": {
+    "per_table": 0.5452,
+    "across_table": null
+   },
+   "mixed": {
+    "per_table": 0.6478,
+    "across_table": null
+   },
+   "across_table_note": "undefined: the SCM prior varies column count per table, so pooled row-value features have no fixed width"
+  }
+ }
+}

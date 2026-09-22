@@ -1,0 +1,952 @@
+{
+ "note": "masked-cell probe (eval/probe_masked.py). 'alive' = seeds whose cell mse_f is below BOTH null anchors at the same sigma -- DEGENERATE x the constant map, and the random-init floor. Aggregates are over seeds.",
+ "degenerate_rule": {
+  "fraction_of_constant_map": 0.98,
+  "constant_map_by_sigma": {
+   "1.0": 0.9622,
+   "2.0": 0.9575,
+   "4.0": 0.8984,
+   "8.0": 0.7109
+  },
+  "floor_by_sigma": {
+   "1.0": 0.9327,
+   "2.0": 0.9346,
+   "4.0": 0.8602,
+   "8.0": 0.7079
+  },
+  "cutoff_by_sigma": {
+   "1.0": 0.9327,
+   "2.0": 0.9346,
+   "4.0": 0.8602,
+   "8.0": 0.6967
+  },
+  "note": "min(DEGENERATE x constant map, random-init floor): the same two-anchor rule every other table uses, so neither anchor can satisfy the strict inequality"
+ },
+ "floor": {
+  "1.0": {
+   "cell": {
+    "mse_f": 0.9327,
+    "mse_x": 0.9426,
+    "dim": 256,
+    "n": 19324
+   },
+   "cls_mean": {
+    "mse_f": 0.9743,
+    "mse_x": 0.9887,
+    "dim": 256,
+    "n": 19324
+   },
+   "cls_concat": {
+    "mse_f": 1.1238,
+    "mse_x": 1.162,
+    "dim": 1024,
+    "n": 19324
+   }
+  },
+  "2.0": {
+   "cell": {
+    "mse_f": 0.9346,
+    "mse_x": 0.9792,
+    "dim": 256,
+    "n": 20543
+   },
+   "cls_mean": {
+    "mse_f": 0.9575,
+    "mse_x": 1.0061,
+    "dim": 256,
+    "n": 20543
+   },
+   "cls_concat": {
+    "mse_f": 0.9742,
+    "mse_x": 1.0397,
+    "dim": 1024,
+    "n": 20543
+   }
+  },
+  "4.0": {
+   "cell": {
+    "mse_f": 0.8602,
+    "mse_x": 0.9818,
+    "dim": 256,
+    "n": 16647
+   },
+   "cls_mean": {
+    "mse_f": 0.9003,
+    "mse_x": 1.0203,
+    "dim": 256,
+    "n": 16647
+   },
+   "cls_concat": {
+    "mse_f": 0.9135,
+    "mse_x": 1.0329,
+    "dim": 1024,
+    "n": 16647
+   }
+  },
+  "8.0": {
+   "cell": {
+    "mse_f": 0.7079,
+    "mse_x": 1.0033,
+    "dim": 256,
+    "n": 23066
+   },
+   "cls_mean": {
+    "mse_f": 0.7111,
+    "mse_x": 1.0059,
+    "dim": 256,
+    "n": 23066
+   },
+   "cls_concat": {
+    "mse_f": 0.7141,
+    "mse_x": 1.0105,
+    "dim": 1024,
+    "n": 23066
+   }
+  }
+ },
+ "sigmas": [
+  "1.0",
+  "2.0",
+  "4.0",
+  "8.0"
+ ],
+ "per_group": {
+  "ds": {
+   "runs": [
+    "base_ds_s0",
+    "base_ds_s1",
+    "base_ds_s2",
+    "base_ds_s3",
+    "base_ds_s4"
+   ],
+   "alive": [
+    "base_ds_s0",
+    "base_ds_s1",
+    "base_ds_s2",
+    "base_ds_s3",
+    "base_ds_s4"
+   ],
+   "n_alive": "5/5",
+   "1.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.2192,
+      "sd": 0.0068,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.2192,
+      "sd": 0.0068,
+      "n": 5
+     },
+     "mse_x_alive": {
+      "mean": 0.2293,
+      "sd": 0.0067,
+      "n": 5
+     }
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.9386,
+      "sd": 0.0118,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.9386,
+      "sd": 0.0118,
+      "n": 5
+     },
+     "mse_x_alive": {
+      "mean": 0.9499,
+      "sd": 0.0118,
+      "n": 5
+     }
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 0.9518,
+      "sd": 0.0172,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.9518,
+      "sd": 0.0172,
+      "n": 5
+     },
+     "mse_x_alive": {
+      "mean": 0.9638,
+      "sd": 0.0172,
+      "n": 5
+     }
+    }
+   },
+   "2.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.3101,
+      "sd": 0.0072,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.3101,
+      "sd": 0.0072,
+      "n": 5
+     },
+     "mse_x_alive": {
+      "mean": 0.3438,
+      "sd": 0.0065,
+      "n": 5
+     }
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.9445,
+      "sd": 0.0116,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.9445,
+      "sd": 0.0116,
+      "n": 5
+     },
+     "mse_x_alive": {
+      "mean": 0.9911,
+      "sd": 0.0115,
+      "n": 5
+     }
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 0.9579,
+      "sd": 0.0192,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.9579,
+      "sd": 0.0192,
+      "n": 5
+     },
+     "mse_x_alive": {
+      "mean": 1.0058,
+      "sd": 0.0198,
+      "n": 5
+     }
+    }
+   },
+   "4.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.3459,
+      "sd": 0.0082,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.3459,
+      "sd": 0.0082,
+      "n": 5
+     },
+     "mse_x_alive": {
+      "mean": 0.4236,
+      "sd": 0.0087,
+      "n": 5
+     }
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.8737,
+      "sd": 0.0067,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.8737,
+      "sd": 0.0067,
+      "n": 5
+     },
+     "mse_x_alive": {
+      "mean": 0.9964,
+      "sd": 0.0082,
+      "n": 5
+     }
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 0.8925,
+      "sd": 0.0188,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.8925,
+      "sd": 0.0188,
+      "n": 5
+     },
+     "mse_x_alive": {
+      "mean": 1.0164,
+      "sd": 0.0187,
+      "n": 5
+     }
+    }
+   },
+   "8.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.4485,
+      "sd": 0.0065,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.4485,
+      "sd": 0.0065,
+      "n": 5
+     },
+     "mse_x_alive": {
+      "mean": 0.6788,
+      "sd": 0.0078,
+      "n": 5
+     }
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.7107,
+      "sd": 0.0048,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.7107,
+      "sd": 0.0048,
+      "n": 5
+     },
+     "mse_x_alive": {
+      "mean": 1.0035,
+      "sd": 0.0073,
+      "n": 5
+     }
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 0.72,
+      "sd": 0.0079,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.72,
+      "sd": 0.0079,
+      "n": 5
+     },
+     "mse_x_alive": {
+      "mean": 1.0158,
+      "sd": 0.0116,
+      "n": 5
+     }
+    }
+   }
+  },
+  "dual": {
+   "runs": [
+    "base_dual_s0",
+    "base_dual_s1",
+    "base_dual_s2",
+    "base_dual_s3",
+    "base_dual_s4"
+   ],
+   "alive": [
+    "base_dual_s1",
+    "base_dual_s2",
+    "base_dual_s3"
+   ],
+   "n_alive": "3/5",
+   "1.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.5462,
+      "sd": 0.3798,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.2689,
+      "sd": 0.0053,
+      "n": 3
+     },
+     "mse_x_alive": {
+      "mean": 0.2803,
+      "sd": 0.0044,
+      "n": 3
+     }
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.9936,
+      "sd": 0.0364,
+      "n": 5
+     },
+     "alive": {
+      "mean": 1.0146,
+      "sd": 0.0316,
+      "n": 3
+     },
+     "mse_x_alive": {
+      "mean": 1.026,
+      "sd": 0.0307,
+      "n": 3
+     }
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 1.2553,
+      "sd": 0.27,
+      "n": 5
+     },
+     "alive": {
+      "mean": 1.4506,
+      "sd": 0.0521,
+      "n": 3
+     },
+     "mse_x_alive": {
+      "mean": 1.4658,
+      "sd": 0.0427,
+      "n": 3
+     }
+    }
+   },
+   "2.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.6127,
+      "sd": 0.3148,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.3828,
+      "sd": 0.0045,
+      "n": 3
+     },
+     "mse_x_alive": {
+      "mean": 0.4243,
+      "sd": 0.005,
+      "n": 3
+     }
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.9703,
+      "sd": 0.013,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.9788,
+      "sd": 0.0081,
+      "n": 3
+     },
+     "mse_x_alive": {
+      "mean": 1.0301,
+      "sd": 0.0091,
+      "n": 3
+     }
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 1.2418,
+      "sd": 0.2649,
+      "n": 5
+     },
+     "alive": {
+      "mean": 1.4314,
+      "sd": 0.0749,
+      "n": 3
+     },
+     "mse_x_alive": {
+      "mean": 1.5089,
+      "sd": 0.05,
+      "n": 3
+     }
+    }
+   },
+   "4.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.6157,
+      "sd": 0.2581,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.4272,
+      "sd": 0.0026,
+      "n": 3
+     },
+     "mse_x_alive": {
+      "mean": 0.5223,
+      "sd": 0.0034,
+      "n": 3
+     }
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.9141,
+      "sd": 0.0148,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.9246,
+      "sd": 0.0052,
+      "n": 3
+     },
+     "mse_x_alive": {
+      "mean": 1.0589,
+      "sd": 0.0049,
+      "n": 3
+     }
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 1.1265,
+      "sd": 0.2126,
+      "n": 5
+     },
+     "alive": {
+      "mean": 1.2785,
+      "sd": 0.0606,
+      "n": 3
+     },
+     "mse_x_alive": {
+      "mean": 1.4619,
+      "sd": 0.0395,
+      "n": 3
+     }
+    }
+   },
+   "8.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.5974,
+      "sd": 0.1038,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.5217,
+      "sd": 0.0087,
+      "n": 3
+     },
+     "mse_x_alive": {
+      "mean": 0.7876,
+      "sd": 0.0164,
+      "n": 3
+     }
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.7226,
+      "sd": 0.0107,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.7304,
+      "sd": 0.001,
+      "n": 3
+     },
+     "mse_x_alive": {
+      "mean": 1.0343,
+      "sd": 0.0021,
+      "n": 3
+     }
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 0.856,
+      "sd": 0.1363,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.9528,
+      "sd": 0.0454,
+      "n": 3
+     },
+     "mse_x_alive": {
+      "mean": 1.3569,
+      "sd": 0.046,
+      "n": 3
+     }
+    }
+   }
+  },
+  "lat": {
+   "runs": [
+    "base_lat_s_s0",
+    "base_lat_s_s1",
+    "base_lat_s_s2",
+    "base_lat_s_s3",
+    "base_lat_s_s4"
+   ],
+   "alive": [],
+   "n_alive": "0/5",
+   "1.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.9632,
+      "sd": 0.0022,
+      "n": 5
+     },
+     "alive": null,
+     "mse_x_alive": null
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.9835,
+      "sd": 0.0477,
+      "n": 5
+     },
+     "alive": null,
+     "mse_x_alive": null
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 1.0355,
+      "sd": 0.164,
+      "n": 5
+     },
+     "alive": null,
+     "mse_x_alive": null
+    }
+   },
+   "2.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.9588,
+      "sd": 0.003,
+      "n": 5
+     },
+     "alive": null,
+     "mse_x_alive": null
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.9663,
+      "sd": 0.0198,
+      "n": 5
+     },
+     "alive": null,
+     "mse_x_alive": null
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 0.9731,
+      "sd": 0.035,
+      "n": 5
+     },
+     "alive": null,
+     "mse_x_alive": null
+    }
+   },
+   "4.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.8996,
+      "sd": 0.0026,
+      "n": 5
+     },
+     "alive": null,
+     "mse_x_alive": null
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.9021,
+      "sd": 0.0082,
+      "n": 5
+     },
+     "alive": null,
+     "mse_x_alive": null
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 0.944,
+      "sd": 0.1019,
+      "n": 5
+     },
+     "alive": null,
+     "mse_x_alive": null
+    }
+   },
+   "8.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.7118,
+      "sd": 0.002,
+      "n": 5
+     },
+     "alive": null,
+     "mse_x_alive": null
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.717,
+      "sd": 0.0136,
+      "n": 5
+     },
+     "alive": null,
+     "mse_x_alive": null
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 0.721,
+      "sd": 0.0227,
+      "n": 5
+     },
+     "alive": null,
+     "mse_x_alive": null
+    }
+   }
+  },
+  "ema_nohead": {
+   "runs": [
+    "base_ema_nohead_s0",
+    "base_ema_nohead_s1",
+    "base_ema_nohead_s2",
+    "base_ema_nohead_s3",
+    "base_ema_nohead_s4"
+   ],
+   "alive": [
+    "base_ema_nohead_s1"
+   ],
+   "n_alive": "1/5",
+   "1.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.8236,
+      "sd": 0.3099,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.2693,
+      "sd": 0.0,
+      "n": 1
+     },
+     "mse_x_alive": {
+      "mean": 0.2812,
+      "sd": 0.0,
+      "n": 1
+     }
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.9635,
+      "sd": 0.0029,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.9686,
+      "sd": 0.0,
+      "n": 1
+     },
+     "mse_x_alive": {
+      "mean": 0.9803,
+      "sd": 0.0,
+      "n": 1
+     }
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 1.1501,
+      "sd": 0.4202,
+      "n": 5
+     },
+     "alive": {
+      "mean": 1.9019,
+      "sd": 0.0,
+      "n": 1
+     },
+     "mse_x_alive": {
+      "mean": 1.8794,
+      "sd": 0.0,
+      "n": 1
+     }
+    }
+   },
+   "2.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.8402,
+      "sd": 0.2623,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.371,
+      "sd": 0.0,
+      "n": 1
+     },
+     "mse_x_alive": {
+      "mean": 0.4112,
+      "sd": 0.0,
+      "n": 1
+     }
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.9607,
+      "sd": 0.0072,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.9737,
+      "sd": 0.0,
+      "n": 1
+     },
+     "mse_x_alive": {
+      "mean": 1.0244,
+      "sd": 0.0,
+      "n": 1
+     }
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 1.0725,
+      "sd": 0.2571,
+      "n": 5
+     },
+     "alive": {
+      "mean": 1.5325,
+      "sd": 0.0,
+      "n": 1
+     },
+     "mse_x_alive": {
+      "mean": 1.6361,
+      "sd": 0.0,
+      "n": 1
+     }
+    }
+   },
+   "4.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.8026,
+      "sd": 0.2142,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.4194,
+      "sd": 0.0,
+      "n": 1
+     },
+     "mse_x_alive": {
+      "mean": 0.5075,
+      "sd": 0.0,
+      "n": 1
+     }
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.8995,
+      "sd": 0.0025,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.9041,
+      "sd": 0.0,
+      "n": 1
+     },
+     "mse_x_alive": {
+      "mean": 1.0374,
+      "sd": 0.0,
+      "n": 1
+     }
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 1.0017,
+      "sd": 0.231,
+      "n": 5
+     },
+     "alive": {
+      "mean": 1.4149,
+      "sd": 0.0,
+      "n": 1
+     },
+     "mse_x_alive": {
+      "mean": 1.5766,
+      "sd": 0.0,
+      "n": 1
+     }
+    }
+   },
+   "8.0": {
+    "cell": {
+     "all_seeds": {
+      "mean": 0.6683,
+      "sd": 0.0952,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.4981,
+      "sd": 0.0,
+      "n": 1
+     },
+     "mse_x_alive": {
+      "mean": 0.7577,
+      "sd": 0.0,
+      "n": 1
+     }
+    },
+    "cls_mean": {
+     "all_seeds": {
+      "mean": 0.7133,
+      "sd": 0.0053,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.7227,
+      "sd": 0.0,
+      "n": 1
+     },
+     "mse_x_alive": {
+      "mean": 1.0227,
+      "sd": 0.0,
+      "n": 1
+     }
+    },
+    "cls_concat": {
+     "all_seeds": {
+      "mean": 0.7481,
+      "sd": 0.0832,
+      "n": 5
+     },
+     "alive": {
+      "mean": 0.8969,
+      "sd": 0.0,
+      "n": 1
+     },
+     "mse_x_alive": {
+      "mean": 1.2755,
+      "sd": 0.0,
+      "n": 1
+     }
+    }
+   }
+  }
+ },
+ "old_vs_new_above_edge_floor": {
+  "ds": {
+   "n": 5,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "old_unmasked_mse_f": 0.0873,
+   "new_masked_mse_f": 0.2192
+  },
+  "dual": {
+   "n": 3,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "old_unmasked_mse_f": 0.0301,
+   "new_masked_mse_f": 0.2689
+  },
+  "lat": {
+   "n": 0,
+   "note": "no seed above the edge floor"
+  }
+ },
+ "old_vs_new_note": "selection is by the edge-AUC floor rule of results_probe_seeds.json, so both probes are read on the same runs; the orderings disagree."
+}

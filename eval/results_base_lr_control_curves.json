@@ -1,0 +1,108 @@
+{
+ "note": "seed-0 headline arms at the shared lr (1e-3) beside one control run per alternative lr; val_mse is train.validate's deterministic holdout (unit-variance targets, 1.0 = predict the mean); dual rows report the latent target's health at the last validation",
+ "runs": [
+  {
+   "run": "base_ds_s0",
+   "arm": "ds",
+   "lr": 0.001,
+   "control": false,
+   "last_step": 20000,
+   "steps_configured": 20000,
+   "val_mse_first": 0.922,
+   "val_mse_last": 0.2585,
+   "val_mse_best": 0.2585,
+   "best_step": 20000,
+   "learned": true,
+   "diverged": false
+  },
+  {
+   "run": "base_ds_lr1e-4_s0",
+   "arm": "ds",
+   "lr": 0.0001,
+   "control": true,
+   "last_step": 20000,
+   "steps_configured": 20000,
+   "val_mse_first": 0.981,
+   "val_mse_last": 0.3229,
+   "val_mse_best": 0.3229,
+   "best_step": 20000,
+   "learned": true,
+   "diverged": false
+  },
+  {
+   "run": "base_ds_lr4e-3_s0",
+   "arm": "ds",
+   "lr": 0.004,
+   "control": true,
+   "last_step": 20000,
+   "steps_configured": 20000,
+   "val_mse_first": 0.9896,
+   "val_mse_last": 0.9896,
+   "val_mse_best": 0.9896,
+   "best_step": 250,
+   "learned": false,
+   "diverged": false
+  },
+  {
+   "run": "base_dual_s0",
+   "arm": "dual",
+   "lr": 0.001,
+   "control": false,
+   "last_step": 20000,
+   "steps_configured": 20000,
+   "val_jepa_last": 0.0038,
+   "tgt_dim_std_last": 0.0,
+   "tgt_erank_last": 27.1,
+   "tgt_cos_last": 1.0,
+   "collapsed": true
+  },
+  {
+   "run": "base_dual_lr1e-4_s0",
+   "arm": "dual",
+   "lr": 0.0001,
+   "control": true,
+   "last_step": 20000,
+   "steps_configured": 20000,
+   "val_jepa_last": 0.1913,
+   "tgt_dim_std_last": 0.8633,
+   "tgt_erank_last": 115.0,
+   "tgt_cos_last": 0.2384,
+   "collapsed": false
+  },
+  {
+   "run": "base_dual_lr4e-3_s0",
+   "arm": "dual",
+   "lr": 0.004,
+   "control": true,
+   "last_step": 20000,
+   "steps_configured": 20000,
+   "val_jepa_last": 0.0069,
+   "tgt_dim_std_last": 0.0,
+   "tgt_erank_last": 34.9,
+   "tgt_cos_last": 1.0,
+   "collapsed": true
+  }
+ ],
+ "summary": {
+  "ds": {
+   "0.001": 0.2585,
+   "0.0001": 0.3229,
+   "0.004": 0.9896
+  },
+  "ds_learned": {
+   "0.001": true,
+   "0.0001": true,
+   "0.004": false
+  },
+  "dual_collapsed": {
+   "0.001": true,
+   "0.0001": false,
+   "0.004": true
+  },
+  "dual_tgt_erank": {
+   "0.001": 27.1,
+   "0.0001": 115.0,
+   "0.004": 34.9
+  }
+ }
+}

@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code or the released checkpoints, please cite the paper below."
+title: "A JEPA Recipe for Tabular Foundation Models"
+type: software
+authors:
+  - family-names: Jeon
+    given-names: Mingyu
+    affiliation: "Modulabs, Seoul, Republic of Korea"
+  - family-names: Cho
+    given-names: Suwan
+    affiliation: "Modulabs, Seoul, Republic of Korea"
+  - family-names: Suh
+    given-names: Jae Young
+    affiliation: "Modulabs, Seoul, Republic of Korea"
+repository-code: "https://github.com/fbdeme/jepa-pfn"
+license: Apache-2.0
+date-released: 2026-09-22
+preferred-citation:
+  type: unpublished
+  title: "A JEPA Recipe for Tabular Foundation Models"
+  authors:
+    - family-names: Jeon
+      given-names: Mingyu
+    - family-names: Cho
+      given-names: Suwan
+    - family-names: Suh
+      given-names: Jae Young
+  year: 2026
+  notes: "arXiv preprint; identifier to be added once announced."

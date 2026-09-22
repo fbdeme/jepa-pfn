@@ -1,0 +1,62 @@
+{
+  "note": "C4 instrument directional check, factor substrate (sigma 1.0), re-baselined to a fresh self-consistent run (models on HF). mse_f = rep->f recovery (lower=better); lat = completed 20k reruns (steelman for collapsed seeds, final for un-collapsed; results_c4_lat_full.json); floor = 30-draw seeded band (results_c4_floor_seeds.json); gap = arm - ds. dual is the only arm below the random floor. ARBAUX = dual recipe with the latent target SHUFFLED across cells: it equals ds (arbaux-ds ~= 0), so dual's gain is specific to the aligned latent target, not generic auxiliary regularization.",
+  "seeds_present": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "n": 4,
+  "per_arm": {
+    "ds": {
+      "mse_f": {
+        "mean": 0.5016,
+        "sd": 0.0,
+        "n": 4
+      }
+    },
+    "dual": {
+      "mse_f": {
+        "mean": 0.1718,
+        "sd": 0.0026,
+        "n": 4
+      }
+    },
+    "lat": {
+      "mse_f": {
+        "mean": 0.4431,
+        "sd": 0.0671,
+        "n": 4
+      }
+    },
+    "arbaux": {
+      "mse_f": {
+        "mean": 0.5016,
+        "sd": 0.0,
+        "n": 4
+      }
+    },
+    "floor": {
+      "mse_f": {
+        "mean": 0.2394,
+        "sd": 0.0015,
+        "n": 30
+      }
+    }
+  },
+  "dual_minus_ds": {
+    "mean": -0.3298,
+    "sd": 0.0026,
+    "n": 4
+  },
+  "lat_minus_ds": {
+    "mean": -0.0585,
+    "sd": 0.0671,
+    "n": 4
+  },
+  "arbaux_minus_ds": {
+    "mean": 0.0,
+    "sd": 0.0,
+    "n": 4
+  }
+}

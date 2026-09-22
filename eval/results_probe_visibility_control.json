@@ -1,0 +1,223 @@
+{
+ "protocol": {
+  "source": "eval/probe_masked_all.py PROTOCOL['recipe']; identical query-row target cells under both conditions, only input_mask differs",
+  "ctx": 128,
+  "n_batches": 8,
+  "batch": 8,
+  "eval_seed": 30000
+ },
+ "arms": {
+  "base_ds_s0": {
+   "group": "ds",
+   "any_cell": {
+    "hidden": 0.2274,
+    "visible": 0.1163
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.3186,
+    "visible": 0.1188
+   }
+  },
+  "base_ds_s1": {
+   "group": "ds",
+   "any_cell": {
+    "hidden": 0.2256,
+    "visible": 0.1197
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.3029,
+    "visible": 0.1268
+   }
+  },
+  "base_ds_s2": {
+   "group": "ds",
+   "any_cell": {
+    "hidden": 0.2126,
+    "visible": 0.1093
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.2824,
+    "visible": 0.1155
+   }
+  },
+  "base_ds_s3": {
+   "group": "ds",
+   "any_cell": {
+    "hidden": 0.2165,
+    "visible": 0.1096
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.294,
+    "visible": 0.1138
+   }
+  },
+  "base_ds_s4": {
+   "group": "ds",
+   "any_cell": {
+    "hidden": 0.2139,
+    "visible": 0.1101
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.2857,
+    "visible": 0.1183
+   }
+  },
+  "base_dual_s0": {
+   "group": "dual",
+   "any_cell": {
+    "hidden": 0.9622,
+    "visible": 0.9622
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.9769,
+    "visible": 0.9769
+   }
+  },
+  "base_dual_s1": {
+   "group": "dual",
+   "any_cell": {
+    "hidden": 0.2629,
+    "visible": 0.0439
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.3094,
+    "visible": 0.0441
+   }
+  },
+  "base_dual_s2": {
+   "group": "dual",
+   "any_cell": {
+    "hidden": 0.2709,
+    "visible": 0.0391
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.3116,
+    "visible": 0.0414
+   }
+  },
+  "base_dual_s3": {
+   "group": "dual",
+   "any_cell": {
+    "hidden": 0.2728,
+    "visible": 0.0371
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.3132,
+    "visible": 0.0389
+   }
+  },
+  "base_dual_s4": {
+   "group": "dual",
+   "any_cell": {
+    "hidden": 0.9622,
+    "visible": 0.9622
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.9769,
+    "visible": 0.9769
+   }
+  },
+  "base_ema_nohead_s0": {
+   "group": "ema_nohead",
+   "any_cell": {
+    "hidden": 0.9622,
+    "visible": 0.9622
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.9769,
+    "visible": 0.9769
+   }
+  },
+  "base_ema_nohead_s1": {
+   "group": "ema_nohead",
+   "any_cell": {
+    "hidden": 0.2693,
+    "visible": 0.101
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.3312,
+    "visible": 0.1066
+   }
+  },
+  "base_ema_nohead_s2": {
+   "group": "ema_nohead",
+   "any_cell": {
+    "hidden": 0.9622,
+    "visible": 0.9622
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.9769,
+    "visible": 0.9769
+   }
+  },
+  "base_ema_nohead_s3": {
+   "group": "ema_nohead",
+   "any_cell": {
+    "hidden": 0.9622,
+    "visible": 0.9622
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.9769,
+    "visible": 0.9769
+   }
+  },
+  "base_ema_nohead_s4": {
+   "group": "ema_nohead",
+   "any_cell": {
+    "hidden": 0.9622,
+    "visible": 0.9622
+   },
+   "n": 16688,
+   "mixed": {
+    "hidden": 0.9769,
+    "visible": 0.9769
+   }
+  }
+ },
+ "floor": {
+  "draw0": {
+   "any_cell": {
+    "hidden": 1.0374,
+    "visible": 0.0181
+   },
+   "mixed": {
+    "hidden": 1.4554,
+    "visible": 0.017
+   }
+  },
+  "draw1": {
+   "any_cell": {
+    "hidden": 0.9099,
+    "visible": 0.0171
+   },
+   "mixed": {
+    "hidden": 1.0359,
+    "visible": 0.0186
+   }
+  },
+  "draw2": {
+   "any_cell": {
+    "hidden": 0.9092,
+    "visible": 0.0156
+   },
+   "mixed": {
+    "hidden": 1.1572,
+    "visible": 0.0156
+   }
+  }
+ }
+}

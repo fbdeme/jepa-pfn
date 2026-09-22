@@ -1,0 +1,116 @@
+{
+ "base_ema_nohead_s0": {
+  "edge_auc": 0.4874,
+  "fam_acc": 0.3285,
+  "fam_majority": 0.3285,
+  "mse_f": {
+   "1.0": 0.9482,
+   "2.0": 0.9233,
+   "4.0": 0.8593,
+   "8.0": 0.6804
+  }
+ },
+ "base_ema_nohead_s1": {
+  "edge_auc": 0.5776,
+  "fam_acc": 0.5032,
+  "fam_majority": 0.3285,
+  "mse_f": {
+   "1.0": 0.1137,
+   "2.0": 0.1265,
+   "4.0": 0.1407,
+   "8.0": 0.2296
+  },
+  "slot_share": 0.0325,
+  "slot_share_sd": 0.0073
+ },
+ "base_ema_nohead_s2": {
+  "edge_auc": 0.517,
+  "fam_acc": 0.3285,
+  "fam_majority": 0.3285,
+  "mse_f": {
+   "1.0": 0.9482,
+   "2.0": 0.9233,
+   "4.0": 0.8593,
+   "8.0": 0.6804
+  }
+ },
+ "base_ema_nohead_s3": {
+  "edge_auc": 0.5058,
+  "fam_acc": 0.3285,
+  "fam_majority": 0.3285,
+  "mse_f": {
+   "1.0": 0.9482,
+   "2.0": 0.9233,
+   "4.0": 0.8593,
+   "8.0": 0.6804
+  }
+ },
+ "base_ema_nohead_s4": {
+  "edge_auc": 0.4914,
+  "fam_acc": 0.3285,
+  "fam_majority": 0.3285,
+  "mse_f": {
+   "1.0": 0.9482,
+   "2.0": 0.9233,
+   "4.0": 0.8593,
+   "8.0": 0.6804
+  }
+ },
+ "base_ema_nohead_s0_steelman": {
+  "edge_auc": 0.5233,
+  "fam_acc": 0.359,
+  "fam_majority": 0.3285,
+  "mse_f": {
+   "1.0": 0.0369
+  },
+  "steelman_step": 1000,
+  "steelman_dim_std": 0.5308,
+  "onset": 2250
+ },
+ "base_ema_nohead_s2_steelman": {
+  "edge_auc": 0.5225,
+  "fam_acc": 0.3446,
+  "fam_majority": 0.3285,
+  "mse_f": {
+   "1.0": 0.1539
+  },
+  "steelman_step": 1250,
+  "steelman_dim_std": 0.4533,
+  "onset": 1500
+ },
+ "base_ema_nohead_s3_steelman": {
+  "edge_auc": 0.509,
+  "fam_acc": 0.3333,
+  "fam_majority": 0.3285,
+  "mse_f": {
+   "1.0": 0.3359
+  },
+  "steelman_step": 1500,
+  "steelman_dim_std": 0.7632,
+  "onset": 1750
+ },
+ "base_ema_nohead_s4_steelman": {
+  "edge_auc": 0.5037,
+  "fam_acc": 0.3221,
+  "fam_majority": 0.3285,
+  "mse_f": {
+   "1.0": 0.2767
+  },
+  "steelman_step": 1250,
+  "steelman_dim_std": 0.6842,
+  "onset": 1500
+ },
+ "_protocol": {
+  "recipe": "probe_base SCM recipe (c5_scores + c4_mse_f), encoder()==EMA target copy",
+  "steelman_rule": "max val_tgt dim_std before collapse onset, geometry only",
+  "slot_recipe": "addr_grid column-permutation, seed 41000",
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "config": "base_dual minus value head (lambda_ppd 0)"
+ }
+}

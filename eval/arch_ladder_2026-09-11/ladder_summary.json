@@ -1,0 +1,2120 @@
+{
+ "PFN_tabicl2_ds_s0": {
+  "role": "baseline",
+  "structure": "encoder + bar head, value loss only (no latent term)",
+  "e9": {
+   "clf_mean": 0.7748,
+   "clf_n": 115,
+   "reg_mean": 0.5721,
+   "reg_n": 32,
+   "vs_pfn_ds": "baseline",
+   "vs_snap9250_clf": "101:4",
+   "vs_histgb_clf": [
+    18,
+    96
+   ],
+   "vs_logreg_clf": [
+    44,
+    68
+   ],
+   "vs_histgb_reg": [
+    2,
+    30
+   ],
+   "vs_ridge_reg": [
+    17,
+    15
+   ]
+  },
+  "train": {
+   "val_mse_20k": 0.5012,
+   "min_val_mse": 0.5012,
+   "min_step": 20000,
+   "survived": null,
+   "hours": null,
+   "peak_mib": null,
+   "latent": null
+  },
+  "vs_ds_snap8000": {
+   "clf": {
+    "all": [
+     78,
+     26,
+     0.0
+    ],
+    "ncls=2": [
+     39,
+     15,
+     0.0015
+    ],
+    "ncls=3-5": [
+     13,
+     4,
+     0.04904
+    ],
+    "ncls=6-10": [
+     16,
+     2,
+     0.00131
+    ]
+   },
+   "reg": [
+    26,
+    6,
+    0.00054
+   ],
+   "clf_means": [
+    0.7748,
+    0.7505
+   ],
+   "reg_means": [
+    0.5721,
+    0.5178
+   ]
+  }
+ },
+ "TabularJEPA_v3_tabicl2_s0": {
+  "role": "reference (collapsed)",
+  "structure": "encoder -> predictor(4) -> bar head ON the predictor; EMA diff latent target",
+  "e9": {
+   "clf_mean": 0.5702,
+   "clf_n": 115,
+   "reg_mean": -0.003,
+   "reg_n": 32,
+   "vs_pfn_ds": "6:98 / 0:18 / 1:31",
+   "vs_snap9250_clf": "-",
+   "vs_histgb_clf": [
+    10,
+    102
+   ],
+   "vs_logreg_clf": [
+    12,
+    99
+   ],
+   "vs_histgb_reg": [
+    1,
+    31
+   ],
+   "vs_ridge_reg": [
+    0,
+    32
+   ]
+  },
+  "train": {
+   "val_mse_20k": 0.9364,
+   "min_val_mse": 0.7499,
+   "min_step": 7250,
+   "survived": null,
+   "hours": null,
+   "peak_mib": null,
+   "latent": null
+  }
+ },
+ "TabularJEPA_v3_tabicl2_s0_snap9250": {
+  "role": "reference (v3 best snapshot, 9250)",
+  "structure": "same as v3",
+  "e9": {
+   "clf_mean": 0.6139,
+   "clf_n": 115,
+   "reg_mean": 0.1971,
+   "reg_n": 32,
+   "vs_pfn_ds": "4:101 / 0:18 / 0:32",
+   "vs_snap9250_clf": "baseline",
+   "vs_histgb_clf": [
+    9,
+    105
+   ],
+   "vs_logreg_clf": [
+    11,
+    102
+   ],
+   "vs_histgb_reg": [
+    0,
+    32
+   ],
+   "vs_ridge_reg": [
+    0,
+    32
+   ]
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_s0": {
+  "role": "run 1",
+  "structure": "v3 with the bar head moved onto the ENCODER output; predictor latent-only; EMA diff target",
+  "e9": {
+   "clf_mean": 0.7496,
+   "clf_n": 115,
+   "reg_mean": 0.4898,
+   "reg_n": 32,
+   "vs_pfn_ds": "28:76 / 3:15 / 7:25",
+   "vs_snap9250_clf": "99:5",
+   "vs_histgb_clf": [
+    17,
+    96
+   ],
+   "vs_logreg_clf": [
+    30,
+    82
+   ],
+   "vs_histgb_reg": [
+    2,
+    30
+   ],
+   "vs_ridge_reg": [
+    8,
+    24
+   ]
+  },
+  "train": {
+   "val_mse_20k": 0.5513,
+   "min_val_mse": 0.5513,
+   "min_step": 20000,
+   "survived": true,
+   "hours": 3.04,
+   "peak_mib": 79111,
+   "latent": {
+    "val_mse": 0.5513,
+    "val_ppd": 1.3264,
+    "val_jepa": 0.2723,
+    "tgt_cos": 0.4269,
+    "pred_std": 0.5111,
+    "tgt_erank": 98.1
+   }
+  },
+  "vs_ds_snap8000": {
+   "clf": {
+    "all": [
+     53,
+     49,
+     0.7666
+    ],
+    "ncls=2": [
+     30,
+     23,
+     0.4101
+    ],
+    "ncls=3-5": [
+     11,
+     6,
+     0.33231
+    ],
+    "ncls=6-10": [
+     5,
+     12,
+     0.14346
+    ]
+   },
+   "reg": [
+    11,
+    21,
+    0.11018
+   ],
+   "clf_means": [
+    0.7496,
+    0.7505
+   ],
+   "reg_means": [
+    0.4898,
+    0.5178
+   ]
+  },
+  "probe": {
+   "n": 41805,
+   "mode": "ema",
+   "step": 20000,
+   "pred": {
+    "col": -0.024,
+    "z": 0.051,
+    "z_from_pred": 0.397,
+    "erank": 45.2
+   },
+   "target": {
+    "col": -0.015,
+    "z": 0.141,
+    "z_from_target": 0.897,
+    "erank": 99.3
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_dae_headenc_s0": {
+  "role": "run 2",
+  "structure": "headenc + EMA copy replaced by a denoising y-encoder (sigma .5, own bar-CE reconstruction), embedding = target",
+  "e9": {
+   "clf_mean": 0.7354,
+   "clf_n": 115,
+   "reg_mean": 0.4679,
+   "reg_n": 32,
+   "vs_pfn_ds": "15:87 / 1:17 / 8:24",
+   "vs_snap9250_clf": "93:10",
+   "vs_histgb_clf": [
+    17,
+    97
+   ],
+   "vs_logreg_clf": [
+    32,
+    79
+   ],
+   "vs_histgb_reg": [
+    2,
+    30
+   ],
+   "vs_ridge_reg": [
+    7,
+    25
+   ]
+  },
+  "train": {
+   "val_mse_20k": 0.565,
+   "min_val_mse": 0.565,
+   "min_step": 20000,
+   "survived": true,
+   "hours": 3.75,
+   "peak_mib": 86135,
+   "latent": {
+    "val_mse": 0.565,
+    "val_ppd": 1.3657,
+    "val_jepa": 0.1907,
+    "tgt_cos": 0.3711,
+    "pred_std": 0.6001,
+    "tgt_erank": 93.9
+   }
+  },
+  "vs_ds_snap8000": {
+   "clf": {
+    "all": [
+     38,
+     62,
+     0.02098
+    ],
+    "ncls=2": [
+     22,
+     29,
+     0.40106
+    ],
+    "ncls=3-5": [
+     6,
+     11,
+     0.33231
+    ],
+    "ncls=6-10": [
+     4,
+     13,
+     0.04904
+    ]
+   },
+   "reg": [
+    9,
+    23,
+    0.02006
+   ],
+   "clf_means": [
+    0.7354,
+    0.7505
+   ],
+   "reg_means": [
+    0.4679,
+    0.5178
+   ]
+  },
+  "probe": {
+   "n": 41805,
+   "mode": "dae",
+   "step": 20000,
+   "pred": {
+    "col": -0.028,
+    "z": 0.04,
+    "z_from_pred": 0.413,
+    "erank": 42.6
+   },
+   "target": {
+    "col": -0.021,
+    "z": 0.119,
+    "z_from_target": 0.865,
+    "erank": 94.4
+   },
+   "target_noise_free": {
+    "col": -0.029,
+    "z": 0.078,
+    "z_from_target": 0.95,
+    "erank": 89.6
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_sigreg_headenc_s0": {
+  "role": "run 3",
+  "structure": "headenc + EMA copy replaced by LeWM SIGReg (same encoder full pass -> projector, no detach, additive lambda .05)",
+  "e9": {
+   "clf_mean": 0.5683,
+   "clf_n": 115,
+   "reg_mean": -0.0027,
+   "reg_n": 32,
+   "vs_pfn_ds": "6:98 / 0:18 / 1:31",
+   "vs_snap9250_clf": "33:55",
+   "vs_histgb_clf": [
+    10,
+    102
+   ],
+   "vs_logreg_clf": [
+    12,
+    99
+   ],
+   "vs_histgb_reg": [
+    1,
+    31
+   ],
+   "vs_ridge_reg": [
+    0,
+    32
+   ]
+  },
+  "train": {
+   "val_mse_20k": 0.9365,
+   "min_val_mse": 0.9365,
+   "min_step": 17500,
+   "survived": false,
+   "hours": 3.83,
+   "peak_mib": 94681,
+   "latent": {
+    "val_mse": 0.9365,
+    "val_ppd": 2.9689,
+    "val_jepa": 0.9147,
+    "tgt_cos": 0.001,
+    "pred_std": 0.3418,
+    "tgt_erank": 104.9
+   }
+  },
+  "probe": {
+   "n": 41805,
+   "mode": "sigreg",
+   "step": 20000,
+   "pred": {
+    "col": -0.05,
+    "z": -0.0,
+    "z_from_pred": -0.004,
+    "erank": 38.7
+   },
+   "target": {
+    "col": -0.026,
+    "z": -0.0,
+    "z_from_target": -0.012,
+    "erank": 103.8
+   }
+  }
+ },
+ "v4_dual_split_ctx_tw4_diff_lam1_lr5e-4_mixed_cell_s0": {
+  "role": "reference (real-prior dual_split 20k)",
+  "structure": "previous best JEPA run, real-data-matched prior",
+  "e9": {
+   "clf_mean": 0.6676,
+   "clf_n": 115,
+   "reg_mean": 0.4613,
+   "reg_n": 32,
+   "vs_pfn_ds": "92:12 / 18:0 / 30:2 (PFN first)",
+   "vs_snap9250_clf": "82:17",
+   "vs_histgb_clf": [
+    13,
+    101
+   ],
+   "vs_logreg_clf": [
+    20,
+    91
+   ],
+   "vs_histgb_reg": [
+    0,
+    32
+   ],
+   "vs_ridge_reg": [
+    7,
+    25
+   ]
+  },
+  "train": {
+   "val_mse_20k": 0.6566,
+   "min_val_mse": 0.6543,
+   "min_step": 19500,
+   "survived": null,
+   "hours": null,
+   "peak_mib": null,
+   "latent": null
+  }
+ },
+ "PFN_tabicl2_ds_conv_s0_snap20000": {
+  "L3": {
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      51,
+      49,
+      0.92041
+     ],
+     "ncls=2": [
+      29,
+      22,
+      0.40106
+     ],
+     "ncls=3-5": [
+      9,
+      7,
+      0.80362
+     ],
+     "ncls=6-10": [
+      7,
+      11,
+      0.48068
+     ]
+    },
+    "reg": [
+     17,
+     15,
+     0.86005
+    ],
+    "clf_means": [
+     0.7769,
+     0.7748
+    ],
+    "reg_means": [
+     0.5724,
+     0.5721
+    ]
+   }
+  }
+ },
+ "PFN_tabicl2_ds_conv_s0_snap40000": {
+  "L3": {
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      65,
+      37,
+      0.00721
+     ],
+     "ncls=2": [
+      33,
+      21,
+      0.13367
+     ],
+     "ncls=3-5": [
+      11,
+      5,
+      0.21011
+     ],
+     "ncls=6-10": [
+      11,
+      7,
+      0.48068
+     ]
+    },
+    "reg": [
+     28,
+     4,
+     2e-05
+    ],
+    "clf_means": [
+     0.7876,
+     0.7748
+    ],
+    "reg_means": [
+     0.609,
+     0.5721
+    ]
+   }
+  }
+ },
+ "PFN_tabicl2_ds_conv_s0_snap60000": {
+  "L3": {
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      79,
+      25,
+      0.0
+     ],
+     "ncls=2": [
+      37,
+      18,
+      0.01445
+     ],
+     "ncls=3-5": [
+      14,
+      3,
+      0.01273
+     ],
+     "ncls=6-10": [
+      16,
+      2,
+      0.00131
+     ]
+    },
+    "reg": [
+     30,
+     2,
+     0.0
+    ],
+    "clf_means": [
+     0.7984,
+     0.7748
+    ],
+    "reg_means": [
+     0.6235,
+     0.5721
+    ]
+   }
+  }
+ },
+ "PFN_tabicl2_ds_conv_s0_snap80000": {
+  "L3": {
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      82,
+      23,
+      0.0
+     ],
+     "ncls=2": [
+      39,
+      16,
+      0.00267
+     ],
+     "ncls=3-5": [
+      15,
+      2,
+      0.00235
+     ],
+     "ncls=6-10": [
+      17,
+      1,
+      0.00014
+     ]
+    },
+    "reg": [
+     31,
+     1,
+     0.0
+    ],
+    "clf_means": [
+     0.8047,
+     0.7748
+    ],
+    "reg_means": [
+     0.6352,
+     0.5721
+    ]
+   }
+  }
+ },
+ "PFN_tabicl2_ds_conv_s0_snap100000": {
+  "L3": {
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      89,
+      14,
+      0.0
+     ],
+     "ncls=2": [
+      46,
+      7,
+      0.0
+     ],
+     "ncls=3-5": [
+      15,
+      2,
+      0.00235
+     ],
+     "ncls=6-10": [
+      16,
+      2,
+      0.00131
+     ]
+    },
+    "reg": [
+     32,
+     0,
+     0.0
+    ],
+    "clf_means": [
+     0.8103,
+     0.7748
+    ],
+    "reg_means": [
+     0.6467,
+     0.5721
+    ]
+   }
+  }
+ },
+ "PFN_tabicl2_ds_conv_s0_snap120000": {
+  "L3": {
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      90,
+      12,
+      0.0
+     ],
+     "ncls=2": [
+      43,
+      9,
+      0.0
+     ],
+     "ncls=3-5": [
+      16,
+      1,
+      0.00027
+     ],
+     "ncls=6-10": [
+      17,
+      1,
+      0.00014
+     ]
+    },
+    "reg": [
+     32,
+     0,
+     0.0
+    ],
+    "clf_means": [
+     0.8124,
+     0.7748
+    ],
+    "reg_means": [
+     0.6549,
+     0.5721
+    ]
+   }
+  }
+ },
+ "PFN_tabicl2_ds_conv_s0_snap140000": {
+  "L3": {
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      88,
+      14,
+      0.0
+     ],
+     "ncls=2": [
+      43,
+      9,
+      0.0
+     ],
+     "ncls=3-5": [
+      15,
+      2,
+      0.00235
+     ],
+     "ncls=6-10": [
+      17,
+      1,
+      0.00014
+     ]
+    },
+    "reg": [
+     32,
+     0,
+     0.0
+    ],
+    "clf_means": [
+     0.8143,
+     0.7748
+    ],
+    "reg_means": [
+     0.6618,
+     0.5721
+    ]
+   }
+  }
+ },
+ "PFN_tabicl2_ds_conv_s0_snap160000": {
+  "L3": {
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      92,
+      11,
+      0.0
+     ],
+     "ncls=2": [
+      45,
+      8,
+      0.0
+     ],
+     "ncls=3-5": [
+      16,
+      1,
+      0.00027
+     ],
+     "ncls=6-10": [
+      17,
+      1,
+      0.00014
+     ]
+    },
+    "reg": [
+     32,
+     0,
+     0.0
+    ],
+    "clf_means": [
+     0.8148,
+     0.7748
+    ],
+    "reg_means": [
+     0.6639,
+     0.5721
+    ]
+   }
+  }
+ },
+ "PFN_tabicl2_ds_conv_s0": {
+  "L3": {
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      89,
+      13,
+      0.0
+     ],
+     "ncls=2": [
+      43,
+      9,
+      0.0
+     ],
+     "ncls=3-5": [
+      15,
+      2,
+      0.00235
+     ],
+     "ncls=6-10": [
+      17,
+      1,
+      0.00014
+     ]
+    },
+    "reg": [
+     32,
+     0,
+     0.0
+    ],
+    "clf_means": [
+     0.8148,
+     0.7748
+    ],
+    "reg_means": [
+     0.6648,
+     0.5721
+    ]
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_conv_s0_snap20000": {
+  "L3": {
+   "PFN_tabicl2_ds_conv_s0": {
+    "clf": {
+     "all": [
+      9,
+      96,
+      0.0
+     ],
+     "ncls=2": [
+      8,
+      48,
+      0.0
+     ],
+     "ncls=3-5": [
+      0,
+      16,
+      3e-05
+     ],
+     "ncls=6-10": [
+      0,
+      18,
+      1e-05
+     ]
+    },
+    "reg": [
+     0,
+     32,
+     0.0
+    ],
+    "clf_means": [
+     0.741,
+     0.8148
+    ],
+    "reg_means": [
+     0.4824,
+     0.6648
+    ]
+   },
+   "PFN_tabicl2_ds_conv_s0_snap20000": {
+    "clf": {
+     "all": [
+      22,
+      80,
+      0.0
+     ],
+     "ncls=2": [
+      16,
+      37,
+      0.00549
+     ],
+     "ncls=3-5": [
+      2,
+      15,
+      0.00235
+     ],
+     "ncls=6-10": [
+      1,
+      17,
+      0.00014
+     ]
+    },
+    "reg": [
+     7,
+     25,
+     0.0021
+    ],
+    "clf_means": [
+     0.741,
+     0.7769
+    ],
+    "reg_means": [
+     0.4824,
+     0.5724
+    ]
+   },
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      21,
+      79,
+      0.0
+     ],
+     "ncls=2": [
+      16,
+      35,
+      0.01097
+     ],
+     "ncls=3-5": [
+      3,
+      14,
+      0.01273
+     ],
+     "ncls=6-10": [
+      1,
+      16,
+      0.00027
+     ]
+    },
+    "reg": [
+     5,
+     27,
+     0.00011
+    ],
+    "clf_means": [
+     0.741,
+     0.7748
+    ],
+    "reg_means": [
+     0.4824,
+     0.5721
+    ]
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_conv_s0_snap40000": {
+  "L3": {
+   "PFN_tabicl2_ds_conv_s0": {
+    "clf": {
+     "all": [
+      6,
+      96,
+      0.0
+     ],
+     "ncls=2": [
+      4,
+      50,
+      0.0
+     ],
+     "ncls=3-5": [
+      0,
+      17,
+      2e-05
+     ],
+     "ncls=6-10": [
+      1,
+      16,
+      0.00027
+     ]
+    },
+    "reg": [
+     0,
+     32,
+     0.0
+    ],
+    "clf_means": [
+     0.7626,
+     0.8148
+    ],
+    "reg_means": [
+     0.536,
+     0.6648
+    ]
+   },
+   "PFN_tabicl2_ds_conv_s0_snap40000": {
+    "clf": {
+     "all": [
+      23,
+      81,
+      0.0
+     ],
+     "ncls=2": [
+      13,
+      43,
+      7e-05
+     ],
+     "ncls=3-5": [
+      3,
+      12,
+      0.03516
+     ],
+     "ncls=6-10": [
+      3,
+      15,
+      0.00754
+     ]
+    },
+    "reg": [
+     3,
+     29,
+     0.0
+    ],
+    "clf_means": [
+     0.7626,
+     0.7876
+    ],
+    "reg_means": [
+     0.536,
+     0.609
+    ]
+   },
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      38,
+      64,
+      0.01292
+     ],
+     "ncls=2": [
+      23,
+      30,
+      0.4101
+     ],
+     "ncls=3-5": [
+      6,
+      10,
+      0.4545
+     ],
+     "ncls=6-10": [
+      3,
+      15,
+      0.00754
+     ]
+    },
+    "reg": [
+     11,
+     21,
+     0.11018
+    ],
+    "clf_means": [
+     0.7626,
+     0.7748
+    ],
+    "reg_means": [
+     0.536,
+     0.5721
+    ]
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_conv_s0_snap60000": {
+  "L3": {
+   "PFN_tabicl2_ds_conv_s0": {
+    "clf": {
+     "all": [
+      15,
+      87,
+      0.0
+     ],
+     "ncls=2": [
+      10,
+      42,
+      1e-05
+     ],
+     "ncls=3-5": [
+      2,
+      15,
+      0.00235
+     ],
+     "ncls=6-10": [
+      2,
+      16,
+      0.00131
+     ]
+    },
+    "reg": [
+     0,
+     32,
+     0.0
+    ],
+    "clf_means": [
+     0.7752,
+     0.8148
+    ],
+    "reg_means": [
+     0.5634,
+     0.6648
+    ]
+   },
+   "PFN_tabicl2_ds_conv_s0_snap60000": {
+    "clf": {
+     "all": [
+      26,
+      79,
+      0.0
+     ],
+     "ncls=2": [
+      18,
+      37,
+      0.01445
+     ],
+     "ncls=3-5": [
+      4,
+      13,
+      0.04904
+     ],
+     "ncls=6-10": [
+      3,
+      15,
+      0.00754
+     ]
+    },
+    "reg": [
+     2,
+     30,
+     0.0
+    ],
+    "clf_means": [
+     0.7752,
+     0.7984
+    ],
+    "reg_means": [
+     0.5634,
+     0.6235
+    ]
+   },
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      47,
+      57,
+      0.37758
+     ],
+     "ncls=2": [
+      28,
+      27,
+      1.0
+     ],
+     "ncls=3-5": [
+      7,
+      9,
+      0.80362
+     ],
+     "ncls=6-10": [
+      6,
+      12,
+      0.23788
+     ]
+    },
+    "reg": [
+     18,
+     14,
+     0.59661
+    ],
+    "clf_means": [
+     0.7752,
+     0.7748
+    ],
+    "reg_means": [
+     0.5634,
+     0.5721
+    ]
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_conv_s0_snap80000": {
+  "L3": {
+   "PFN_tabicl2_ds_conv_s0": {
+    "clf": {
+     "all": [
+      11,
+      91,
+      0.0
+     ],
+     "ncls=2": [
+      7,
+      46,
+      0.0
+     ],
+     "ncls=3-5": [
+      1,
+      16,
+      0.00027
+     ],
+     "ncls=6-10": [
+      1,
+      17,
+      0.00014
+     ]
+    },
+    "reg": [
+     1,
+     31,
+     0.0
+    ],
+    "clf_means": [
+     0.7812,
+     0.8148
+    ],
+    "reg_means": [
+     0.5841,
+     0.6648
+    ]
+   },
+   "PFN_tabicl2_ds_conv_s0_snap80000": {
+    "clf": {
+     "all": [
+      20,
+      86,
+      0.0
+     ],
+     "ncls=2": [
+      12,
+      44,
+      2e-05
+     ],
+     "ncls=3-5": [
+      1,
+      16,
+      0.00027
+     ],
+     "ncls=6-10": [
+      1,
+      17,
+      0.00014
+     ]
+    },
+    "reg": [
+     3,
+     28,
+     0.0
+    ],
+    "clf_means": [
+     0.7812,
+     0.8047
+    ],
+    "reg_means": [
+     0.5841,
+     0.6352
+    ]
+   },
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      60,
+      38,
+      0.03336
+     ],
+     "ncls=2": [
+      29,
+      23,
+      0.48846
+     ],
+     "ncls=3-5": [
+      11,
+      5,
+      0.21011
+     ],
+     "ncls=6-10": [
+      11,
+      6,
+      0.33231
+     ]
+    },
+    "reg": [
+     20,
+     12,
+     0.21533
+    ],
+    "clf_means": [
+     0.7812,
+     0.7748
+    ],
+    "reg_means": [
+     0.5841,
+     0.5721
+    ]
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_conv_s0_snap100000": {
+  "L3": {
+   "PFN_tabicl2_ds_conv_s0": {
+    "clf": {
+     "all": [
+      17,
+      89,
+      0.0
+     ],
+     "ncls=2": [
+      12,
+      44,
+      2e-05
+     ],
+     "ncls=3-5": [
+      2,
+      15,
+      0.00235
+     ],
+     "ncls=6-10": [
+      1,
+      17,
+      0.00014
+     ]
+    },
+    "reg": [
+     3,
+     29,
+     0.0
+    ],
+    "clf_means": [
+     0.7883,
+     0.8148
+    ],
+    "reg_means": [
+     0.5912,
+     0.6648
+    ]
+   },
+   "PFN_tabicl2_ds_conv_s0_snap100000": {
+    "clf": {
+     "all": [
+      16,
+      86,
+      0.0
+     ],
+     "ncls=2": [
+      9,
+      43,
+      0.0
+     ],
+     "ncls=3-5": [
+      2,
+      15,
+      0.00235
+     ],
+     "ncls=6-10": [
+      2,
+      16,
+      0.00131
+     ]
+    },
+    "reg": [
+     4,
+     28,
+     2e-05
+    ],
+    "clf_means": [
+     0.7883,
+     0.8103
+    ],
+    "reg_means": [
+     0.5912,
+     0.6467
+    ]
+   },
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      70,
+      30,
+      8e-05
+     ],
+     "ncls=2": [
+      36,
+      17,
+      0.01266
+     ],
+     "ncls=3-5": [
+      12,
+      5,
+      0.14346
+     ],
+     "ncls=6-10": [
+      13,
+      3,
+      0.02127
+     ]
+    },
+    "reg": [
+     23,
+     9,
+     0.02006
+    ],
+    "clf_means": [
+     0.7883,
+     0.7748
+    ],
+    "reg_means": [
+     0.5912,
+     0.5721
+    ]
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_conv_s0_snap120000": {
+  "L3": {
+   "PFN_tabicl2_ds_conv_s0": {
+    "clf": {
+     "all": [
+      18,
+      87,
+      0.0
+     ],
+     "ncls=2": [
+      12,
+      43,
+      3e-05
+     ],
+     "ncls=3-5": [
+      3,
+      14,
+      0.01273
+     ],
+     "ncls=6-10": [
+      1,
+      17,
+      0.00014
+     ]
+    },
+    "reg": [
+     2,
+     30,
+     0.0
+    ],
+    "clf_means": [
+     0.7933,
+     0.8148
+    ],
+    "reg_means": [
+     0.6023,
+     0.6648
+    ]
+   },
+   "PFN_tabicl2_ds_conv_s0_snap120000": {
+    "clf": {
+     "all": [
+      15,
+      89,
+      0.0
+     ],
+     "ncls=2": [
+      9,
+      47,
+      0.0
+     ],
+     "ncls=3-5": [
+      2,
+      14,
+      0.00418
+     ],
+     "ncls=6-10": [
+      1,
+      16,
+      0.00027
+     ]
+    },
+    "reg": [
+     2,
+     30,
+     0.0
+    ],
+    "clf_means": [
+     0.7933,
+     0.8124
+    ],
+    "reg_means": [
+     0.6023,
+     0.6549
+    ]
+   },
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      75,
+      28,
+      0.0
+     ],
+     "ncls=2": [
+      34,
+      19,
+      0.05344
+     ],
+     "ncls=3-5": [
+      15,
+      2,
+      0.00235
+     ],
+     "ncls=6-10": [
+      16,
+      2,
+      0.00131
+     ]
+    },
+    "reg": [
+     27,
+     5,
+     0.00011
+    ],
+    "clf_means": [
+     0.7933,
+     0.7748
+    ],
+    "reg_means": [
+     0.6023,
+     0.5721
+    ]
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_conv_s0_snap140000": {
+  "L3": {
+   "PFN_tabicl2_ds_conv_s0": {
+    "clf": {
+     "all": [
+      19,
+      81,
+      0.0
+     ],
+     "ncls=2": [
+      13,
+      39,
+      0.00041
+     ],
+     "ncls=3-5": [
+      1,
+      15,
+      0.00052
+     ],
+     "ncls=6-10": [
+      1,
+      16,
+      0.00027
+     ]
+    },
+    "reg": [
+     3,
+     29,
+     0.0
+    ],
+    "clf_means": [
+     0.7967,
+     0.8148
+    ],
+    "reg_means": [
+     0.606,
+     0.6648
+    ]
+   },
+   "PFN_tabicl2_ds_conv_s0_snap140000": {
+    "clf": {
+     "all": [
+      19,
+      83,
+      0.0
+     ],
+     "ncls=2": [
+      14,
+      38,
+      0.0012
+     ],
+     "ncls=3-5": [
+      1,
+      16,
+      0.00027
+     ],
+     "ncls=6-10": [
+      2,
+      16,
+      0.00131
+     ]
+    },
+    "reg": [
+     4,
+     28,
+     2e-05
+    ],
+    "clf_means": [
+     0.7967,
+     0.8143
+    ],
+    "reg_means": [
+     0.606,
+     0.6618
+    ]
+   },
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      79,
+      21,
+      0.0
+     ],
+     "ncls=2": [
+      37,
+      13,
+      0.00094
+     ],
+     "ncls=3-5": [
+      13,
+      4,
+      0.04904
+     ],
+     "ncls=6-10": [
+      17,
+      1,
+      0.00014
+     ]
+    },
+    "reg": [
+     30,
+     2,
+     0.0
+    ],
+    "clf_means": [
+     0.7967,
+     0.7748
+    ],
+    "reg_means": [
+     0.606,
+     0.5721
+    ]
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_conv_s0_snap160000": {
+  "L3": {
+   "PFN_tabicl2_ds_conv_s0": {
+    "clf": {
+     "all": [
+      22,
+      81,
+      0.0
+     ],
+     "ncls=2": [
+      14,
+      40,
+      0.00054
+     ],
+     "ncls=3-5": [
+      2,
+      14,
+      0.00418
+     ],
+     "ncls=6-10": [
+      1,
+      17,
+      0.00014
+     ]
+    },
+    "reg": [
+     4,
+     28,
+     2e-05
+    ],
+    "clf_means": [
+     0.7996,
+     0.8148
+    ],
+    "reg_means": [
+     0.6135,
+     0.6648
+    ]
+   },
+   "PFN_tabicl2_ds_conv_s0_snap160000": {
+    "clf": {
+     "all": [
+      17,
+      79,
+      0.0
+     ],
+     "ncls=2": [
+      10,
+      37,
+      0.0001
+     ],
+     "ncls=3-5": [
+      1,
+      15,
+      0.00052
+     ],
+     "ncls=6-10": [
+      1,
+      17,
+      0.00014
+     ]
+    },
+    "reg": [
+     4,
+     28,
+     2e-05
+    ],
+    "clf_means": [
+     0.7996,
+     0.8148
+    ],
+    "reg_means": [
+     0.6135,
+     0.6639
+    ]
+   },
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      85,
+      21,
+      0.0
+     ],
+     "ncls=2": [
+      41,
+      15,
+      0.00069
+     ],
+     "ncls=3-5": [
+      14,
+      3,
+      0.01273
+     ],
+     "ncls=6-10": [
+      18,
+      0,
+      1e-05
+     ]
+    },
+    "reg": [
+     30,
+     2,
+     0.0
+    ],
+    "clf_means": [
+     0.7996,
+     0.7748
+    ],
+    "reg_means": [
+     0.6135,
+     0.5721
+    ]
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_conv_s0_snap180000": {
+  "L3": {
+   "PFN_tabicl2_ds_conv_s0": {
+    "clf": {
+     "all": [
+      21,
+      82,
+      0.0
+     ],
+     "ncls=2": [
+      13,
+      42,
+      0.00011
+     ],
+     "ncls=3-5": [
+      3,
+      12,
+      0.03516
+     ],
+     "ncls=6-10": [
+      1,
+      17,
+      0.00014
+     ]
+    },
+    "reg": [
+     2,
+     29,
+     0.0
+    ],
+    "clf_means": [
+     0.801,
+     0.8148
+    ],
+    "reg_means": [
+     0.6202,
+     0.6648
+    ]
+   },
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      87,
+      18,
+      0.0
+     ],
+     "ncls=2": [
+      41,
+      14,
+      0.00036
+     ],
+     "ncls=3-5": [
+      15,
+      2,
+      0.00235
+     ],
+     "ncls=6-10": [
+      18,
+      0,
+      1e-05
+     ]
+    },
+    "reg": [
+     30,
+     2,
+     0.0
+    ],
+    "clf_means": [
+     0.801,
+     0.7748
+    ],
+    "reg_means": [
+     0.6202,
+     0.5721
+    ]
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_conv_s0_snap200000": {
+  "L3": {
+   "PFN_tabicl2_ds_conv_s0": {
+    "clf": {
+     "all": [
+      24,
+      78,
+      0.0
+     ],
+     "ncls=2": [
+      14,
+      40,
+      0.00054
+     ],
+     "ncls=3-5": [
+      4,
+      13,
+      0.04904
+     ],
+     "ncls=6-10": [
+      2,
+      15,
+      0.00235
+     ]
+    },
+    "reg": [
+     1,
+     30,
+     0.0
+    ],
+    "clf_means": [
+     0.803,
+     0.8148
+    ],
+    "reg_means": [
+     0.6259,
+     0.6648
+    ]
+   },
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      84,
+      19,
+      0.0
+     ],
+     "ncls=2": [
+      39,
+      15,
+      0.0015
+     ],
+     "ncls=3-5": [
+      14,
+      3,
+      0.01273
+     ],
+     "ncls=6-10": [
+      18,
+      0,
+      1e-05
+     ]
+    },
+    "reg": [
+     30,
+     2,
+     0.0
+    ],
+    "clf_means": [
+     0.803,
+     0.7748
+    ],
+    "reg_means": [
+     0.6259,
+     0.5721
+    ]
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_conv_s0_snap220000": {
+  "L3": {
+   "PFN_tabicl2_ds_conv_s0": {
+    "clf": {
+     "all": [
+      36,
+      68,
+      0.00221
+     ],
+     "ncls=2": [
+      21,
+      34,
+      0.10479
+     ],
+     "ncls=3-5": [
+      6,
+      11,
+      0.33231
+     ],
+     "ncls=6-10": [
+      2,
+      15,
+      0.00235
+     ]
+    },
+    "reg": [
+     5,
+     27,
+     0.00011
+    ],
+    "clf_means": [
+     0.8059,
+     0.8148
+    ],
+    "reg_means": [
+     0.6297,
+     0.6648
+    ]
+   },
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      87,
+      18,
+      0.0
+     ],
+     "ncls=2": [
+      41,
+      15,
+      0.00069
+     ],
+     "ncls=3-5": [
+      14,
+      2,
+      0.00418
+     ],
+     "ncls=6-10": [
+      18,
+      0,
+      1e-05
+     ]
+    },
+    "reg": [
+     30,
+     2,
+     0.0
+    ],
+    "clf_means": [
+     0.8059,
+     0.7748
+    ],
+    "reg_means": [
+     0.6297,
+     0.5721
+    ]
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_conv_s0_snap240000": {
+  "L3": {
+   "PFN_tabicl2_ds_conv_s0": {
+    "clf": {
+     "all": [
+      31,
+      69,
+      0.00018
+     ],
+     "ncls=2": [
+      19,
+      34,
+      0.05344
+     ],
+     "ncls=3-5": [
+      5,
+      11,
+      0.21011
+     ],
+     "ncls=6-10": [
+      2,
+      15,
+      0.00235
+     ]
+    },
+    "reg": [
+     6,
+     26,
+     0.00054
+    ],
+    "clf_means": [
+     0.8078,
+     0.8148
+    ],
+    "reg_means": [
+     0.6329,
+     0.6648
+    ]
+   },
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      89,
+      18,
+      0.0
+     ],
+     "ncls=2": [
+      41,
+      16,
+      0.00126
+     ],
+     "ncls=3-5": [
+      16,
+      1,
+      0.00027
+     ],
+     "ncls=6-10": [
+      18,
+      0,
+      1e-05
+     ]
+    },
+    "reg": [
+     30,
+     2,
+     0.0
+    ],
+    "clf_means": [
+     0.8078,
+     0.7748
+    ],
+    "reg_means": [
+     0.6329,
+     0.5721
+    ]
+   }
+  }
+ },
+ "TabularJEPA_v3_tabicl2_headenc_conv_s0": {
+  "L3": {
+   "PFN_tabicl2_ds_conv_s0": {
+    "clf": {
+     "all": [
+      32,
+      70,
+      0.00021
+     ],
+     "ncls=2": [
+      21,
+      36,
+      0.06274
+     ],
+     "ncls=3-5": [
+      6,
+      10,
+      0.4545
+     ],
+     "ncls=6-10": [
+      2,
+      14,
+      0.00418
+     ]
+    },
+    "reg": [
+     8,
+     24,
+     0.007
+    ],
+    "clf_means": [
+     0.809,
+     0.8148
+    ],
+    "reg_means": [
+     0.635,
+     0.6648
+    ]
+   },
+   "PFN_tabicl2_ds_s0": {
+    "clf": {
+     "all": [
+      91,
+      15,
+      0.0
+     ],
+     "ncls=2": [
+      43,
+      13,
+      7e-05
+     ],
+     "ncls=3-5": [
+      16,
+      1,
+      0.00027
+     ],
+     "ncls=6-10": [
+      18,
+      0,
+      1e-05
+     ]
+    },
+    "reg": [
+     30,
+     2,
+     0.0
+    ],
+    "clf_means": [
+     0.809,
+     0.7748
+    ],
+    "reg_means": [
+     0.635,
+     0.5721
+    ]
+   }
+  }
+ }
+}

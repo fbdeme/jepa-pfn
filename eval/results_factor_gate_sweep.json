@@ -1,0 +1,124 @@
+{
+ "protocol": {
+  "gate": "eval/factor_oracle.py _cross_column_r2, floors r2_f>=0.5 (latent learnable) and r2_x>=0.5 (value arm fair), on the probe geometry (178 rows, 12 cols)",
+  "ceiling": "closed-form Gaussian conditioning on Sigma=WW^T+s^2I, median over 400 loading draws x 12 columns"
+ },
+ "gate": {
+  "K1_s0.5": {
+   "r2_f": 0.9753,
+   "r2_x": 0.7521,
+   "fair_to_value_arm": true,
+   "latent_learnable": true
+  },
+  "K2_s0.5": {
+   "r2_f": 0.9468,
+   "r2_x": 0.7285,
+   "fair_to_value_arm": true,
+   "latent_learnable": true
+  },
+  "K4_s0.5": {
+   "r2_f": 0.8834,
+   "r2_x": 0.6737,
+   "fair_to_value_arm": true,
+   "latent_learnable": true
+  },
+  "K6_s0.5": {
+   "r2_f": 0.7999,
+   "r2_x": 0.6008,
+   "fair_to_value_arm": true,
+   "latent_learnable": true
+  },
+  "K8_s0.5": {
+   "r2_f": 0.7029,
+   "r2_x": 0.5339,
+   "fair_to_value_arm": true,
+   "latent_learnable": true
+  },
+  "K12_s0.5": {
+   "r2_f": 0.5313,
+   "r2_x": 0.3889,
+   "fair_to_value_arm": false,
+   "latent_learnable": true
+  },
+  "K1_s0.6": {
+   "r2_f": 0.9647,
+   "r2_x": 0.6711,
+   "fair_to_value_arm": true,
+   "latent_learnable": true
+  },
+  "K2_s0.6": {
+   "r2_f": 0.925,
+   "r2_x": 0.6401,
+   "fair_to_value_arm": true,
+   "latent_learnable": true
+  },
+  "K4_s0.6": {
+   "r2_f": 0.8403,
+   "r2_x": 0.573,
+   "fair_to_value_arm": true,
+   "latent_learnable": true
+  },
+  "K6_s0.6": {
+   "r2_f": 0.7372,
+   "r2_x": 0.4923,
+   "fair_to_value_arm": false,
+   "latent_learnable": true
+  },
+  "K8_s0.6": {
+   "r2_f": 0.6366,
+   "r2_x": 0.4259,
+   "fair_to_value_arm": false,
+   "latent_learnable": true
+  },
+  "K12_s0.6": {
+   "r2_f": 0.4689,
+   "r2_x": 0.2956,
+   "fair_to_value_arm": false,
+   "latent_learnable": false
+  },
+  "K1_s1.0": {
+   "r2_f": 0.906,
+   "r2_x": 0.3718,
+   "fair_to_value_arm": false,
+   "latent_learnable": true
+  },
+  "K2_s1.0": {
+   "r2_f": 0.8119,
+   "r2_x": 0.3292,
+   "fair_to_value_arm": false,
+   "latent_learnable": true
+  },
+  "K4_s1.0": {
+   "r2_f": 0.6545,
+   "r2_x": 0.2425,
+   "fair_to_value_arm": false,
+   "latent_learnable": true
+  },
+  "K6_s1.0": {
+   "r2_f": 0.5128,
+   "r2_x": 0.1609,
+   "fair_to_value_arm": false,
+   "latent_learnable": true
+  },
+  "K8_s1.0": {
+   "r2_f": 0.4072,
+   "r2_x": 0.1276,
+   "fair_to_value_arm": false,
+   "latent_learnable": false
+  },
+  "K12_s1.0": {
+   "r2_f": 0.2721,
+   "r2_x": 0.0473,
+   "fair_to_value_arm": false,
+   "latent_learnable": false
+  }
+ },
+ "ceiling": {
+  "1": 0.4583,
+  "2": 0.4202,
+  "4": 0.3499,
+  "6": 0.2911,
+  "8": 0.2462,
+  "12": 0.1823
+ }
+}

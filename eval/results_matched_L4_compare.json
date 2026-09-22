@@ -1,0 +1,38 @@
+{
+  "note": "C5 matched nonlinear rerun, seed 0. edge_gap/msef_gap = ds - lat (msef lower=better).",
+  "headroom_base": 0.023,
+  "headroom_L4": 0.128,
+  "lat_steelman_step": 750,
+  "lat_steelman_dim_std": 0.8821,
+  "base": {
+    "ds_edge": 0.5968,
+    "lat_edge": 0.4979,
+    "floor_edge": 0.5524,
+    "edge_gap": 0.0989,
+    "ds_msef": 0.0786,
+    "dual_msef": 0.0247,
+    "lat_msef": 0.4431,
+    "floor_msef": 0.016,
+    "msef_gap": -0.3645,
+    "lat_over_ds_msef": 5.64,
+    "dual_beats_ds_msef": true
+  },
+  "L4": {
+    "ds_edge": 0.5856,
+    "lat_edge": 0.536,
+    "floor_edge": 0.5808,
+    "edge_gap": 0.0496,
+    "ds_msef": 0.0941,
+    "dual_msef": 0.0479,
+    "lat_msef": 0.7348,
+    "floor_msef": 0.0164,
+    "msef_gap": -0.6407,
+    "lat_over_ds_msef": 7.81,
+    "dual_beats_ds_msef": true
+  },
+  "verdict": {
+    "latent_catches_up_at_L4": false,
+    "lat_relatively_worse_at_L4": true,
+    "dual_beats_ds_both": true
+  }
+}

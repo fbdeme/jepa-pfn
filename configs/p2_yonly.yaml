@@ -1,0 +1,6 @@
+# Phase 2 baseline (i): y-only masking, data-space bar-distribution CE
+# = TabPFN-style supervised shape, on our instrumented prior
+run_name: p2_yonly
+policy: y_only
+seed: 0
+steps: 20000

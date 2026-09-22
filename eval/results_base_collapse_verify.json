@@ -1,0 +1,35 @@
+{
+ "run": "bsw_lat_n1_s0",
+ "recipe": "SIGReg latent, matched base recipe (base_lat_s), noise_scale=1",
+ "direct_ckpt_verification": [
+  {
+   "step": 750,
+   "dim_std": 0.792,
+   "cos": 0.3123,
+   "raw_std_mean": 0.79352,
+   "max_L2_8cells": 21.92734
+  },
+  {
+   "step": 1000,
+   "dim_std": 0.7846,
+   "cos": 0.3318,
+   "raw_std_mean": 0.78378,
+   "max_L2_8cells": 26.05371
+  },
+  {
+   "step": 8000,
+   "dim_std": 0.0,
+   "cos": 1.0,
+   "raw_std_mean": 0.0,
+   "max_L2_8cells": 0.0
+  }
+ ],
+ "trajectory": {
+  "collapse_onset_step": 1250,
+  "permanent_collapse_step": 2250,
+  "healthy_peak_step": 500,
+  "healthy_peak_dim_std": 1.1283,
+  "n_vals": 32
+ },
+ "conclusion": "collapsed encoder maps every cell to one vector (max_L2=0); no well-trained non-collapsed base checkpoint exists at the matched recipe"
+}

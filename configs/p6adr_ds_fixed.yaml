@@ -1,0 +1,8 @@
+# Issue #20: matched data-space control for the "fixed" address scheme. The gap
+# inside the pair is the measurement; absolute values are not comparable across
+# schemes (both arms change), only gaps are.
+run_name: p6adr_ds_fixed
+policy: any_cell
+r_scheme: fixed
+seed: 0
+steps: 20000

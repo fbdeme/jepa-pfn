@@ -1,0 +1,86 @@
+{
+ "rule": {
+  "rule": "val_mse mean over the last quarter of the run vs the previous quarter: converged if the drop <= max(rel_tol x previous-quarter mean, noise_k x sd of the last quarter)",
+  "rel_tol": 0.01,
+  "noise_k": 2,
+  "extension": "if any run of a seed pair is not converged at 40k, extend both arms of that seed to 60k once (new configs) and judge on the longest steps where both arms exist"
+ },
+ "runs": {
+  "real_ds_lr5e-4_s0": {
+   "steps": 20000,
+   "n_val": 80,
+   "q3_mean": 0.7873,
+   "q4_mean": 0.7743,
+   "q4_sd": 0.002,
+   "drop": 0.013,
+   "rel_drop": 0.0165,
+   "tolerance": 0.0079,
+   "converged": false
+  },
+  "real_ds_lr5e-4_s1": {
+   "steps": 20000,
+   "n_val": 80,
+   "q3_mean": 0.5101,
+   "q4_mean": 0.459,
+   "q4_sd": 0.0107,
+   "drop": 0.051,
+   "rel_drop": 0.1,
+   "tolerance": 0.0213,
+   "converged": false
+  },
+  "real_ds_lr5e-4_s2": {
+   "steps": 20000,
+   "n_val": 80,
+   "q3_mean": 0.8498,
+   "q4_mean": 0.8278,
+   "q4_sd": 0.0079,
+   "drop": 0.022,
+   "rel_drop": 0.0259,
+   "tolerance": 0.0158,
+   "converged": false
+  },
+  "v4_ds_latinit_lam0_lr5e-4_any_cell_bar32_20k_s0": {
+   "steps": 20000,
+   "n_val": 80,
+   "q3_mean": 0.7509,
+   "q4_mean": 0.7361,
+   "q4_sd": 0.0043,
+   "drop": 0.0148,
+   "rel_drop": 0.0197,
+   "tolerance": 0.0086,
+   "converged": false
+  },
+  "v4_ds_latinit_lam0_lr5e-4_any_cell_bar32_20k_s1": {
+   "steps": 20000,
+   "n_val": 80,
+   "q3_mean": 0.418,
+   "q4_mean": 0.3766,
+   "q4_sd": 0.0105,
+   "drop": 0.0415,
+   "rel_drop": 0.0992,
+   "tolerance": 0.0209,
+   "converged": false
+  },
+  "v4_ds_latinit_lam0_lr5e-4_any_cell_bar32_20k_s2": {
+   "steps": 20000,
+   "n_val": 80,
+   "q3_mean": 0.7762,
+   "q4_mean": 0.7504,
+   "q4_sd": 0.0079,
+   "drop": 0.0258,
+   "rel_drop": 0.0332,
+   "tolerance": 0.0158,
+   "converged": false
+  }
+ },
+ "arm": {
+  "v4_ds_latinit_lam0_lr5e-4_any_cell_bar32_20k_s0": "finetune 20k",
+  "v4_ds_latinit_lam0_lr5e-4_any_cell_bar32_20k_s1": "finetune 20k",
+  "v4_ds_latinit_lam0_lr5e-4_any_cell_bar32_20k_s2": "finetune 20k",
+  "real_ds_lr5e-4_s0": "scratch 20k (real_ds)",
+  "real_ds_lr5e-4_s1": "scratch 20k (real_ds)",
+  "real_ds_lr5e-4_s2": "scratch 20k (real_ds)"
+ },
+ "n_converged": 0,
+ "n": 6
+}

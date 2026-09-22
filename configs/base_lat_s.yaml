@@ -1,0 +1,25 @@
+# #2 base FM: PURE-LATENT arm, stronger anti-collapse (hedge for base_lat).
+# Identical to base_lat but lambda_sig 0.25 (more SIGReg weight). Run alongside
+# base_lat (0.1) on the spare GPU so one round yields a non-collapsed pure-latent;
+# keep the lower lambda_sig that doesn't collapse.
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.0
+mode: sigreg
+lambda_sig: 0.25
+run_name: base_lat_s
+seed: 0
+steps: 20000
+batch_size: 4
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]

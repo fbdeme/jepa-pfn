@@ -1,0 +1,23 @@
+# Issue #23 T1b: free-running consumption training, DUAL (JEPA) arm (temporal_design S12.4).
+# Fixes T1a's exposure bias: T1a only consumed the TRUE latent (teacher-forced), but eval
+# latent_rollout feeds back the model's OWN masked-cell latent -> blow-up. T1b rolls out
+# feeding own latents (scheduled sampling, eps 1->0), no BPTT (per-step backward, O(1) mem).
+# Question: does latent_rollout stop blowing up / beat value_rollout as L grows?
+run_name: t1b_dual
+base: jepa
+consume_mode: rollout      # free-running roll (vs single = T1a teacher-forced)
+ss_anneal_frac: 0.5        # eps=1->0 by mid-run; 2nd half pure free-running
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+seed: 0
+steps: 12000               # ~3x encodes/step of T1a; batch8 ~2.5h
+batch_size: 8              # T1b rolls T steps; keep 8 (8GB, same per-step mem as T1a)
+lambda_ppd: 0.1
+consume_weight: 1.0
+prior:
+  temporal: [3, 6]
+  temporal_squash: true    # tail-stabilized (match T1 eval)
+  p_missing_table: 0.0

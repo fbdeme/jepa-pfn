@@ -1,0 +1,28 @@
+[project]
+name = "jepa-pfn"
+version = "0.0.1"
+description = "JEPA-based in-context world model over generic SCM priors"
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.4",
+    "numpy",
+    "pyyaml",
+    "schedulefree>=1.4.1",
+    "h5py>=3.16.0",
+    "scikit-learn>=1.9.0",
+    "matplotlib>=3.11.0",
+    "huggingface-hub>=1.30.0",
+    "xgboost>=3.4.1",
+    "psutil>=7.2.2",
+    "threadpoolctl>=3.6.0",
+    "scipy>=1.18.0",
+]
+
+# ponytail: CPU wheel pin — this box has no GPU; delete this block on a GPU machine
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

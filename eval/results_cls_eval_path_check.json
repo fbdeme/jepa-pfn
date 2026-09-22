@@ -1,0 +1,295 @@
+{
+ "note": "640-row in-prior tables, 512 context rows; a = training path (NaN masked, label in place), b = NaN mean-imputed in place, c = PFNClassifier (label appended last)",
+ "runs": {
+  "cls_dual_lr5e-4_s1": {
+   "tables": [
+    {
+     "D": 7,
+     "K": 2,
+     "missing": 0.0,
+     "a_train_path": 0.7717,
+     "b_impute_inplace": 0.7717,
+     "c_classifier": 0.748,
+     "maj": 0.7402
+    },
+    {
+     "D": 7,
+     "K": 2,
+     "missing": 0.0,
+     "a_train_path": 0.8425,
+     "b_impute_inplace": 0.8425,
+     "c_classifier": 0.8504,
+     "maj": 0.6142
+    },
+    {
+     "D": 18,
+     "K": 2,
+     "missing": 0.0,
+     "a_train_path": 0.7244,
+     "b_impute_inplace": 0.7244,
+     "c_classifier": 0.7165,
+     "maj": 0.7165
+    },
+    {
+     "D": 58,
+     "K": 4,
+     "missing": 0.0,
+     "a_train_path": 0.1538,
+     "b_impute_inplace": 0.1538,
+     "c_classifier": 0.2308,
+     "maj": 0.3462
+    },
+    {
+     "D": 23,
+     "K": 2,
+     "missing": 0.042,
+     "a_train_path": 0.878,
+     "b_impute_inplace": 0.878,
+     "c_classifier": 0.878,
+     "maj": 0.878
+    },
+    {
+     "D": 27,
+     "K": 5,
+     "missing": 0.0,
+     "a_train_path": 0.1732,
+     "b_impute_inplace": 0.1732,
+     "c_classifier": 0.1417,
+     "maj": 0.3622
+    },
+    {
+     "D": 11,
+     "K": 4,
+     "missing": 0.0,
+     "a_train_path": 0.7323,
+     "b_impute_inplace": 0.7323,
+     "c_classifier": 0.6772,
+     "maj": 0.6693
+    },
+    {
+     "D": 48,
+     "K": 10,
+     "missing": 0.0,
+     "a_train_path": 0.1102,
+     "b_impute_inplace": 0.1102,
+     "c_classifier": 0.2205,
+     "maj": 0.1654
+    },
+    {
+     "D": 5,
+     "K": 6,
+     "missing": 0.0,
+     "a_train_path": 0.5276,
+     "b_impute_inplace": 0.5276,
+     "c_classifier": 0.6535,
+     "maj": 0.5276
+    },
+    {
+     "D": 7,
+     "K": 10,
+     "missing": 0.081,
+     "a_train_path": 0.1356,
+     "b_impute_inplace": 0.1186,
+     "c_classifier": 0.2881,
+     "maj": 0.2203
+    },
+    {
+     "D": 7,
+     "K": 2,
+     "missing": 0.0,
+     "a_train_path": 0.9449,
+     "b_impute_inplace": 0.9449,
+     "c_classifier": 0.9449,
+     "maj": 0.9055
+    },
+    {
+     "D": 11,
+     "K": 2,
+     "missing": 0.089,
+     "a_train_path": 0.8036,
+     "b_impute_inplace": 0.7411,
+     "c_classifier": 0.8304,
+     "maj": 0.5982
+    },
+    {
+     "D": 58,
+     "K": 2,
+     "missing": 0.035,
+     "a_train_path": 0.8846,
+     "b_impute_inplace": 0.9038,
+     "c_classifier": 0.8846,
+     "maj": 0.8846
+    },
+    {
+     "D": 34,
+     "K": 2,
+     "missing": 0.094,
+     "a_train_path": 0.8421,
+     "b_impute_inplace": 0.8421,
+     "c_classifier": 0.8158,
+     "maj": 0.6228
+    },
+    {
+     "D": 10,
+     "K": 10,
+     "missing": 0.0,
+     "a_train_path": 0.252,
+     "b_impute_inplace": 0.252,
+     "c_classifier": 0.252,
+     "maj": 0.2362
+    }
+   ],
+   "mean": {
+    "a_train_path": 0.5851,
+    "b_impute_inplace": 0.5811,
+    "c_classifier": 0.6088,
+    "maj": 0.5658
+   }
+  },
+  "cls_ds_lr1.7e-4_s0": {
+   "tables": [
+    {
+     "D": 7,
+     "K": 2,
+     "missing": 0.0,
+     "a_train_path": 0.7559,
+     "b_impute_inplace": 0.7559,
+     "c_classifier": 0.7323,
+     "maj": 0.7402
+    },
+    {
+     "D": 7,
+     "K": 2,
+     "missing": 0.0,
+     "a_train_path": 0.8268,
+     "b_impute_inplace": 0.8268,
+     "c_classifier": 0.8268,
+     "maj": 0.6142
+    },
+    {
+     "D": 18,
+     "K": 2,
+     "missing": 0.0,
+     "a_train_path": 0.7008,
+     "b_impute_inplace": 0.7008,
+     "c_classifier": 0.7165,
+     "maj": 0.7165
+    },
+    {
+     "D": 58,
+     "K": 4,
+     "missing": 0.0,
+     "a_train_path": 0.5192,
+     "b_impute_inplace": 0.5192,
+     "c_classifier": 0.4423,
+     "maj": 0.3462
+    },
+    {
+     "D": 23,
+     "K": 2,
+     "missing": 0.042,
+     "a_train_path": 0.878,
+     "b_impute_inplace": 0.7967,
+     "c_classifier": 0.9024,
+     "maj": 0.878
+    },
+    {
+     "D": 27,
+     "K": 5,
+     "missing": 0.0,
+     "a_train_path": 0.3307,
+     "b_impute_inplace": 0.3307,
+     "c_classifier": 0.2835,
+     "maj": 0.3622
+    },
+    {
+     "D": 11,
+     "K": 4,
+     "missing": 0.0,
+     "a_train_path": 0.8268,
+     "b_impute_inplace": 0.8268,
+     "c_classifier": 0.6772,
+     "maj": 0.6693
+    },
+    {
+     "D": 48,
+     "K": 10,
+     "missing": 0.0,
+     "a_train_path": 0.1811,
+     "b_impute_inplace": 0.1811,
+     "c_classifier": 0.1339,
+     "maj": 0.1654
+    },
+    {
+     "D": 5,
+     "K": 6,
+     "missing": 0.0,
+     "a_train_path": 0.6614,
+     "b_impute_inplace": 0.6614,
+     "c_classifier": 0.6929,
+     "maj": 0.5276
+    },
+    {
+     "D": 7,
+     "K": 10,
+     "missing": 0.081,
+     "a_train_path": 0.2542,
+     "b_impute_inplace": 0.3051,
+     "c_classifier": 0.2712,
+     "maj": 0.2203
+    },
+    {
+     "D": 7,
+     "K": 2,
+     "missing": 0.0,
+     "a_train_path": 0.937,
+     "b_impute_inplace": 0.937,
+     "c_classifier": 0.9213,
+     "maj": 0.9055
+    },
+    {
+     "D": 11,
+     "K": 2,
+     "missing": 0.089,
+     "a_train_path": 0.7946,
+     "b_impute_inplace": 0.6161,
+     "c_classifier": 0.8036,
+     "maj": 0.5982
+    },
+    {
+     "D": 58,
+     "K": 2,
+     "missing": 0.035,
+     "a_train_path": 0.9423,
+     "b_impute_inplace": 0.9423,
+     "c_classifier": 0.9423,
+     "maj": 0.8846
+    },
+    {
+     "D": 34,
+     "K": 2,
+     "missing": 0.094,
+     "a_train_path": 0.7895,
+     "b_impute_inplace": 0.7105,
+     "c_classifier": 0.8596,
+     "maj": 0.6228
+    },
+    {
+     "D": 10,
+     "K": 10,
+     "missing": 0.0,
+     "a_train_path": 0.1339,
+     "b_impute_inplace": 0.1339,
+     "c_classifier": 0.4803,
+     "maj": 0.2362
+    }
+   ],
+   "mean": {
+    "a_train_path": 0.6355,
+    "b_impute_inplace": 0.6163,
+    "c_classifier": 0.6457,
+    "maj": 0.5658
+   }
+  }
+ }
+}

@@ -1,0 +1,24 @@
+# ds arm on the TabICL OPEN prior (soda-inria/tabicl), 6M / emb256. Predict the target column's
+# VALUE (y_last) -- the data-space objective. R=1024 tables (TabICL's large-data regime, where
+# its bimodal prior carries signal). batch 16 / lr 2e-3 = base_ds's 8 / 1e-3 scaled linearly
+# (train-run rule lr proportional to batch); ds is stable so the scale-up is safe.
+# Watch val_mse in the first ~1-2k steps (learnability gate) before trusting the full run; the
+# dump is a finite 10k-table pool, so val also flags overfitting -> early-stop if it turns up.
+run_name: tabicl_ds
+dump_path: data/tabicl_dump_r1024_learn.h5
+feat: 10
+policy: y_last
+seed: 0
+steps: 20000
+batch_size: 12
+lr: 0.0015
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+n_cls: 4
+r_scheme: rope
+log_every: 50
+val_every: 250
+val_batches: 8

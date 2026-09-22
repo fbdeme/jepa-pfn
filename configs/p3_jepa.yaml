@@ -1,0 +1,10 @@
+# Phase 3: JEPA objective (core contribution) - pure latent (lambda_ppd 0)
+# Same trunk/prior/steps as Phase 2 baselines; p2_anycell is the direct
+# data-space control at identical masking (post-curriculum).
+run_name: p3_jepa
+seed: 0
+steps: 20000
+curriculum_frac: 0.2   # y_only -> any_cell switch point
+ema: 0.996
+lambda_ppd: 0.0
+n_reg_tokens: 0        # collapse fallback: set >0 if monitoring trips (R1)

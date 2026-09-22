@@ -1,0 +1,29 @@
+# Factor-substrate lr control at K=6 (round-13 R5 ISSUE-06 follow-up): the value arm at lr/10, seed 0.
+batch_size: 8
+dump_path: ''
+emb: 256
+feat: 5
+heads: 8
+layers: 6
+log_every: 25
+lr: 0.0001
+mlp: 1024
+n_bins: 32
+n_cls: 4
+policy: any_cell
+prior:
+  n_cols:
+  - 12
+  - 12
+  n_factors: 6
+  n_rows:
+  - 128
+  - 384
+  sigma: 1.0
+prior_source: factor
+r_scheme: rope
+run_name: c4_factor_ds_K6_lr1e-4_s0
+seed: 0
+steps: 20000
+val_batches: 8
+val_every: 250

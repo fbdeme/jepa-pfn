@@ -1,0 +1,8 @@
+# Issue #18: data-space arm at prior noise_scale=16. Pairs with p4n_lat_s16 -
+# only the GAP between the pair is the measurement. s1 is the reproduction
+# control: it should land on p2_anycell, which was trained at the same noise.
+run_name: p4n_ds_s16
+policy: any_cell
+seed: 0
+steps: 20000
+prior: {noise_scale: 16.0}

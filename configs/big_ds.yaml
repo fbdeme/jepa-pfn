@@ -1,0 +1,20 @@
+# #2-final scale-up: DATA-SPACE arm (emb512 L8, ~35M). Scaled base_ds.
+# Third rung of the scale ladder (pilot 0.3M -> base 6.6M -> big 35M): does the
+# ds >= latent gap keep widening as the model grows? Matched to big_dual/big_lat_s
+# on EVERY hyperparameter except the objective.
+run_name: big_ds
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 40000          # over-provision; mid-ckpt saves latest -> stop at val plateau
+batch_size: 2          # matched across ds/dual/lat on 48GB (lat sigreg 2x-mem = 40GB fits)
+lr: 0.0002           # #24 TUNED: lr sweep {1,1.5,2,3,4}e-4 -> 2e-4 best (55% var@1500, fastest stable descent; higher thrashes on emb512 width)
+emb: 512
+heads: 16              # dh=32 (rope needs emb/heads even; 512/16=32)
+mlp: 2048
+layers: 8
+n_bins: 32
+prior:
+  n_rows: [128, 384]   # identical to base (only emb/layers scaled up)
+  n_cols: [4, 32]      # wide D

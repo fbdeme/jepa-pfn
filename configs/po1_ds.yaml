@@ -1,0 +1,18 @@
+# Issue #23 PO-1: matched DATA-SPACE control (= t1a_ds + one hidden variable). Same consumption
+# training + partial-obs prior; only the base objective differs. Paired with po1_dual so the
+# oracle_latent-vs-oracle_value contrast is read per model on the same hidden prior.
+run_name: po1_ds
+base: dataspace
+consume_mode: single
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 20000
+batch_size: 8
+consume_weight: 1.0
+prior:
+  temporal: [3, 6]
+  temporal_squash: true
+  temporal_hidden: [1, 1]
+  p_missing_table: 0.0

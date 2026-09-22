@@ -1,0 +1,250 @@
+{
+ "_note": "one entry per dataset name; 'earliest' keeps the first benchmark in CC18>Grinsztajn>TabArena, 'latest' the last",
+ "duplicates": {
+  "Diabetes130US|clf": {
+   "entries": [
+    "Grinsztajn|Diabetes130US|clf",
+    "TabArena|Diabetes130US|clf"
+   ],
+   "ids": [
+    45022,
+    46922
+   ]
+  },
+  "bank-marketing|clf": {
+   "entries": [
+    "CC18|bank-marketing|clf",
+    "Grinsztajn|bank-marketing|clf",
+    "TabArena|bank-marketing|clf"
+   ],
+   "ids": [
+    1461,
+    44126,
+    46910
+   ]
+  },
+  "blood-transfusion-service-center|clf": {
+   "entries": [
+    "CC18|blood-transfusion-service-center|clf",
+    "TabArena|blood-transfusion-service-center|clf"
+   ],
+   "ids": [
+    1464,
+    46913
+   ]
+  },
+  "churn|clf": {
+   "entries": [
+    "CC18|churn|clf",
+    "TabArena|churn|clf"
+   ],
+   "ids": [
+    40701,
+    46915
+   ]
+  },
+  "credit-g|clf": {
+   "entries": [
+    "CC18|credit-g|clf",
+    "TabArena|credit-g|clf"
+   ],
+   "ids": [
+    31,
+    46918
+   ]
+  },
+  "diabetes|clf": {
+   "entries": [
+    "CC18|diabetes|clf",
+    "TabArena|diabetes|clf"
+   ],
+   "ids": [
+    37,
+    46921
+   ]
+  },
+  "diamonds|reg": {
+   "entries": [
+    "Grinsztajn|diamonds|reg",
+    "TabArena|diamonds|reg"
+   ],
+   "ids": [
+    44140,
+    46923
+   ]
+  },
+  "electricity|clf": {
+   "entries": [
+    "CC18|electricity|clf",
+    "Grinsztajn|electricity|clf"
+   ],
+   "ids": [
+    151,
+    44156
+   ]
+  },
+  "heloc|clf": {
+   "entries": [
+    "Grinsztajn|heloc|clf",
+    "TabArena|heloc|clf"
+   ],
+   "ids": [
+    45026,
+    46932
+   ]
+  },
+  "houses|reg": {
+   "entries": [
+    "Grinsztajn|houses|reg",
+    "TabArena|houses|reg"
+   ],
+   "ids": [
+    44138,
+    46934
+   ]
+  },
+  "jm1|clf": {
+   "entries": [
+    "CC18|jm1|clf",
+    "TabArena|jm1|clf"
+   ],
+   "ids": [
+    1053,
+    46979
+   ]
+  },
+  "qsar-biodeg|clf": {
+   "entries": [
+    "CC18|qsar-biodeg|clf",
+    "TabArena|qsar-biodeg|clf"
+   ],
+   "ids": [
+    1494,
+    46952
+   ]
+  },
+  "splice|clf": {
+   "entries": [
+    "CC18|splice|clf",
+    "TabArena|splice|clf"
+   ],
+   "ids": [
+    46,
+    46958
+   ]
+  },
+  "wine_quality|clf": {
+   "entries": [
+    "Grinsztajn|wine_quality|clf",
+    "TabArena|wine_quality|clf"
+   ],
+   "ids": [
+    44136,
+    46964
+   ]
+  }
+ },
+ "n_dup_names": {
+  "clf": 12,
+  "reg": 2
+ },
+ "n_dropped": {
+  "clf": 13,
+  "reg": 2
+ },
+ "dup_ids_all_distinct": true,
+ "earliest": {
+  "clf|all": {
+   "n": 102,
+   "win": 29,
+   "loss": 63,
+   "tie": 10,
+   "p": 0.00051,
+   "mean_a": 0.8123,
+   "mean_b": 0.8184
+  },
+  "clf|ncls=2": {
+   "n": 67,
+   "win": 21,
+   "loss": 38,
+   "tie": 8,
+   "p": 0.03634,
+   "mean_a": 0.8267,
+   "mean_b": 0.8298
+  },
+  "clf|ncls=3-5": {
+   "n": 17,
+   "win": 6,
+   "loss": 10,
+   "tie": 1,
+   "p": 0.4545,
+   "mean_a": 0.7925,
+   "mean_b": 0.7973
+  },
+  "clf|ncls=6-10": {
+   "n": 18,
+   "win": 2,
+   "loss": 15,
+   "tie": 1,
+   "p": 0.00235,
+   "mean_a": 0.7773,
+   "mean_b": 0.7958
+  },
+  "reg|all": {
+   "n": 30,
+   "win": 8,
+   "loss": 22,
+   "tie": 0,
+   "p": 0.01612,
+   "mean_a": 0.6259,
+   "mean_b": 0.6539
+  }
+ },
+ "latest": {
+  "clf|all": {
+   "n": 102,
+   "win": 29,
+   "loss": 62,
+   "tie": 11,
+   "p": 0.00071,
+   "mean_a": 0.8148,
+   "mean_b": 0.8208
+  },
+  "clf|ncls=2": {
+   "n": 67,
+   "win": 21,
+   "loss": 38,
+   "tie": 8,
+   "p": 0.03634,
+   "mean_a": 0.8311,
+   "mean_b": 0.8342
+  },
+  "clf|ncls=3-5": {
+   "n": 17,
+   "win": 6,
+   "loss": 10,
+   "tie": 1,
+   "p": 0.4545,
+   "mean_a": 0.7888,
+   "mean_b": 0.7947
+  },
+  "clf|ncls=6-10": {
+   "n": 18,
+   "win": 2,
+   "loss": 14,
+   "tie": 2,
+   "p": 0.00418,
+   "mean_a": 0.7785,
+   "mean_b": 0.7955
+  },
+  "reg|all": {
+   "n": 30,
+   "win": 8,
+   "loss": 22,
+   "tie": 0,
+   "p": 0.01612,
+   "mean_a": 0.6232,
+   "mean_b": 0.6521
+  }
+ }
+}

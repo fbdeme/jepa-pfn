@@ -1,0 +1,112 @@
+{
+ "real_dual_lr1.5e-3_s0": {
+  "val_jepa": 0.0014,
+  "val_total": 0.3027,
+  "val_tgt": {
+   "dim_std": 0.0,
+   "dim_std_min": 0.0,
+   "erank": 32.8,
+   "cos": 1.0,
+   "within_table_var_frac": null
+  },
+  "val_pred": {
+   "dim_std": 0.0,
+   "dim_std_min": 0.0,
+   "erank": 39.5,
+   "cos": 1.0,
+   "within_table_var_frac": null
+  },
+  "val_ppd": 3.0021,
+  "val_batches": 8,
+  "logged_val_jepa_last": 0.0014,
+  "val_jepa_matches_log": true
+ },
+ "real_dual_lr5e-4_s0": {
+  "val_jepa": 0.2302,
+  "val_total": 0.4005,
+  "val_tgt": {
+   "dim_std": 0.9161,
+   "dim_std_min": 0.5696,
+   "erank": 125.9,
+   "cos": 0.1354,
+   "within_table_var_frac": 0.8587
+  },
+  "val_pred": {
+   "dim_std": 0.7991,
+   "dim_std_min": 0.4712,
+   "erank": 93.8,
+   "cos": 0.1633,
+   "within_table_var_frac": 0.8219
+  },
+  "val_ppd": 1.5441,
+  "val_batches": 8,
+  "logged_val_jepa_last": 0.2302,
+  "val_jepa_matches_log": true
+ },
+ "real_dual_lr5e-4_s1": {
+  "val_jepa": 0.2641,
+  "val_total": 0.535,
+  "val_tgt": {
+   "dim_std": 0.9001,
+   "dim_std_min": 0.5956,
+   "erank": 121.9,
+   "cos": 0.1611,
+   "within_table_var_frac": 0.8933
+  },
+  "val_pred": {
+   "dim_std": 0.7468,
+   "dim_std_min": 0.4745,
+   "erank": 93.9,
+   "cos": 0.23,
+   "within_table_var_frac": 0.854
+  },
+  "val_ppd": 2.7306,
+  "val_batches": 8,
+  "logged_val_jepa_last": 0.2641,
+  "val_jepa_matches_log": true
+ },
+ "real_dual_lr5e-4_s2": {
+  "val_jepa": 0.2672,
+  "val_total": 0.4526,
+  "val_tgt": {
+   "dim_std": 0.9092,
+   "dim_std_min": 0.6324,
+   "erank": 131.8,
+   "cos": 0.1501,
+   "within_table_var_frac": 0.8127
+  },
+  "val_pred": {
+   "dim_std": 0.7628,
+   "dim_std_min": 0.4777,
+   "erank": 100.5,
+   "cos": 0.2024,
+   "within_table_var_frac": 0.752
+  },
+  "val_ppd": 2.1498,
+  "val_batches": 8,
+  "logged_val_jepa_last": 0.2672,
+  "val_jepa_matches_log": true
+ },
+ "real_dual_lr1.7e-4_s0": {
+  "val_jepa": 0.227,
+  "val_total": 0.4083,
+  "val_tgt": {
+   "dim_std": 0.898,
+   "dim_std_min": 0.5522,
+   "erank": 104.1,
+   "cos": 0.1706,
+   "within_table_var_frac": 0.7645
+  },
+  "val_pred": {
+   "dim_std": 0.8113,
+   "dim_std_min": 0.4595,
+   "erank": 61.7,
+   "cos": 0.18,
+   "within_table_var_frac": 0.7098
+  },
+  "val_ppd": 1.6043,
+  "val_batches": 8,
+  "logged_val_jepa_last": 0.227,
+  "val_jepa_matches_log": true
+ }
+}

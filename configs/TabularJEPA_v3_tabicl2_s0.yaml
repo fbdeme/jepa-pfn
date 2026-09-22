@@ -1,0 +1,57 @@
+# Tabular-JEPA v3 (TabICLv2 prior as-is, features 1-100) — 2026-09-10, docs/prior_v2_plan.md section 4.6
+# = the v2 (dual_split) recipe with prior_source tabicl / graph_scm and the vendor's v2 recipe flags (both ExtraTrees
+# filters on, features 1-100, classes <= 10). Our-side adaptations: rows 128-1024 log-uniform (not 1024 fixed: our row
+# attention went flat at R=1024 fixed, history 2026-08-24), mixed cls/reg per batch, MCAR on features (input-mask training).
+# max_cells 65536 from the Blackwell peak smoke (64 x 1024 x batch 4 = 79 GB of 95; 101 x 1024 OOM), 2026-09-10.
+batch_size: 4
+cls_target: false
+ctx_only: true
+curriculum_frac: 0.2
+diff_target: true
+dump_path: ''
+ema: 0.996
+emb: 256
+feat: 5
+head_on_pred: true
+heads: 8
+lambda_jepa: 1.0
+lambda_ppd: 1.0
+lambda_sig: 0.05
+layers: 6
+log_every: 25
+lr: 0.0005
+mlp: 1024
+mode: ema
+n_bins: 32
+n_classes: 0
+n_cls: 4
+n_reg_tokens: 0
+policy_main: mixed
+predictor: twoway-4
+prior:
+  filter_graphs: true
+  filter_unpredictable: true
+  max_cells: 65536
+  max_classes: 10
+  max_features: 100
+  min_features: 1
+  n_rows:
+  - 128
+  - 1024
+  p_cls: 0.7
+  p_missing_table: 0.3
+  prefetch: 8
+  prior_type: graph_scm
+  task: mixed
+  workers: 3
+prior_source: tabicl
+r_invariant: false
+r_scheme: rope
+run_name: TabularJEPA_v3_tabicl2_s0
+seed: 0
+shuffle_target: false
+sig_proj: 128
+steps: 20000
+val_batches: 16
+val_every: 250
+val_policy: any_cell

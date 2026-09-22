@@ -1,0 +1,9 @@
+# Issue #19, 2x2 axis 2: CLS columns present, DATA-SPACE objective (cell CE).
+# Mandatory control - without it the CLS effect and the latent effect are
+# confounded, and a latent failure leaves nothing standing (SSOT V3.2 D4).
+# Pairs with p6cls_lat_k1; only the GAP inside the pair is the measurement.
+run_name: p6cls_ds_k1
+policy: any_cell
+n_cls: 1
+seed: 0
+steps: 20000

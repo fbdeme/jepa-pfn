@@ -1,0 +1,15 @@
+# Issue #23 T1a: single-step consumption training, DATA-SPACE control arm.
+# = t0rc_ds + tail-stabilized prior + the SAME consumption loss (only base objective differs).
+run_name: t1a_ds
+base: dataspace
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 20000
+batch_size: 16
+consume_weight: 1.0
+prior:
+  temporal: [3, 6]
+  temporal_squash: true    # tail-stabilized (T1)
+  p_missing_table: 0.0

@@ -1,0 +1,8 @@
+# sigma-sweep ds arm, noise_scale=1 seed=1. Pilot of base_ds.
+run_name: sw_ds_n1_s1
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 1
+steps: 20000
+prior: {noise_scale: 1}

@@ -1,0 +1,148 @@
+{
+ "probe": {
+  "kind": "mlp",
+  "hidden": [
+   256
+  ],
+  "read_out": "masked cell",
+  "policy": "any_cell",
+  "family": "recipe"
+ },
+ "note": "nonlinear counterpart of the masked ridge probe. `mse_f_ridge_check` must reproduce results_probe_masked_all.json exactly: only the regressor differs.",
+ "arms": {
+  "base_ds_s0": {
+   "group": "ds",
+   "mse_f_mlp": 0.2171,
+   "mse_f_ridge_check": 0.2274,
+   "n": 19324
+  },
+  "base_ds_s1": {
+   "group": "ds",
+   "mse_f_mlp": 0.2197,
+   "mse_f_ridge_check": 0.2256,
+   "n": 19324
+  },
+  "base_ds_s2": {
+   "group": "ds",
+   "mse_f_mlp": 0.21,
+   "mse_f_ridge_check": 0.2126,
+   "n": 19324
+  },
+  "base_ds_s3": {
+   "group": "ds",
+   "mse_f_mlp": 0.2098,
+   "mse_f_ridge_check": 0.2165,
+   "n": 19324
+  },
+  "base_ds_s4": {
+   "group": "ds",
+   "mse_f_mlp": 0.2135,
+   "mse_f_ridge_check": 0.2139,
+   "n": 19324
+  },
+  "base_dual_s0": {
+   "group": "dual",
+   "mse_f_mlp": 0.9707,
+   "mse_f_ridge_check": 0.9622,
+   "n": 19324
+  },
+  "base_dual_s1": {
+   "group": "dual",
+   "mse_f_mlp": 0.2914,
+   "mse_f_ridge_check": 0.2629,
+   "n": 19324
+  },
+  "base_dual_s2": {
+   "group": "dual",
+   "mse_f_mlp": 0.3051,
+   "mse_f_ridge_check": 0.2709,
+   "n": 19324
+  },
+  "base_dual_s3": {
+   "group": "dual",
+   "mse_f_mlp": 0.3029,
+   "mse_f_ridge_check": 0.2728,
+   "n": 19324
+  },
+  "base_dual_s4": {
+   "group": "dual",
+   "mse_f_mlp": 1.1453,
+   "mse_f_ridge_check": 0.9622,
+   "n": 19324
+  },
+  "base_lat_s_s0": {
+   "group": "lat",
+   "mse_f_mlp": 1.0689,
+   "mse_f_ridge_check": 0.9622,
+   "n": 19324
+  },
+  "base_lat_s_s1": {
+   "group": "lat",
+   "mse_f_mlp": 1.018,
+   "mse_f_ridge_check": 0.9622,
+   "n": 19324
+  },
+  "base_lat_s_s2": {
+   "group": "lat",
+   "mse_f_mlp": 1.0866,
+   "mse_f_ridge_check": 0.9622,
+   "n": 19324
+  },
+  "base_lat_s_s3": {
+   "group": "lat",
+   "mse_f_mlp": 1.0154,
+   "mse_f_ridge_check": 0.9672,
+   "n": 19324
+  },
+  "base_lat_s_s4": {
+   "group": "lat",
+   "mse_f_mlp": 1.0934,
+   "mse_f_ridge_check": 0.9622,
+   "n": 19324
+  },
+  "base_ema_nohead_s0": {
+   "group": "ema_nohead",
+   "mse_f_mlp": 1.1014,
+   "mse_f_ridge_check": 0.9622,
+   "n": 19324
+  },
+  "base_ema_nohead_s1": {
+   "group": "ema_nohead",
+   "mse_f_mlp": 0.2807,
+   "mse_f_ridge_check": 0.2693,
+   "n": 19324
+  },
+  "base_ema_nohead_s2": {
+   "group": "ema_nohead",
+   "mse_f_mlp": 1.0927,
+   "mse_f_ridge_check": 0.9622,
+   "n": 19324
+  },
+  "base_ema_nohead_s3": {
+   "group": "ema_nohead",
+   "mse_f_mlp": 0.965,
+   "mse_f_ridge_check": 0.9622,
+   "n": 19324
+  },
+  "base_ema_nohead_s4": {
+   "group": "ema_nohead",
+   "mse_f_mlp": 1.1076,
+   "mse_f_ridge_check": 0.9622,
+   "n": 19324
+  }
+ },
+ "floor": {
+  "draw0": {
+   "mse_f_mlp": 0.94,
+   "mse_f_ridge_check": 0.885
+  },
+  "draw1": {
+   "mse_f_mlp": 0.9541,
+   "mse_f_ridge_check": 0.9359
+  },
+  "draw2": {
+   "mse_f_mlp": 0.9782,
+   "mse_f_ridge_check": 0.9403
+  }
+ }
+}

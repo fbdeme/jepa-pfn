@@ -1,0 +1,21 @@
+# Nonlinearity-ceiling smoke, rung L2 (docs/scm_nonlinearity_ceiling.md).
+# base_ds arch/regime; ONLY mlp_depth/mlp_gain differ. Learnability probe: does val_mse
+# descend (learns) or stick at ~1.0 (over its capacity at batch 8)?
+run_name: nonlin_L2_ds
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 3000
+batch_size: 8
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]
+  mlp_depth: [2, 2]
+  mlp_gain: 2.0

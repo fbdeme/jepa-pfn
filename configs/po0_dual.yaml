@@ -1,0 +1,19 @@
+# Issue #23 PO-0: partial-observability oracle gate, DUAL (JEPA) arm (temporal_design S15).
+# = t0rc_dual (STANDARD objective, not consumption) on the temporal prior WITH one hidden
+# variable (POMDP). Question: does a persistent hidden state make oracle_latent < oracle_value
+# -- i.e. does the true latent carry belief the true scalar can't? (In full obs they were equal.)
+# No consumption training needed: the oracle diagnostic alone is the discriminator (S15.3).
+run_name: po0_dual
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+seed: 0
+steps: 20000
+batch_size: 16          # D=(V-H)*(T+1)=14 < 21, lighter than T0; two arms fit 8GB
+lambda_ppd: 0.1
+prior:
+  temporal: [3, 6]        # V state vars x (T+1) slices, weight-shared transition
+  temporal_hidden: [1, 1] # 1 variable hidden at every t (niche-guaranteed); belief-state test
+  p_missing_table: 0.0

@@ -1,0 +1,6 @@
+# Follow-up arms (2)+(3): block masking + 2-block two-way predictor
+run_name: p3b_mixed_tw2
+policy_main: mixed
+predictor: twoway-2
+seed: 0
+steps: 20000

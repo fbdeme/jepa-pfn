@@ -1,0 +1,21 @@
+# #24 Phase B: dual lambda_ppd sweep. 0.2. Verify value-head CE = (loss-pred_loss)/lambda_ppd
+# descends AND erank stays high (latent side not destroyed). lr=lr*=2e-4. Throwaway.
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.2
+run_name: big_dual_p2
+seed: 0
+steps: 1500
+batch_size: 2
+lr: 0.0002
+emb: 512
+heads: 16
+mlp: 2048
+layers: 8
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]

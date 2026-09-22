@@ -1,0 +1,27 @@
+# C5 matched arm: pure-latent SIGReg, on the L4 nonlinear prior. base_lat_s settings.
+# save_steps: true -> step-tagged ckpts so eval/pick_steelman.py can pick the pre-collapse peak
+# (this arm collapses, prior-independent -- confirmed by the L3 smoke).
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.0
+mode: sigreg
+lambda_sig: 0.25
+save_steps: true
+run_name: matched_L4_lat
+seed: 0
+steps: 20000
+batch_size: 4
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]
+  mlp_depth: [3, 3]
+  mlp_gain: 3.0

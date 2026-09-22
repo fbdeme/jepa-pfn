@@ -1,0 +1,7 @@
+# Issue #18: data-space arm at elevated prior noise (noise_scale=4).
+# Pairs with p4n_lat_s4 - only the GAP between them is the measurement.
+run_name: p4n_ds_s4
+policy: any_cell
+seed: 0
+steps: 20000
+prior: {noise_scale: 4.0}

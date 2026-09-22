@@ -1,0 +1,13 @@
+# Issue #20 confirmation run (V3.4): rope+CLS latent at seed 1 (new model init +
+# new prior stream + new mask rng). Does the seed-0 mse_f flip reproduce?
+# address tax (slot_share 0.34->0.04, closed edge/fam); #19 CLS added compression
+# (closed mse_f). This is CLS latent target UNDER rope - do both closures add up?
+# The clean-science arm (no data-space help mixed in).
+run_name: p6rc_lat_s1
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+seed: 1
+steps: 20000

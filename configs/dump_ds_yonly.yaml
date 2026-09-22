@@ -1,0 +1,19 @@
+# Loop-vs-prior diagnostic, TabPFN-native task: same as dump_ds_s1 but policy=y_last, so the
+# model is trained to predict the LABEL column (TabPFN's supervised task) rather than any cell.
+# Needed because TabPFN's prior features aren't mutually predictable, so any_cell dilutes the
+# label signal. This is the capability test: CAN our arch+loop+head learn a strong classifier
+# from a good prior? If yes on the benchmark, our stack is fine and base_ds's weakness is prior.
+run_name: dump_ds_yonly
+policy: y_last
+r_scheme: rope
+n_cls: 4
+seed: 1
+steps: 20000
+batch_size: 8
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+dump_path: data/tabpfn_prior_dump.h5

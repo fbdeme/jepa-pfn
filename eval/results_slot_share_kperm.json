@@ -1,0 +1,214 @@
+{
+ "protocol": {
+  "source": "eval/slot_share_all.py (arms, batches, paired re-seeding)",
+  "varies": "slot_share k_perm only",
+  "k_values": [
+   4,
+   8,
+   16
+  ],
+  "threshold": 0.5
+ },
+ "by_arm": {
+  "base_ds_s0": {
+   "scale": "base",
+   "label": "data-space",
+   "by_k": {
+    "4": 0.0082,
+    "8": 0.0085,
+    "16": 0.0089
+   },
+   "range": 0.0007,
+   "dominated_by_k": {
+    "4": false,
+    "8": false,
+    "16": false
+   },
+   "classification_stable": true
+  },
+  "base_dual_s0": {
+   "scale": "base",
+   "label": "EMA latent + head",
+   "by_k": {
+    "4": 0.9207,
+    "8": 0.9493,
+    "16": 0.9731
+   },
+   "range": 0.0524,
+   "dominated_by_k": {
+    "4": true,
+    "8": true,
+    "16": true
+   },
+   "classification_stable": true
+  },
+  "base_lat_s_s0": {
+   "scale": "base",
+   "label": "SIGReg latent (collapsed)",
+   "by_k": {
+    "4": 0.6225,
+    "8": 0.6267,
+    "16": 0.6168
+   },
+   "range": 0.0099,
+   "dominated_by_k": {
+    "4": true,
+    "8": true,
+    "16": true
+   },
+   "classification_stable": true
+  },
+  "base_ema_nohead_s1": {
+   "scale": "base",
+   "label": "EMA, no head (the surviving seed)",
+   "by_k": {
+    "4": 0.0358,
+    "8": 0.0362,
+    "16": 0.0372
+   },
+   "range": 0.0014,
+   "dominated_by_k": {
+    "4": false,
+    "8": false,
+    "16": false
+   },
+   "classification_stable": true
+  },
+  "sw_ds_n1_s0": {
+   "scale": "sigma-sweep",
+   "label": "data-space, noise 1",
+   "by_k": {
+    "4": 0.0011,
+    "8": 0.0012,
+    "16": 0.0012
+   },
+   "range": 0.0001,
+   "dominated_by_k": {
+    "4": false,
+    "8": false,
+    "16": false
+   },
+   "classification_stable": true
+  },
+  "sw_lat_n1_s0": {
+   "scale": "sigma-sweep",
+   "label": "SIGReg latent, noise 1",
+   "by_k": {
+    "4": 0.7526,
+    "8": 0.8489,
+    "16": 0.8979
+   },
+   "range": 0.1453,
+   "dominated_by_k": {
+    "4": true,
+    "8": true,
+    "16": true
+   },
+   "classification_stable": true
+  },
+  "sw_ds_n10_s0": {
+   "scale": "sigma-sweep",
+   "label": "data-space, noise 10",
+   "by_k": {
+    "4": 0.0079,
+    "8": 0.0079,
+    "16": 0.008
+   },
+   "range": 0.0001,
+   "dominated_by_k": {
+    "4": false,
+    "8": false,
+    "16": false
+   },
+   "classification_stable": true
+  },
+  "sw_lat_n10_s0": {
+   "scale": "sigma-sweep",
+   "label": "SIGReg latent, noise 10",
+   "by_k": {
+    "4": 0.7743,
+    "8": 0.8685,
+    "16": 0.9192
+   },
+   "range": 0.1449,
+   "dominated_by_k": {
+    "4": true,
+    "8": true,
+    "16": true
+   },
+   "classification_stable": true
+  },
+  "big_ds": {
+   "scale": "35M",
+   "label": "data-space",
+   "by_k": {
+    "4": 0.0118,
+    "8": 0.0131,
+    "16": 0.0129
+   },
+   "range": 0.0013,
+   "dominated_by_k": {
+    "4": false,
+    "8": false,
+    "16": false
+   },
+   "classification_stable": true
+  },
+  "big_dual": {
+   "scale": "35M",
+   "label": "EMA latent + head",
+   "by_k": {
+    "4": 0.0115,
+    "8": 0.0127,
+    "16": 0.0123
+   },
+   "range": 0.0012,
+   "dominated_by_k": {
+    "4": false,
+    "8": false,
+    "16": false
+   },
+   "classification_stable": true
+  },
+  "big_lat_s_h": {
+   "scale": "35M",
+   "label": "SIGReg latent, steelman",
+   "by_k": {
+    "4": 0.7593,
+    "8": 0.8686,
+    "16": 0.9407
+   },
+   "range": 0.1814,
+   "dominated_by_k": {
+    "4": true,
+    "8": true,
+    "16": true
+   },
+   "classification_stable": true
+  },
+  "big_dual_lewm_h": {
+   "scale": "35M",
+   "label": "SIGReg + head, steelman",
+   "by_k": {
+    "4": 0.7406,
+    "8": 0.8343,
+    "16": 0.8852
+   },
+   "range": 0.1446,
+   "dominated_by_k": {
+    "4": true,
+    "8": true,
+    "16": true
+   },
+   "classification_stable": true
+  }
+ },
+ "summary": {
+  "n_arms": 12,
+  "n_classification_stable": 12,
+  "all_classifications_stable": true,
+  "max_range": 0.1814,
+  "max_range_arm": "big_lat_s_h",
+  "n_dominated": 6
+ }
+}

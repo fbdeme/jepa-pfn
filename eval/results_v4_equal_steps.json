@@ -1,0 +1,194 @@
+{
+ "protocol": "fixed-R value MSE (select rows mean) from eval/results_real_readout*.json; scratch at the largest available total <= the two-stage total",
+ "rows": [
+  {
+   "arm": "lat20k+ft5k",
+   "objective": "latent",
+   "pretrain_steps": 20000,
+   "finetune_steps": 5000,
+   "total_steps": 25000,
+   "scratch_steps": 20000,
+   "values": [
+    0.6751,
+    0.7917,
+    0.7763
+   ],
+   "scratch_values": [
+    0.621,
+    0.7548,
+    0.7269
+   ],
+   "gap": [
+    0.0541,
+    0.0369,
+    0.0494
+   ],
+   "mean_gap": 0.0468,
+   "two_stage_better_all_seeds": false,
+   "scratch_better_all_seeds": true,
+   "exact_match": false
+  },
+  {
+   "arm": "dsmix20k+ft5k",
+   "objective": "ds-mixed",
+   "pretrain_steps": 20000,
+   "finetune_steps": 5000,
+   "total_steps": 25000,
+   "scratch_steps": 20000,
+   "values": [
+    0.6307,
+    0.7761,
+    0.7281
+   ],
+   "scratch_values": [
+    0.621,
+    0.7548,
+    0.7269
+   ],
+   "gap": [
+    0.0097,
+    0.0213,
+    0.0012
+   ],
+   "mean_gap": 0.0107,
+   "two_stage_better_all_seeds": false,
+   "scratch_better_all_seeds": true,
+   "exact_match": false
+  },
+  {
+   "arm": "lat20k+ft20k",
+   "objective": "latent",
+   "pretrain_steps": 20000,
+   "finetune_steps": 20000,
+   "total_steps": 40000,
+   "scratch_steps": 40000,
+   "values": [
+    0.5739,
+    0.7127,
+    0.6657
+   ],
+   "scratch_values": [
+    0.5885,
+    0.7409,
+    0.6808
+   ],
+   "gap": [
+    -0.0146,
+    -0.0282,
+    -0.0151
+   ],
+   "mean_gap": -0.0193,
+   "two_stage_better_all_seeds": true,
+   "scratch_better_all_seeds": false,
+   "exact_match": true
+  },
+  {
+   "arm": "lat40k+ft5k",
+   "objective": "latent",
+   "pretrain_steps": 40000,
+   "finetune_steps": 5000,
+   "total_steps": 45000,
+   "scratch_steps": 40000,
+   "values": [
+    0.6303,
+    0.7626,
+    0.7333
+   ],
+   "scratch_values": [
+    0.5885,
+    0.7409,
+    0.6808
+   ],
+   "gap": [
+    0.0418,
+    0.0217,
+    0.0525
+   ],
+   "mean_gap": 0.0387,
+   "two_stage_better_all_seeds": false,
+   "scratch_better_all_seeds": true,
+   "exact_match": false
+  },
+  {
+   "arm": "dsmix40k+ft5k",
+   "objective": "ds-mixed",
+   "pretrain_steps": 40000,
+   "finetune_steps": 5000,
+   "total_steps": 45000,
+   "scratch_steps": 40000,
+   "values": [
+    0.6048,
+    0.7589,
+    0.7052
+   ],
+   "scratch_values": [
+    0.5885,
+    0.7409,
+    0.6808
+   ],
+   "gap": [
+    0.0163,
+    0.018,
+    0.0244
+   ],
+   "mean_gap": 0.0196,
+   "two_stage_better_all_seeds": false,
+   "scratch_better_all_seeds": true,
+   "exact_match": false
+  },
+  {
+   "arm": "lat20k+ft40k",
+   "objective": "latent",
+   "pretrain_steps": 20000,
+   "finetune_steps": 40000,
+   "total_steps": 60000,
+   "scratch_steps": 60000,
+   "values": [
+    0.5345,
+    0.6746,
+    0.6245
+   ],
+   "scratch_values": [
+    0.5702,
+    0.7234,
+    0.6759
+   ],
+   "gap": [
+    -0.0357,
+    -0.0488,
+    -0.0514
+   ],
+   "mean_gap": -0.0453,
+   "two_stage_better_all_seeds": true,
+   "scratch_better_all_seeds": false,
+   "exact_match": true
+  },
+  {
+   "arm": "lat20k+ft60k",
+   "objective": "latent",
+   "pretrain_steps": 20000,
+   "finetune_steps": 60000,
+   "total_steps": 80000,
+   "scratch_steps": 60000,
+   "values": [
+    0.5169,
+    0.6571,
+    0.606
+   ],
+   "scratch_values": [
+    0.5702,
+    0.7234,
+    0.6759
+   ],
+   "gap": [
+    -0.0533,
+    -0.0663,
+    -0.0699
+   ],
+   "mean_gap": -0.0632,
+   "two_stage_better_all_seeds": true,
+   "scratch_better_all_seeds": false,
+   "exact_match": false
+  }
+ ]
+}

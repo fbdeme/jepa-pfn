@@ -1,0 +1,18 @@
+# #24 Phase A: ds lr sweep smoke. lr=4e-4. Judge by val_mse trajectory
+# (frac_var = 1 - val_mse/0.9765). Fastest stable descent = lr*. Throwaway.
+run_name: big_ds_lr4
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 1500
+batch_size: 2
+lr: 0.0004
+emb: 512
+heads: 16
+mlp: 2048
+layers: 8
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]

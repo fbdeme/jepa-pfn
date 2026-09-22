@@ -1,0 +1,9 @@
+# Issue #20: latent arm under the "fixed" address scheme. Matches p3b_mixed_tw2
+# apart from r_scheme, so the gap vs p6adr_ds_fixed isolates the objective at a
+# scheme that does NOT pay the resample address tax (#15: 36% under resample).
+run_name: p6adr_lat_fixed
+policy_main: mixed
+predictor: twoway-2
+r_scheme: fixed
+seed: 0
+steps: 20000

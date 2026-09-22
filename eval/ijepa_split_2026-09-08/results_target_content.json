@@ -1,0 +1,53 @@
+{
+ "protocol": {
+  "prior": "run cfg (probe_prior)",
+  "policy": "any_cell",
+  "ctx": 128,
+  "n_batches": 8,
+  "batch": 8,
+  "seed": 30000,
+  "fit": "lstsq on half, R2 on the other half"
+ },
+ "runs": {
+  "v4_dual_ema_lam0_lr5e-4_mixed_cell_ctx_s0": {
+   "n": 32480,
+   "step": 20000,
+   "target": {
+    "col": 0.594,
+    "z": -0.0,
+    "f": -0.0
+   },
+   "pred": {
+    "col": 0.608,
+    "z": -0.0,
+    "f": -0.0
+   },
+   "reverse": {
+    "z_from_target": -0.008,
+    "z_from_pred": -0.006,
+    "f_from_target": -0.008,
+    "f_from_pred": -0.006
+   }
+  },
+  "v4_dual_ema_lam0_lr5e-4_mixed_cell_s0": {
+   "n": 32480,
+   "step": 20000,
+   "target": {
+    "col": -0.006,
+    "z": 0.072,
+    "f": 0.071
+   },
+   "pred": {
+    "col": -0.004,
+    "z": 0.008,
+    "f": 0.008
+   },
+   "reverse": {
+    "z_from_target": 0.932,
+    "z_from_pred": 0.238,
+    "f_from_target": 0.912,
+    "f_from_pred": 0.242
+   }
+  }
+ }
+}

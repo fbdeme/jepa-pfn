@@ -1,0 +1,31 @@
+# latent (JEPA / SIGReg) arm on the TabICL OPEN prior -- the objective swap against tabicl_ds:
+# same masking (y_last, the target column) but predict its LATENT, not its value. cls_target
+# false -> predict the masked cell's own latent (matched to ds). SIGReg (mode sigreg) is the
+# anti-collapse used by base_lat_s. batch 8 / lr 1e-3 kept CONSERVATIVE: SIGReg collapsed at
+# higher lr in past base runs (dual_lewm needed lr 5e-4), so we under-scale rather than risk it,
+# and watch the collapse stats (dim_std, cos) + val_jepa early -- kill and lower lr if it slides.
+run_name: tabicl_jepa
+dump_path: data/tabicl_dump_r1024_learn.h5
+feat: 10
+policy_main: y_last
+val_policy: y_last
+curriculum_frac: 0.0
+mode: sigreg
+lambda_sig: 0.25
+lambda_ppd: 0.0
+predictor: twoway-2
+cls_target: false
+n_cls: 4
+r_scheme: rope
+seed: 0
+steps: 20000
+batch_size: 6
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+log_every: 50
+val_every: 250
+val_batches: 8

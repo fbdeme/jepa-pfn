@@ -1,0 +1,22 @@
+# #24 Phase C: lat sigreg lambda_sig sweep. 0.4. batch2 matched, lr=lr*=2e-4. Throwaway.
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.0
+mode: sigreg
+lambda_sig: 0.4
+run_name: big_lat_s4
+seed: 0
+steps: 1500
+batch_size: 2
+lr: 0.0002
+emb: 512
+heads: 16
+mlp: 2048
+layers: 8
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]

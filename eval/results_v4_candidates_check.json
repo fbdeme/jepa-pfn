@@ -1,0 +1,275 @@
+{
+ "rule_e5": "still falling = val metric drops > 1% over the last 1000 steps",
+ "e5": {
+  "runs": {
+   "v4_dual_ema_lam0.3_lr5e-4_mixed_cls_row_s0": {
+    "logged_metric": {
+     "metric": "val_jepa",
+     "last_step": 20000,
+     "value_before": 0.2486,
+     "value_last": 0.2474,
+     "rel_drop": 0.0048,
+     "still_falling": false
+    },
+    "val_ppd": {
+     "metric": "val_ppd",
+     "last_step": 20000,
+     "value_before": 1.8391,
+     "value_last": 1.8228,
+     "rel_drop": 0.0089,
+     "still_falling": false
+    }
+   },
+   "v4_dual_ema_lam0.3_lr5e-4_mixed_cls_row_s1": {
+    "logged_metric": {
+     "metric": "val_jepa",
+     "last_step": 20000,
+     "value_before": 0.2121,
+     "value_last": 0.2112,
+     "rel_drop": 0.0042,
+     "still_falling": false
+    },
+    "val_ppd": {
+     "metric": "val_ppd",
+     "last_step": 20000,
+     "value_before": 2.6317,
+     "value_last": 2.6081,
+     "rel_drop": 0.009,
+     "still_falling": false
+    }
+   },
+   "v4_dual_ema_lam0.3_lr5e-4_mixed_cls_row_s2": {
+    "logged_metric": {
+     "metric": "val_jepa",
+     "last_step": 20000,
+     "value_before": 0.1706,
+     "value_last": 0.174,
+     "rel_drop": -0.0199,
+     "still_falling": false
+    },
+    "val_ppd": {
+     "metric": "val_ppd",
+     "last_step": 20000,
+     "value_before": 2.6358,
+     "value_last": 2.6211,
+     "rel_drop": 0.0056,
+     "still_falling": false
+    }
+   },
+   "v4_dual_ema_lam0_lr5e-4_mixed_cls_row_s0": {
+    "logged_metric": {
+     "metric": "val_jepa",
+     "last_step": 20000,
+     "value_before": 0.266,
+     "value_last": 0.2703,
+     "rel_drop": -0.0162,
+     "still_falling": false
+    },
+    "val_ppd": null
+   },
+   "v4_dual_ema_lam0_lr5e-4_mixed_cls_row_s1": {
+    "logged_metric": {
+     "metric": "val_jepa",
+     "last_step": 20000,
+     "value_before": 0.2745,
+     "value_last": 0.2752,
+     "rel_drop": -0.0026,
+     "still_falling": false
+    },
+    "val_ppd": null
+   },
+   "v4_dual_ema_lam0_lr5e-4_mixed_cls_row_s2": {
+    "logged_metric": {
+     "metric": "val_jepa",
+     "last_step": 20000,
+     "value_before": 0.2666,
+     "value_last": 0.2689,
+     "rel_drop": -0.0086,
+     "still_falling": false
+    },
+    "val_ppd": null
+   },
+   "real_ds_lr5e-4_s0": {
+    "logged_metric": {
+     "metric": "val_mse",
+     "last_step": 20000,
+     "value_before": 0.776,
+     "value_last": 0.7701,
+     "rel_drop": 0.0076,
+     "still_falling": false
+    },
+    "val_ppd": null
+   },
+   "real_ds_lr5e-4_s1": {
+    "logged_metric": {
+     "metric": "val_mse",
+     "last_step": 20000,
+     "value_before": 0.4482,
+     "value_last": 0.4529,
+     "rel_drop": -0.0105,
+     "still_falling": false
+    },
+    "val_ppd": null
+   },
+   "real_ds_lr5e-4_s2": {
+    "logged_metric": {
+     "metric": "val_mse",
+     "last_step": 20000,
+     "value_before": 0.8218,
+     "value_last": 0.8155,
+     "rel_drop": 0.0077,
+     "still_falling": false
+    },
+    "val_ppd": null
+   }
+  },
+  "any_still_falling": false,
+  "extension_needed": false
+ },
+ "e1b": {
+  "registered_lr": "5e-4",
+  "ema_collapsed_at_registered_lr": [
+   0,
+   6
+  ],
+  "detectability": "one-sided (EMA never collapses here: only 'sigreg worse' is detectable)",
+  "ema_collapse_by_lr": {
+   "1.7e-4": "0/9",
+   "5e-4": "0/9",
+   "1.5e-3": "9/9"
+  },
+  "informative_lr": [
+   "1.5e-3"
+  ]
+ },
+ "lat_probe": {
+  "cells": {
+   "lam0_lr1.7e-4": {
+    "lambda_ppd": 0.0,
+    "lr": "1.7e-4",
+    "collapsed": "0/3",
+    "n_masked": 3,
+    "n_truth": 3,
+    "masked_f_any": 0.9425,
+    "masked_f_mixed": 0.9751,
+    "edge_auc": 0.6006,
+    "fam_acc": 0.8672
+   },
+   "lam0_lr5e-4": {
+    "lambda_ppd": 0.0,
+    "lr": "5e-4",
+    "collapsed": "0/3",
+    "n_masked": 3,
+    "n_truth": 3,
+    "masked_f_any": 0.9023,
+    "masked_f_mixed": 0.956,
+    "edge_auc": 0.5655,
+    "fam_acc": 0.8684
+   },
+   "lam0_lr1.5e-3": {
+    "lambda_ppd": 0.0,
+    "lr": "1.5e-3",
+    "collapsed": "3/3",
+    "n_masked": 3,
+    "n_truth": 3,
+    "masked_f_any": 0.9664,
+    "masked_f_mixed": 0.9646,
+    "edge_auc": 0.5062,
+    "fam_acc": 0.8653
+   },
+   "lam0.1_lr1.7e-4": {
+    "lambda_ppd": 0.1,
+    "lr": "1.7e-4",
+    "collapsed": "0/3",
+    "n_masked": 3,
+    "n_truth": 3,
+    "masked_f_any": 0.9172,
+    "masked_f_mixed": 0.9637,
+    "edge_auc": 0.596,
+    "fam_acc": 0.8743
+   },
+   "lam0.1_lr5e-4": {
+    "lambda_ppd": 0.1,
+    "lr": "5e-4",
+    "collapsed": "0/3",
+    "n_masked": 3,
+    "n_truth": 3,
+    "masked_f_any": 0.8692,
+    "masked_f_mixed": 0.9405,
+    "edge_auc": 0.6018,
+    "fam_acc": 0.8736
+   },
+   "lam0.1_lr1.5e-3": {
+    "lambda_ppd": 0.1,
+    "lr": "1.5e-3",
+    "collapsed": "3/3",
+    "n_masked": 3,
+    "n_truth": 3,
+    "masked_f_any": 0.9663,
+    "masked_f_mixed": 0.9646,
+    "edge_auc": 0.5006,
+    "fam_acc": 0.8653
+   },
+   "lam0.3_lr1.7e-4": {
+    "lambda_ppd": 0.3,
+    "lr": "1.7e-4",
+    "collapsed": "0/3",
+    "n_masked": 3,
+    "n_truth": 3,
+    "masked_f_any": 0.9052,
+    "masked_f_mixed": 0.9672,
+    "edge_auc": 0.604,
+    "fam_acc": 0.8766
+   },
+   "lam0.3_lr5e-4": {
+    "lambda_ppd": 0.3,
+    "lr": "5e-4",
+    "collapsed": "0/3",
+    "n_masked": 3,
+    "n_truth": 3,
+    "masked_f_any": 0.798,
+    "masked_f_mixed": 0.8845,
+    "edge_auc": 0.6207,
+    "fam_acc": 0.8783
+   },
+   "lam0.3_lr1.5e-3": {
+    "lambda_ppd": 0.3,
+    "lr": "1.5e-3",
+    "collapsed": "3/3",
+    "n_masked": 3,
+    "n_truth": 3,
+    "masked_f_any": 0.9663,
+    "masked_f_mixed": 0.9646,
+    "edge_auc": 0.4994,
+    "fam_acc": 0.8653
+   }
+  },
+  "floor": {
+   "any_cell": {
+    "mean": 0.9677,
+    "sd": 0.0015,
+    "n": 3,
+    "draws": [
+     0.966,
+     0.9686,
+     0.9685
+    ]
+   },
+   "mixed": {
+    "mean": 0.9755,
+    "sd": 0.0046,
+    "n": 3,
+    "draws": [
+     0.9757,
+     0.9709,
+     0.98
+    ]
+   }
+  },
+  "best_cell_lat": {
+   "lambda_ppd": 0.0,
+   "lr": "5e-4",
+   "masked_f_any": 0.9023
+  }
+ }
+}

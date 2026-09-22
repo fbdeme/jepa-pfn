@@ -1,0 +1,8 @@
+# Issue #20: matched data-space control for the "rope" address scheme. The gap
+# inside the pair is the measurement; absolute values are not comparable across
+# schemes (both arms change), only gaps are.
+run_name: p6adr_ds_rope
+policy: any_cell
+r_scheme: rope
+seed: 0
+steps: 20000

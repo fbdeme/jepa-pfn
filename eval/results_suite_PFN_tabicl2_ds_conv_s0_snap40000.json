@@ -1,0 +1,2060 @@
+{
+ "CC18|kr-vs-kp|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.722,
+   "auc": 0.7963
+  },
+  "logreg": {
+   "acc": 0.9531,
+   "auc": 0.9904
+  },
+  "histgb": {
+   "acc": 0.9902,
+   "auc": 0.999
+  }
+ },
+ "CC18|balance-scale|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7998,
+   "auc": 0.8142
+  },
+  "logreg": {
+   "acc": 0.8733,
+   "auc": 0.9613
+  },
+  "histgb": {
+   "acc": 0.8743,
+   "auc": 0.9189
+  }
+ },
+ "CC18|mfeat-factors|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8757,
+   "auc": 0.9912
+  },
+  "logreg": {
+   "acc": 0.9525,
+   "auc": 0.9968
+  },
+  "histgb": {
+   "acc": 0.9648,
+   "auc": 0.9982
+  }
+ },
+ "CC18|mfeat-fourier|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6875,
+   "auc": 0.952
+  },
+  "logreg": {
+   "acc": 0.8008,
+   "auc": 0.9761
+  },
+  "histgb": {
+   "acc": 0.8262,
+   "auc": 0.9807
+  }
+ },
+ "CC18|breast-w|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9724,
+   "auc": 0.9928
+  },
+  "logreg": {
+   "acc": 0.9657,
+   "auc": 0.9956
+  },
+  "histgb": {
+   "acc": 0.9552,
+   "auc": 0.9928
+  }
+ },
+ "CC18|mfeat-karhunen|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7962,
+   "auc": 0.9763
+  },
+  "logreg": {
+   "acc": 0.9518,
+   "auc": 0.996
+  },
+  "histgb": {
+   "acc": 0.9414,
+   "auc": 0.997
+  }
+ },
+ "CC18|mfeat-morphological|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7467,
+   "auc": 0.9625
+  },
+  "logreg": {
+   "acc": 0.6758,
+   "auc": 0.952
+  },
+  "histgb": {
+   "acc": 0.7031,
+   "auc": 0.9563
+  }
+ },
+ "CC18|mfeat-zernike|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6738,
+   "auc": 0.9547
+  },
+  "logreg": {
+   "acc": 0.7917,
+   "auc": 0.9759
+  },
+  "histgb": {
+   "acc": 0.7936,
+   "auc": 0.9641
+  }
+ },
+ "CC18|cmc|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.5189,
+   "auc": 0.7044
+  },
+  "logreg": {
+   "acc": 0.4993,
+   "auc": 0.6772
+  },
+  "histgb": {
+   "acc": 0.4993,
+   "auc": 0.6852
+  }
+ },
+ "CC18|optdigits|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8034,
+   "auc": 0.9744
+  },
+  "logreg": {
+   "acc": 0.9714,
+   "auc": 0.999
+  },
+  "histgb": {
+   "acc": 0.9772,
+   "auc": 0.9996
+  }
+ },
+ "CC18|credit-approval|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8493,
+   "auc": 0.9242
+  },
+  "logreg": {
+   "acc": 0.8667,
+   "auc": 0.9212
+  },
+  "histgb": {
+   "acc": 0.8676,
+   "auc": 0.9309
+  }
+ },
+ "CC18|credit-g|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6947,
+   "auc": 0.6993
+  },
+  "logreg": {
+   "acc": 0.738,
+   "auc": 0.7537
+  },
+  "histgb": {
+   "acc": 0.7387,
+   "auc": 0.753
+  }
+ },
+ "CC18|pendigits|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8828,
+   "auc": 0.9929
+  },
+  "logreg": {
+   "acc": 0.9505,
+   "auc": 0.9978
+  },
+  "histgb": {
+   "acc": 0.9876,
+   "auc": 0.9999
+  }
+ },
+ "CC18|diabetes|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7352,
+   "auc": 0.8015
+  },
+  "logreg": {
+   "acc": 0.7734,
+   "auc": 0.8421
+  },
+  "histgb": {
+   "acc": 0.7378,
+   "auc": 0.8034
+  }
+ },
+ "CC18|sick|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9733,
+   "auc": 0.9745
+  },
+  "logreg": {
+   "acc": 0.9668,
+   "auc": 0.9461
+  },
+  "histgb": {
+   "acc": 0.9837,
+   "auc": 0.9943
+  }
+ },
+ "CC18|spambase|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9173,
+   "auc": 0.9602
+  },
+  "logreg": {
+   "acc": 0.9206,
+   "auc": 0.9673
+  },
+  "histgb": {
+   "acc": 0.9551,
+   "auc": 0.9857
+  }
+ },
+ "CC18|splice|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8809,
+   "auc": 0.9736
+  },
+  "logreg": {
+   "acc": 0.916,
+   "auc": 0.9828
+  },
+  "histgb": {
+   "acc": 0.9661,
+   "auc": 0.9936
+  }
+ },
+ "CC18|tic-tac-toe|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7008,
+   "auc": 0.7581
+  },
+  "logreg": {
+   "acc": 0.7042,
+   "auc": 0.7299
+  },
+  "histgb": {
+   "acc": 0.9582,
+   "auc": 0.9946
+  }
+ },
+ "CC18|vehicle|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6935,
+   "auc": 0.9018
+  },
+  "logreg": {
+   "acc": 0.7991,
+   "auc": 0.946
+  },
+  "histgb": {
+   "acc": 0.7415,
+   "auc": 0.9215
+  }
+ },
+ "CC18|electricity|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7832,
+   "auc": 0.8474
+  },
+  "logreg": {
+   "acc": 0.7695,
+   "auc": 0.8301
+  },
+  "histgb": {
+   "acc": 0.89,
+   "auc": 0.9554
+  }
+ },
+ "CC18|satimage|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8743,
+   "auc": 0.9832
+  },
+  "logreg": {
+   "acc": 0.8451,
+   "auc": 0.9749
+  },
+  "histgb": {
+   "acc": 0.9147,
+   "auc": 0.9893
+  }
+ },
+ "CC18|eucalyptus|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.5833,
+   "auc": 0.8568
+  },
+  "logreg": {
+   "acc": 0.5553,
+   "auc": 0.8379
+  },
+  "histgb": {
+   "acc": 0.635,
+   "auc": 0.8907
+  }
+ },
+ "CC18|analcatdata_authorship|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9786,
+   "auc": 0.9996
+  },
+  "logreg": {
+   "acc": 0.9881,
+   "auc": 0.9998
+  },
+  "histgb": {
+   "acc": 0.985,
+   "auc": 0.9994
+  }
+ },
+ "CC18|analcatdata_dmft|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.1821,
+   "auc": 0.547
+  },
+  "logreg": {
+   "acc": 0.2038,
+   "auc": 0.5319
+  },
+  "histgb": {
+   "acc": 0.1955,
+   "auc": 0.5564
+  }
+ },
+ "CC18|pc4|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8796,
+   "auc": 0.8926
+  },
+  "logreg": {
+   "acc": 0.9023,
+   "auc": 0.8782
+  },
+  "histgb": {
+   "acc": 0.9128,
+   "auc": 0.9407
+  }
+ },
+ "CC18|pc3|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.888,
+   "auc": 0.8226
+  },
+  "logreg": {
+   "acc": 0.8867,
+   "auc": 0.7599
+  },
+  "histgb": {
+   "acc": 0.8789,
+   "auc": 0.8005
+  }
+ },
+ "CC18|jm1|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8079,
+   "auc": 0.7027
+  },
+  "logreg": {
+   "acc": 0.7995,
+   "auc": 0.5968
+  },
+  "histgb": {
+   "acc": 0.7962,
+   "auc": 0.7084
+  }
+ },
+ "CC18|kc2|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8327,
+   "auc": 0.8347
+  },
+  "logreg": {
+   "acc": 0.8314,
+   "auc": 0.8001
+  },
+  "histgb": {
+   "acc": 0.8314,
+   "auc": 0.8181
+  }
+ },
+ "CC18|kc1|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8587,
+   "auc": 0.8078
+  },
+  "logreg": {
+   "acc": 0.8561,
+   "auc": 0.7688
+  },
+  "histgb": {
+   "acc": 0.847,
+   "auc": 0.7736
+  }
+ },
+ "CC18|pc1|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9303,
+   "auc": 0.7995
+  },
+  "logreg": {
+   "acc": 0.9173,
+   "auc": 0.7043
+  },
+  "histgb": {
+   "acc": 0.9277,
+   "auc": 0.849
+  }
+ },
+ "CC18|bank-marketing|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8835,
+   "auc": 0.7534
+  },
+  "logreg": {
+   "acc": 0.9023,
+   "auc": 0.8886
+  },
+  "histgb": {
+   "acc": 0.903,
+   "auc": 0.9257
+  }
+ },
+ "CC18|banknote-authentication|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9883,
+   "auc": 0.9994
+  },
+  "logreg": {
+   "acc": 0.9922,
+   "auc": 0.9998
+  },
+  "histgb": {
+   "acc": 0.9948,
+   "auc": 0.9998
+  }
+ },
+ "CC18|blood-transfusion-service-center|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7629,
+   "auc": 0.7344
+  },
+  "logreg": {
+   "acc": 0.7736,
+   "auc": 0.7464
+  },
+  "histgb": {
+   "acc": 0.7549,
+   "auc": 0.6841
+  }
+ },
+ "CC18|first-order-theorem-proving|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.4388,
+   "auc": 0.7096
+  },
+  "logreg": {
+   "acc": 0.4837,
+   "auc": 0.7158
+  },
+  "histgb": {
+   "acc": 0.5807,
+   "auc": 0.8123
+  }
+ },
+ "CC18|ilpd|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6975,
+   "auc": 0.7015
+  },
+  "logreg": {
+   "acc": 0.7135,
+   "auc": 0.7547
+  },
+  "histgb": {
+   "acc": 0.7032,
+   "auc": 0.7197
+  }
+ },
+ "CC18|nomao|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9141,
+   "auc": 0.9672
+  },
+  "logreg": {
+   "acc": 0.9342,
+   "auc": 0.9838
+  },
+  "histgb": {
+   "acc": 0.9635,
+   "auc": 0.9922
+  }
+ },
+ "CC18|ozone-level-8hr|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9277,
+   "auc": 0.8641
+  },
+  "logreg": {
+   "acc": 0.929,
+   "auc": 0.8867
+  },
+  "histgb": {
+   "acc": 0.9355,
+   "auc": 0.9074
+  }
+ },
+ "CC18|phoneme|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8112,
+   "auc": 0.8816
+  },
+  "logreg": {
+   "acc": 0.7513,
+   "auc": 0.8158
+  },
+  "histgb": {
+   "acc": 0.8776,
+   "auc": 0.9389
+  }
+ },
+ "CC18|qsar-biodeg|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8327,
+   "auc": 0.8882
+  },
+  "logreg": {
+   "acc": 0.8581,
+   "auc": 0.9189
+  },
+  "histgb": {
+   "acc": 0.8438,
+   "auc": 0.9099
+  }
+ },
+ "CC18|wall-robot-navigation|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.847,
+   "auc": 0.9691
+  },
+  "logreg": {
+   "acc": 0.7018,
+   "auc": 0.9132
+  },
+  "histgb": {
+   "acc": 0.9961,
+   "auc": 1.0
+  }
+ },
+ "CC18|semeion|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6641,
+   "auc": 0.9421
+  },
+  "logreg": {
+   "acc": 0.791,
+   "auc": 0.9742
+  },
+  "histgb": {
+   "acc": 0.8164,
+   "auc": 0.9758
+  }
+ },
+ "CC18|wdbc|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9404,
+   "auc": 0.9846
+  },
+  "logreg": {
+   "acc": 0.9567,
+   "auc": 0.9908
+  },
+  "histgb": {
+   "acc": 0.9591,
+   "auc": 0.9918
+  }
+ },
+ "CC18|adult|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8223,
+   "auc": 0.8661
+  },
+  "logreg": {
+   "acc": 0.7891,
+   "auc": 0.7043
+  },
+  "histgb": {
+   "acc": 0.8678,
+   "auc": 0.9275
+  }
+ },
+ "CC18|PhishingWebsites|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9303,
+   "auc": 0.9769
+  },
+  "logreg": {
+   "acc": 0.8945,
+   "auc": 0.9615
+  },
+  "histgb": {
+   "acc": 0.9661,
+   "auc": 0.9953
+  }
+ },
+ "CC18|GesturePhaseSegmentationProcessed|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.5143,
+   "auc": 0.7709
+  },
+  "logreg": {
+   "acc": 0.4642,
+   "auc": 0.7491
+  },
+  "histgb": {
+   "acc": 0.6497,
+   "auc": 0.8796
+  }
+ },
+ "CC18|cylinder-bands|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7049,
+   "auc": 0.763
+  },
+  "logreg": {
+   "acc": 0.6963,
+   "auc": 0.7738
+  },
+  "histgb": {
+   "acc": 0.7691,
+   "auc": 0.845
+  }
+ },
+ "CC18|dresses-sales|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6027,
+   "auc": 0.5689
+  },
+  "logreg": {
+   "acc": 0.5547,
+   "auc": 0.5419
+  },
+  "histgb": {
+   "acc": 0.5707,
+   "auc": 0.5725
+  }
+ },
+ "CC18|numerai28.6|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.5065,
+   "auc": 0.491
+  },
+  "logreg": {
+   "acc": 0.5234,
+   "auc": 0.5389
+  },
+  "histgb": {
+   "acc": 0.5384,
+   "auc": 0.5514
+  }
+ },
+ "CC18|connect-4|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6589,
+   "auc": 0.585
+  },
+  "logreg": {
+   "acc": 0.6862,
+   "auc": 0.6685
+  },
+  "histgb": {
+   "acc": 0.8398,
+   "auc": 0.9217
+  }
+ },
+ "CC18|dna|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8802,
+   "auc": 0.9671
+  },
+  "logreg": {
+   "acc": 0.9603,
+   "auc": 0.9939
+  },
+  "histgb": {
+   "acc": 0.9603,
+   "auc": 0.993
+  }
+ },
+ "CC18|churn|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8815,
+   "auc": 0.7075
+  },
+  "logreg": {
+   "acc": 0.8561,
+   "auc": 0.8098
+  },
+  "histgb": {
+   "acc": 0.959,
+   "auc": 0.9403
+  }
+ },
+ "CC18|MiceProtein|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7969,
+   "auc": 0.9812
+  },
+  "logreg": {
+   "acc": 0.8314,
+   "auc": 0.9816
+  },
+  "histgb": {
+   "acc": 0.9603,
+   "auc": 0.999
+  }
+ },
+ "CC18|car|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7031,
+   "auc": 0.9395
+  },
+  "logreg": {
+   "acc": 0.821,
+   "auc": 0.9548
+  },
+  "histgb": {
+   "acc": 0.985,
+   "auc": 0.9994
+  }
+ },
+ "CC18|mfeat-pixel|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8138,
+   "auc": 0.9817
+  },
+  "logreg": {
+   "acc": 0.9095,
+   "auc": 0.9914
+  },
+  "histgb": {
+   "acc": 0.9258,
+   "auc": 0.9956
+  }
+ },
+ "CC18|steel-plates-fault|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6478,
+   "auc": 0.908
+  },
+  "logreg": {
+   "acc": 0.5215,
+   "auc": 0.7586
+  },
+  "histgb": {
+   "acc": 0.7695,
+   "auc": 0.957
+  }
+ },
+ "CC18|wilt|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9714,
+   "auc": 0.9833
+  },
+  "logreg": {
+   "acc": 0.9694,
+   "auc": 0.9725
+  },
+  "histgb": {
+   "acc": 0.9792,
+   "auc": 0.9846
+  }
+ },
+ "CC18|segment|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9036,
+   "auc": 0.9915
+  },
+  "logreg": {
+   "acc": 0.8685,
+   "auc": 0.9816
+  },
+  "histgb": {
+   "acc": 0.9186,
+   "auc": 0.9926
+  }
+ },
+ "CC18|climate-model-simulation-crashes|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9148,
+   "auc": 0.6248
+  },
+  "logreg": {
+   "acc": 0.9235,
+   "auc": 0.9514
+  },
+  "histgb": {
+   "acc": 0.9395,
+   "auc": 0.9326
+  }
+ },
+ "CC18|jungle_chess_2pcs_raw_endgame_complete|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.638,
+   "auc": 0.7314
+  },
+  "logreg": {
+   "acc": 0.6816,
+   "auc": 0.8126
+  },
+  "histgb": {
+   "acc": 0.8639,
+   "auc": 0.9745
+  }
+ },
+ "Grinsztajn|analcatdata_supreme|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9115,
+   "auc": 0.9887
+  },
+  "logreg": {
+   "acc": 0.6764,
+   "auc": 0.6204
+  },
+  "histgb": {
+   "acc": 0.974,
+   "auc": 0.9955
+  }
+ },
+ "Grinsztajn|visualizing_soil|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.9904,
+   "rmse": 1.2235
+  },
+  "ridge": {
+   "r2": 0.8366,
+   "rmse": 5.0622
+  },
+  "histgbr": {
+   "r2": 0.9999,
+   "rmse": 0.108
+  }
+ },
+ "Grinsztajn|diamonds|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.9384,
+   "rmse": 0.2515
+  },
+  "ridge": {
+   "r2": 0.9327,
+   "rmse": 0.263
+  },
+  "histgbr": {
+   "r2": 0.9455,
+   "rmse": 0.2363
+  }
+ },
+ "Grinsztajn|Mercedes_Benz_Greener_Manufacturing|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.4893,
+   "rmse": 9.3623
+  },
+  "ridge": {
+   "r2": 0.4829,
+   "rmse": 9.422
+  },
+  "histgbr": {
+   "r2": 0.5001,
+   "rmse": 9.2635
+  }
+ },
+ "Grinsztajn|Brazilian_houses|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.9786,
+   "rmse": 0.1119
+  },
+  "ridge": {
+   "r2": 0.8214,
+   "rmse": 0.328
+  },
+  "histgbr": {
+   "r2": 0.9968,
+   "rmse": 0.043
+  }
+ },
+ "Grinsztajn|Bike_Sharing_Demand|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.5412,
+   "rmse": 126.1092
+  },
+  "ridge": {
+   "r2": 0.3413,
+   "rmse": 151.1558
+  },
+  "histgbr": {
+   "r2": 0.698,
+   "rmse": 102.2714
+  }
+ },
+ "Grinsztajn|house_sales|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.7194,
+   "rmse": 0.2744
+  },
+  "ridge": {
+   "r2": 0.7642,
+   "rmse": 0.2515
+  },
+  "histgbr": {
+   "r2": 0.8859,
+   "rmse": 0.175
+  }
+ },
+ "Grinsztajn|credit|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7272,
+   "auc": 0.8002
+  },
+  "logreg": {
+   "acc": 0.7168,
+   "auc": 0.7929
+  },
+  "histgb": {
+   "acc": 0.7819,
+   "auc": 0.8564
+  }
+ },
+ "Grinsztajn|electricity|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7578,
+   "auc": 0.8339
+  },
+  "logreg": {
+   "acc": 0.7402,
+   "auc": 0.8109
+  },
+  "histgb": {
+   "acc": 0.8685,
+   "auc": 0.948
+  }
+ },
+ "Grinsztajn|pol|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8848,
+   "auc": 0.9611
+  },
+  "logreg": {
+   "acc": 0.8724,
+   "auc": 0.9415
+  },
+  "histgb": {
+   "acc": 0.9837,
+   "auc": 0.9978
+  }
+ },
+ "Grinsztajn|house_16H|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8099,
+   "auc": 0.8901
+  },
+  "logreg": {
+   "acc": 0.791,
+   "auc": 0.8617
+  },
+  "histgb": {
+   "acc": 0.8835,
+   "auc": 0.95
+  }
+ },
+ "Grinsztajn|MagicTelescope|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7852,
+   "auc": 0.876
+  },
+  "logreg": {
+   "acc": 0.7702,
+   "auc": 0.8485
+  },
+  "histgb": {
+   "acc": 0.8574,
+   "auc": 0.9309
+  }
+ },
+ "Grinsztajn|bank-marketing|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7572,
+   "auc": 0.8308
+  },
+  "logreg": {
+   "acc": 0.7428,
+   "auc": 0.8268
+  },
+  "histgb": {
+   "acc": 0.7962,
+   "auc": 0.8669
+  }
+ },
+ "Grinsztajn|MiniBooNE|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8574,
+   "auc": 0.9367
+  },
+  "logreg": {
+   "acc": 0.8958,
+   "auc": 0.955
+  },
+  "histgb": {
+   "acc": 0.9401,
+   "auc": 0.9827
+  }
+ },
+ "Grinsztajn|eye_movements|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.5332,
+   "auc": 0.5546
+  },
+  "logreg": {
+   "acc": 0.5514,
+   "auc": 0.589
+  },
+  "histgb": {
+   "acc": 0.6289,
+   "auc": 0.6818
+  }
+ },
+ "Grinsztajn|cpu_act|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.866,
+   "rmse": 7.0887
+  },
+  "ridge": {
+   "r2": 0.7673,
+   "rmse": 9.3293
+  },
+  "histgbr": {
+   "r2": 0.9855,
+   "rmse": 2.3254
+  }
+ },
+ "Grinsztajn|pol|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.8144,
+   "rmse": 17.9696
+  },
+  "ridge": {
+   "r2": 0.4691,
+   "rmse": 30.3924
+  },
+  "histgbr": {
+   "r2": 0.9809,
+   "rmse": 5.7552
+  }
+ },
+ "Grinsztajn|elevators|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.5018,
+   "rmse": 0.0047
+  },
+  "ridge": {
+   "r2": 0.2381,
+   "rmse": 0.0059
+  },
+  "histgbr": {
+   "r2": 0.8849,
+   "rmse": 0.0023
+  }
+ },
+ "Grinsztajn|wine_quality|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.5156,
+   "auc": 0.6972
+  },
+  "logreg": {
+   "acc": 0.5339,
+   "auc": 0.7155
+  },
+  "histgb": {
+   "acc": 0.6159,
+   "auc": 0.7741
+  }
+ },
+ "Grinsztajn|Ailerons|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.6437,
+   "rmse": 0.0002
+  },
+  "ridge": {
+   "r2": 0.8087,
+   "rmse": 0.0002
+  },
+  "histgbr": {
+   "r2": 0.8402,
+   "rmse": 0.0002
+  }
+ },
+ "Grinsztajn|houses|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.5228,
+   "rmse": 0.389
+  },
+  "ridge": {
+   "r2": 0.6386,
+   "rmse": 0.3387
+  },
+  "histgbr": {
+   "r2": 0.8273,
+   "rmse": 0.2344
+  }
+ },
+ "Grinsztajn|house_16H|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.4898,
+   "rmse": 0.5143
+  },
+  "ridge": {
+   "r2": 0.3476,
+   "rmse": 0.5813
+  },
+  "histgbr": {
+   "r2": 0.6948,
+   "rmse": 0.3971
+  }
+ },
+ "Grinsztajn|sulfur|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.5286,
+   "rmse": 0.0362
+  },
+  "ridge": {
+   "r2": 0.3682,
+   "rmse": 0.0418
+  },
+  "histgbr": {
+   "r2": 0.7599,
+   "rmse": 0.0257
+  }
+ },
+ "Grinsztajn|medical_charges|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.9761,
+   "rmse": 0.0877
+  },
+  "ridge": {
+   "r2": 0.8261,
+   "rmse": 0.2367
+  },
+  "histgbr": {
+   "r2": 0.9804,
+   "rmse": 0.0794
+  }
+ },
+ "Grinsztajn|MiamiHousing2016|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.81,
+   "rmse": 0.2462
+  },
+  "ridge": {
+   "r2": 0.7275,
+   "rmse": 0.2958
+  },
+  "histgbr": {
+   "r2": 0.9195,
+   "rmse": 0.1599
+  }
+ },
+ "Grinsztajn|superconduct|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.795,
+   "rmse": 15.2906
+  },
+  "ridge": {
+   "r2": 0.7243,
+   "rmse": 17.7185
+  },
+  "histgbr": {
+   "r2": 0.8984,
+   "rmse": 10.7418
+  }
+ },
+ "Grinsztajn|Bioresponse|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6602,
+   "auc": 0.7325
+  },
+  "logreg": {
+   "acc": 0.6927,
+   "auc": 0.7735
+  },
+  "histgb": {
+   "acc": 0.752,
+   "auc": 0.8352
+  }
+ },
+ "Grinsztajn|default-of-credit-card-clients|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7109,
+   "auc": 0.774
+  },
+  "logreg": {
+   "acc": 0.6934,
+   "auc": 0.751
+  },
+  "histgb": {
+   "acc": 0.7337,
+   "auc": 0.8021
+  }
+ },
+ "Grinsztajn|jannis|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6628,
+   "auc": 0.7257
+  },
+  "logreg": {
+   "acc": 0.7435,
+   "auc": 0.8272
+  },
+  "histgb": {
+   "acc": 0.8001,
+   "auc": 0.8815
+  }
+ },
+ "Grinsztajn|Diabetes130US|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.5684,
+   "auc": 0.5924
+  },
+  "logreg": {
+   "acc": 0.5879,
+   "auc": 0.6134
+  },
+  "histgb": {
+   "acc": 0.5918,
+   "auc": 0.622
+  }
+ },
+ "Grinsztajn|heloc|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6934,
+   "auc": 0.7584
+  },
+  "logreg": {
+   "acc": 0.6966,
+   "auc": 0.7672
+  },
+  "histgb": {
+   "acc": 0.6927,
+   "auc": 0.7658
+  }
+ },
+ "Grinsztajn|california|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8118,
+   "auc": 0.8922
+  },
+  "logreg": {
+   "acc": 0.8379,
+   "auc": 0.9203
+  },
+  "histgb": {
+   "acc": 0.8939,
+   "auc": 0.9613
+  }
+ },
+ "Grinsztajn|yprop_4_1|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.0135,
+   "rmse": 0.0284
+  },
+  "ridge": {
+   "r2": 0.046,
+   "rmse": 0.0279
+  },
+  "histgbr": {
+   "r2": 0.064,
+   "rmse": 0.0276
+  }
+ },
+ "Grinsztajn|abalone|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.4918,
+   "rmse": 2.1885
+  },
+  "ridge": {
+   "r2": 0.4901,
+   "rmse": 2.19
+  },
+  "histgbr": {
+   "r2": 0.4869,
+   "rmse": 2.1989
+  }
+ },
+ "Grinsztajn|albert|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6165,
+   "auc": 0.6683
+  },
+  "logreg": {
+   "acc": 0.6309,
+   "auc": 0.6799
+  },
+  "histgb": {
+   "acc": 0.6491,
+   "auc": 0.7118
+  }
+ },
+ "Grinsztajn|road-safety|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6309,
+   "auc": 0.6875
+  },
+  "logreg": {
+   "acc": 0.597,
+   "auc": 0.6202
+  },
+  "histgb": {
+   "acc": 0.7773,
+   "auc": 0.8719
+  }
+ },
+ "Grinsztajn|compas-two-years|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6595,
+   "auc": 0.71
+  },
+  "logreg": {
+   "acc": 0.6836,
+   "auc": 0.7327
+  },
+  "histgb": {
+   "acc": 0.6536,
+   "auc": 0.7186
+  }
+ },
+ "Grinsztajn|topo_2_1|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.0078,
+   "rmse": 0.0285
+  },
+  "ridge": {
+   "r2": 0.0369,
+   "rmse": 0.028
+  },
+  "histgbr": {
+   "r2": -0.0345,
+   "rmse": 0.029
+  }
+ },
+ "Grinsztajn|seattlecrime6|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.1674,
+   "rmse": 384.622
+  },
+  "ridge": {
+   "r2": 0.1287,
+   "rmse": 393.4809
+  },
+  "histgbr": {
+   "r2": 0.1854,
+   "rmse": 380.5027
+  }
+ },
+ "Grinsztajn|Allstate_Claims_Severity|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.3299,
+   "rmse": 0.6655
+  },
+  "ridge": {
+   "r2": 0.419,
+   "rmse": 0.6198
+  },
+  "histgbr": {
+   "r2": 0.4945,
+   "rmse": 0.5781
+  }
+ },
+ "TabArena|airfoil_self_noise|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.6769,
+   "rmse": 3.9117
+  },
+  "ridge": {
+   "r2": 0.2817,
+   "rmse": 5.8376
+  },
+  "histgbr": {
+   "r2": 0.9016,
+   "rmse": 2.1575
+  }
+ },
+ "TabArena|Amazon_employee_access|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9479,
+   "auc": 0.5268
+  },
+  "logreg": {
+   "acc": 0.9479,
+   "auc": 0.5698
+  },
+  "histgb": {
+   "acc": 0.9512,
+   "auc": 0.7679
+  }
+ },
+ "TabArena|anneal|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9673,
+   "auc": 0.8976
+  },
+  "logreg": {
+   "acc": 0.9391,
+   "auc": 0.9859
+  },
+  "histgb": {
+   "acc": 0.9792,
+   "auc": 0.9675
+  }
+ },
+ "TabArena|Another-Dataset-on-used-Fiat-500|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.8289,
+   "rmse": 792.6032
+  },
+  "ridge": {
+   "r2": 0.8417,
+   "rmse": 762.5495
+  },
+  "histgbr": {
+   "r2": 0.8314,
+   "rmse": 787.0967
+  }
+ },
+ "TabArena|APSFailure|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9818,
+   "auc": 0.5928
+  },
+  "logreg": {
+   "acc": 0.9798,
+   "auc": 0.6828
+  },
+  "histgb": {
+   "acc": 0.9922,
+   "auc": 0.9936
+  }
+ },
+ "TabArena|bank-marketing|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8828,
+   "auc": 0.706
+  },
+  "logreg": {
+   "acc": 0.8913,
+   "auc": 0.7165
+  },
+  "histgb": {
+   "acc": 0.8939,
+   "auc": 0.7711
+  }
+ },
+ "TabArena|Bank_Customer_Churn|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8314,
+   "auc": 0.8276
+  },
+  "logreg": {
+   "acc": 0.8008,
+   "auc": 0.7541
+  },
+  "histgb": {
+   "acc": 0.8477,
+   "auc": 0.858
+  }
+ },
+ "TabArena|blood-transfusion-service-center|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7647,
+   "auc": 0.724
+  },
+  "logreg": {
+   "acc": 0.7736,
+   "auc": 0.7647
+  },
+  "histgb": {
+   "acc": 0.7496,
+   "auc": 0.7078
+  }
+ },
+ "TabArena|churn|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8822,
+   "auc": 0.7205
+  },
+  "logreg": {
+   "acc": 0.8776,
+   "auc": 0.8387
+  },
+  "histgb": {
+   "acc": 0.9668,
+   "auc": 0.9526
+  }
+ },
+ "TabArena|coil2000_insurance_policies|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9447,
+   "auc": 0.6752
+  },
+  "logreg": {
+   "acc": 0.944,
+   "auc": 0.7187
+  },
+  "histgb": {
+   "acc": 0.9362,
+   "auc": 0.7344
+  }
+ },
+ "TabArena|concrete_compressive_strength|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.6996,
+   "rmse": 9.1443
+  },
+  "ridge": {
+   "r2": 0.5709,
+   "rmse": 10.9106
+  },
+  "histgbr": {
+   "r2": 0.8939,
+   "rmse": 5.4311
+  }
+ },
+ "TabArena|credit-g|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6973,
+   "auc": 0.6685
+  },
+  "logreg": {
+   "acc": 0.7247,
+   "auc": 0.703
+  },
+  "histgb": {
+   "acc": 0.74,
+   "auc": 0.7493
+  }
+ },
+ "TabArena|credit_card_clients_default|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7871,
+   "auc": 0.7579
+  },
+  "logreg": {
+   "acc": 0.8112,
+   "auc": 0.6956
+  },
+  "histgb": {
+   "acc": 0.8229,
+   "auc": 0.7761
+  }
+ },
+ "TabArena|customer_satisfaction_in_airline|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8275,
+   "auc": 0.9102
+  },
+  "logreg": {
+   "acc": 0.7591,
+   "auc": 0.8426
+  },
+  "histgb": {
+   "acc": 0.9551,
+   "auc": 0.9919
+  }
+ },
+ "TabArena|diabetes|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7118,
+   "auc": 0.77
+  },
+  "logreg": {
+   "acc": 0.7665,
+   "auc": 0.8247
+  },
+  "histgb": {
+   "acc": 0.7214,
+   "auc": 0.7868
+  }
+ },
+ "TabArena|Diabetes130US|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.903,
+   "auc": 0.5934
+  },
+  "logreg": {
+   "acc": 0.9023,
+   "auc": 0.6186
+  },
+  "histgb": {
+   "acc": 0.903,
+   "auc": 0.6615
+  }
+ },
+ "TabArena|diamonds|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.8302,
+   "rmse": 1600.6466
+  },
+  "ridge": {
+   "r2": 0.8541,
+   "rmse": 1481.3254
+  },
+  "histgbr": {
+   "r2": 0.9785,
+   "rmse": 565.477
+  }
+ },
+ "TabArena|E-CommereShippingData|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6712,
+   "auc": 0.7454
+  },
+  "logreg": {
+   "acc": 0.6491,
+   "auc": 0.7263
+  },
+  "histgb": {
+   "acc": 0.6595,
+   "auc": 0.7382
+  }
+ },
+ "TabArena|Fitness_Club|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7585,
+   "auc": 0.7826
+  },
+  "logreg": {
+   "acc": 0.7715,
+   "auc": 0.8165
+  },
+  "histgb": {
+   "acc": 0.7461,
+   "auc": 0.7582
+  }
+ },
+ "TabArena|Food_Delivery_Time|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.2073,
+   "rmse": 8.1218
+  },
+  "ridge": {
+   "r2": 0.2024,
+   "rmse": 8.1508
+  },
+  "histgbr": {
+   "r2": 0.37,
+   "rmse": 7.2433
+  }
+ },
+ "TabArena|GiveMeSomeCredit|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9336,
+   "auc": 0.854
+  },
+  "logreg": {
+   "acc": 0.9362,
+   "auc": 0.7189
+  },
+  "histgb": {
+   "acc": 0.9427,
+   "auc": 0.8977
+  }
+ },
+ "TabArena|hazelnut-spread-contaminant-detection|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8405,
+   "auc": 0.9066
+  },
+  "logreg": {
+   "acc": 0.7044,
+   "auc": 0.6368
+  },
+  "histgb": {
+   "acc": 0.9108,
+   "auc": 0.965
+  }
+ },
+ "TabArena|healthcare_insurance_expenses|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.6854,
+   "rmse": 6847.2803
+  },
+  "ridge": {
+   "r2": 0.7407,
+   "rmse": 6216.3391
+  },
+  "histgbr": {
+   "r2": 0.8352,
+   "rmse": 4954.5207
+  }
+ },
+ "TabArena|heloc|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6836,
+   "auc": 0.7425
+  },
+  "logreg": {
+   "acc": 0.7109,
+   "auc": 0.7752
+  },
+  "histgb": {
+   "acc": 0.7161,
+   "auc": 0.7821
+  }
+ },
+ "TabArena|houses|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.5638,
+   "rmse": 0.3693
+  },
+  "ridge": {
+   "r2": 0.6384,
+   "rmse": 0.3362
+  },
+  "histgbr": {
+   "r2": 0.8512,
+   "rmse": 0.2154
+  }
+ },
+ "TabArena|HR_Analytics_Job_Change_of_Data_Scientists|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7689,
+   "auc": 0.7465
+  },
+  "logreg": {
+   "acc": 0.7565,
+   "auc": 0.7486
+  },
+  "histgb": {
+   "acc": 0.7819,
+   "auc": 0.773
+  }
+ },
+ "TabArena|in_vehicle_coupon_recommendation|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.6055,
+   "auc": 0.6201
+  },
+  "logreg": {
+   "acc": 0.6439,
+   "auc": 0.7012
+  },
+  "histgb": {
+   "acc": 0.7591,
+   "auc": 0.8275
+  }
+ },
+ "TabArena|Is-this-a-good-customer|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8926,
+   "auc": 0.6465
+  },
+  "logreg": {
+   "acc": 0.8913,
+   "auc": 0.6533
+  },
+  "histgb": {
+   "acc": 0.8776,
+   "auc": 0.6878
+  }
+ },
+ "TabArena|kddcup09_appetency|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9818,
+   "auc": 0.531
+  },
+  "logreg": {
+   "acc": 0.9818,
+   "auc": 0.6587
+  },
+  "histgb": {
+   "acc": 0.9805,
+   "auc": 0.8591
+  }
+ },
+ "TabArena|Marketing_Campaign|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8691,
+   "auc": 0.8129
+  },
+  "logreg": {
+   "acc": 0.8639,
+   "auc": 0.8009
+  },
+  "histgb": {
+   "acc": 0.8763,
+   "auc": 0.8508
+  }
+ },
+ "TabArena|maternal_health_risk|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7291,
+   "auc": 0.8816
+  },
+  "logreg": {
+   "acc": 0.6134,
+   "auc": 0.7877
+  },
+  "histgb": {
+   "acc": 0.783,
+   "auc": 0.9037
+  }
+ },
+ "TabArena|miami_housing|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.7471,
+   "rmse": 164767.8596
+  },
+  "ridge": {
+   "r2": 0.6903,
+   "rmse": 181992.7183
+  },
+  "histgbr": {
+   "r2": 0.9013,
+   "rmse": 103348.2467
+  }
+ },
+ "TabArena|online_shoppers_intention|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8945,
+   "auc": 0.9181
+  },
+  "logreg": {
+   "acc": 0.8919,
+   "auc": 0.9056
+  },
+  "histgb": {
+   "acc": 0.9102,
+   "auc": 0.9439
+  }
+ },
+ "TabArena|physiochemical_protein|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.3082,
+   "rmse": 5.0853
+  },
+  "ridge": {
+   "r2": 0.2782,
+   "rmse": 5.194
+  },
+  "histgbr": {
+   "r2": 0.528,
+   "rmse": 4.2002
+  }
+ },
+ "TabArena|polish_companies_bankruptcy|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9368,
+   "auc": 0.8602
+  },
+  "logreg": {
+   "acc": 0.9368,
+   "auc": 0.5916
+  },
+  "histgb": {
+   "acc": 0.957,
+   "auc": 0.9266
+  }
+ },
+ "TabArena|qsar-biodeg|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8314,
+   "auc": 0.8953
+  },
+  "logreg": {
+   "acc": 0.86,
+   "auc": 0.9255
+  },
+  "histgb": {
+   "acc": 0.8509,
+   "auc": 0.9161
+  }
+ },
+ "TabArena|QSAR_fish_toxicity|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.544,
+   "rmse": 0.9768
+  },
+  "ridge": {
+   "r2": 0.5549,
+   "rmse": 0.9651
+  },
+  "histgbr": {
+   "r2": 0.5852,
+   "rmse": 0.9314
+  }
+ },
+ "TabArena|SDSS17|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.957,
+   "auc": 0.9853
+  },
+  "logreg": {
+   "acc": 0.8724,
+   "auc": 0.9293
+  },
+  "histgb": {
+   "acc": 0.9746,
+   "auc": 0.9955
+  }
+ },
+ "TabArena|seismic-bumps|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9355,
+   "auc": 0.7926
+  },
+  "logreg": {
+   "acc": 0.9355,
+   "auc": 0.7453
+  },
+  "histgb": {
+   "acc": 0.931,
+   "auc": 0.7352
+  }
+ },
+ "TabArena|splice|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.821,
+   "auc": 0.9225
+  },
+  "logreg": {
+   "acc": 0.8438,
+   "auc": 0.9456
+  },
+  "histgb": {
+   "acc": 0.9538,
+   "auc": 0.994
+  }
+ },
+ "TabArena|students_dropout_and_academic_success|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.7448,
+   "auc": 0.8587
+  },
+  "logreg": {
+   "acc": 0.7682,
+   "auc": 0.8803
+  },
+  "histgb": {
+   "acc": 0.778,
+   "auc": 0.888
+  }
+ },
+ "TabArena|superconductivity|reg": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "r2": 0.78,
+   "rmse": 16.0252
+  },
+  "ridge": {
+   "r2": 0.7014,
+   "rmse": 18.7161
+  },
+  "histgbr": {
+   "r2": 0.9004,
+   "rmse": 10.7772
+  }
+ },
+ "TabArena|taiwanese_bankruptcy_prediction|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9681,
+   "auc": 0.8274
+  },
+  "logreg": {
+   "acc": 0.9629,
+   "auc": 0.5589
+  },
+  "histgb": {
+   "acc": 0.9733,
+   "auc": 0.9623
+  }
+ },
+ "TabArena|website_phishing|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8379,
+   "auc": 0.9387
+  },
+  "logreg": {
+   "acc": 0.8164,
+   "auc": 0.9033
+  },
+  "histgb": {
+   "acc": 0.877,
+   "auc": 0.9664
+  }
+ },
+ "TabArena|wine_quality|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.5085,
+   "auc": 0.6993
+  },
+  "logreg": {
+   "acc": 0.5195,
+   "auc": 0.6506
+  },
+  "histgb": {
+   "acc": 0.6094,
+   "auc": 0.7795
+  }
+ },
+ "TabArena|NATICUSdroid|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.9069,
+   "auc": 0.9694
+  },
+  "logreg": {
+   "acc": 0.9232,
+   "auc": 0.9762
+  },
+  "histgb": {
+   "acc": 0.931,
+   "auc": 0.9779
+  }
+ },
+ "TabArena|jm1|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.804,
+   "auc": 0.7072
+  },
+  "logreg": {
+   "acc": 0.7956,
+   "auc": 0.5999
+  },
+  "histgb": {
+   "acc": 0.8118,
+   "auc": 0.7355
+  }
+ },
+ "TabArena|MIC|clf": {
+  "PFN_tabicl2_ds_conv_s0_snap40000": {
+   "acc": 0.8841,
+   "auc": 0.7015
+  },
+  "logreg": {
+   "acc": 0.8678,
+   "auc": 0.7473
+  },
+  "histgb": {
+   "acc": 0.8809,
+   "auc": 0.8213
+  }
+ }
+}

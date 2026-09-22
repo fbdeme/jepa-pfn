@@ -1,0 +1,82 @@
+{
+  "n_tables": 80,
+  "seed": 0,
+  "note": "index = median(R2_f) - median(R2_x), cross-column linear ridge (median robust to r2 outliers)",
+  "factor_sweep": [
+    {
+      "label": "factor_K4_D12_sigma0.4",
+      "r2_f": 0.9254,
+      "r2_x": 0.78,
+      "index": 0.1455,
+      "sigma": 0.4
+    },
+    {
+      "label": "factor_K4_D12_sigma0.5",
+      "r2_f": 0.8891,
+      "r2_x": 0.6856,
+      "index": 0.2035,
+      "sigma": 0.5
+    },
+    {
+      "label": "factor_K4_D12_sigma0.6",
+      "r2_f": 0.8482,
+      "r2_x": 0.5886,
+      "index": 0.2596,
+      "sigma": 0.6
+    },
+    {
+      "label": "factor_K4_D12_sigma0.7",
+      "r2_f": 0.8053,
+      "r2_x": 0.4968,
+      "index": 0.3084,
+      "sigma": 0.7
+    },
+    {
+      "label": "factor_K4_D12_sigma0.8",
+      "r2_f": 0.761,
+      "r2_x": 0.4138,
+      "index": 0.3471,
+      "sigma": 0.8
+    },
+    {
+      "label": "factor_K4_D12_sigma1.0",
+      "r2_f": 0.6704,
+      "r2_x": 0.2723,
+      "index": 0.3981,
+      "sigma": 1.0
+    },
+    {
+      "label": "factor_K4_D12_sigma1.5",
+      "r2_f": 0.4672,
+      "r2_x": 0.0645,
+      "index": 0.4027,
+      "sigma": 1.5
+    }
+  ],
+  "scm_default": {
+    "label": "scm_default",
+    "r2_f": 0.8402,
+    "r2_x": 0.8371,
+    "index": 0.0031
+  },
+  "scm_matched_D12": {
+    "label": "scm_matched_D12",
+    "r2_f": 0.8689,
+    "r2_x": 0.8648,
+    "index": 0.004
+  },
+  "selected": {
+    "sigma": 0.6,
+    "index": 0.2596,
+    "r2_f": 0.8482,
+    "r2_x": 0.5886,
+    "note": "max index s.t. r2_f>=0.5 (lat learnable) AND r2_x>=0.5 (ds learnable)"
+  },
+  "gate": {
+    "gate_index": 0.15,
+    "gate_ratio": 3.0,
+    "scm_index_max": 0.004,
+    "ratio_over_scm": 64.9,
+    "passed": true
+  }
+}

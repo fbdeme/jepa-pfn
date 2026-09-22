@@ -1,0 +1,62 @@
+{
+ "TabularJEPA_v3_tabicl2_headenc_s0": {
+  "steps_configured": 20000,
+  "last_step": 20000,
+  "complete": true,
+  "last": {
+   "val_mse": 0.5513,
+   "val_ppd": 1.3264,
+   "val_jepa": 0.2723,
+   "tgt_cos": 0.4269,
+   "pred_std": 0.5111,
+   "tgt_erank": 98.1
+  },
+  "min_val_mse": 0.5513,
+  "min_val_mse_step": 20000,
+  "first_below_const_map_step": 500,
+  "relapse_steps": [],
+  "survived": true,
+  "n_val": 80,
+  "sec_total": 10933.5
+ },
+ "TabularJEPA_v3_tabicl2_dae_headenc_s0": {
+  "steps_configured": 20000,
+  "last_step": 20000,
+  "complete": true,
+  "last": {
+   "val_mse": 0.565,
+   "val_ppd": 1.3657,
+   "val_jepa": 0.1907,
+   "tgt_cos": 0.3711,
+   "pred_std": 0.6001,
+   "tgt_erank": 93.9
+  },
+  "min_val_mse": 0.565,
+  "min_val_mse_step": 20000,
+  "first_below_const_map_step": 500,
+  "relapse_steps": [],
+  "survived": true,
+  "n_val": 80,
+  "sec_total": 13503.7
+ },
+ "TabularJEPA_v3_tabicl2_sigreg_headenc_s0": {
+  "steps_configured": 20000,
+  "last_step": 20000,
+  "complete": true,
+  "last": {
+   "val_mse": 0.9365,
+   "val_ppd": 2.9689,
+   "val_jepa": 0.9147,
+   "tgt_cos": 0.001,
+   "pred_std": 0.3418,
+   "tgt_erank": 104.9
+  },
+  "min_val_mse": 0.9365,
+  "min_val_mse_step": 17500,
+  "first_below_const_map_step": null,
+  "relapse_steps": [],
+  "survived": false,
+  "n_val": 80,
+  "sec_total": 13792.3
+ }
+}

@@ -1,0 +1,981 @@
+{
+ "datasets": [
+  {
+   "key": "CC18|mfeat-factors|clf",
+   "id": 12,
+   "n_classes": 10,
+   "ds_mean": 0.2997,
+   "dual_mean": 0.11673333333333331,
+   "linear": 0.9538,
+   "histgb": 0.9648
+  },
+  {
+   "key": "CC18|mfeat-fourier|clf",
+   "id": 14,
+   "n_classes": 10,
+   "ds_mean": 0.2823333333333334,
+   "dual_mean": 0.16926666666666668,
+   "linear": 0.8008,
+   "histgb": 0.8262
+  },
+  {
+   "key": "CC18|mfeat-karhunen|clf",
+   "id": 16,
+   "n_classes": 10,
+   "ds_mean": 0.1927,
+   "dual_mean": 0.08743333333333332,
+   "linear": 0.9518,
+   "histgb": 0.9414
+  },
+  {
+   "key": "CC18|mfeat-morphological|clf",
+   "id": 18,
+   "n_classes": 10,
+   "ds_mean": 0.35916666666666663,
+   "dual_mean": 0.12976666666666667,
+   "linear": 0.6901,
+   "histgb": 0.7031
+  },
+  {
+   "key": "CC18|mfeat-zernike|clf",
+   "id": 22,
+   "n_classes": 10,
+   "ds_mean": 0.2808,
+   "dual_mean": 0.17989999999999998,
+   "linear": 0.7871,
+   "histgb": 0.7936
+  },
+  {
+   "key": "CC18|optdigits|clf",
+   "id": 28,
+   "n_classes": 10,
+   "ds_mean": 0.32136666666666663,
+   "dual_mean": 0.11676666666666667,
+   "linear": 0.9727,
+   "histgb": 0.9772
+  },
+  {
+   "key": "CC18|pendigits|clf",
+   "id": 32,
+   "n_classes": 10,
+   "ds_mean": 0.34179999999999994,
+   "dual_mean": 0.1428,
+   "linear": 0.9518,
+   "histgb": 0.9876
+  },
+  {
+   "key": "CC18|semeion|clf",
+   "id": 1501,
+   "n_classes": 10,
+   "ds_mean": 0.21503333333333333,
+   "dual_mean": 0.12760000000000002,
+   "linear": 0.791,
+   "histgb": 0.8164
+  },
+  {
+   "key": "CC18|mfeat-pixel|clf",
+   "id": 40979,
+   "n_classes": 10,
+   "ds_mean": 0.16733333333333333,
+   "dual_mean": 0.1391,
+   "linear": 0.9082,
+   "histgb": 0.9258
+  },
+  {
+   "key": "Grinsztajn|analcatdata_supreme|clf",
+   "id": 44055,
+   "n_classes": 10,
+   "ds_mean": 0.7159,
+   "dual_mean": 0.6770666666666667,
+   "linear": 0.6758,
+   "histgb": 0.974
+  },
+  {
+   "key": "CC18|MiceProtein|clf",
+   "id": 40966,
+   "n_classes": 8,
+   "ds_mean": 0.2979333333333334,
+   "dual_mean": 0.13086666666666666,
+   "linear": 0.8314,
+   "histgb": 0.9603
+  },
+  {
+   "key": "TabArena|MIC|clf",
+   "id": 46980,
+   "n_classes": 8,
+   "ds_mean": 0.8464,
+   "dual_mean": 0.8464,
+   "linear": 0.8665,
+   "histgb": 0.8809
+  },
+  {
+   "key": "CC18|steel-plates-fault|clf",
+   "id": 40982,
+   "n_classes": 7,
+   "ds_mean": 0.5403666666666667,
+   "dual_mean": 0.3524666666666667,
+   "linear": 0.5072,
+   "histgb": 0.7695
+  },
+  {
+   "key": "CC18|segment|clf",
+   "id": 40984,
+   "n_classes": 7,
+   "ds_mean": 0.28213333333333335,
+   "dual_mean": 0.32226666666666665,
+   "linear": 0.8639,
+   "histgb": 0.9186
+  },
+  {
+   "key": "TabArena|wine_quality|clf",
+   "id": 46964,
+   "n_classes": 7,
+   "ds_mean": 0.4318666666666666,
+   "dual_mean": 0.44143333333333334,
+   "linear": 0.5293,
+   "histgb": 0.6094
+  },
+  {
+   "key": "CC18|satimage|clf",
+   "id": 182,
+   "n_classes": 6,
+   "ds_mean": 0.7267666666666667,
+   "dual_mean": 0.3541666666666667,
+   "linear": 0.8451,
+   "histgb": 0.9147
+  },
+  {
+   "key": "CC18|analcatdata_dmft|clf",
+   "id": 469,
+   "n_classes": 6,
+   "ds_mean": 0.18046666666666666,
+   "dual_mean": 0.17149999999999999,
+   "linear": 0.2038,
+   "histgb": 0.1955
+  },
+  {
+   "key": "CC18|first-order-theorem-proving|clf",
+   "id": 1475,
+   "n_classes": 6,
+   "ds_mean": 0.4149333333333334,
+   "dual_mean": 0.40363333333333334,
+   "linear": 0.4837,
+   "histgb": 0.5807
+  },
+  {
+   "key": "CC18|eucalyptus|clf",
+   "id": 188,
+   "n_classes": 5,
+   "ds_mean": 0.4136666666666667,
+   "dual_mean": 0.3913,
+   "linear": 0.5598,
+   "histgb": 0.635
+  },
+  {
+   "key": "CC18|GesturePhaseSegmentationProcessed|clf",
+   "id": 4538,
+   "n_classes": 5,
+   "ds_mean": 0.39020000000000005,
+   "dual_mean": 0.41643333333333327,
+   "linear": 0.4642,
+   "histgb": 0.6497
+  },
+  {
+   "key": "TabArena|anneal|clf",
+   "id": 46906,
+   "n_classes": 5,
+   "ds_mean": 0.7698666666666667,
+   "dual_mean": 0.7616999999999999,
+   "linear": 0.9317,
+   "histgb": 0.9792
+  },
+  {
+   "key": "CC18|vehicle|clf",
+   "id": 54,
+   "n_classes": 4,
+   "ds_mean": 0.3504,
+   "dual_mean": 0.38433333333333336,
+   "linear": 0.7998,
+   "histgb": 0.7415
+  },
+  {
+   "key": "CC18|analcatdata_authorship|clf",
+   "id": 458,
+   "n_classes": 4,
+   "ds_mean": 0.8012666666666668,
+   "dual_mean": 0.6571333333333333,
+   "linear": 0.9881,
+   "histgb": 0.985
+  },
+  {
+   "key": "CC18|wall-robot-navigation|clf",
+   "id": 1497,
+   "n_classes": 4,
+   "ds_mean": 0.4067,
+   "dual_mean": 0.39973333333333333,
+   "linear": 0.7018,
+   "histgb": 0.9961
+  },
+  {
+   "key": "CC18|car|clf",
+   "id": 40975,
+   "n_classes": 4,
+   "ds_mean": 0.7009333333333334,
+   "dual_mean": 0.7376333333333333,
+   "linear": 0.821,
+   "histgb": 0.985
+  },
+  {
+   "key": "CC18|balance-scale|clf",
+   "id": 11,
+   "n_classes": 3,
+   "ds_mean": 0.6492666666666667,
+   "dual_mean": 0.6482,
+   "linear": 0.8733,
+   "histgb": 0.8743
+  },
+  {
+   "key": "CC18|cmc|clf",
+   "id": 23,
+   "n_classes": 3,
+   "ds_mean": 0.45073333333333326,
+   "dual_mean": 0.39930000000000004,
+   "linear": 0.4987,
+   "histgb": 0.4993
+  },
+  {
+   "key": "CC18|connect-4|clf",
+   "id": 40668,
+   "n_classes": 3,
+   "ds_mean": 0.6589,
+   "dual_mean": 0.6589,
+   "linear": 0.6862,
+   "histgb": 0.8398
+  },
+  {
+   "key": "CC18|dna|clf",
+   "id": 40670,
+   "n_classes": 3,
+   "ds_mean": 0.5124,
+   "dual_mean": 0.5004666666666666,
+   "linear": 0.9603,
+   "histgb": 0.9603
+  },
+  {
+   "key": "CC18|jungle_chess_2pcs_raw_endgame_complete|clf",
+   "id": 41027,
+   "n_classes": 3,
+   "ds_mean": 0.5722666666666667,
+   "dual_mean": 0.5464333333333333,
+   "linear": 0.6816,
+   "histgb": 0.8639
+  },
+  {
+   "key": "TabArena|maternal_health_risk|clf",
+   "id": 46941,
+   "n_classes": 3,
+   "ds_mean": 0.5485666666666668,
+   "dual_mean": 0.44639999999999996,
+   "linear": 0.6134,
+   "histgb": 0.783
+  },
+  {
+   "key": "TabArena|SDSS17|clf",
+   "id": 46955,
+   "n_classes": 3,
+   "ds_mean": 0.6358666666666667,
+   "dual_mean": 0.6257,
+   "linear": 0.8626,
+   "histgb": 0.9746
+  },
+  {
+   "key": "TabArena|splice|clf",
+   "id": 46958,
+   "n_classes": 3,
+   "ds_mean": 0.6046,
+   "dual_mean": 0.4941333333333333,
+   "linear": 0.8438,
+   "histgb": 0.9538
+  },
+  {
+   "key": "TabArena|students_dropout_and_academic_success|clf",
+   "id": 46960,
+   "n_classes": 3,
+   "ds_mean": 0.6705666666666666,
+   "dual_mean": 0.6445333333333333,
+   "linear": 0.7695,
+   "histgb": 0.778
+  },
+  {
+   "key": "TabArena|website_phishing|clf",
+   "id": 46963,
+   "n_classes": 3,
+   "ds_mean": 0.722,
+   "dual_mean": 0.5212333333333333,
+   "linear": 0.8164,
+   "histgb": 0.877
+  },
+  {
+   "key": "CC18|kr-vs-kp|clf",
+   "id": 3,
+   "n_classes": 2,
+   "ds_mean": 0.6310666666666667,
+   "dual_mean": 0.5575,
+   "linear": 0.9531,
+   "histgb": 0.9902
+  },
+  {
+   "key": "CC18|breast-w|clf",
+   "id": 15,
+   "n_classes": 2,
+   "ds_mean": 0.9660333333333333,
+   "dual_mean": 0.9676333333333332,
+   "linear": 0.9657,
+   "histgb": 0.9552
+  },
+  {
+   "key": "CC18|credit-approval|clf",
+   "id": 29,
+   "n_classes": 2,
+   "ds_mean": 0.6959666666666666,
+   "dual_mean": 0.8254333333333332,
+   "linear": 0.8667,
+   "histgb": 0.8676
+  },
+  {
+   "key": "CC18|sick|clf",
+   "id": 38,
+   "n_classes": 2,
+   "ds_mean": 0.9583666666666666,
+   "dual_mean": 0.9499,
+   "linear": 0.9668,
+   "histgb": 0.9837
+  },
+  {
+   "key": "CC18|spambase|clf",
+   "id": 44,
+   "n_classes": 2,
+   "ds_mean": 0.7256999999999999,
+   "dual_mean": 0.6135333333333333,
+   "linear": 0.9206,
+   "histgb": 0.9551
+  },
+  {
+   "key": "CC18|tic-tac-toe|clf",
+   "id": 50,
+   "n_classes": 2,
+   "ds_mean": 0.6534,
+   "dual_mean": 0.6534,
+   "linear": 0.7042,
+   "histgb": 0.9582
+  },
+  {
+   "key": "CC18|pc4|clf",
+   "id": 1049,
+   "n_classes": 2,
+   "ds_mean": 0.8815,
+   "dual_mean": 0.8802,
+   "linear": 0.9036,
+   "histgb": 0.9128
+  },
+  {
+   "key": "CC18|pc3|clf",
+   "id": 1050,
+   "n_classes": 2,
+   "ds_mean": 0.8880333333333333,
+   "dual_mean": 0.8887,
+   "linear": 0.8861,
+   "histgb": 0.8789
+  },
+  {
+   "key": "CC18|kc2|clf",
+   "id": 1063,
+   "n_classes": 2,
+   "ds_mean": 0.8233333333333333,
+   "dual_mean": 0.8284333333333332,
+   "linear": 0.8391,
+   "histgb": 0.8314
+  },
+  {
+   "key": "CC18|kc1|clf",
+   "id": 1067,
+   "n_classes": 2,
+   "ds_mean": 0.8511333333333333,
+   "dual_mean": 0.8498333333333333,
+   "linear": 0.8535,
+   "histgb": 0.847
+  },
+  {
+   "key": "CC18|pc1|clf",
+   "id": 1068,
+   "n_classes": 2,
+   "ds_mean": 0.9285666666666668,
+   "dual_mean": 0.9289999999999999,
+   "linear": 0.9167,
+   "histgb": 0.9277
+  },
+  {
+   "key": "CC18|banknote-authentication|clf",
+   "id": 1462,
+   "n_classes": 2,
+   "ds_mean": 0.8986666666666667,
+   "dual_mean": 0.8574,
+   "linear": 0.9922,
+   "histgb": 0.9948
+  },
+  {
+   "key": "CC18|ilpd|clf",
+   "id": 1480,
+   "n_classes": 2,
+   "ds_mean": 0.7119333333333332,
+   "dual_mean": 0.7081333333333334,
+   "linear": 0.7135,
+   "histgb": 0.7032
+  },
+  {
+   "key": "CC18|nomao|clf",
+   "id": 1486,
+   "n_classes": 2,
+   "ds_mean": 0.852,
+   "dual_mean": 0.7606333333333334,
+   "linear": 0.9342,
+   "histgb": 0.9635
+  },
+  {
+   "key": "CC18|ozone-level-8hr|clf",
+   "id": 1487,
+   "n_classes": 2,
+   "ds_mean": 0.9299,
+   "dual_mean": 0.9297,
+   "linear": 0.9297,
+   "histgb": 0.9355
+  },
+  {
+   "key": "CC18|phoneme|clf",
+   "id": 1489,
+   "n_classes": 2,
+   "ds_mean": 0.7836,
+   "dual_mean": 0.7363333333333334,
+   "linear": 0.7513,
+   "histgb": 0.8776
+  },
+  {
+   "key": "CC18|wdbc|clf",
+   "id": 1510,
+   "n_classes": 2,
+   "ds_mean": 0.9321666666666667,
+   "dual_mean": 0.8323666666666666,
+   "linear": 0.9567,
+   "histgb": 0.9591
+  },
+  {
+   "key": "CC18|adult|clf",
+   "id": 1590,
+   "n_classes": 2,
+   "ds_mean": 0.7658666666666667,
+   "dual_mean": 0.7604000000000001,
+   "linear": 0.7897,
+   "histgb": 0.8678
+  },
+  {
+   "key": "CC18|PhishingWebsites|clf",
+   "id": 4534,
+   "n_classes": 2,
+   "ds_mean": 0.7604000000000001,
+   "dual_mean": 0.6946666666666667,
+   "linear": 0.8945,
+   "histgb": 0.9661
+  },
+  {
+   "key": "CC18|cylinder-bands|clf",
+   "id": 6332,
+   "n_classes": 2,
+   "ds_mean": 0.6872333333333334,
+   "dual_mean": 0.6164333333333333,
+   "linear": 0.6938,
+   "histgb": 0.7691
+  },
+  {
+   "key": "CC18|dresses-sales|clf",
+   "id": 23381,
+   "n_classes": 2,
+   "ds_mean": 0.5822333333333334,
+   "dual_mean": 0.5781999999999999,
+   "linear": 0.5547,
+   "histgb": 0.5707
+  },
+  {
+   "key": "CC18|numerai28.6|clf",
+   "id": 23517,
+   "n_classes": 2,
+   "ds_mean": 0.5126,
+   "dual_mean": 0.5026,
+   "linear": 0.5234,
+   "histgb": 0.5384
+  },
+  {
+   "key": "CC18|wilt|clf",
+   "id": 40983,
+   "n_classes": 2,
+   "ds_mean": 0.9414000000000001,
+   "dual_mean": 0.9414000000000001,
+   "linear": 0.9694,
+   "histgb": 0.9792
+  },
+  {
+   "key": "CC18|climate-model-simulation-crashes|clf",
+   "id": 40994,
+   "n_classes": 2,
+   "ds_mean": 0.9148,
+   "dual_mean": 0.9148,
+   "linear": 0.9235,
+   "histgb": 0.9395
+  },
+  {
+   "key": "Grinsztajn|credit|clf",
+   "id": 44089,
+   "n_classes": 2,
+   "ds_mean": 0.5566333333333334,
+   "dual_mean": 0.5104000000000001,
+   "linear": 0.7181,
+   "histgb": 0.7819
+  },
+  {
+   "key": "Grinsztajn|electricity|clf",
+   "id": 44156,
+   "n_classes": 2,
+   "ds_mean": 0.6699,
+   "dual_mean": 0.6482,
+   "linear": 0.7402,
+   "histgb": 0.8685
+  },
+  {
+   "key": "Grinsztajn|MagicTelescope|clf",
+   "id": 44125,
+   "n_classes": 2,
+   "ds_mean": 0.7757999999999999,
+   "dual_mean": 0.6745000000000001,
+   "linear": 0.7702,
+   "histgb": 0.8574
+  },
+  {
+   "key": "Grinsztajn|MiniBooNE|clf",
+   "id": 44128,
+   "n_classes": 2,
+   "ds_mean": 0.7040000000000001,
+   "dual_mean": 0.6196,
+   "linear": 0.8939,
+   "histgb": 0.9401
+  },
+  {
+   "key": "Grinsztajn|eye_movements|clf",
+   "id": 44157,
+   "n_classes": 2,
+   "ds_mean": 0.5091,
+   "dual_mean": 0.5275666666666666,
+   "linear": 0.5456,
+   "histgb": 0.6289
+  },
+  {
+   "key": "Grinsztajn|Bioresponse|clf",
+   "id": 45019,
+   "n_classes": 2,
+   "ds_mean": 0.6256666666666666,
+   "dual_mean": 0.6004333333333333,
+   "linear": 0.6927,
+   "histgb": 0.752
+  },
+  {
+   "key": "Grinsztajn|default-of-credit-card-clients|clf",
+   "id": 45036,
+   "n_classes": 2,
+   "ds_mean": 0.6547,
+   "dual_mean": 0.5861666666666666,
+   "linear": 0.6829,
+   "histgb": 0.7337
+  },
+  {
+   "key": "Grinsztajn|jannis|clf",
+   "id": 45021,
+   "n_classes": 2,
+   "ds_mean": 0.6417,
+   "dual_mean": 0.5687666666666668,
+   "linear": 0.7454,
+   "histgb": 0.8001
+  },
+  {
+   "key": "Grinsztajn|california|clf",
+   "id": 45028,
+   "n_classes": 2,
+   "ds_mean": 0.6933333333333334,
+   "dual_mean": 0.6573333333333333,
+   "linear": 0.8385,
+   "histgb": 0.8939
+  },
+  {
+   "key": "Grinsztajn|albert|clf",
+   "id": 45035,
+   "n_classes": 2,
+   "ds_mean": 0.5427333333333334,
+   "dual_mean": 0.5258333333333334,
+   "linear": 0.6341,
+   "histgb": 0.6491
+  },
+  {
+   "key": "Grinsztajn|road-safety|clf",
+   "id": 45038,
+   "n_classes": 2,
+   "ds_mean": 0.5406,
+   "dual_mean": 0.49520000000000003,
+   "linear": 0.5853,
+   "histgb": 0.7773
+  },
+  {
+   "key": "Grinsztajn|compas-two-years|clf",
+   "id": 45039,
+   "n_classes": 2,
+   "ds_mean": 0.5961666666666666,
+   "dual_mean": 0.5597,
+   "linear": 0.6836,
+   "histgb": 0.6536
+  },
+  {
+   "key": "TabArena|Amazon_employee_access|clf",
+   "id": 46905,
+   "n_classes": 2,
+   "ds_mean": 0.9479000000000001,
+   "dual_mean": 0.9479000000000001,
+   "linear": 0.9479,
+   "histgb": 0.9512
+  },
+  {
+   "key": "TabArena|APSFailure|clf",
+   "id": 46908,
+   "n_classes": 2,
+   "ds_mean": 0.9818000000000001,
+   "dual_mean": 0.9818000000000001,
+   "linear": 0.9772,
+   "histgb": 0.9922
+  },
+  {
+   "key": "TabArena|bank-marketing|clf",
+   "id": 46910,
+   "n_classes": 2,
+   "ds_mean": 0.8835000000000001,
+   "dual_mean": 0.8835000000000001,
+   "linear": 0.8919,
+   "histgb": 0.8939
+  },
+  {
+   "key": "TabArena|Bank_Customer_Churn|clf",
+   "id": 46911,
+   "n_classes": 2,
+   "ds_mean": 0.7942999999999999,
+   "dual_mean": 0.7878,
+   "linear": 0.806,
+   "histgb": 0.8477
+  },
+  {
+   "key": "TabArena|blood-transfusion-service-center|clf",
+   "id": 46913,
+   "n_classes": 2,
+   "ds_mean": 0.762,
+   "dual_mean": 0.7608333333333333,
+   "linear": 0.7736,
+   "histgb": 0.7496
+  },
+  {
+   "key": "TabArena|churn|clf",
+   "id": 46915,
+   "n_classes": 2,
+   "ds_mean": 0.8786666666666667,
+   "dual_mean": 0.8659,
+   "linear": 0.8802,
+   "histgb": 0.9668
+  },
+  {
+   "key": "TabArena|coil2000_insurance_policies|clf",
+   "id": 46916,
+   "n_classes": 2,
+   "ds_mean": 0.9447,
+   "dual_mean": 0.9447,
+   "linear": 0.944,
+   "histgb": 0.9362
+  },
+  {
+   "key": "TabArena|credit-g|clf",
+   "id": 46918,
+   "n_classes": 2,
+   "ds_mean": 0.6993333333333333,
+   "dual_mean": 0.6999999999999998,
+   "linear": 0.7233,
+   "histgb": 0.74
+  },
+  {
+   "key": "TabArena|credit_card_clients_default|clf",
+   "id": 46919,
+   "n_classes": 2,
+   "ds_mean": 0.8022999999999999,
+   "dual_mean": 0.7756,
+   "linear": 0.8092,
+   "histgb": 0.8229
+  },
+  {
+   "key": "TabArena|customer_satisfaction_in_airline|clf",
+   "id": 46920,
+   "n_classes": 2,
+   "ds_mean": 0.6974999999999999,
+   "dual_mean": 0.574,
+   "linear": 0.7533,
+   "histgb": 0.9551
+  },
+  {
+   "key": "TabArena|diabetes|clf",
+   "id": 46921,
+   "n_classes": 2,
+   "ds_mean": 0.7158666666666665,
+   "dual_mean": 0.6851666666666666,
+   "linear": 0.7665,
+   "histgb": 0.7214
+  },
+  {
+   "key": "TabArena|Diabetes130US|clf",
+   "id": 46922,
+   "n_classes": 2,
+   "ds_mean": 0.903,
+   "dual_mean": 0.903,
+   "linear": 0.9023,
+   "histgb": 0.903
+  },
+  {
+   "key": "TabArena|E-CommereShippingData|clf",
+   "id": 46924,
+   "n_classes": 2,
+   "ds_mean": 0.6245666666666666,
+   "dual_mean": 0.6176,
+   "linear": 0.6491,
+   "histgb": 0.6595
+  },
+  {
+   "key": "TabArena|Fitness_Club|clf",
+   "id": 46927,
+   "n_classes": 2,
+   "ds_mean": 0.7205,
+   "dual_mean": 0.6994666666666666,
+   "linear": 0.7715,
+   "histgb": 0.7461
+  },
+  {
+   "key": "TabArena|GiveMeSomeCredit|clf",
+   "id": 46929,
+   "n_classes": 2,
+   "ds_mean": 0.9338000000000001,
+   "dual_mean": 0.9335999999999999,
+   "linear": 0.9382,
+   "histgb": 0.9427
+  },
+  {
+   "key": "TabArena|hazelnut-spread-contaminant-detection|clf",
+   "id": 46930,
+   "n_classes": 2,
+   "ds_mean": 0.7604333333333333,
+   "dual_mean": 0.6389,
+   "linear": 0.7044,
+   "histgb": 0.9108
+  },
+  {
+   "key": "TabArena|heloc|clf",
+   "id": 46932,
+   "n_classes": 2,
+   "ds_mean": 0.6063333333333333,
+   "dual_mean": 0.5061,
+   "linear": 0.709,
+   "histgb": 0.7161
+  },
+  {
+   "key": "TabArena|HR_Analytics_Job_Change_of_Data_Scientists|clf",
+   "id": 46935,
+   "n_classes": 2,
+   "ds_mean": 0.7695333333333334,
+   "dual_mean": 0.7487,
+   "linear": 0.7565,
+   "histgb": 0.7819
+  },
+  {
+   "key": "TabArena|in_vehicle_coupon_recommendation|clf",
+   "id": 46937,
+   "n_classes": 2,
+   "ds_mean": 0.5866,
+   "dual_mean": 0.5698666666666666,
+   "linear": 0.6439,
+   "histgb": 0.7591
+  },
+  {
+   "key": "TabArena|Is-this-a-good-customer|clf",
+   "id": 46938,
+   "n_classes": 2,
+   "ds_mean": 0.8926,
+   "dual_mean": 0.8926,
+   "linear": 0.8913,
+   "histgb": 0.8776
+  },
+  {
+   "key": "TabArena|kddcup09_appetency|clf",
+   "id": 46939,
+   "n_classes": 2,
+   "ds_mean": 0.9818000000000001,
+   "dual_mean": 0.9818000000000001,
+   "linear": 0.9818,
+   "histgb": 0.9805
+  },
+  {
+   "key": "TabArena|Marketing_Campaign|clf",
+   "id": 46940,
+   "n_classes": 2,
+   "ds_mean": 0.8548333333333334,
+   "dual_mean": 0.8548,
+   "linear": 0.8626,
+   "histgb": 0.8763
+  },
+  {
+   "key": "TabArena|online_shoppers_intention|clf",
+   "id": 46947,
+   "n_classes": 2,
+   "ds_mean": 0.8535333333333334,
+   "dual_mean": 0.8489999999999999,
+   "linear": 0.8926,
+   "histgb": 0.9102
+  },
+  {
+   "key": "TabArena|polish_companies_bankruptcy|clf",
+   "id": 46950,
+   "n_classes": 2,
+   "ds_mean": 0.9392333333333333,
+   "dual_mean": 0.9375,
+   "linear": 0.9375,
+   "histgb": 0.957
+  },
+  {
+   "key": "TabArena|qsar-biodeg|clf",
+   "id": 46952,
+   "n_classes": 2,
+   "ds_mean": 0.7311,
+   "dual_mean": 0.6816,
+   "linear": 0.86,
+   "histgb": 0.8509
+  },
+  {
+   "key": "TabArena|seismic-bumps|clf",
+   "id": 46956,
+   "n_classes": 2,
+   "ds_mean": 0.9350666666666667,
+   "dual_mean": 0.9354999999999999,
+   "linear": 0.9342,
+   "histgb": 0.931
+  },
+  {
+   "key": "TabArena|taiwanese_bankruptcy_prediction|clf",
+   "id": 46962,
+   "n_classes": 2,
+   "ds_mean": 0.9678666666666667,
+   "dual_mean": 0.9674,
+   "linear": 0.9629,
+   "histgb": 0.9733
+  },
+  {
+   "key": "TabArena|NATICUSdroid|clf",
+   "id": 46969,
+   "n_classes": 2,
+   "ds_mean": 0.7413000000000002,
+   "dual_mean": 0.6536333333333334,
+   "linear": 0.9232,
+   "histgb": 0.931
+  },
+  {
+   "key": "TabArena|jm1|clf",
+   "id": 46979,
+   "n_classes": 2,
+   "ds_mean": 0.7944666666666667,
+   "dual_mean": 0.7979333333333333,
+   "linear": 0.7904,
+   "histgb": 0.8118
+  },
+  {
+   "key": "CC18|credit-g|clf",
+   "id": 31,
+   "n_classes": 2
+  },
+  {
+   "key": "CC18|diabetes|clf",
+   "id": 37,
+   "n_classes": 2
+  },
+  {
+   "key": "CC18|splice|clf",
+   "id": 46,
+   "n_classes": 3
+  },
+  {
+   "key": "CC18|electricity|clf",
+   "id": 151,
+   "n_classes": 2
+  },
+  {
+   "key": "CC18|jm1|clf",
+   "id": 1053,
+   "n_classes": 2
+  },
+  {
+   "key": "CC18|bank-marketing|clf",
+   "id": 1461,
+   "n_classes": 2
+  },
+  {
+   "key": "CC18|blood-transfusion-service-center|clf",
+   "id": 1464,
+   "n_classes": 2
+  },
+  {
+   "key": "CC18|qsar-biodeg|clf",
+   "id": 1494,
+   "n_classes": 2
+  },
+  {
+   "key": "CC18|churn|clf",
+   "id": 40701,
+   "n_classes": 2
+  },
+  {
+   "key": "Grinsztajn|pol|clf",
+   "id": 44122,
+   "n_classes": 2
+  },
+  {
+   "key": "Grinsztajn|house_16H|clf",
+   "id": 44123,
+   "n_classes": 2
+  },
+  {
+   "key": "Grinsztajn|bank-marketing|clf",
+   "id": 44126,
+   "n_classes": 2
+  },
+  {
+   "key": "Grinsztajn|wine_quality|clf",
+   "id": 44136,
+   "n_classes": 7
+  },
+  {
+   "key": "Grinsztajn|Diabetes130US|clf",
+   "id": 45022,
+   "n_classes": 2
+  },
+  {
+   "key": "Grinsztajn|heloc|clf",
+   "id": 45026,
+   "n_classes": 2
+  }
+ ],
+ "unresolved": [],
+ "fill_note": "eval/class_count_fill.py: all 115 entries derived or re-derived by matching the suite log's per-dataset baseline scores"
+}

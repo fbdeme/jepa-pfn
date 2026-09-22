@@ -1,0 +1,11 @@
+# Issue #19, pivot core: latent target moved from the cell to the ROW SUMMARY.
+# A cell latent is a near-invertible code of its value, so hitting it ~ hitting
+# the value - no compression, nothing to abstract. The CLS of a row that lost
+# cells has both. Matches p3b_mixed_tw2 apart from the target location.
+run_name: p6cls_lat_k1
+policy_main: mixed
+predictor: twoway-2
+n_cls: 1
+cls_target: true
+seed: 0
+steps: 20000

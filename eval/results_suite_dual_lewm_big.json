@@ -1,0 +1,340 @@
+{
+ "CC18|dresses-sales|clf": {
+  "big_ds": {
+   "acc": 0.5547,
+   "auc": 0.5566
+  },
+  "big_dual": {
+   "acc": 0.5813,
+   "auc": 0.5562
+  },
+  "big_dual_lewm_h": {
+   "acc": 0.58,
+   "auc": 0.4806
+  },
+  "big_lat_s_h": {
+   "acc": 0.58,
+   "auc": 0.4807
+  },
+  "logreg": {
+   "acc": 0.5547,
+   "auc": 0.5419
+  },
+  "histgb": {
+   "acc": 0.5707,
+   "auc": 0.5725
+  }
+ },
+ "CC18|kc2|clf": {
+  "big_ds": {
+   "acc": 0.8391,
+   "auc": 0.8435
+  },
+  "big_dual": {
+   "acc": 0.8467,
+   "auc": 0.8379
+  },
+  "big_dual_lewm_h": {
+   "acc": 0.7957,
+   "auc": 0.4606
+  },
+  "big_lat_s_h": {
+   "acc": 0.7957,
+   "auc": 0.6344
+  },
+  "logreg": {
+   "acc": 0.8314,
+   "auc": 0.8001
+  },
+  "histgb": {
+   "acc": 0.8314,
+   "auc": 0.8181
+  }
+ },
+ "CC18|cylinder-bands|clf": {
+  "big_ds": {
+   "acc": 0.7025,
+   "auc": 0.7943
+  },
+  "big_dual": {
+   "acc": 0.6914,
+   "auc": 0.7554
+  },
+  "big_dual_lewm_h": {
+   "acc": 0.5778,
+   "auc": 0.4731
+  },
+  "big_lat_s_h": {
+   "acc": 0.5778,
+   "auc": 0.4793
+  },
+  "logreg": {
+   "acc": 0.7049,
+   "auc": 0.7725
+  },
+  "histgb": {
+   "acc": 0.7778,
+   "auc": 0.8507
+  }
+ },
+ "Grinsztajn|Bioresponse|clf": {
+  "big_ds": {
+   "acc": 0.6738,
+   "auc": 0.7345
+  },
+  "big_dual": {
+   "acc": 0.6543,
+   "auc": 0.7134
+  },
+  "big_dual_lewm_h": {
+   "acc": 0.4974,
+   "auc": 0.5156
+  },
+  "big_lat_s_h": {
+   "acc": 0.4883,
+   "auc": 0.5189
+  },
+  "logreg": {
+   "acc": 0.6829,
+   "auc": 0.7536
+  },
+  "histgb": {
+   "acc": 0.7533,
+   "auc": 0.8252
+  }
+ },
+ "Grinsztajn|compas-two-years|clf": {
+  "big_ds": {
+   "acc": 0.6335,
+   "auc": 0.678
+  },
+  "big_dual": {
+   "acc": 0.6393,
+   "auc": 0.6795
+  },
+  "big_dual_lewm_h": {
+   "acc": 0.5215,
+   "auc": 0.5024
+  },
+  "big_lat_s_h": {
+   "acc": 0.4902,
+   "auc": 0.4873
+  },
+  "logreg": {
+   "acc": 0.6836,
+   "auc": 0.7327
+  },
+  "histgb": {
+   "acc": 0.6536,
+   "auc": 0.7186
+  }
+ },
+ "Grinsztajn|eye_movements|clf": {
+  "big_ds": {
+   "acc": 0.4805,
+   "auc": 0.4955
+  },
+  "big_dual": {
+   "acc": 0.5156,
+   "auc": 0.5101
+  },
+  "big_dual_lewm_h": {
+   "acc": 0.4857,
+   "auc": 0.4808
+  },
+  "big_lat_s_h": {
+   "acc": 0.4954,
+   "auc": 0.4948
+  },
+  "logreg": {
+   "acc": 0.5612,
+   "auc": 0.5816
+  },
+  "histgb": {
+   "acc": 0.6289,
+   "auc": 0.6821
+  }
+ },
+ "Grinsztajn|analcatdata_supreme|clf": {
+  "big_ds": {
+   "acc": 0.8672,
+   "auc": 0.9849
+  },
+  "big_dual": {
+   "acc": 0.7702,
+   "auc": 0.9603
+  },
+  "big_dual_lewm_h": {
+   "acc": 0.6764,
+   "auc": 0.549
+  },
+  "big_lat_s_h": {
+   "acc": 0.6764,
+   "auc": 0.5233
+  },
+  "logreg": {
+   "acc": 0.6764,
+   "auc": 0.6204
+  },
+  "histgb": {
+   "acc": 0.974,
+   "auc": 0.9955
+  }
+ },
+ "Grinsztajn|abalone|reg": {
+  "big_ds": {
+   "r2": 0.4653,
+   "rmse": 2.2448
+  },
+  "big_dual": {
+   "r2": 0.4085,
+   "rmse": 2.3614
+  },
+  "big_dual_lewm_h": {
+   "r2": -0.0146,
+   "rmse": 3.0901
+  },
+  "big_lat_s_h": {
+   "r2": -0.0259,
+   "rmse": 3.1063
+  },
+  "ridge": {
+   "r2": 0.4837,
+   "rmse": 2.203
+  },
+  "histgbr": {
+   "r2": 0.4754,
+   "rmse": 2.2233
+  }
+ },
+ "TabArena|blood-transfusion-service-center|clf": {
+  "big_ds": {
+   "acc": 0.7647,
+   "auc": 0.7351
+  },
+  "big_dual": {
+   "acc": 0.7683,
+   "auc": 0.7337
+  },
+  "big_dual_lewm_h": {
+   "acc": 0.762,
+   "auc": 0.5041
+  },
+  "big_lat_s_h": {
+   "acc": 0.762,
+   "auc": 0.5017
+  },
+  "logreg": {
+   "acc": 0.7736,
+   "auc": 0.7647
+  },
+  "histgb": {
+   "acc": 0.7496,
+   "auc": 0.7078
+  }
+ },
+ "TabArena|diabetes|clf": {
+  "big_ds": {
+   "acc": 0.7439,
+   "auc": 0.8018
+  },
+  "big_dual": {
+   "acc": 0.6901,
+   "auc": 0.746
+  },
+  "big_dual_lewm_h": {
+   "acc": 0.651,
+   "auc": 0.3676
+  },
+  "big_lat_s_h": {
+   "acc": 0.651,
+   "auc": 0.599
+  },
+  "logreg": {
+   "acc": 0.7665,
+   "auc": 0.8247
+  },
+  "histgb": {
+   "acc": 0.7214,
+   "auc": 0.7868
+  }
+ },
+ "TabArena|anneal|clf": {
+  "big_ds": {
+   "acc": 0.9681,
+   "auc": 0.8986
+  },
+  "big_dual": {
+   "acc": 0.9547,
+   "auc": 0.8962
+  },
+  "big_dual_lewm_h": {
+   "acc": 0.7617,
+   "auc": 0.5152
+  },
+  "big_lat_s_h": {
+   "acc": 0.7617,
+   "auc": 0.517
+  },
+  "logreg": {
+   "acc": 0.931,
+   "auc": 0.9837
+  },
+  "histgb": {
+   "acc": 0.9792,
+   "auc": 0.9675
+  }
+ },
+ "TabArena|QSAR_fish_toxicity|reg": {
+  "big_ds": {
+   "r2": 0.5552,
+   "rmse": 0.9644
+  },
+  "big_dual": {
+   "r2": 0.5431,
+   "rmse": 0.9778
+  },
+  "big_dual_lewm_h": {
+   "r2": -0.0063,
+   "rmse": 1.4512
+  },
+  "big_lat_s_h": {
+   "r2": -0.0137,
+   "rmse": 1.4565
+  },
+  "ridge": {
+   "r2": 0.5549,
+   "rmse": 0.9651
+  },
+  "histgbr": {
+   "r2": 0.5852,
+   "rmse": 0.9314
+  }
+ },
+ "TabArena|concrete_compressive_strength|reg": {
+  "big_ds": {
+   "r2": 0.7113,
+   "rmse": 8.9503
+  },
+  "big_dual": {
+   "r2": 0.5262,
+   "rmse": 11.4562
+  },
+  "big_dual_lewm_h": {
+   "r2": -0.0061,
+   "rmse": 16.7553
+  },
+  "big_lat_s_h": {
+   "r2": -0.0108,
+   "rmse": 16.7935
+  },
+  "ridge": {
+   "r2": 0.5709,
+   "rmse": 10.9106
+  },
+  "histgbr": {
+   "r2": 0.8939,
+   "rmse": 5.4311
+  }
+ }
+}

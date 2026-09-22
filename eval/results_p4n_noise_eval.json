@@ -1,0 +1,134 @@
+{
+ "records": [
+  {
+   "kind": "ds",
+   "noise_scale": 1,
+   "nuisance": 0.0125,
+   "edge_auc": 0.5801,
+   "fam_acc": 0.6042,
+   "fam_majority": 0.3285,
+   "mse_f": 0.1362
+  },
+  {
+   "kind": "lat",
+   "noise_scale": 1,
+   "nuisance": 0.0125,
+   "edge_auc": 0.541,
+   "fam_acc": 0.4696,
+   "fam_majority": 0.3285,
+   "mse_f": 0.1412
+  },
+  {
+   "kind": "ds",
+   "noise_scale": 2,
+   "nuisance": 0.0452,
+   "edge_auc": 0.5719,
+   "fam_acc": 0.56,
+   "fam_majority": 0.3314,
+   "mse_f": 0.1284
+  },
+  {
+   "kind": "lat",
+   "noise_scale": 2,
+   "nuisance": 0.0452,
+   "edge_auc": 0.5386,
+   "fam_acc": 0.4486,
+   "fam_majority": 0.3314,
+   "mse_f": 0.1741
+  },
+  {
+   "kind": "ds",
+   "noise_scale": 4,
+   "nuisance": 0.1304,
+   "edge_auc": 0.5689,
+   "fam_acc": 0.5493,
+   "fam_majority": 0.382,
+   "mse_f": 0.1667
+  },
+  {
+   "kind": "lat",
+   "noise_scale": 4,
+   "nuisance": 0.1304,
+   "edge_auc": 0.5545,
+   "fam_acc": 0.382,
+   "fam_majority": 0.382,
+   "mse_f": 0.1789
+  },
+  {
+   "kind": "ds",
+   "noise_scale": 8,
+   "nuisance": 0.2814,
+   "edge_auc": 0.5467,
+   "fam_acc": 0.4889,
+   "fam_majority": 0.3577,
+   "mse_f": 0.2396
+  },
+  {
+   "kind": "lat",
+   "noise_scale": 8,
+   "nuisance": 0.2814,
+   "edge_auc": 0.5295,
+   "fam_acc": 0.3762,
+   "fam_majority": 0.3577,
+   "mse_f": 0.2821
+  },
+  {
+   "kind": "ds",
+   "noise_scale": 16,
+   "nuisance": 0.462,
+   "edge_auc": 0.5611,
+   "fam_acc": 0.4035,
+   "fam_majority": 0.3386,
+   "mse_f": 0.2257
+  },
+  {
+   "kind": "lat",
+   "noise_scale": 16,
+   "nuisance": 0.462,
+   "edge_auc": 0.5205,
+   "fam_acc": 0.3209,
+   "fam_majority": 0.3386,
+   "mse_f": 0.3218
+  }
+ ],
+ "gaps": [
+  {
+   "noise_scale": 1,
+   "nuisance": 0.0125,
+   "edge_gap_ds_minus_lat": 0.0391,
+   "mse_f_gap_lat_minus_ds": 0.005
+  },
+  {
+   "noise_scale": 2,
+   "nuisance": 0.0452,
+   "edge_gap_ds_minus_lat": 0.0333,
+   "mse_f_gap_lat_minus_ds": 0.0457
+  },
+  {
+   "noise_scale": 4,
+   "nuisance": 0.1304,
+   "edge_gap_ds_minus_lat": 0.0144,
+   "mse_f_gap_lat_minus_ds": 0.0122
+  },
+  {
+   "noise_scale": 8,
+   "nuisance": 0.2814,
+   "edge_gap_ds_minus_lat": 0.0172,
+   "mse_f_gap_lat_minus_ds": 0.0425
+  },
+  {
+   "noise_scale": 16,
+   "nuisance": 0.462,
+   "edge_gap_ds_minus_lat": 0.0406,
+   "mse_f_gap_lat_minus_ds": 0.0961
+  }
+ ],
+ "nuisance": {
+  "1": 0.0125,
+  "2": 0.0452,
+  "4": 0.1304,
+  "8": 0.2814,
+  "16": 0.462
+ },
+ "caveat": "p4n_lat = EMA single-cell latent, narrow regime, no rope/CLS (weak latent)"
+}

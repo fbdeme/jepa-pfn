@@ -1,0 +1,18 @@
+# Issue #23 T1b: free-running consumption training, DATA-SPACE control (temporal_design S12.5).
+# Same rollout consumption as t1b_dual; only the base objective differs (dataspace CE vs JEPA
+# latent). Paired dual-ds tests whether the latent objective makes free-running consumption
+# pay off (latent_rollout < value_rollout, growing with L). base: routes to train_t1.
+run_name: t1b_ds
+base: dataspace
+consume_mode: rollout
+ss_anneal_frac: 0.5
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 12000
+batch_size: 8
+consume_weight: 1.0
+prior:
+  temporal: [3, 6]
+  temporal_squash: true
+  p_missing_table: 0.0

@@ -1,0 +1,14 @@
+{
+ "p3_jepa|10": 1.2438,
+ "random_init|10": 1.3843,
+ "p2_anycell_direct|10": 0.9657,
+ "p3_jepa|25": 0.9822,
+ "random_init|25": 1.1028,
+ "p2_anycell_direct|25": 0.5167,
+ "p3_jepa|50": 0.8887,
+ "random_init|50": 1.0338,
+ "p2_anycell_direct|50": 0.4281,
+ "p3_jepa|100": 0.8657,
+ "random_init|100": 1.0032,
+ "p2_anycell_direct|100": 0.3802
+}

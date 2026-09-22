@@ -1,0 +1,22 @@
+# #2 base FM: DATA-SPACE arm. Scaled p6rc_ds (rope+CLS, any_cell CE).
+# Matched to base_dual on EVERY hyperparameter except the objective -> isolates
+# whether a bigger, wide-D, long-context model closes the gap to full-data
+# baselines, and whether latent still <= data-space at scale.
+run_name: base_ds
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 20000
+batch_size: 8          # R up to 1024 is memory-heavy; drop to 4 if the box OOMs
+lr: 0.001
+emb: 256
+heads: 8               # dh=32 (rope needs emb/heads even)
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows: [128, 384]   # train context <=512 (row-attn is O(R^2) mem; 24GB caps it).
+                       # row attention is set-based (order-free) -> eval extrapolates
+                       # to 1024-shot on CPU (forward-only, memory is free there).
+  n_cols: [4, 32]      # wide D: eval without the 8-feature crop on most datasets

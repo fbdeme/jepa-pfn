@@ -1,0 +1,18 @@
+# Issue #23 PO-2: matched DATA-SPACE control (= t1b_ds + one hidden variable). Same free-running
+# rollout consumption + partial-obs prior; only the base objective differs. Paired dual-ds tests
+# whether the latent objective makes the predicted latent rollout pay off under partial observability.
+run_name: po2_ds
+base: dataspace
+consume_mode: rollout
+ss_anneal_frac: 0.5
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 12000
+batch_size: 8
+consume_weight: 1.0
+prior:
+  temporal: [3, 6]
+  temporal_squash: true
+  temporal_hidden: [1, 1]
+  p_missing_table: 0.0

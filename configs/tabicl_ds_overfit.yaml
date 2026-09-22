@@ -1,0 +1,22 @@
+# DIAGNOSTIC: can our ds model + pipeline learn TabICL mechanisms AT ALL? Train on only ~32
+# learnable tables at R=1024, high lr -- if train loss craters, the pipeline is sound and the
+# full-pool flatness is genuine in-context difficulty (below-frontier). If it stays flat, there
+# is a pipeline bug to fix. NOT a real run.
+run_name: tabicl_ds_overfit
+dump_path: data/tabicl_overfit32.h5
+feat: 10
+policy: y_last
+seed: 0
+steps: 500
+batch_size: 12
+lr: 0.004
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+n_cls: 4
+r_scheme: rope
+log_every: 25
+val_every: 100
+val_batches: 4

@@ -1,0 +1,53 @@
+# Tabular-JEPA v3 ablation: prior engine generation (TabICL v1 mix_scm instead of v2 graph_scm), same ranges and flags.
+batch_size: 4
+cls_target: false
+ctx_only: true
+curriculum_frac: 0.2
+diff_target: true
+dump_path: ''
+ema: 0.996
+emb: 256
+feat: 5
+head_on_pred: true
+heads: 8
+lambda_jepa: 1.0
+lambda_ppd: 1.0
+lambda_sig: 0.05
+layers: 6
+log_every: 25
+lr: 0.0005
+mlp: 1024
+mode: ema
+n_bins: 32
+n_classes: 0
+n_cls: 4
+n_reg_tokens: 0
+policy_main: mixed
+predictor: twoway-4
+prior:
+  filter_graphs: true
+  filter_unpredictable: true
+  max_cells: 65536
+  max_classes: 10
+  max_features: 100
+  min_features: 1
+  n_rows:
+  - 128
+  - 1024
+  p_cls: 0.7
+  p_missing_table: 0.3
+  prefetch: 8
+  prior_type: mix_scm
+  task: mixed
+  workers: 3
+prior_source: tabicl
+r_invariant: false
+r_scheme: rope
+run_name: TabularJEPA_v3_tabicl1_s0
+seed: 0
+shuffle_target: false
+sig_proj: 128
+steps: 20000
+val_batches: 16
+val_every: 250
+val_policy: any_cell

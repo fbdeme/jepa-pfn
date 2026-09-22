@@ -1,0 +1,8 @@
+# Issue #18: latent arm at elevated prior noise (noise_scale=8).
+# Matches p3b_mixed_tw2 apart from the prior. Pairs with p4n_ds_s8.
+run_name: p4n_lat_s8
+policy_main: mixed
+predictor: twoway-2
+seed: 0
+steps: 20000
+prior: {noise_scale: 8.0}

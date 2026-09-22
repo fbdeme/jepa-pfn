@@ -1,0 +1,24 @@
+# #2-final scale-up: PURE-LATENT arm, SIGReg anti-collapse (emb512 L8, ~35M).
+# Scaled base_lat_s. lambda_sig 0.25 (base's ema-mode latent collapsed at 6.6M;
+# expect collapse pressure to be no weaker at 35M -> keep the working sigreg 0.25).
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.0
+mode: sigreg
+lambda_sig: 0.4        # #24 TUNED: sweep {0.25,0.4,0.6} at batch2 -> 0.4 best (erank 9->33 rising, no collapse). Last session's "0.25 collapse" was batch1-only; batch2 fixes it. No hang on healthy box.
+run_name: big_lat_s
+seed: 0
+steps: 40000          # over-provision; mid-ckpt saves latest -> stop at val plateau
+batch_size: 2          # #24 TUNED: matched to ds/dual; sigreg 2x-mem = 40GB fits 48GB
+lr: 0.0002           # #24 TUNED: matched to lr* 2e-4
+emb: 512
+heads: 16
+mlp: 2048
+layers: 8
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]

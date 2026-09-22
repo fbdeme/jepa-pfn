@@ -1,0 +1,25 @@
+# #2 base FM: PURE-LATENT arm (JEPA, no data-space CE -> random-init head).
+# Same as base_dual but lambda_ppd=0: the value head never gets a gradient, so its
+# downstream score IS the measurement (like pilot p6rc_lat). Completes the ds/dual/lat
+# triple at scale and is the clean-science target for the mechanism-recovery probe.
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.0        # pure latent: no value-head training
+mode: sigreg           # EMA-free anti-collapse (LeWM/LeJEPA, Issue #8). ema-mode
+lambda_sig: 0.1        #   collapsed at 6.6M (erank->1); SIGReg prevents it.
+run_name: base_lat
+seed: 0
+steps: 20000
+batch_size: 4
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]

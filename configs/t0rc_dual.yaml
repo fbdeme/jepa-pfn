@@ -1,0 +1,16 @@
+# Issue #23 T0: the confirmed rope+CLS DUAL arm (= p6rc_dual) on the TEMPORAL prior
+# (time-unrolled DBN, V=3 T=6). STANDARD objective, not autoregressive (that is T1).
+# Question: does the temporal prior reproduce the #22 foothold (nan-jeom B + compounding)?
+run_name: t0rc_dual
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+seed: 0
+steps: 20000
+batch_size: 16          # 8GB box: two arms concurrent (p6rc used 32; paired dual-vs-ds unaffected)
+lambda_ppd: 0.1
+prior:
+  temporal: [3, 6]        # V state vars x (T+1) slices, weight-shared transition
+  p_missing_table: 0.0    # clean pilot: no MCAR dropout (n_hidden=0 by construction)

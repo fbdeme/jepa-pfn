@@ -1,0 +1,393 @@
+{
+ "metric": "val_mse -- held-out value MSE; targets are unit variance, so 1.0 is the score of predicting the mean",
+ "arm": "c4_factor_ds (data-space) on the shared-factor substrate at sigma=1.0",
+ "note": "reported per intrinsic rank K; if the failure were about compressibility it would ease at high K, where the target is least compressible",
+ "missing_runs": [],
+ "by_k": {
+  "1": {
+   "n_runs": 4,
+   "val_mse_first_mean": 1.0231,
+   "val_mse_last_mean": 0.8126,
+   "val_mse_best_mean": 0.5803,
+   "improvement_mean": 0.2104,
+   "runs": [
+    {
+     "run": "c4_factor_ds_K1_s0",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 0.9969,
+     "val_mse_last": 0.6056,
+     "val_mse_best": 0.5676,
+     "best_step": 17000,
+     "learned": true,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K1_s1",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0247,
+     "val_mse_last": 1.0249,
+     "val_mse_best": 0.5804,
+     "best_step": 4750,
+     "learned": true,
+     "diverged": true
+    },
+    {
+     "run": "c4_factor_ds_K1_s2",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0398,
+     "val_mse_last": 1.0399,
+     "val_mse_best": 0.5963,
+     "best_step": 3250,
+     "learned": true,
+     "diverged": true
+    },
+    {
+     "run": "c4_factor_ds_K1_s3",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0308,
+     "val_mse_last": 0.5801,
+     "val_mse_best": 0.5767,
+     "best_step": 6250,
+     "learned": true,
+     "diverged": false
+    }
+   ]
+  },
+  "2": {
+   "n_runs": 4,
+   "val_mse_first_mean": 1.0367,
+   "val_mse_last_mean": 1.0367,
+   "val_mse_best_mean": 1.0366,
+   "improvement_mean": 0.0,
+   "runs": [
+    {
+     "run": "c4_factor_ds_K2_s0",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0244,
+     "val_mse_last": 1.0244,
+     "val_mse_best": 1.0243,
+     "best_step": 1250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K2_s1",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0477,
+     "val_mse_last": 1.0477,
+     "val_mse_best": 1.0476,
+     "best_step": 750,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K2_s2",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0318,
+     "val_mse_last": 1.0317,
+     "val_mse_best": 1.0317,
+     "best_step": 750,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K2_s3",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0429,
+     "val_mse_last": 1.0429,
+     "val_mse_best": 1.0428,
+     "best_step": 2750,
+     "learned": false,
+     "diverged": false
+    }
+   ]
+  },
+  "4": {
+   "n_runs": 4,
+   "val_mse_first_mean": 1.0366,
+   "val_mse_last_mean": 1.0366,
+   "val_mse_best_mean": 1.0365,
+   "improvement_mean": 0.0,
+   "runs": [
+    {
+     "run": "c4_factor_ds_s0",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0288,
+     "val_mse_last": 1.0288,
+     "val_mse_best": 1.0287,
+     "best_step": 500,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_s1",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0488,
+     "val_mse_last": 1.0488,
+     "val_mse_best": 1.0488,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_s2",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0563,
+     "val_mse_last": 1.0563,
+     "val_mse_best": 1.0562,
+     "best_step": 1000,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_s3",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0123,
+     "val_mse_last": 1.0123,
+     "val_mse_best": 1.0123,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    }
+   ]
+  },
+  "6": {
+   "n_runs": 4,
+   "val_mse_first_mean": 1.0402,
+   "val_mse_last_mean": 1.0401,
+   "val_mse_best_mean": 1.0401,
+   "improvement_mean": 0.0,
+   "runs": [
+    {
+     "run": "c4_factor_ds_K6_s0",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0456,
+     "val_mse_last": 1.0456,
+     "val_mse_best": 1.0456,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K6_s1",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0391,
+     "val_mse_last": 1.0391,
+     "val_mse_best": 1.0391,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K6_s2",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0425,
+     "val_mse_last": 1.0424,
+     "val_mse_best": 1.0424,
+     "best_step": 500,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K6_s3",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0334,
+     "val_mse_last": 1.0334,
+     "val_mse_best": 1.0334,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    }
+   ]
+  },
+  "8": {
+   "n_runs": 4,
+   "val_mse_first_mean": 1.0263,
+   "val_mse_last_mean": 1.0262,
+   "val_mse_best_mean": 1.0262,
+   "improvement_mean": 0.0,
+   "runs": [
+    {
+     "run": "c4_factor_ds_K8_s0",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0234,
+     "val_mse_last": 1.0234,
+     "val_mse_best": 1.0234,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K8_s1",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0049,
+     "val_mse_last": 1.0048,
+     "val_mse_best": 1.0048,
+     "best_step": 750,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K8_s2",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0335,
+     "val_mse_last": 1.0335,
+     "val_mse_best": 1.0335,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K8_s3",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0432,
+     "val_mse_last": 1.0432,
+     "val_mse_best": 1.0432,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    }
+   ]
+  },
+  "12": {
+   "n_runs": 4,
+   "val_mse_first_mean": 1.0294,
+   "val_mse_last_mean": 1.0295,
+   "val_mse_best_mean": 1.0294,
+   "improvement_mean": -0.0,
+   "runs": [
+    {
+     "run": "c4_factor_ds_K12_s0",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0399,
+     "val_mse_last": 1.0399,
+     "val_mse_best": 1.0399,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K12_s1",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0132,
+     "val_mse_last": 1.0133,
+     "val_mse_best": 1.0132,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K12_s2",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0326,
+     "val_mse_last": 1.0326,
+     "val_mse_best": 1.0326,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K12_s3",
+     "n_val": 80,
+     "first_step": 250,
+     "last_step": 20000,
+     "val_mse_first": 1.0321,
+     "val_mse_last": 1.0321,
+     "val_mse_best": 1.0321,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    }
+   ]
+  }
+ },
+ "summary": {
+  "k_values": [
+   1,
+   2,
+   4,
+   6,
+   8,
+   12
+  ],
+  "improvement_range": [
+   0.0,
+   0.2104
+  ],
+  "val_mse_last_range": [
+   0.8126,
+   1.0401
+  ],
+  "max_abs_improvement": 0.2104,
+  "eases_at_high_k": false,
+  "learning_tolerance": 0.001,
+  "n_runs": 24,
+  "n_no_learning": 22,
+  "learned_runs": [
+   "c4_factor_ds_K1_s0",
+   "c4_factor_ds_K1_s3"
+  ],
+  "learned_k_values": [
+   1
+  ],
+  "n_ever_learned": 4,
+  "n_learned_then_diverged": 2,
+  "ever_learned_k_values": [
+   1
+  ],
+  "diverged_runs": [
+   "c4_factor_ds_K1_s1",
+   "c4_factor_ds_K1_s2"
+  ],
+  "best_step_range": [
+   3250,
+   17000
+  ]
+ }
+}

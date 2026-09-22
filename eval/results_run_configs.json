@@ -1,0 +1,948 @@
+{
+ "base": {
+  "label": "base scale (headline, 5 seeds)",
+  "arms": {
+   "ds": {
+    "runs": [
+     "base_ds_s0",
+     "base_ds_s1",
+     "base_ds_s2",
+     "base_ds_s3",
+     "base_ds_s4"
+    ],
+    "n_runs": 5,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "any_cell",
+    "params_encoder": 6618400,
+    "params_trainable": 6618400,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "n_cls": 4,
+    "differs_from_ds": []
+   },
+   "dual": {
+    "runs": [
+     "base_dual_s0",
+     "base_dual_s1",
+     "base_dual_s2",
+     "base_dual_s3",
+     "base_dual_s4"
+    ],
+    "n_runs": 5,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 8791072,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "ema",
+    "lambda_ppd": 0.1,
+    "lambda_sig": 0.05,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking"
+    ]
+   },
+   "lat (SIGReg)": {
+    "runs": [
+     "base_lat_s_s0",
+     "base_lat_s_s1",
+     "base_lat_s_s2",
+     "base_lat_s_s3",
+     "base_lat_s_s4"
+    ],
+    "n_runs": 5,
+    "source": "run",
+    "batch_size": 4,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 9316640,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "sigreg",
+    "lambda_ppd": 0.0,
+    "lambda_sig": 0.25,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "batch_size",
+     "masking"
+    ]
+   },
+   "EMA, no head": {
+    "runs": [
+     "base_ema_nohead_s0",
+     "base_ema_nohead_s1",
+     "base_ema_nohead_s2",
+     "base_ema_nohead_s3",
+     "base_ema_nohead_s4"
+    ],
+    "n_runs": 5,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 8791072,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "ema",
+    "lambda_ppd": 0.0,
+    "lambda_sig": 0.05,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking"
+    ]
+   },
+   "dual+LeWM": {
+    "runs": [
+     "base_dual_lewm"
+    ],
+    "n_runs": 1,
+    "source": "run",
+    "batch_size": 4,
+    "lr": 0.0005,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 9316640,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "sigreg",
+    "lambda_ppd": 0.1,
+    "lambda_sig": 0.4,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "batch_size",
+     "lr",
+     "masking"
+    ]
+   }
+  }
+ },
+ "big": {
+  "label": "$35$M scale-up",
+  "arms": {
+   "ds": {
+    "runs": [
+     "big_ds"
+    ],
+    "n_runs": 1,
+    "source": "run",
+    "batch_size": 2,
+    "lr": 0.0002,
+    "steps": 40000,
+    "masking": "any_cell",
+    "params_encoder": 34752032,
+    "params_trainable": 34752032,
+    "last_step_min": 40000,
+    "last_step_max": 40000,
+    "r_scheme": "rope",
+    "n_cls": 4,
+    "differs_from_ds": []
+   },
+   "dual": {
+    "runs": [
+     "big_dual"
+    ],
+    "n_runs": 1,
+    "source": "run",
+    "batch_size": 2,
+    "lr": 0.0002,
+    "steps": 40000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 34752032,
+    "params_trainable": 43422752,
+    "last_step_min": 40000,
+    "last_step_max": 40000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "ema",
+    "lambda_ppd": 0.5,
+    "lambda_sig": 0.05,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking"
+    ]
+   },
+   "lat (SIGReg)": {
+    "runs": [
+     "big_lat_s"
+    ],
+    "n_runs": 1,
+    "source": "run",
+    "batch_size": 2,
+    "lr": 0.0002,
+    "steps": 40000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 34752032,
+    "params_trainable": 45522464,
+    "last_step_min": 40000,
+    "last_step_max": 40000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "sigreg",
+    "lambda_ppd": 0.0,
+    "lambda_sig": 0.4,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking"
+    ]
+   },
+   "lat steelman": {
+    "runs": [
+     "big_lat_s_h"
+    ],
+    "n_runs": 1,
+    "source": "run",
+    "batch_size": 2,
+    "lr": 0.0002,
+    "steps": 13500,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 34752032,
+    "params_trainable": 45522464,
+    "last_step_min": 13500,
+    "last_step_max": 13500,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "sigreg",
+    "lambda_ppd": 0.0,
+    "lambda_sig": 0.4,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking",
+     "steps"
+    ]
+   },
+   "dual+LeWM steel.": {
+    "runs": [
+     "big_dual_lewm_h"
+    ],
+    "n_runs": 1,
+    "source": "ckpt",
+    "batch_size": 2,
+    "lr": 0.0002,
+    "steps": 40000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 34752032,
+    "params_trainable": 45522464,
+    "last_step_min": null,
+    "last_step_max": null,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "sigreg",
+    "lambda_ppd": 0.5,
+    "lambda_sig": 0.4,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking"
+    ]
+   }
+  }
+ },
+ "sigma": {
+  "label": "nuisance sweep (pilot)",
+  "arms": {
+   "ds": {
+    "runs": [
+     "sw_ds_n10_s0",
+     "sw_ds_n10_s1",
+     "sw_ds_n1_s0",
+     "sw_ds_n1_s1",
+     "sw_ds_n3_s0",
+     "sw_ds_n3_s1"
+    ],
+    "n_runs": 6,
+    "source": "run",
+    "batch_size": 32,
+    "lr": 0.004,
+    "steps": 20000,
+    "masking": "any_cell",
+    "params_encoder": 362144,
+    "params_trainable": 362144,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "n_cls": 4,
+    "differs_from_ds": []
+   },
+   "lat (SIGReg)": {
+    "runs": [
+     "sw_lat_n10_s0",
+     "sw_lat_n10_s1",
+     "sw_lat_n1_s0",
+     "sw_lat_n1_s1",
+     "sw_lat_n3_s0",
+     "sw_lat_n3_s1"
+    ],
+    "n_runs": 6,
+    "source": "run",
+    "batch_size": 32,
+    "lr": 0.002,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 362144,
+    "params_trainable": 633056,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "sigreg",
+    "lambda_ppd": 0.0,
+    "lambda_sig": 0.25,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "lr",
+     "masking"
+    ]
+   }
+  }
+ },
+ "collapse": {
+  "label": "collapse curve / steelman (base)",
+  "arms": {
+   "ds": {
+    "runs": [
+     "bsw_ds_n1_s0"
+    ],
+    "n_runs": 1,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "any_cell",
+    "params_encoder": 6618400,
+    "params_trainable": 6618400,
+    "last_step_min": 19450,
+    "last_step_max": 19450,
+    "r_scheme": "rope",
+    "n_cls": 4,
+    "differs_from_ds": []
+   },
+   "lat (SIGReg)": {
+    "runs": [
+     "bsw_lat_n1_s0"
+    ],
+    "n_runs": 1,
+    "source": "run",
+    "batch_size": 4,
+    "lr": 0.001,
+    "steps": 8000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 9316640,
+    "last_step_min": 8000,
+    "last_step_max": 8000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "sigreg",
+    "lambda_ppd": 0.0,
+    "lambda_sig": 0.25,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "batch_size",
+     "masking",
+     "steps"
+    ]
+   }
+  }
+ },
+ "addr": {
+  "label": "addressing and CLS grid (pilot)",
+  "arms": {
+   "ds": {
+    "runs": [
+     "p2_anycell"
+    ],
+    "n_runs": 1,
+    "source": "run",
+    "batch_size": 32,
+    "lr": 0.004,
+    "steps": 20000,
+    "masking": "any_cell",
+    "params_encoder": 361760,
+    "params_trainable": 361760,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "differs_from_ds": []
+   },
+   "ds (RoPE)": {
+    "runs": [
+     "p6adr_ds_fixed",
+     "p6adr_ds_rope"
+    ],
+    "n_runs": 2,
+    "source": "run",
+    "batch_size": 32,
+    "lr": 0.004,
+    "steps": 20000,
+    "masking": "any_cell",
+    "params_encoder": 361760,
+    "params_trainable": 361760,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "fixed",
+    "n_cls": 0,
+    "differs_from_ds": []
+   },
+   "ds (RoPE+CLS)": {
+    "runs": [
+     "p6rc_ds",
+     "p6rc_ds_s1",
+     "p6rc_ds_s2"
+    ],
+    "n_runs": 3,
+    "source": "run",
+    "batch_size": 32,
+    "lr": 0.004,
+    "steps": 20000,
+    "masking": "any_cell",
+    "params_encoder": 362144,
+    "params_trainable": 362144,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "n_cls": 4,
+    "differs_from_ds": []
+   },
+   "latent (cell target)": {
+    "runs": [
+     "p3b_mixed_tw2"
+    ],
+    "n_runs": 1,
+    "source": "run",
+    "batch_size": 32,
+    "lr": 0.002,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 361760,
+    "params_trainable": 595520,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "lambda_ppd": 0.0,
+    "differs_from_ds": [
+     "lr",
+     "masking"
+    ]
+   },
+   "latent (RoPE)": {
+    "runs": [
+     "p6adr_lat_fixed",
+     "p6adr_lat_rope"
+    ],
+    "n_runs": 2,
+    "source": "run",
+    "batch_size": 32,
+    "lr": 0.002,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 361760,
+    "params_trainable": 595520,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "fixed",
+    "cls_target": false,
+    "mode": "ema",
+    "lambda_ppd": 0.0,
+    "lambda_sig": 0.05,
+    "n_cls": 0,
+    "differs_from_ds": [
+     "lr",
+     "masking"
+    ]
+   },
+   "latent (CLS)": {
+    "runs": [
+     "p6cls_lat_k1",
+     "p6cls_lat_k4"
+    ],
+    "n_runs": 2,
+    "source": "run",
+    "batch_size": 32,
+    "lr": 0.002,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 361856,
+    "params_trainable": 595616,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "cls_target": true,
+    "mode": "ema",
+    "lambda_ppd": 0.0,
+    "lambda_sig": 0.05,
+    "n_cls": 1,
+    "differs_from_ds": [
+     "lr",
+     "masking"
+    ]
+   },
+   "latent (RoPE+CLS)": {
+    "runs": [
+     "p6rc_lat",
+     "p6rc_lat_s1",
+     "p6rc_lat_s2"
+    ],
+    "n_runs": 3,
+    "source": "run",
+    "batch_size": 32,
+    "lr": 0.002,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 362144,
+    "params_trainable": 595904,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "ema",
+    "lambda_ppd": 0.0,
+    "lambda_sig": 0.05,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "lr",
+     "masking"
+    ]
+   }
+  }
+ },
+ "substrate": {
+  "label": "shared-factor substrate",
+  "arms": {
+   "ds": {
+    "runs": [
+     "c4_factor_ds_s0",
+     "c4_factor_ds_s1",
+     "c4_factor_ds_s2",
+     "c4_factor_ds_s3"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "any_cell",
+    "params_encoder": 6618400,
+    "params_trainable": 6618400,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "n_cls": 4,
+    "differs_from_ds": []
+   },
+   "dual": {
+    "runs": [
+     "c4_factor_dual_s0",
+     "c4_factor_dual_s1",
+     "c4_factor_dual_s2",
+     "c4_factor_dual_s3"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 8791072,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "ema",
+    "lambda_ppd": 0.1,
+    "lambda_sig": 0.05,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking"
+    ]
+   },
+   "lat (SIGReg)": {
+    "runs": [
+     "c4_factor_lat_s0_full",
+     "c4_factor_lat_s1_full",
+     "c4_factor_lat_s2_full",
+     "c4_factor_lat_s3_full"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 4,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 9316640,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "sigreg",
+    "lambda_ppd": 0.0,
+    "lambda_sig": 0.25,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "batch_size",
+     "masking"
+    ]
+   },
+   "arbitrary aux.": {
+    "runs": [
+     "c4_factor_arbaux_s0",
+     "c4_factor_arbaux_s1",
+     "c4_factor_arbaux_s2",
+     "c4_factor_arbaux_s3"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 8791072,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "ema",
+    "lambda_ppd": 0.1,
+    "lambda_sig": 0.05,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking"
+    ]
+   }
+  }
+ },
+ "boundary": {
+  "label": "compressibility sweep over intrinsic rank K",
+  "arms": {
+   "ds (K=1)": {
+    "runs": [
+     "c4_factor_ds_K1_s0",
+     "c4_factor_ds_K1_s1",
+     "c4_factor_ds_K1_s2",
+     "c4_factor_ds_K1_s3"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "any_cell",
+    "params_encoder": 6618400,
+    "params_trainable": 6618400,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "n_cls": 4,
+    "differs_from_ds": []
+   },
+   "ds (K=2)": {
+    "runs": [
+     "c4_factor_ds_K2_s0",
+     "c4_factor_ds_K2_s1",
+     "c4_factor_ds_K2_s2",
+     "c4_factor_ds_K2_s3"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "any_cell",
+    "params_encoder": 6618400,
+    "params_trainable": 6618400,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "n_cls": 4,
+    "differs_from_ds": []
+   },
+   "ds (K=6)": {
+    "runs": [
+     "c4_factor_ds_K6_s0",
+     "c4_factor_ds_K6_s1",
+     "c4_factor_ds_K6_s2",
+     "c4_factor_ds_K6_s3"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "any_cell",
+    "params_encoder": 6618400,
+    "params_trainable": 6618400,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "n_cls": 4,
+    "differs_from_ds": []
+   },
+   "ds (K=8)": {
+    "runs": [
+     "c4_factor_ds_K8_s0",
+     "c4_factor_ds_K8_s1",
+     "c4_factor_ds_K8_s2",
+     "c4_factor_ds_K8_s3"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "any_cell",
+    "params_encoder": 6618400,
+    "params_trainable": 6618400,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "n_cls": 4,
+    "differs_from_ds": []
+   },
+   "ds (K=12)": {
+    "runs": [
+     "c4_factor_ds_K12_s0",
+     "c4_factor_ds_K12_s1",
+     "c4_factor_ds_K12_s2",
+     "c4_factor_ds_K12_s3"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "any_cell",
+    "params_encoder": 6618400,
+    "params_trainable": 6618400,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "n_cls": 4,
+    "differs_from_ds": []
+   },
+   "dual (K=1)": {
+    "runs": [
+     "c4_factor_dual_K1_s0",
+     "c4_factor_dual_K1_s1",
+     "c4_factor_dual_K1_s2",
+     "c4_factor_dual_K1_s3"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 8791072,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "ema",
+    "lambda_ppd": 0.1,
+    "lambda_sig": 0.05,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking"
+    ]
+   },
+   "dual (K=2)": {
+    "runs": [
+     "c4_factor_dual_K2_s0",
+     "c4_factor_dual_K2_s1",
+     "c4_factor_dual_K2_s2",
+     "c4_factor_dual_K2_s3"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 8791072,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "ema",
+    "lambda_ppd": 0.1,
+    "lambda_sig": 0.05,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking"
+    ]
+   },
+   "dual (K=6)": {
+    "runs": [
+     "c4_factor_dual_K6_s0",
+     "c4_factor_dual_K6_s1",
+     "c4_factor_dual_K6_s2",
+     "c4_factor_dual_K6_s3"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 8791072,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "ema",
+    "lambda_ppd": 0.1,
+    "lambda_sig": 0.05,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking"
+    ]
+   },
+   "dual (K=8)": {
+    "runs": [
+     "c4_factor_dual_K8_s0",
+     "c4_factor_dual_K8_s1",
+     "c4_factor_dual_K8_s2",
+     "c4_factor_dual_K8_s3"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 8791072,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "ema",
+    "lambda_ppd": 0.1,
+    "lambda_sig": 0.05,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking"
+    ]
+   },
+   "dual (K=12)": {
+    "runs": [
+     "c4_factor_dual_K12_s0",
+     "c4_factor_dual_K12_s1",
+     "c4_factor_dual_K12_s2",
+     "c4_factor_dual_K12_s3"
+    ],
+    "n_runs": 4,
+    "source": "run",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "y_only(0.2)->mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 8791072,
+    "last_step_min": 20000,
+    "last_step_max": 20000,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "ema",
+    "lambda_ppd": 0.1,
+    "lambda_sig": 0.05,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking"
+    ]
+   }
+  }
+ },
+ "nonlinear": {
+  "label": "nonlinear matched rerun (L4)",
+  "arms": {
+   "ds": {
+    "runs": [
+     "matched_L4_ds"
+    ],
+    "n_runs": 1,
+    "source": "config",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "any_cell",
+    "params_encoder": 6618400,
+    "params_trainable": 6618400,
+    "last_step_min": null,
+    "last_step_max": null,
+    "r_scheme": "rope",
+    "n_cls": 4,
+    "differs_from_ds": []
+   },
+   "dual": {
+    "runs": [
+     "matched_L4_dual"
+    ],
+    "n_runs": 1,
+    "source": "config",
+    "batch_size": 8,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 8791072,
+    "last_step_min": null,
+    "last_step_max": null,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "lambda_ppd": 0.1,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "masking"
+    ]
+   },
+   "lat (SIGReg)": {
+    "runs": [
+     "matched_L4_lat"
+    ],
+    "n_runs": 1,
+    "source": "config",
+    "batch_size": 4,
+    "lr": 0.001,
+    "steps": 20000,
+    "masking": "mixed",
+    "params_encoder": 6618400,
+    "params_trainable": 9316640,
+    "last_step_min": null,
+    "last_step_max": null,
+    "r_scheme": "rope",
+    "cls_target": true,
+    "mode": "sigreg",
+    "lambda_ppd": 0.0,
+    "lambda_sig": 0.25,
+    "n_cls": 4,
+    "differs_from_ds": [
+     "batch_size",
+     "masking"
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,20 @@
+# C5 matched arm (docs/scm_nonlinearity_ceiling.md): data-space, on the L4 nonlinear prior
+# (mlp_depth3/gain3 -> headroom +.128, the richest LEARNABLE rung). base_ds arch/regime.
+run_name: matched_L4_ds
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 20000
+batch_size: 8
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]
+  mlp_depth: [3, 3]
+  mlp_gain: 3.0

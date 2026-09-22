@@ -1,0 +1,26 @@
+# rows control (todo 30 / large-N): base recipe with n_rows [10,1024] (code floor 10 = 8 ctx + 2 query),
+# 5k steps (learn-or-flat is visible <1k). batch 8 OOMs at R=1024 on 48GB (both arms, smoke 2026-09-03),
+# so batch 4 with lr scaled linearly: ratio = 1e-3*4/8 = 5e-4, ratio/10 = 5e-5. Name keeps the batch-8-equivalent lr tag.
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.1
+run_name: rows_dual_lr1e-3_s0
+seed: 0
+steps: 5000
+batch_size: 4
+lr: 0.0005
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows:
+  - 10
+  - 1024
+  n_cols:
+  - 4
+  - 32

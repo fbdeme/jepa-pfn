@@ -1,0 +1,7 @@
+# Follow-up arm (2) alone: iid masking (as p3_jepa) + 2-block two-way predictor
+# completes the 2x2 with p3_jepa (iid+mlp) for masking/predictor disentangling
+run_name: p3b_iid_tw2
+policy_main: any_cell
+predictor: twoway-2
+seed: 0
+steps: 20000

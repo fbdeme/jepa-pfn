@@ -1,0 +1,6 @@
+# Follow-up arm (3): block masking (SSOT sec.3 spec completion), mlp predictor
+run_name: p3b_mixed_mlp
+policy_main: mixed
+predictor: mlp
+seed: 0
+steps: 20000

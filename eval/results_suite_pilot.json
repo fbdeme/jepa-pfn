@@ -1,0 +1,288 @@
+{
+ "CC18|dresses-sales|clf": {
+  "base_ds": {
+   "acc": 0.588,
+   "auc": 0.5505
+  },
+  "base_dual": {
+   "acc": 0.5987,
+   "auc": 0.5761
+  },
+  "base_lat_s": {
+   "acc": 0.58,
+   "auc": 0.522
+  },
+  "logreg": {
+   "acc": 0.5547,
+   "auc": 0.5419
+  },
+  "histgb": {
+   "acc": 0.5707,
+   "auc": 0.5725
+  }
+ },
+ "CC18|kc2|clf": {
+  "base_ds": {
+   "acc": 0.8429,
+   "auc": 0.8491
+  },
+  "base_dual": {
+   "acc": 0.8404,
+   "auc": 0.7835
+  },
+  "base_lat_s": {
+   "acc": 0.7957,
+   "auc": 0.5555
+  },
+  "logreg": {
+   "acc": 0.8314,
+   "auc": 0.8001
+  },
+  "histgb": {
+   "acc": 0.8314,
+   "auc": 0.8181
+  }
+ },
+ "CC18|cylinder-bands|clf": {
+  "base_ds": {
+   "acc": 0.7049,
+   "auc": 0.7765
+  },
+  "base_dual": {
+   "acc": 0.6864,
+   "auc": 0.702
+  },
+  "base_lat_s": {
+   "acc": 0.5778,
+   "auc": 0.4873
+  },
+  "logreg": {
+   "acc": 0.7049,
+   "auc": 0.7725
+  },
+  "histgb": {
+   "acc": 0.7778,
+   "auc": 0.8507
+  }
+ },
+ "Grinsztajn|Bioresponse|clf": {
+  "base_ds": {
+   "acc": 0.6185,
+   "auc": 0.6944
+  },
+  "base_dual": {
+   "acc": 0.6211,
+   "auc": 0.6994
+  },
+  "base_lat_s": {
+   "acc": 0.5247,
+   "auc": 0.5021
+  },
+  "logreg": {
+   "acc": 0.6829,
+   "auc": 0.7536
+  },
+  "histgb": {
+   "acc": 0.7533,
+   "auc": 0.8252
+  }
+ },
+ "Grinsztajn|compas-two-years|clf": {
+  "base_ds": {
+   "acc": 0.6556,
+   "auc": 0.7195
+  },
+  "base_dual": {
+   "acc": 0.5964,
+   "auc": 0.6245
+  },
+  "base_lat_s": {
+   "acc": 0.459,
+   "auc": 0.4632
+  },
+  "logreg": {
+   "acc": 0.6836,
+   "auc": 0.7327
+  },
+  "histgb": {
+   "acc": 0.6536,
+   "auc": 0.7186
+  }
+ },
+ "Grinsztajn|eye_movements|clf": {
+  "base_ds": {
+   "acc": 0.5189,
+   "auc": 0.5377
+  },
+  "base_dual": {
+   "acc": 0.498,
+   "auc": 0.4998
+  },
+  "base_lat_s": {
+   "acc": 0.5234,
+   "auc": 0.5315
+  },
+  "logreg": {
+   "acc": 0.5612,
+   "auc": 0.5816
+  },
+  "histgb": {
+   "acc": 0.6289,
+   "auc": 0.6821
+  }
+ },
+ "Grinsztajn|analcatdata_supreme|clf": {
+  "base_ds": {
+   "acc": 0.8457,
+   "auc": 0.9829
+  },
+  "base_dual": {
+   "acc": 0.7214,
+   "auc": 0.9357
+  },
+  "base_lat_s": {
+   "acc": 0.6764,
+   "auc": 0.4841
+  },
+  "logreg": {
+   "acc": 0.6764,
+   "auc": 0.6204
+  },
+  "histgb": {
+   "acc": 0.974,
+   "auc": 0.9955
+  }
+ },
+ "Grinsztajn|abalone|reg": {
+  "base_ds": {
+   "r2": 0.4703,
+   "rmse": 2.2341
+  },
+  "base_dual": {
+   "r2": 0.3464,
+   "rmse": 2.4798
+  },
+  "base_lat_s": {
+   "r2": 0.0021,
+   "rmse": 3.065
+  },
+  "ridge": {
+   "r2": 0.4837,
+   "rmse": 2.203
+  },
+  "histgbr": {
+   "r2": 0.4754,
+   "rmse": 2.2233
+  }
+ },
+ "TabArena|blood-transfusion-service-center|clf": {
+  "base_ds": {
+   "acc": 0.7683,
+   "auc": 0.7541
+  },
+  "base_dual": {
+   "acc": 0.7701,
+   "auc": 0.7019
+  },
+  "base_lat_s": {
+   "acc": 0.762,
+   "auc": 0.4695
+  },
+  "logreg": {
+   "acc": 0.7736,
+   "auc": 0.7647
+  },
+  "histgb": {
+   "acc": 0.7496,
+   "auc": 0.7078
+  }
+ },
+ "TabArena|diabetes|clf": {
+  "base_ds": {
+   "acc": 0.7648,
+   "auc": 0.8217
+  },
+  "base_dual": {
+   "acc": 0.7066,
+   "auc": 0.7723
+  },
+  "base_lat_s": {
+   "acc": 0.651,
+   "auc": 0.4307
+  },
+  "logreg": {
+   "acc": 0.7665,
+   "auc": 0.8247
+  },
+  "histgb": {
+   "acc": 0.7214,
+   "auc": 0.7868
+  }
+ },
+ "TabArena|anneal|clf": {
+  "base_ds": {
+   "acc": 0.9369,
+   "auc": 0.8945
+  },
+  "base_dual": {
+   "acc": 0.7869,
+   "auc": 0.8542
+  },
+  "base_lat_s": {
+   "acc": 0.7617,
+   "auc": 0.5467
+  },
+  "logreg": {
+   "acc": 0.931,
+   "auc": 0.9837
+  },
+  "histgb": {
+   "acc": 0.9792,
+   "auc": 0.9675
+  }
+ },
+ "TabArena|QSAR_fish_toxicity|reg": {
+  "base_ds": {
+   "r2": 0.5478,
+   "rmse": 0.9728
+  },
+  "base_dual": {
+   "r2": 0.5192,
+   "rmse": 1.0022
+  },
+  "base_lat_s": {
+   "r2": 0.0212,
+   "rmse": 1.4312
+  },
+  "ridge": {
+   "r2": 0.5549,
+   "rmse": 0.9651
+  },
+  "histgbr": {
+   "r2": 0.5852,
+   "rmse": 0.9314
+  }
+ },
+ "TabArena|concrete_compressive_strength|reg": {
+  "base_ds": {
+   "r2": 0.6133,
+   "rmse": 10.3687
+  },
+  "base_dual": {
+   "r2": 0.5351,
+   "rmse": 11.3727
+  },
+  "base_lat_s": {
+   "r2": -0.008,
+   "rmse": 16.7699
+  },
+  "ridge": {
+   "r2": 0.5709,
+   "rmse": 10.9106
+  },
+  "histgbr": {
+   "r2": 0.8939,
+   "rmse": 5.4311
+  }
+ }
+}

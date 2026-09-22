@@ -1,0 +1,24 @@
+# base sigma-sweep lat_s arm, noise_scale=3 seed=1. Mirrors base_lat_s.
+run_name: bsw_lat_n3_s1
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.0
+mode: sigreg
+lambda_sig: 0.25
+batch_size: 4
+lr: 0.001
+seed: 1
+steps: 8000
+save_steps: true
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]
+  noise_scale: 3

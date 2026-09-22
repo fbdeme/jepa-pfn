@@ -1,0 +1,19 @@
+# Loop-vs-prior diagnostic: base_ds_s1's EXACT config, data swapped SCMPrior -> TabPFN-prior
+# dump (nanoTabPFN, 150x5, real TabPFN-v2 prior samples). dump_ds vs base_ds is a pure prior
+# swap -- same architecture, loop, head, and eval -- so if this becomes strong on real
+# benchmarks, our stack is fine and the base_ds weakness is the prior, not the pipeline.
+# Trained via train.train_dump (not train.train), which reads dump_path instead of a prior block.
+run_name: dump_ds_s1
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 1
+steps: 20000
+batch_size: 8
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+dump_path: data/tabpfn_prior_dump.h5

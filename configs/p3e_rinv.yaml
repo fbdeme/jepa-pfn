@@ -1,0 +1,11 @@
+# Issue #15: r-invariant latent loss. Identical to p3b_mixed_tw2 except the
+# column address r_j is projected out of prediction AND target before the L2,
+# so the 36% of target variance that is address (eval/address_leak.py) cannot
+# be scored. Steelmans the latent objective: if it still loses, "your latent
+# arm was handicapped" is closed.
+run_name: p3e_rinv
+policy_main: mixed
+predictor: twoway-2
+r_invariant: true
+seed: 0
+steps: 20000

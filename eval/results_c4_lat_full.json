@@ -1,0 +1,36 @@
+{
+ "c4_factor_lat_s0_full": {
+  "final_step": 20000,
+  "onset": 750,
+  "final_dim_std": 0.0,
+  "final_cos": 1.0,
+  "mse_f_final": 0.5016,
+  "steelman_step": 500,
+  "steelman_dim_std": 0.6497,
+  "mse_f_steelman": 0.3327
+ },
+ "c4_factor_lat_s1_full": {
+  "final_step": 20000,
+  "onset": null,
+  "final_dim_std": 0.9746,
+  "final_cos": 0.0127,
+  "mse_f_final": 0.4917
+ },
+ "c4_factor_lat_s2_full": {
+  "final_step": 20000,
+  "onset": 1500,
+  "final_dim_std": 0.0,
+  "final_cos": 1.0,
+  "mse_f_final": 0.5016,
+  "steelman_step": 1000,
+  "steelman_dim_std": 1.1438,
+  "mse_f_steelman": 0.4462
+ },
+ "c4_factor_lat_s3_full": {
+  "final_step": 20000,
+  "onset": null,
+  "final_dim_std": 0.2973,
+  "final_cos": 0.9157,
+  "mse_f_final": 0.5017
+ }
+}

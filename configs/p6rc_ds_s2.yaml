@@ -1,0 +1,10 @@
+# Issue #20 confirmation run (V3.4): matched data-space control at seed 2.
+# rope address scheme + CLS columns present, data-space CE objective. The gap
+# vs p6rc_lat / p6rc_dual isolates the objective at the scheme (#20) AND target
+# location (#19) that each closed a different part of the gap.
+run_name: p6rc_ds_s2
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 2
+steps: 20000

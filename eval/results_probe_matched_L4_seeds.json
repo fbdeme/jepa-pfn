@@ -1,0 +1,90 @@
+{
+  "note": "C5, L4 (+.128) prior. gap = ds - lat (mse_f lower=better); lat at steelman. VALID = conditional on ds training; ITT = all seeds incl. the untrained one (gap~0).",
+  "valid_seeds": [
+    0,
+    2,
+    3,
+    4
+  ],
+  "excluded_seeds_ds_failed": [
+    1
+  ],
+  "n_valid": 4,
+  "excluded_all_arms_mse_f": {
+    "1": {
+      "ds": 0.964,
+      "dual": 0.964,
+      "lat": 0.964
+    }
+  },
+  "per_arm": {
+    "ds": {
+      "edge_auc": {
+        "mean": 0.5994,
+        "sd": 0.0046,
+        "n": 4
+      },
+      "mse_f": {
+        "mean": 0.0853,
+        "sd": 0.0079,
+        "n": 4
+      }
+    },
+    "dual": {
+      "edge_auc": {
+        "mean": 0.556,
+        "sd": 0.033,
+        "n": 4
+      },
+      "mse_f": {
+        "mean": 0.2726,
+        "sd": 0.3991,
+        "n": 4
+      }
+    },
+    "lat": {
+      "edge_auc": {
+        "mean": 0.5158,
+        "sd": 0.0069,
+        "n": 4
+      },
+      "mse_f": {
+        "mean": 0.7841,
+        "sd": 0.2314,
+        "n": 4
+      }
+    },
+    "floor": {
+      "edge_auc": {
+        "mean": 0.5802,
+        "sd": 0.0,
+        "n": 4
+      },
+      "mse_f": {
+        "mean": 0.0164,
+        "sd": 0.0,
+        "n": 4
+      }
+    }
+  },
+  "ds_minus_lat_edge": {
+    "mean": 0.0836,
+    "sd": 0.0079,
+    "n": 4
+  },
+  "ds_minus_lat_msef": {
+    "mean": -0.6988,
+    "sd": 0.2273,
+    "n": 4
+  },
+  "ds_minus_lat_msef_itt": {
+    "mean": -0.559,
+    "sd": 0.3456,
+    "n": 5
+  },
+  "lat_over_ds_ratio_range": [
+    5.1,
+    12.3
+  ],
+  "base_reference_file": "results_probe_seeds.json"
+}

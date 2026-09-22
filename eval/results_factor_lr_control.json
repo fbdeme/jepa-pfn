@@ -1,0 +1,530 @@
+{
+ "metric": "val_mse -- held-out value MSE; targets are unit variance, so 1.0 is the score of predicting the mean",
+ "arm": "c4_factor_ds (data-space) on the shared-factor substrate at sigma=1.0; baseline seeds at the sweep's single lr plus one control run per alternative lr and rank",
+ "learned_rule": "val_mse_best < val_mse_first - 0.1",
+ "by_k": {
+  "2": {
+   "baseline_lr": [
+    0.001
+   ],
+   "baseline_val_mse_last_mean": 1.0367,
+   "baseline_n_learned": 0,
+   "baseline_n": 4,
+   "controls": {
+    "0.0001": {
+     "val_mse_last": 0.6516,
+     "val_mse_best": 0.6514,
+     "best_step": 19500,
+     "learned": true,
+     "diverged": false
+    },
+    "0.004": {
+     "val_mse_last": 1.0244,
+     "val_mse_best": 1.0243,
+     "best_step": 1250,
+     "learned": false,
+     "diverged": false
+    }
+   },
+   "runs": [
+    {
+     "run": "c4_factor_ds_K2_s0",
+     "k": 2,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0244,
+     "val_mse_last": 1.0244,
+     "val_mse_best": 1.0243,
+     "best_step": 1250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K2_s1",
+     "k": 2,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0477,
+     "val_mse_last": 1.0477,
+     "val_mse_best": 1.0476,
+     "best_step": 750,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K2_s2",
+     "k": 2,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0318,
+     "val_mse_last": 1.0317,
+     "val_mse_best": 1.0317,
+     "best_step": 750,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K2_s3",
+     "k": 2,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0429,
+     "val_mse_last": 1.0429,
+     "val_mse_best": 1.0428,
+     "best_step": 2750,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K2_lr1e-4_s0",
+     "k": 2,
+     "lr": 0.0001,
+     "control": true,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0243,
+     "val_mse_last": 0.6516,
+     "val_mse_best": 0.6514,
+     "best_step": 19500,
+     "learned": true,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K2_lr4e-3_s0",
+     "k": 2,
+     "lr": 0.004,
+     "control": true,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0244,
+     "val_mse_last": 1.0244,
+     "val_mse_best": 1.0243,
+     "best_step": 1250,
+     "learned": false,
+     "diverged": false
+    }
+   ]
+  },
+  "4": {
+   "baseline_lr": [
+    0.001
+   ],
+   "baseline_val_mse_last_mean": 1.0366,
+   "baseline_n_learned": 0,
+   "baseline_n": 4,
+   "controls": {
+    "0.0001": {
+     "val_mse_last": 0.7932,
+     "val_mse_best": 0.7871,
+     "best_step": 18250,
+     "learned": true,
+     "diverged": false
+    }
+   },
+   "runs": [
+    {
+     "run": "c4_factor_ds_s0",
+     "k": 4,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0288,
+     "val_mse_last": 1.0288,
+     "val_mse_best": 1.0287,
+     "best_step": 500,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_s1",
+     "k": 4,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0488,
+     "val_mse_last": 1.0488,
+     "val_mse_best": 1.0488,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_s2",
+     "k": 4,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0563,
+     "val_mse_last": 1.0563,
+     "val_mse_best": 1.0562,
+     "best_step": 1000,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_s3",
+     "k": 4,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0123,
+     "val_mse_last": 1.0123,
+     "val_mse_best": 1.0123,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K4_lr1e-4_s0",
+     "k": 4,
+     "lr": 0.0001,
+     "control": true,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0287,
+     "val_mse_last": 0.7932,
+     "val_mse_best": 0.7871,
+     "best_step": 18250,
+     "learned": true,
+     "diverged": false
+    }
+   ]
+  },
+  "6": {
+   "baseline_lr": [
+    0.001
+   ],
+   "baseline_val_mse_last_mean": 1.0401,
+   "baseline_n_learned": 0,
+   "baseline_n": 4,
+   "controls": {
+    "0.0001": {
+     "val_mse_last": 0.8637,
+     "val_mse_best": 0.8634,
+     "best_step": 19000,
+     "learned": true,
+     "diverged": false
+    }
+   },
+   "runs": [
+    {
+     "run": "c4_factor_ds_K6_s0",
+     "k": 6,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0456,
+     "val_mse_last": 1.0456,
+     "val_mse_best": 1.0456,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K6_s1",
+     "k": 6,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0391,
+     "val_mse_last": 1.0391,
+     "val_mse_best": 1.0391,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K6_s2",
+     "k": 6,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0425,
+     "val_mse_last": 1.0424,
+     "val_mse_best": 1.0424,
+     "best_step": 500,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K6_s3",
+     "k": 6,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0334,
+     "val_mse_last": 1.0334,
+     "val_mse_best": 1.0334,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K6_lr1e-4_s0",
+     "k": 6,
+     "lr": 0.0001,
+     "control": true,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0456,
+     "val_mse_last": 0.8637,
+     "val_mse_best": 0.8634,
+     "best_step": 19000,
+     "learned": true,
+     "diverged": false
+    }
+   ]
+  },
+  "8": {
+   "baseline_lr": [
+    0.001
+   ],
+   "baseline_val_mse_last_mean": 1.0262,
+   "baseline_n_learned": 0,
+   "baseline_n": 4,
+   "controls": {
+    "0.0001": {
+     "val_mse_last": 0.9167,
+     "val_mse_best": 0.9161,
+     "best_step": 19750,
+     "learned": true,
+     "diverged": false
+    }
+   },
+   "runs": [
+    {
+     "run": "c4_factor_ds_K8_s0",
+     "k": 8,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0234,
+     "val_mse_last": 1.0234,
+     "val_mse_best": 1.0234,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K8_s1",
+     "k": 8,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0049,
+     "val_mse_last": 1.0048,
+     "val_mse_best": 1.0048,
+     "best_step": 750,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K8_s2",
+     "k": 8,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0335,
+     "val_mse_last": 1.0335,
+     "val_mse_best": 1.0335,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K8_s3",
+     "k": 8,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0432,
+     "val_mse_last": 1.0432,
+     "val_mse_best": 1.0432,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K8_lr1e-4_s0",
+     "k": 8,
+     "lr": 0.0001,
+     "control": true,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0234,
+     "val_mse_last": 0.9167,
+     "val_mse_best": 0.9161,
+     "best_step": 19750,
+     "learned": true,
+     "diverged": false
+    }
+   ]
+  },
+  "12": {
+   "baseline_lr": [
+    0.001
+   ],
+   "baseline_val_mse_last_mean": 1.0295,
+   "baseline_n_learned": 0,
+   "baseline_n": 4,
+   "controls": {
+    "0.0001": {
+     "val_mse_last": 0.9865,
+     "val_mse_best": 0.9865,
+     "best_step": 20000,
+     "learned": false,
+     "diverged": false
+    }
+   },
+   "runs": [
+    {
+     "run": "c4_factor_ds_K12_s0",
+     "k": 12,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0399,
+     "val_mse_last": 1.0399,
+     "val_mse_best": 1.0399,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K12_s1",
+     "k": 12,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0132,
+     "val_mse_last": 1.0133,
+     "val_mse_best": 1.0132,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K12_s2",
+     "k": 12,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0326,
+     "val_mse_last": 1.0326,
+     "val_mse_best": 1.0326,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K12_s3",
+     "k": 12,
+     "lr": 0.001,
+     "control": false,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0321,
+     "val_mse_last": 1.0321,
+     "val_mse_best": 1.0321,
+     "best_step": 250,
+     "learned": false,
+     "diverged": false
+    },
+    {
+     "run": "c4_factor_ds_K12_lr1e-4_s0",
+     "k": 12,
+     "lr": 0.0001,
+     "control": true,
+     "n_val": 80,
+     "last_step": 20000,
+     "steps_configured": 20000,
+     "val_mse_first": 1.0399,
+     "val_mse_last": 0.9865,
+     "val_mse_best": 0.9865,
+     "best_step": 20000,
+     "learned": false,
+     "diverged": false
+    }
+   ]
+  }
+ },
+ "summary": {
+  "k_values_controlled": [
+   2,
+   4,
+   6,
+   8,
+   12
+  ],
+  "control_lrs": [
+   0.0001,
+   0.004
+  ],
+  "n_control": 6,
+  "n_control_learned": 4,
+  "n_control_diverged": 0,
+  "lr1e-4_learned_by_k": {
+   "2": true,
+   "4": true,
+   "6": true,
+   "8": true,
+   "12": false
+  },
+  "lr1e-4_val_mse_last_by_k": {
+   "2": 0.6516,
+   "4": 0.7932,
+   "6": 0.8637,
+   "8": 0.9167,
+   "12": 0.9865
+  },
+  "all_lr1e-4_learned": false
+ }
+}

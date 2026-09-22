@@ -1,0 +1,184 @@
+{
+ "CC18|dresses-sales|clf": {
+  "TabularJEPA_v3_tabicl2_s0": {
+   "acc": 0.58,
+   "auc": 0.4826
+  },
+  "logreg": {
+   "acc": 0.5547,
+   "auc": 0.5419
+  },
+  "histgb": {
+   "acc": 0.5707,
+   "auc": 0.5725
+  }
+ },
+ "CC18|kc2|clf": {
+  "TabularJEPA_v3_tabicl2_s0": {
+   "acc": 0.7957,
+   "auc": 0.4988
+  },
+  "logreg": {
+   "acc": 0.8314,
+   "auc": 0.8001
+  },
+  "histgb": {
+   "acc": 0.8314,
+   "auc": 0.8181
+  }
+ },
+ "CC18|cylinder-bands|clf": {
+  "TabularJEPA_v3_tabicl2_s0": {
+   "acc": 0.5778,
+   "auc": 0.5223
+  },
+  "logreg": {
+   "acc": 0.6963,
+   "auc": 0.7738
+  },
+  "histgb": {
+   "acc": 0.7691,
+   "auc": 0.845
+  }
+ },
+ "Grinsztajn|Bioresponse|clf": {
+  "TabularJEPA_v3_tabicl2_s0": {
+   "acc": 0.5072,
+   "auc": 0.5027
+  },
+  "logreg": {
+   "acc": 0.6927,
+   "auc": 0.7735
+  },
+  "histgb": {
+   "acc": 0.752,
+   "auc": 0.8352
+  }
+ },
+ "Grinsztajn|compas-two-years|clf": {
+  "TabularJEPA_v3_tabicl2_s0": {
+   "acc": 0.4987,
+   "auc": 0.5323
+  },
+  "logreg": {
+   "acc": 0.6836,
+   "auc": 0.7327
+  },
+  "histgb": {
+   "acc": 0.6536,
+   "auc": 0.7186
+  }
+ },
+ "Grinsztajn|eye_movements|clf": {
+  "TabularJEPA_v3_tabicl2_s0": {
+   "acc": 0.4928,
+   "auc": 0.5056
+  },
+  "logreg": {
+   "acc": 0.5612,
+   "auc": 0.5816
+  },
+  "histgb": {
+   "acc": 0.6289,
+   "auc": 0.6821
+  }
+ },
+ "Grinsztajn|analcatdata_supreme|clf": {
+  "TabularJEPA_v3_tabicl2_s0": {
+   "acc": 0.6764,
+   "auc": 0.5049
+  },
+  "logreg": {
+   "acc": 0.6764,
+   "auc": 0.6204
+  },
+  "histgb": {
+   "acc": 0.974,
+   "auc": 0.9955
+  }
+ },
+ "Grinsztajn|abalone|reg": {
+  "TabularJEPA_v3_tabicl2_s0": {
+   "r2": -0.0065,
+   "rmse": 3.0782
+  },
+  "ridge": {
+   "r2": 0.4837,
+   "rmse": 2.203
+  },
+  "histgbr": {
+   "r2": 0.4754,
+   "rmse": 2.2233
+  }
+ },
+ "TabArena|blood-transfusion-service-center|clf": {
+  "TabularJEPA_v3_tabicl2_s0": {
+   "acc": 0.762,
+   "auc": 0.4674
+  },
+  "logreg": {
+   "acc": 0.7736,
+   "auc": 0.7647
+  },
+  "histgb": {
+   "acc": 0.7496,
+   "auc": 0.7078
+  }
+ },
+ "TabArena|diabetes|clf": {
+  "TabularJEPA_v3_tabicl2_s0": {
+   "acc": 0.651,
+   "auc": 0.5108
+  },
+  "logreg": {
+   "acc": 0.7665,
+   "auc": 0.8247
+  },
+  "histgb": {
+   "acc": 0.7214,
+   "auc": 0.7868
+  }
+ },
+ "TabArena|anneal|clf": {
+  "TabularJEPA_v3_tabicl2_s0": {
+   "acc": 0.7617,
+   "auc": 0.4709
+  },
+  "logreg": {
+   "acc": 0.9391,
+   "auc": 0.9859
+  },
+  "histgb": {
+   "acc": 0.9792,
+   "auc": 0.9675
+  }
+ },
+ "TabArena|QSAR_fish_toxicity|reg": {
+  "TabularJEPA_v3_tabicl2_s0": {
+   "r2": -0.0026,
+   "rmse": 1.4485
+  },
+  "ridge": {
+   "r2": 0.5549,
+   "rmse": 0.9651
+  },
+  "histgbr": {
+   "r2": 0.5852,
+   "rmse": 0.9314
+  }
+ },
+ "TabArena|concrete_compressive_strength|reg": {
+  "TabularJEPA_v3_tabicl2_s0": {
+   "r2": -0.0033,
+   "rmse": 16.7321
+  },
+  "ridge": {
+   "r2": 0.5709,
+   "rmse": 10.9106
+  },
+  "histgbr": {
+   "r2": 0.8939,
+   "rmse": 5.4311
+  }
+ }
+}

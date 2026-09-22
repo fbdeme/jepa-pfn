@@ -1,0 +1,11 @@
+# Issue #8 — LeWM/SIGReg arm (EMA-free, 3rd objective family), lambda_sig=0.00005
+# Matched to p3b_mixed_tw2 in every other respect (predictor, masking, steps,
+# seed) so the only contrast is the objective family. Plain decimals: YAML 1.1
+# parses 5e-4 as a string, only 5.0e-4 / 0.0005 as a float.
+run_name: p3c_sig_5m5
+mode: sigreg
+lambda_sig: 0.00005
+policy_main: mixed
+predictor: twoway-2
+seed: 0
+steps: 20000

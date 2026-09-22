@@ -1,0 +1,440 @@
+{
+ "note": "E9 per-dataset deltas (run minus ds baseline; clf = acc, reg = r2), training step lag behind ds, config confounds",
+ "headenc_vs_ds": {
+  "clf_acc": {
+   "n": 115,
+   "mean": -0.0252,
+   "median": -0.0066,
+   "q10": -0.0742,
+   "q90": 0.0078,
+   "gain_gt_02": 4,
+   "loss_gt_02": 45,
+   "loss_gt_05": 22
+  },
+  "clf_auc": {
+   "n": 115,
+   "mean": -0.0157,
+   "median": -0.0132,
+   "q10": -0.0563,
+   "q90": 0.0171,
+   "gain_gt_02": 10,
+   "loss_gt_02": 43,
+   "loss_gt_05": 13
+  },
+  "reg_r2": {
+   "n": 32,
+   "mean": -0.0823,
+   "median": -0.049,
+   "q10": -0.2816,
+   "q90": 0.0046,
+   "gain_gt_02": 0,
+   "loss_gt_02": 21,
+   "loss_gt_05": 15
+  },
+  "strata": {
+   "ncls=2": {
+    "n": 65,
+    "mean": -0.0079,
+    "win": 20,
+    "loss": 34
+   },
+   "ncls=3-5": {
+    "n": 17,
+    "mean": -0.0326,
+    "win": 2,
+    "loss": 15
+   },
+   "ncls=6-10": {
+    "n": 18,
+    "mean": -0.0821,
+    "win": 3,
+    "loss": 15
+   },
+   "by_benchmark": {
+    "CC18": {
+     "n": 59,
+     "mean": -0.0372,
+     "win": 12,
+     "loss": 45
+    },
+    "Grinsztajn": {
+     "n": 19,
+     "mean": -0.0204,
+     "win": 4,
+     "loss": 14
+    },
+    "TabArena": {
+     "n": 37,
+     "mean": -0.0087,
+     "win": 12,
+     "loss": 17
+    }
+   }
+  },
+  "worst_clf": [
+   [
+    "MiceProtein",
+    -0.2715,
+    0.694,
+    8
+   ],
+   [
+    "mfeat-fourier",
+    -0.1901,
+    0.7155,
+    10
+   ],
+   [
+    "mfeat-zernike",
+    -0.1745,
+    0.6048,
+    10
+   ],
+   [
+    "wall-robot-navigation",
+    -0.1673,
+    0.7897,
+    4
+   ],
+   [
+    "optdigits",
+    -0.151,
+    0.763,
+    10
+   ],
+   [
+    "semeion",
+    -0.1276,
+    0.6986,
+    10
+   ],
+   [
+    "splice",
+    -0.1269,
+    0.8053,
+    null
+   ],
+   [
+    "mfeat-factors",
+    -0.1217,
+    0.8307,
+    10
+   ],
+   [
+    "pendigits",
+    -0.1048,
+    0.8685,
+    10
+   ],
+   [
+    "house_16H",
+    -0.0833,
+    0.804,
+    null
+   ],
+   [
+    "mfeat-karhunen",
+    -0.0742,
+    0.6517,
+    10
+   ],
+   [
+    "SDSS17",
+    -0.0742,
+    0.9251,
+    3
+   ]
+  ],
+  "best_clf": [
+   [
+    "students_dropout_and_academic_success",
+    0.0131,
+    0.7174,
+    3
+   ],
+   [
+    "first-order-theorem-proving",
+    0.0163,
+    0.4466,
+    6
+   ],
+   [
+    "Bank_Customer_Churn",
+    0.0208,
+    0.8125,
+    2
+   ],
+   [
+    "diabetes",
+    0.039,
+    0.7127,
+    2
+   ],
+   [
+    "credit",
+    0.0391,
+    0.5885,
+    2
+   ],
+   [
+    "jungle_chess_2pcs_raw_endgame_complete",
+    0.0488,
+    0.612,
+    3
+   ]
+  ],
+  "worst_reg": [
+   [
+    "airfoil_self_noise",
+    -0.3544,
+    0.6726
+   ],
+   [
+    "sulfur",
+    -0.3161,
+    0.5194
+   ],
+   [
+    "houses",
+    -0.2818,
+    0.519
+   ],
+   [
+    "houses",
+    -0.2812,
+    0.5266
+   ],
+   [
+    "pol",
+    -0.2351,
+    0.7728
+   ],
+   [
+    "visualizing_soil",
+    -0.1897,
+    0.955
+   ],
+   [
+    "concrete_compressive_strength",
+    -0.1296,
+    0.5834
+   ],
+   [
+    "house_sales",
+    -0.0998,
+    0.6602
+   ]
+  ]
+ },
+ "dae_vs_ds": {
+  "clf_acc": {
+   "n": 115,
+   "mean": -0.0394,
+   "median": -0.0169,
+   "q10": -0.1447,
+   "q90": 0.0033,
+   "gain_gt_02": 2,
+   "loss_gt_02": 52,
+   "loss_gt_05": 27
+  },
+  "reg_r2": {
+   "n": 32,
+   "mean": -0.1041,
+   "median": -0.057,
+   "q10": -0.3199,
+   "q90": 0.0037,
+   "gain_gt_02": 1,
+   "loss_gt_02": 21,
+   "loss_gt_05": 18
+  },
+  "strata": {
+   "ncls=2": {
+    "n": 65,
+    "mean": -0.0161,
+    "win": 9,
+    "loss": 43
+   },
+   "ncls=3-5": {
+    "n": 17,
+    "mean": -0.0559,
+    "win": 2,
+    "loss": 15
+   },
+   "ncls=6-10": {
+    "n": 18,
+    "mean": -0.1171,
+    "win": 1,
+    "loss": 17
+   },
+   "by_benchmark": {
+    "CC18": {
+     "n": 59,
+     "mean": -0.0563,
+     "win": 9,
+     "loss": 46
+    },
+    "TabArena": {
+     "n": 37,
+     "mean": -0.0162,
+     "win": 5,
+     "loss": 23
+    },
+    "Grinsztajn": {
+     "n": 19,
+     "mean": -0.032,
+     "win": 1,
+     "loss": 18
+    }
+   }
+  }
+ },
+ "headenc_vs_dae": {
+  "clf_acc": {
+   "n": 115,
+   "mean": 0.0141,
+   "median": 0.0027,
+   "q10": -0.0182,
+   "q90": 0.0596,
+   "gain_gt_02": 36,
+   "loss_gt_02": 11,
+   "loss_gt_05": 0
+  }
+ },
+ "lose_set_overlap": {
+  "headenc": 76,
+  "dae": 87,
+  "both": 69
+ },
+ "step_lag": {
+  "headenc": [
+   {
+    "step": 2500,
+    "val_mse": 0.8306,
+    "ds_val_mse": 0.6234,
+    "gap": 0.2072,
+    "ds_reaches_at": 750
+   },
+   {
+    "step": 5000,
+    "val_mse": 0.7,
+    "ds_val_mse": 0.5871,
+    "gap": 0.1129,
+    "ds_reaches_at": 1500
+   },
+   {
+    "step": 7500,
+    "val_mse": 0.651,
+    "ds_val_mse": 0.554,
+    "gap": 0.097,
+    "ds_reaches_at": 2000
+   },
+   {
+    "step": 10000,
+    "val_mse": 0.6222,
+    "ds_val_mse": 0.5364,
+    "gap": 0.0858,
+    "ds_reaches_at": 2750
+   },
+   {
+    "step": 12500,
+    "val_mse": 0.6013,
+    "ds_val_mse": 0.5211,
+    "gap": 0.0802,
+    "ds_reaches_at": 3500
+   },
+   {
+    "step": 15000,
+    "val_mse": 0.5771,
+    "ds_val_mse": 0.5163,
+    "gap": 0.0608,
+    "ds_reaches_at": 5750
+   },
+   {
+    "step": 17500,
+    "val_mse": 0.5632,
+    "ds_val_mse": 0.509,
+    "gap": 0.0542,
+    "ds_reaches_at": 6750
+   },
+   {
+    "step": 20000,
+    "val_mse": 0.5513,
+    "ds_val_mse": 0.5012,
+    "gap": 0.0501,
+    "ds_reaches_at": 7750
+   }
+  ],
+  "dae": [
+   {
+    "step": 2500,
+    "val_mse": 0.8309,
+    "ds_val_mse": 0.6234,
+    "gap": 0.2075,
+    "ds_reaches_at": 750
+   },
+   {
+    "step": 5000,
+    "val_mse": 0.6994,
+    "ds_val_mse": 0.5871,
+    "gap": 0.1123,
+    "ds_reaches_at": 1500
+   },
+   {
+    "step": 7500,
+    "val_mse": 0.6549,
+    "ds_val_mse": 0.554,
+    "gap": 0.1009,
+    "ds_reaches_at": 2000
+   },
+   {
+    "step": 10000,
+    "val_mse": 0.6345,
+    "ds_val_mse": 0.5364,
+    "gap": 0.0981,
+    "ds_reaches_at": 2500
+   },
+   {
+    "step": 12500,
+    "val_mse": 0.6154,
+    "ds_val_mse": 0.5211,
+    "gap": 0.0943,
+    "ds_reaches_at": 2750
+   },
+   {
+    "step": 15000,
+    "val_mse": 0.597,
+    "ds_val_mse": 0.5163,
+    "gap": 0.0807,
+    "ds_reaches_at": 4750
+   },
+   {
+    "step": 17500,
+    "val_mse": 0.5789,
+    "ds_val_mse": 0.509,
+    "gap": 0.0699,
+    "ds_reaches_at": 5750
+   },
+   {
+    "step": 20000,
+    "val_mse": 0.565,
+    "ds_val_mse": 0.5012,
+    "gap": 0.0638,
+    "ds_reaches_at": 6750
+   }
+  ]
+ },
+ "config_confounds": {
+  "note": "what differs between PFN_tabicl2_ds_s0 (train.train) and headenc (train.train_jepa) besides the latent term",
+  "ds": {
+   "module": "train.train",
+   "policy": "any_cell (iid cells, no curriculum)",
+   "ctx_only": false
+  },
+  "headenc": {
+   "module": "train.train_jepa",
+   "policy": "y_only for the first 20% (4k steps), then mixed = iid / col_block / block",
+   "ctx_only": true,
+   "note": "hidden cells are not keys in feature attention; the ds encoder attends to them"
+  }
+ }
+}

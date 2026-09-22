@@ -1,0 +1,26 @@
+# Issue #23 PO-2: partial-obs FREE-RUNNING (predicted-rollout) training, DUAL arm (temporal_design S17).
+# = t1b_dual (free-running: model consumes its OWN predicted latents) + one hidden variable. This is
+# the missing 2x2 cell (partial obs x free-running). The oracle (PO-1) cannot reveal a belief niche
+# because it injects TRUE values (no uncertainty to hedge); belief only helps under prediction
+# uncertainty, i.e. the PREDICTED rollout. Question: with the latent loop fairly trained, does
+# predicted latent_rollout < value_rollout AND beat one_shot in partial obs (grew nothing in full-obs
+# T1b)? Win = belief niche real; tie = scalar (LLM-style) loop suffices, latent WM adds nothing.
+run_name: po2_dual
+base: jepa
+consume_mode: rollout      # free-running (own predicted latents), scheduled sampling
+ss_anneal_frac: 0.5
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+seed: 0
+steps: 12000
+batch_size: 8
+lambda_ppd: 0.1
+consume_weight: 1.0
+prior:
+  temporal: [3, 6]
+  temporal_squash: true
+  temporal_hidden: [1, 1]  # POMDP: the belief-state manipulation (matches PO-1 prior)
+  p_missing_table: 0.0

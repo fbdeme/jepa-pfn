@@ -1,0 +1,8 @@
+# Issue #18: latent arm at prior noise_scale=16. Matches p3b_mixed_tw2 apart
+# from the prior; s1 is the reproduction control against that arm.
+run_name: p4n_lat_s16
+policy_main: mixed
+predictor: twoway-2
+seed: 0
+steps: 20000
+prior: {noise_scale: 16.0}

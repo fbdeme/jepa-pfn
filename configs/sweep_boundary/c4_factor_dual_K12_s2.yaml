@@ -1,0 +1,40 @@
+batch_size: 8
+cls_target: true
+curriculum_frac: 0.2
+dump_path: ''
+ema: 0.996
+emb: 256
+feat: 5
+heads: 8
+lambda_ppd: 0.1
+lambda_sig: 0.05
+layers: 6
+log_every: 25
+lr: 0.001
+mlp: 1024
+mode: ema
+n_bins: 32
+n_cls: 4
+n_reg_tokens: 0
+policy_main: mixed
+predictor: twoway-2
+prior:
+  n_cols:
+  - 12
+  - 12
+  n_factors: 12
+  n_rows:
+  - 128
+  - 384
+  sigma: 1.0
+prior_source: factor
+r_invariant: false
+r_scheme: rope
+run_name: c4_factor_dual_K12_s2
+seed: 2
+shuffle_target: false
+sig_proj: 128
+steps: 20000
+val_batches: 8
+val_every: 250
+val_policy: any_cell

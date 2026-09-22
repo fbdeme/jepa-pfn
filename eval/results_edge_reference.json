@@ -1,0 +1,13 @@
+{
+ "protocol": {
+  "source": "eval/probe_base.py collect/c5_scores: the trained arms' own prior, seed, batch shape, pairing, subsample and split; encoder replaced by data statistics (round-12 protocol fix)",
+  "edge_feature": "|Pearson r| of two columns' context values",
+  "family_feature": "four moments of the column's context values"
+ },
+ "edge_auc_raw": 0.6807,
+ "edge_auc_fit": 0.6807,
+ "fam_acc": 0.3494,
+ "fam_majority": 0.3285,
+ "n_pairs": 14208,
+ "n_cols": 1248
+}

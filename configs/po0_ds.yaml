@@ -1,0 +1,14 @@
+# Issue #23 PO-0: matched DATA-SPACE control on the partial-obs temporal prior.
+# = t0rc_ds + one hidden variable. policy: routes to train.train (data-space CE). Paired with
+# po0_dual so the oracle_latent-vs-oracle_value contrast is read per model, same hidden prior.
+run_name: po0_ds
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 20000
+batch_size: 16
+prior:
+  temporal: [3, 6]
+  temporal_hidden: [1, 1]
+  p_missing_table: 0.0

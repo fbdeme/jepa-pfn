@@ -1,0 +1,21 @@
+# Headline-scale lr control (round-13 R5 ISSUE-06 follow-up): base_ds_s0 with lr moved off the shared 1e-3.
+run_name: base_ds_lr4e-3_s0
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 20000
+batch_size: 8
+lr: 0.004
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows:
+  - 128
+  - 384
+  n_cols:
+  - 4
+  - 32

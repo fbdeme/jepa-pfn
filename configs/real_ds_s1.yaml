@@ -1,0 +1,27 @@
+# Real-SCM data-space arm: base_ds_s1's exact twin, only the PRIOR is enriched toward genuine
+# nonlinearity -- but only as far as the base model still LEARNS at batch 8. The enrichment was
+# selected by a learnability probe (3k-step val_mse must actually drop, not merely raise GBM
+# difficulty): a stronger enrichment (GBM-over-linear headroom ~+0.12) OVERSHOT -- the model could
+# not fit it at batch 8 (val_mse stuck at 1.0); this setting (headroom ~+0.08, ~3.5x the toy
+# prior's +0.02) keeps val_mse descending. vs base_ds_s1 it changes ONLY mechanism depth/gain +
+# mild noise; the graph is kept at the default, so a benchmark gain is attributable to prior
+# nonlinearity alone (Discussion 8.3). Difficulty/learnability tooling: eval/prior_difficulty.py.
+run_name: real_ds_s1
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 1
+steps: 20000
+batch_size: 8
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]
+  mlp_depth: [2, 2]     # NONLINEAR mechanisms (toy: single ~linear layer)
+  mlp_gain: 2.0         # push activations into saturation
+  sigma: [0.02, 0.4]    # mildly more irreducible noise (toy: 0.01-0.3)

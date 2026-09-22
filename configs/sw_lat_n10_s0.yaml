@@ -1,0 +1,13 @@
+# sigma-sweep lat_s arm, noise_scale=10 seed=0. Pilot of base_lat_s.
+run_name: sw_lat_n10_s0
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.0
+mode: sigreg
+lambda_sig: 0.25
+seed: 0
+steps: 20000
+prior: {noise_scale: 10}

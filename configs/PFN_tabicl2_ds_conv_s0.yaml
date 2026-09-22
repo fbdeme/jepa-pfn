@@ -1,0 +1,36 @@
+# Open-horizon pair (docs/prior_v2_plan.md 5.3, user decision 2026-09-14): PFN_tabicl2_ds_s0 recipe run until the value curve
+# plateaus instead of a fixed 20k. steps is a safety cap only; the run stops when the best val_mse has not improved by more than
+# stop_delta for stop_patience consecutive validations (80 x val_every 250 = 20k steps; train/plateau.py). Schedule-free AdamW,
+# so nothing else depends on the cap. Snapshots every 5k via scripts/box/snap_loop.py (SNAP_EVERY=5000), E9 on the GPU at 20k steps.
+batch_size: 4
+emb: 256
+heads: 8
+layers: 6
+lr: 0.0005
+mlp: 1024
+n_bins: 32
+n_cls: 4
+policy: any_cell
+prior:
+  filter_graphs: true
+  filter_unpredictable: true
+  max_cells: 65536
+  max_classes: 10
+  max_features: 100
+  min_features: 1
+  n_rows:
+  - 128
+  - 1024
+  p_cls: 0.7
+  p_missing_table: 0.3
+  prefetch: 8
+  prior_type: graph_scm
+  task: mixed
+  workers: 3
+prior_source: tabicl
+r_scheme: rope
+run_name: PFN_tabicl2_ds_conv_s0
+seed: 0
+steps: 1000000
+stop_delta: 0.002
+stop_patience: 80

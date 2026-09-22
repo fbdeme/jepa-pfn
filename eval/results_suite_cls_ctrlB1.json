@@ -1,0 +1,1612 @@
+{
+ "CC18|kr-vs-kp|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.5273,
+   "auc": 0.5501
+  },
+  "logreg": {
+   "acc": 0.9492,
+   "auc": 0.9898
+  },
+  "histgb": {
+   "acc": 0.9746,
+   "auc": 0.9982
+  }
+ },
+ "CC18|balance-scale|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7966,
+   "auc": 0.8579
+  },
+  "logreg": {
+   "acc": 0.8733,
+   "auc": 0.9613
+  },
+  "histgb": {
+   "acc": 0.8743,
+   "auc": 0.9189
+  }
+ },
+ "CC18|mfeat-factors|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.2227,
+   "auc": 0.7858
+  },
+  "logreg": {
+   "acc": 0.9329,
+   "auc": 0.9929
+  },
+  "histgb": {
+   "acc": 0.9466,
+   "auc": 0.9968
+  }
+ },
+ "CC18|mfeat-fourier|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.2904,
+   "auc": 0.804
+  },
+  "logreg": {
+   "acc": 0.8105,
+   "auc": 0.9752
+  },
+  "histgb": {
+   "acc": 0.8398,
+   "auc": 0.984
+  }
+ },
+ "CC18|breast-w|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9714,
+   "auc": 0.9914
+  },
+  "logreg": {
+   "acc": 0.9657,
+   "auc": 0.9956
+  },
+  "histgb": {
+   "acc": 0.9552,
+   "auc": 0.9928
+  }
+ },
+ "CC18|mfeat-karhunen|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.2572,
+   "auc": 0.7595
+  },
+  "logreg": {
+   "acc": 0.9453,
+   "auc": 0.9955
+  },
+  "histgb": {
+   "acc": 0.9473,
+   "auc": 0.9976
+  }
+ },
+ "CC18|mfeat-morphological|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.1595,
+   "auc": 0.6919
+  },
+  "logreg": {
+   "acc": 0.6758,
+   "auc": 0.952
+  },
+  "histgb": {
+   "acc": 0.7031,
+   "auc": 0.9563
+  }
+ },
+ "CC18|mfeat-zernike|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.248,
+   "auc": 0.7397
+  },
+  "logreg": {
+   "acc": 0.7839,
+   "auc": 0.9731
+  },
+  "histgb": {
+   "acc": 0.7858,
+   "auc": 0.9651
+  }
+ },
+ "CC18|cmc|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.4961,
+   "auc": 0.6873
+  },
+  "logreg": {
+   "acc": 0.4993,
+   "auc": 0.6772
+  },
+  "histgb": {
+   "acc": 0.4993,
+   "auc": 0.6852
+  }
+ },
+ "CC18|optdigits|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.0983,
+   "auc": 0.6618
+  },
+  "logreg": {
+   "acc": 0.9518,
+   "auc": 0.9976
+  },
+  "histgb": {
+   "acc": 0.974,
+   "auc": 0.9995
+  }
+ },
+ "CC18|credit-approval|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7565,
+   "auc": 0.8208
+  },
+  "logreg": {
+   "acc": 0.8667,
+   "auc": 0.9213
+  },
+  "histgb": {
+   "acc": 0.8676,
+   "auc": 0.9309
+  }
+ },
+ "CC18|credit-g|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7067,
+   "auc": 0.6459
+  },
+  "logreg": {
+   "acc": 0.7373,
+   "auc": 0.7532
+  },
+  "histgb": {
+   "acc": 0.7387,
+   "auc": 0.753
+  }
+ },
+ "CC18|pendigits|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.194,
+   "auc": 0.7126
+  },
+  "logreg": {
+   "acc": 0.9505,
+   "auc": 0.9978
+  },
+  "histgb": {
+   "acc": 0.9876,
+   "auc": 0.9999
+  }
+ },
+ "CC18|diabetes|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7648,
+   "auc": 0.8386
+  },
+  "logreg": {
+   "acc": 0.7734,
+   "auc": 0.8421
+  },
+  "histgb": {
+   "acc": 0.7378,
+   "auc": 0.8034
+  }
+ },
+ "CC18|sick|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9486,
+   "auc": 0.9475
+  },
+  "logreg": {
+   "acc": 0.9668,
+   "auc": 0.9461
+  },
+  "histgb": {
+   "acc": 0.9837,
+   "auc": 0.9943
+  }
+ },
+ "CC18|spambase|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.89,
+   "auc": 0.9488
+  },
+  "logreg": {
+   "acc": 0.9121,
+   "auc": 0.9657
+  },
+  "histgb": {
+   "acc": 0.9525,
+   "auc": 0.9842
+  }
+ },
+ "CC18|splice|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.5163,
+   "auc": 0.632
+  },
+  "logreg": {
+   "acc": 0.9245,
+   "auc": 0.9848
+  },
+  "histgb": {
+   "acc": 0.9635,
+   "auc": 0.9927
+  }
+ },
+ "CC18|tic-tac-toe|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6534,
+   "auc": 0.6971
+  },
+  "logreg": {
+   "acc": 0.7042,
+   "auc": 0.7299
+  },
+  "histgb": {
+   "acc": 0.9582,
+   "auc": 0.9946
+  }
+ },
+ "CC18|vehicle|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.4854,
+   "auc": 0.7516
+  },
+  "logreg": {
+   "acc": 0.7991,
+   "auc": 0.946
+  },
+  "histgb": {
+   "acc": 0.7415,
+   "auc": 0.9215
+  }
+ },
+ "CC18|electricity|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7708,
+   "auc": 0.8335
+  },
+  "logreg": {
+   "acc": 0.7695,
+   "auc": 0.8301
+  },
+  "histgb": {
+   "acc": 0.89,
+   "auc": 0.9554
+  }
+ },
+ "CC18|satimage|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7428,
+   "auc": 0.9181
+  },
+  "logreg": {
+   "acc": 0.8418,
+   "auc": 0.9746
+  },
+  "histgb": {
+   "acc": 0.9108,
+   "auc": 0.9886
+  }
+ },
+ "CC18|eucalyptus|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.3813,
+   "auc": 0.6774
+  },
+  "logreg": {
+   "acc": 0.5553,
+   "auc": 0.8379
+  },
+  "histgb": {
+   "acc": 0.635,
+   "auc": 0.8907
+  }
+ },
+ "CC18|analcatdata_authorship|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8915,
+   "auc": 0.9845
+  },
+  "logreg": {
+   "acc": 0.981,
+   "auc": 0.9994
+  },
+  "histgb": {
+   "acc": 0.9818,
+   "auc": 0.9993
+  }
+ },
+ "CC18|analcatdata_dmft|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.1579,
+   "auc": 0.4996
+  },
+  "logreg": {
+   "acc": 0.2038,
+   "auc": 0.5319
+  },
+  "histgb": {
+   "acc": 0.1955,
+   "auc": 0.5564
+  }
+ },
+ "CC18|pc4|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8841,
+   "auc": 0.8403
+  },
+  "logreg": {
+   "acc": 0.8932,
+   "auc": 0.863
+  },
+  "histgb": {
+   "acc": 0.9121,
+   "auc": 0.9405
+  }
+ },
+ "CC18|pc3|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8887,
+   "auc": 0.8065
+  },
+  "logreg": {
+   "acc": 0.8919,
+   "auc": 0.8153
+  },
+  "histgb": {
+   "acc": 0.8854,
+   "auc": 0.8034
+  }
+ },
+ "CC18|jm1|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7975,
+   "auc": 0.684
+  },
+  "logreg": {
+   "acc": 0.7995,
+   "auc": 0.5968
+  },
+  "histgb": {
+   "acc": 0.7962,
+   "auc": 0.7084
+  }
+ },
+ "CC18|kc2|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8429,
+   "auc": 0.84
+  },
+  "logreg": {
+   "acc": 0.8314,
+   "auc": 0.8001
+  },
+  "histgb": {
+   "acc": 0.8314,
+   "auc": 0.8181
+  }
+ },
+ "CC18|kc1|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8542,
+   "auc": 0.7815
+  },
+  "logreg": {
+   "acc": 0.8561,
+   "auc": 0.7688
+  },
+  "histgb": {
+   "acc": 0.847,
+   "auc": 0.7736
+  }
+ },
+ "CC18|pc1|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9245,
+   "auc": 0.7102
+  },
+  "logreg": {
+   "acc": 0.9173,
+   "auc": 0.7043
+  },
+  "histgb": {
+   "acc": 0.9277,
+   "auc": 0.849
+  }
+ },
+ "CC18|bank-marketing|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8828,
+   "auc": 0.7235
+  },
+  "logreg": {
+   "acc": 0.9023,
+   "auc": 0.8886
+  },
+  "histgb": {
+   "acc": 0.903,
+   "auc": 0.9257
+  }
+ },
+ "CC18|banknote-authentication|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8815,
+   "auc": 0.9657
+  },
+  "logreg": {
+   "acc": 0.9922,
+   "auc": 0.9998
+  },
+  "histgb": {
+   "acc": 0.9948,
+   "auc": 0.9998
+  }
+ },
+ "CC18|blood-transfusion-service-center|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7834,
+   "auc": 0.7489
+  },
+  "logreg": {
+   "acc": 0.7736,
+   "auc": 0.7464
+  },
+  "histgb": {
+   "acc": 0.7549,
+   "auc": 0.6841
+  }
+ },
+ "CC18|first-order-theorem-proving|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.3913,
+   "auc": 0.5959
+  },
+  "logreg": {
+   "acc": 0.4635,
+   "auc": 0.7015
+  },
+  "histgb": {
+   "acc": 0.5742,
+   "auc": 0.8023
+  }
+ },
+ "CC18|ilpd|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7032,
+   "auc": 0.6936
+  },
+  "logreg": {
+   "acc": 0.7135,
+   "auc": 0.7547
+  },
+  "histgb": {
+   "acc": 0.7032,
+   "auc": 0.7197
+  }
+ },
+ "CC18|nomao|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8672,
+   "auc": 0.9379
+  },
+  "logreg": {
+   "acc": 0.9206,
+   "auc": 0.9746
+  },
+  "histgb": {
+   "acc": 0.957,
+   "auc": 0.9897
+  }
+ },
+ "CC18|ozone-level-8hr|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9303,
+   "auc": 0.8545
+  },
+  "logreg": {
+   "acc": 0.9342,
+   "auc": 0.8697
+  },
+  "histgb": {
+   "acc": 0.9316,
+   "auc": 0.8749
+  }
+ },
+ "CC18|phoneme|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.776,
+   "auc": 0.8387
+  },
+  "logreg": {
+   "acc": 0.7513,
+   "auc": 0.8158
+  },
+  "histgb": {
+   "acc": 0.8776,
+   "auc": 0.9389
+  }
+ },
+ "CC18|qsar-biodeg|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.806,
+   "auc": 0.8658
+  },
+  "logreg": {
+   "acc": 0.8529,
+   "auc": 0.9208
+  },
+  "histgb": {
+   "acc": 0.8522,
+   "auc": 0.9076
+  }
+ },
+ "CC18|wall-robot-navigation|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.446,
+   "auc": 0.6686
+  },
+  "logreg": {
+   "acc": 0.7018,
+   "auc": 0.9132
+  },
+  "histgb": {
+   "acc": 0.9961,
+   "auc": 1.0
+  }
+ },
+ "CC18|semeion|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.0996,
+   "auc": 0.5248
+  },
+  "logreg": {
+   "acc": 0.6973,
+   "auc": 0.9517
+  },
+  "histgb": {
+   "acc": 0.6979,
+   "auc": 0.9487
+  }
+ },
+ "CC18|wdbc|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9556,
+   "auc": 0.9899
+  },
+  "logreg": {
+   "acc": 0.9567,
+   "auc": 0.9908
+  },
+  "histgb": {
+   "acc": 0.9591,
+   "auc": 0.9918
+  }
+ },
+ "CC18|adult|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7943,
+   "auc": 0.776
+  },
+  "logreg": {
+   "acc": 0.7878,
+   "auc": 0.702
+  },
+  "histgb": {
+   "acc": 0.8678,
+   "auc": 0.9275
+  }
+ },
+ "CC18|PhishingWebsites|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6771,
+   "auc": 0.7331
+  },
+  "logreg": {
+   "acc": 0.8945,
+   "auc": 0.9615
+  },
+  "histgb": {
+   "acc": 0.9661,
+   "auc": 0.9953
+  }
+ },
+ "CC18|GesturePhaseSegmentationProcessed|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.4375,
+   "auc": 0.6885
+  },
+  "logreg": {
+   "acc": 0.4642,
+   "auc": 0.7491
+  },
+  "histgb": {
+   "acc": 0.6497,
+   "auc": 0.8796
+  }
+ },
+ "CC18|cylinder-bands|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6247,
+   "auc": 0.6782
+  },
+  "logreg": {
+   "acc": 0.7049,
+   "auc": 0.7725
+  },
+  "histgb": {
+   "acc": 0.7778,
+   "auc": 0.8507
+  }
+ },
+ "CC18|dresses-sales|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.5747,
+   "auc": 0.4823
+  },
+  "logreg": {
+   "acc": 0.5547,
+   "auc": 0.5419
+  },
+  "histgb": {
+   "acc": 0.5707,
+   "auc": 0.5725
+  }
+ },
+ "CC18|numerai28.6|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.5052,
+   "auc": 0.4944
+  },
+  "logreg": {
+   "acc": 0.5234,
+   "auc": 0.5389
+  },
+  "histgb": {
+   "acc": 0.5384,
+   "auc": 0.5514
+  }
+ },
+ "CC18|connect-4|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6589,
+   "auc": 0.5072
+  },
+  "logreg": {
+   "acc": 0.6777,
+   "auc": 0.6557
+  },
+  "histgb": {
+   "acc": 0.8158,
+   "auc": 0.8973
+  }
+ },
+ "CC18|dna|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.5124,
+   "auc": 0.6508
+  },
+  "logreg": {
+   "acc": 0.9616,
+   "auc": 0.9933
+  },
+  "histgb": {
+   "acc": 0.9499,
+   "auc": 0.9912
+  }
+ },
+ "CC18|churn|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8763,
+   "auc": 0.7264
+  },
+  "logreg": {
+   "acc": 0.8587,
+   "auc": 0.8069
+  },
+  "histgb": {
+   "acc": 0.959,
+   "auc": 0.9403
+  }
+ },
+ "CC18|MiceProtein|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.2988,
+   "auc": 0.65
+  },
+  "logreg": {
+   "acc": 0.7539,
+   "auc": 0.9705
+  },
+  "histgb": {
+   "acc": 0.9577,
+   "auc": 0.9988
+  }
+ },
+ "CC18|car|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6966,
+   "auc": 0.7473
+  },
+  "logreg": {
+   "acc": 0.821,
+   "auc": 0.9548
+  },
+  "histgb": {
+   "acc": 0.985,
+   "auc": 0.9994
+  }
+ },
+ "CC18|mfeat-pixel|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.0931,
+   "auc": 0.5846
+  },
+  "logreg": {
+   "acc": 0.7878,
+   "auc": 0.9732
+  },
+  "histgb": {
+   "acc": 0.8184,
+   "auc": 0.9794
+  }
+ },
+ "CC18|steel-plates-fault|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.4844,
+   "auc": 0.7015
+  },
+  "logreg": {
+   "acc": 0.5215,
+   "auc": 0.7586
+  },
+  "histgb": {
+   "acc": 0.7695,
+   "auc": 0.957
+  }
+ },
+ "CC18|wilt|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9427,
+   "auc": 0.9076
+  },
+  "logreg": {
+   "acc": 0.9694,
+   "auc": 0.9725
+  },
+  "histgb": {
+   "acc": 0.9792,
+   "auc": 0.9846
+  }
+ },
+ "CC18|segment|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.3548,
+   "auc": 0.7745
+  },
+  "logreg": {
+   "acc": 0.8685,
+   "auc": 0.9816
+  },
+  "histgb": {
+   "acc": 0.9186,
+   "auc": 0.9926
+  }
+ },
+ "CC18|climate-model-simulation-crashes|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9148,
+   "auc": 0.9322
+  },
+  "logreg": {
+   "acc": 0.9235,
+   "auc": 0.9514
+  },
+  "histgb": {
+   "acc": 0.9395,
+   "auc": 0.9326
+  }
+ },
+ "CC18|jungle_chess_2pcs_raw_endgame_complete|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6491,
+   "auc": 0.7606
+  },
+  "logreg": {
+   "acc": 0.6816,
+   "auc": 0.8126
+  },
+  "histgb": {
+   "acc": 0.8639,
+   "auc": 0.9745
+  }
+ },
+ "Grinsztajn|analcatdata_supreme|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7064,
+   "auc": 0.8651
+  },
+  "logreg": {
+   "acc": 0.6764,
+   "auc": 0.6204
+  },
+  "histgb": {
+   "acc": 0.974,
+   "auc": 0.9955
+  }
+ },
+ "Grinsztajn|credit|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6283,
+   "auc": 0.6697
+  },
+  "logreg": {
+   "acc": 0.7181,
+   "auc": 0.793
+  },
+  "histgb": {
+   "acc": 0.7819,
+   "auc": 0.8564
+  }
+ },
+ "Grinsztajn|electricity|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7279,
+   "auc": 0.7965
+  },
+  "logreg": {
+   "acc": 0.7402,
+   "auc": 0.8109
+  },
+  "histgb": {
+   "acc": 0.8685,
+   "auc": 0.948
+  }
+ },
+ "Grinsztajn|pol|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8893,
+   "auc": 0.9636
+  },
+  "logreg": {
+   "acc": 0.8717,
+   "auc": 0.9415
+  },
+  "histgb": {
+   "acc": 0.9837,
+   "auc": 0.9978
+  }
+ },
+ "Grinsztajn|house_16H|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7656,
+   "auc": 0.8525
+  },
+  "logreg": {
+   "acc": 0.791,
+   "auc": 0.8617
+  },
+  "histgb": {
+   "acc": 0.8835,
+   "auc": 0.95
+  }
+ },
+ "Grinsztajn|MagicTelescope|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7812,
+   "auc": 0.8457
+  },
+  "logreg": {
+   "acc": 0.7702,
+   "auc": 0.8485
+  },
+  "histgb": {
+   "acc": 0.8574,
+   "auc": 0.9309
+  }
+ },
+ "Grinsztajn|bank-marketing|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7422,
+   "auc": 0.8276
+  },
+  "logreg": {
+   "acc": 0.7428,
+   "auc": 0.8268
+  },
+  "histgb": {
+   "acc": 0.7962,
+   "auc": 0.8669
+  }
+ },
+ "Grinsztajn|MiniBooNE|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8099,
+   "auc": 0.8845
+  },
+  "logreg": {
+   "acc": 0.89,
+   "auc": 0.949
+  },
+  "histgb": {
+   "acc": 0.9323,
+   "auc": 0.9783
+  }
+ },
+ "Grinsztajn|eye_movements|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.5033,
+   "auc": 0.511
+  },
+  "logreg": {
+   "acc": 0.5514,
+   "auc": 0.589
+  },
+  "histgb": {
+   "acc": 0.6289,
+   "auc": 0.6818
+  }
+ },
+ "Grinsztajn|wine_quality|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.498,
+   "auc": 0.6526
+  },
+  "logreg": {
+   "acc": 0.5339,
+   "auc": 0.7155
+  },
+  "histgb": {
+   "acc": 0.6159,
+   "auc": 0.7741
+  }
+ },
+ "Grinsztajn|Bioresponse|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6458,
+   "auc": 0.7043
+  },
+  "logreg": {
+   "acc": 0.6829,
+   "auc": 0.7536
+  },
+  "histgb": {
+   "acc": 0.7533,
+   "auc": 0.8252
+  }
+ },
+ "Grinsztajn|default-of-credit-card-clients|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.696,
+   "auc": 0.7451
+  },
+  "logreg": {
+   "acc": 0.6934,
+   "auc": 0.751
+  },
+  "histgb": {
+   "acc": 0.7337,
+   "auc": 0.8021
+  }
+ },
+ "Grinsztajn|jannis|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7181,
+   "auc": 0.7893
+  },
+  "logreg": {
+   "acc": 0.7428,
+   "auc": 0.8274
+  },
+  "histgb": {
+   "acc": 0.791,
+   "auc": 0.881
+  }
+ },
+ "Grinsztajn|Diabetes130US|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.5443,
+   "auc": 0.5739
+  },
+  "logreg": {
+   "acc": 0.5879,
+   "auc": 0.6134
+  },
+  "histgb": {
+   "acc": 0.5918,
+   "auc": 0.622
+  }
+ },
+ "Grinsztajn|heloc|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6686,
+   "auc": 0.7248
+  },
+  "logreg": {
+   "acc": 0.6966,
+   "auc": 0.7672
+  },
+  "histgb": {
+   "acc": 0.6927,
+   "auc": 0.7658
+  }
+ },
+ "Grinsztajn|california|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7995,
+   "auc": 0.8656
+  },
+  "logreg": {
+   "acc": 0.8379,
+   "auc": 0.9203
+  },
+  "histgb": {
+   "acc": 0.8939,
+   "auc": 0.9613
+  }
+ },
+ "Grinsztajn|albert|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6107,
+   "auc": 0.6462
+  },
+  "logreg": {
+   "acc": 0.6309,
+   "auc": 0.6798
+  },
+  "histgb": {
+   "acc": 0.6491,
+   "auc": 0.7118
+  }
+ },
+ "Grinsztajn|road-safety|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.5599,
+   "auc": 0.5635
+  },
+  "logreg": {
+   "acc": 0.5931,
+   "auc": 0.6198
+  },
+  "histgb": {
+   "acc": 0.7773,
+   "auc": 0.8719
+  }
+ },
+ "Grinsztajn|compas-two-years|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6595,
+   "auc": 0.715
+  },
+  "logreg": {
+   "acc": 0.6836,
+   "auc": 0.7327
+  },
+  "histgb": {
+   "acc": 0.6536,
+   "auc": 0.7186
+  }
+ },
+ "TabArena|Amazon_employee_access|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9479,
+   "auc": 0.4737
+  },
+  "logreg": {
+   "acc": 0.9479,
+   "auc": 0.5698
+  },
+  "histgb": {
+   "acc": 0.9512,
+   "auc": 0.7679
+  }
+ },
+ "TabArena|anneal|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7617,
+   "auc": 0.6599
+  },
+  "logreg": {
+   "acc": 0.931,
+   "auc": 0.9837
+  },
+  "histgb": {
+   "acc": 0.9792,
+   "auc": 0.9675
+  }
+ },
+ "TabArena|APSFailure|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9811,
+   "auc": 0.9707
+  },
+  "logreg": {
+   "acc": 0.9596,
+   "auc": 0.3999
+  },
+  "histgb": {
+   "acc": 0.9896,
+   "auc": 0.9826
+  }
+ },
+ "TabArena|bank-marketing|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8835,
+   "auc": 0.6495
+  },
+  "logreg": {
+   "acc": 0.8913,
+   "auc": 0.7165
+  },
+  "histgb": {
+   "acc": 0.8939,
+   "auc": 0.7711
+  }
+ },
+ "TabArena|Bank_Customer_Churn|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8027,
+   "auc": 0.7445
+  },
+  "logreg": {
+   "acc": 0.8008,
+   "auc": 0.7541
+  },
+  "histgb": {
+   "acc": 0.8477,
+   "auc": 0.858
+  }
+ },
+ "TabArena|blood-transfusion-service-center|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7674,
+   "auc": 0.74
+  },
+  "logreg": {
+   "acc": 0.7736,
+   "auc": 0.7647
+  },
+  "histgb": {
+   "acc": 0.7496,
+   "auc": 0.7078
+  }
+ },
+ "TabArena|churn|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8783,
+   "auc": 0.679
+  },
+  "logreg": {
+   "acc": 0.8776,
+   "auc": 0.8387
+  },
+  "histgb": {
+   "acc": 0.9668,
+   "auc": 0.9526
+  }
+ },
+ "TabArena|coil2000_insurance_policies|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9447,
+   "auc": 0.6209
+  },
+  "logreg": {
+   "acc": 0.9447,
+   "auc": 0.7133
+  },
+  "histgb": {
+   "acc": 0.9375,
+   "auc": 0.7126
+  }
+ },
+ "TabArena|credit-g|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.724,
+   "auc": 0.6489
+  },
+  "logreg": {
+   "acc": 0.7247,
+   "auc": 0.703
+  },
+  "histgb": {
+   "acc": 0.74,
+   "auc": 0.7493
+  }
+ },
+ "TabArena|credit_card_clients_default|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7799,
+   "auc": 0.6756
+  },
+  "logreg": {
+   "acc": 0.8112,
+   "auc": 0.6956
+  },
+  "histgb": {
+   "acc": 0.8229,
+   "auc": 0.7761
+  }
+ },
+ "TabArena|customer_satisfaction_in_airline|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.5918,
+   "auc": 0.6555
+  },
+  "logreg": {
+   "acc": 0.7585,
+   "auc": 0.8409
+  },
+  "histgb": {
+   "acc": 0.9551,
+   "auc": 0.9919
+  }
+ },
+ "TabArena|diabetes|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7604,
+   "auc": 0.8292
+  },
+  "logreg": {
+   "acc": 0.7665,
+   "auc": 0.8247
+  },
+  "histgb": {
+   "acc": 0.7214,
+   "auc": 0.7868
+  }
+ },
+ "TabArena|Diabetes130US|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.903,
+   "auc": 0.5473
+  },
+  "logreg": {
+   "acc": 0.9023,
+   "auc": 0.6215
+  },
+  "histgb": {
+   "acc": 0.903,
+   "auc": 0.6816
+  }
+ },
+ "TabArena|E-CommereShippingData|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6341,
+   "auc": 0.7157
+  },
+  "logreg": {
+   "acc": 0.6491,
+   "auc": 0.7263
+  },
+  "histgb": {
+   "acc": 0.6595,
+   "auc": 0.7382
+  }
+ },
+ "TabArena|Fitness_Club|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7721,
+   "auc": 0.819
+  },
+  "logreg": {
+   "acc": 0.7715,
+   "auc": 0.8165
+  },
+  "histgb": {
+   "acc": 0.7461,
+   "auc": 0.7582
+  }
+ },
+ "TabArena|GiveMeSomeCredit|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9342,
+   "auc": 0.7448
+  },
+  "logreg": {
+   "acc": 0.9368,
+   "auc": 0.7208
+  },
+  "histgb": {
+   "acc": 0.9427,
+   "auc": 0.8977
+  }
+ },
+ "TabArena|hazelnut-spread-contaminant-detection|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8223,
+   "auc": 0.8867
+  },
+  "logreg": {
+   "acc": 0.7044,
+   "auc": 0.6368
+  },
+  "histgb": {
+   "acc": 0.9108,
+   "auc": 0.965
+  }
+ },
+ "TabArena|heloc|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6549,
+   "auc": 0.7161
+  },
+  "logreg": {
+   "acc": 0.7109,
+   "auc": 0.7752
+  },
+  "histgb": {
+   "acc": 0.7161,
+   "auc": 0.7821
+  }
+ },
+ "TabArena|HR_Analytics_Job_Change_of_Data_Scientists|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7526,
+   "auc": 0.7219
+  },
+  "logreg": {
+   "acc": 0.7565,
+   "auc": 0.7486
+  },
+  "histgb": {
+   "acc": 0.7819,
+   "auc": 0.773
+  }
+ },
+ "TabArena|in_vehicle_coupon_recommendation|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.5462,
+   "auc": 0.5339
+  },
+  "logreg": {
+   "acc": 0.6439,
+   "auc": 0.7012
+  },
+  "histgb": {
+   "acc": 0.7591,
+   "auc": 0.8275
+  }
+ },
+ "TabArena|Is-this-a-good-customer|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8926,
+   "auc": 0.533
+  },
+  "logreg": {
+   "acc": 0.8913,
+   "auc": 0.6533
+  },
+  "histgb": {
+   "acc": 0.8776,
+   "auc": 0.6878
+  }
+ },
+ "TabArena|kddcup09_appetency|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9818,
+   "auc": 0.5929
+  },
+  "logreg": {
+   "acc": 0.9818,
+   "auc": 0.7468
+  },
+  "histgb": {
+   "acc": 0.9818,
+   "auc": 0.863
+  }
+ },
+ "TabArena|Marketing_Campaign|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8548,
+   "auc": 0.7573
+  },
+  "logreg": {
+   "acc": 0.8639,
+   "auc": 0.8013
+  },
+  "histgb": {
+   "acc": 0.8763,
+   "auc": 0.8508
+  }
+ },
+ "TabArena|maternal_health_risk|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6154,
+   "auc": 0.7588
+  },
+  "logreg": {
+   "acc": 0.6134,
+   "auc": 0.7877
+  },
+  "histgb": {
+   "acc": 0.783,
+   "auc": 0.9037
+  }
+ },
+ "TabArena|online_shoppers_intention|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.89,
+   "auc": 0.869
+  },
+  "logreg": {
+   "acc": 0.8919,
+   "auc": 0.9056
+  },
+  "histgb": {
+   "acc": 0.9102,
+   "auc": 0.9439
+  }
+ },
+ "TabArena|polish_companies_bankruptcy|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9323,
+   "auc": 0.8299
+  },
+  "logreg": {
+   "acc": 0.9388,
+   "auc": 0.7709
+  },
+  "histgb": {
+   "acc": 0.9466,
+   "auc": 0.883
+  }
+ },
+ "TabArena|qsar-biodeg|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.7891,
+   "auc": 0.8581
+  },
+  "logreg": {
+   "acc": 0.8555,
+   "auc": 0.9262
+  },
+  "histgb": {
+   "acc": 0.8477,
+   "auc": 0.9135
+  }
+ },
+ "TabArena|SDSS17|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8392,
+   "auc": 0.9502
+  },
+  "logreg": {
+   "acc": 0.8724,
+   "auc": 0.9293
+  },
+  "histgb": {
+   "acc": 0.9746,
+   "auc": 0.9955
+  }
+ },
+ "TabArena|seismic-bumps|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9303,
+   "auc": 0.7594
+  },
+  "logreg": {
+   "acc": 0.9355,
+   "auc": 0.7453
+  },
+  "histgb": {
+   "acc": 0.931,
+   "auc": 0.7352
+  }
+ },
+ "TabArena|splice|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.5299,
+   "auc": 0.7244
+  },
+  "logreg": {
+   "acc": 0.834,
+   "auc": 0.951
+  },
+  "histgb": {
+   "acc": 0.9525,
+   "auc": 0.9926
+  }
+ },
+ "TabArena|students_dropout_and_academic_success|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.679,
+   "auc": 0.7861
+  },
+  "logreg": {
+   "acc": 0.7676,
+   "auc": 0.8797
+  },
+  "histgb": {
+   "acc": 0.7676,
+   "auc": 0.8847
+  }
+ },
+ "TabArena|taiwanese_bankruptcy_prediction|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.9707,
+   "auc": 0.9182
+  },
+  "logreg": {
+   "acc": 0.9681,
+   "auc": 0.9083
+  },
+  "histgb": {
+   "acc": 0.9694,
+   "auc": 0.9469
+  }
+ },
+ "TabArena|website_phishing|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6094,
+   "auc": 0.6164
+  },
+  "logreg": {
+   "acc": 0.8164,
+   "auc": 0.9033
+  },
+  "histgb": {
+   "acc": 0.877,
+   "auc": 0.9664
+  }
+ },
+ "TabArena|wine_quality|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.4368,
+   "auc": 0.6443
+  },
+  "logreg": {
+   "acc": 0.5195,
+   "auc": 0.6506
+  },
+  "histgb": {
+   "acc": 0.6094,
+   "auc": 0.7795
+  }
+ },
+ "TabArena|NATICUSdroid|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.6198,
+   "auc": 0.8524
+  },
+  "logreg": {
+   "acc": 0.9186,
+   "auc": 0.9722
+  },
+  "histgb": {
+   "acc": 0.9141,
+   "auc": 0.9732
+  }
+ },
+ "TabArena|jm1|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8014,
+   "auc": 0.6821
+  },
+  "logreg": {
+   "acc": 0.7943,
+   "auc": 0.5983
+  },
+  "histgb": {
+   "acc": 0.8118,
+   "auc": 0.7355
+  }
+ },
+ "TabArena|MIC|clf": {
+  "cls_ds_lr1.7e-4_s1": {
+   "acc": 0.8438,
+   "auc": 0.7362
+  },
+  "logreg": {
+   "acc": 0.8796,
+   "auc": 0.7928
+  },
+  "histgb": {
+   "acc": 0.8809,
+   "auc": 0.7913
+  }
+ }
+}

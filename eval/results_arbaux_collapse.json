@@ -1,0 +1,44 @@
+{
+ "criterion": "target-side batch cosine > 0.95 at EVERY logged step",
+ "source": "runs/c4_factor_arbaux_s*/metrics.jsonl (gitignored; this file is the committed summary)",
+ "per_seed": {
+  "c4_factor_arbaux_s0": {
+   "n_logged": 800,
+   "first_step": 25,
+   "last_step": 20000,
+   "min_cos": 0.982,
+   "last_cos": 1.0,
+   "last_dim_std": 0.0,
+   "collapsed_at_every_logged_step": true
+  },
+  "c4_factor_arbaux_s1": {
+   "n_logged": 800,
+   "first_step": 25,
+   "last_step": 20000,
+   "min_cos": 0.9701,
+   "last_cos": 1.0,
+   "last_dim_std": 0.0,
+   "collapsed_at_every_logged_step": true
+  },
+  "c4_factor_arbaux_s2": {
+   "n_logged": 800,
+   "first_step": 25,
+   "last_step": 20000,
+   "min_cos": 0.9812,
+   "last_cos": 1.0,
+   "last_dim_std": 0.0,
+   "collapsed_at_every_logged_step": true
+  },
+  "c4_factor_arbaux_s3": {
+   "n_logged": 800,
+   "first_step": 25,
+   "last_step": 20000,
+   "min_cos": 0.9693,
+   "last_cos": 1.0,
+   "last_dim_std": 0.0,
+   "collapsed_at_every_logged_step": true
+  }
+ },
+ "n_seeds": 4,
+ "n_collapsed_throughout": 4
+}

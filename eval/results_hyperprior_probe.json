@@ -1,0 +1,2078 @@
+{
+ "protocol": {
+  "prior": "scm_prior(1.0, 128, 50, (4, 32))",
+  "ctx": 128,
+  "n_tables": 512,
+  "batch": 1,
+  "eval_seed": 30000,
+  "policy": "any_cell",
+  "k_fold": 8,
+  "ridge_alpha": 1.0,
+  "features": "context-row means (cell, cls)",
+  "targets": [
+   "sigma_log_mean",
+   "edge_density",
+   "n_hidden",
+   "fam_mlp",
+   "fam_tree",
+   "fam_disc"
+  ],
+  "const_map_r2": 0.0,
+  "n_floor": 3,
+  "floor_ref_arch": "base_ds_s0"
+ },
+ "arms": {
+  "base_ds_s0": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.4738,
+     "mse": 0.0493,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6764,
+     "mse": 0.0029,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.003,
+     "mse": 1.3217,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.5802,
+     "mse": 0.0111,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.2429,
+     "mse": 0.0176,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.1129,
+     "mse": 0.018,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": 0.2748,
+     "mse": 0.0679,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6847,
+     "mse": 0.0028,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0119,
+     "mse": 1.3021,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.4564,
+     "mse": 0.0144,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.1904,
+     "mse": 0.0189,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0999,
+     "mse": 0.0183,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "ds",
+    "seed": 0
+   }
+  },
+  "base_ds_s1": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.4551,
+     "mse": 0.051,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6581,
+     "mse": 0.003,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0166,
+     "mse": 1.3397,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.5775,
+     "mse": 0.0112,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.267,
+     "mse": 0.0171,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0828,
+     "mse": 0.0186,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": 0.3101,
+     "mse": 0.0646,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6954,
+     "mse": 0.0027,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0013,
+     "mse": 1.3161,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.47,
+     "mse": 0.014,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.184,
+     "mse": 0.019,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.1281,
+     "mse": 0.0177,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "ds",
+    "seed": 1
+   }
+  },
+  "base_ds_s2": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.432,
+     "mse": 0.0532,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6868,
+     "mse": 0.0028,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0271,
+     "mse": 1.3535,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.5641,
+     "mse": 0.0115,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.2452,
+     "mse": 0.0176,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.106,
+     "mse": 0.0182,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": 0.2708,
+     "mse": 0.0683,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6951,
+     "mse": 0.0027,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0545,
+     "mse": 1.246,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.496,
+     "mse": 0.0133,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.1794,
+     "mse": 0.0191,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.1053,
+     "mse": 0.0182,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "ds",
+    "seed": 2
+   }
+  },
+  "base_ds_s3": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.4736,
+     "mse": 0.0493,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6851,
+     "mse": 0.0028,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0144,
+     "mse": 1.3367,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.5639,
+     "mse": 0.0115,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.2504,
+     "mse": 0.0175,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.099,
+     "mse": 0.0183,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": 0.2274,
+     "mse": 0.0723,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.655,
+     "mse": 0.003,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0214,
+     "mse": 1.2896,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.4973,
+     "mse": 0.0133,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.2279,
+     "mse": 0.018,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.1359,
+     "mse": 0.0176,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "ds",
+    "seed": 3
+   }
+  },
+  "base_ds_s4": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.4381,
+     "mse": 0.0526,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6833,
+     "mse": 0.0028,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0033,
+     "mse": 1.3222,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.5772,
+     "mse": 0.0112,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.2702,
+     "mse": 0.017,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.1528,
+     "mse": 0.0172,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": 0.2932,
+     "mse": 0.0662,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6827,
+     "mse": 0.0028,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0109,
+     "mse": 1.3035,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.511,
+     "mse": 0.0129,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.2149,
+     "mse": 0.0183,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0988,
+     "mse": 0.0183,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "ds",
+    "seed": 4
+   }
+  },
+  "base_dual_s0": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "dual",
+    "seed": 0
+   }
+  },
+  "base_dual_s1": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.2808,
+     "mse": 0.0673,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6416,
+     "mse": 0.0032,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0411,
+     "mse": 1.372,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.4632,
+     "mse": 0.0142,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.2312,
+     "mse": 0.0179,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0765,
+     "mse": 0.0188,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": -0.2195,
+     "mse": 0.1142,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.4615,
+     "mse": 0.0047,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.2968,
+     "mse": 1.7089,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": -0.0647,
+     "mse": 0.0281,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": -0.2114,
+     "mse": 0.0282,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": -0.28,
+     "mse": 0.026,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "dual",
+    "seed": 1
+   }
+  },
+  "base_dual_s2": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.2862,
+     "mse": 0.0668,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6055,
+     "mse": 0.0035,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0524,
+     "mse": 1.3868,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.4857,
+     "mse": 0.0136,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.2101,
+     "mse": 0.0184,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0854,
+     "mse": 0.0186,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": -0.1317,
+     "mse": 0.106,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.5163,
+     "mse": 0.0043,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.151,
+     "mse": 1.5168,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.2853,
+     "mse": 0.0189,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": -0.0292,
+     "mse": 0.024,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": -0.0812,
+     "mse": 0.022,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "dual",
+    "seed": 2
+   }
+  },
+  "base_dual_s3": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.1891,
+     "mse": 0.0759,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6116,
+     "mse": 0.0034,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0359,
+     "mse": 1.3651,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.462,
+     "mse": 0.0142,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.2393,
+     "mse": 0.0177,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.072,
+     "mse": 0.0188,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": -0.1351,
+     "mse": 0.1063,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.5412,
+     "mse": 0.004,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.1991,
+     "mse": 1.5801,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.1643,
+     "mse": 0.0221,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": -0.0435,
+     "mse": 0.0243,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": -0.1428,
+     "mse": 0.0232,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "dual",
+    "seed": 3
+   }
+  },
+  "base_dual_s4": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": -0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "dual",
+    "seed": 4
+   }
+  },
+  "base_lat_s_s0": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "lat",
+    "seed": 0
+   }
+  },
+  "base_lat_s_s1": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": -0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "lat",
+    "seed": 1
+   }
+  },
+  "base_lat_s_s2": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "lat",
+    "seed": 2
+   }
+  },
+  "base_lat_s_s3": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0431,
+     "mse": 0.0977,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.326,
+     "mse": 0.0059,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0806,
+     "mse": 1.424,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": -0.0669,
+     "mse": 0.0282,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": -0.0916,
+     "mse": 0.0254,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": -0.061,
+     "mse": 0.0216,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0203,
+     "mse": 0.0955,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.4466,
+     "mse": 0.0049,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0344,
+     "mse": 1.3632,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": -0.028,
+     "mse": 0.0272,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": -0.0082,
+     "mse": 0.0235,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": -0.0408,
+     "mse": 0.0211,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "lat",
+    "seed": 3
+   }
+  },
+  "base_lat_s_s4": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": -0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "lat",
+    "seed": 4
+   }
+  },
+  "base_ema_nohead_s0": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "ema_nohead",
+    "seed": 0
+   }
+  },
+  "base_ema_nohead_s1": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0282,
+     "mse": 0.091,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.5979,
+     "mse": 0.0035,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.008,
+     "mse": 1.3072,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.1748,
+     "mse": 0.0218,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.1095,
+     "mse": 0.0207,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0438,
+     "mse": 0.0194,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": -0.2899,
+     "mse": 0.1208,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.5391,
+     "mse": 0.0041,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.2966,
+     "mse": 1.7086,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": -0.1024,
+     "mse": 0.0291,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": -0.1662,
+     "mse": 0.0272,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": -0.2303,
+     "mse": 0.025,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "ema_nohead",
+    "seed": 1
+   }
+  },
+  "base_ema_nohead_s2": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "ema_nohead",
+    "seed": 2
+   }
+  },
+  "base_ema_nohead_s3": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": -0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": -0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "ema_nohead",
+    "seed": 3
+   }
+  },
+  "base_ema_nohead_s4": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": -0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "ema_nohead",
+    "seed": 4
+   }
+  },
+  "base_dual_lewm": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0785,
+     "mse": 0.101,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.3571,
+     "mse": 0.0057,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.075,
+     "mse": 1.4166,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": -0.0564,
+     "mse": 0.0279,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": -0.0111,
+     "mse": 0.0235,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": -0.0391,
+     "mse": 0.0211,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0649,
+     "mse": 0.0997,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.3375,
+     "mse": 0.0058,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.1424,
+     "mse": 1.5054,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": -0.0915,
+     "mse": 0.0288,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": -0.0526,
+     "mse": 0.0245,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": -0.1183,
+     "mse": 0.0227,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "dual_lewm",
+    "seed": 0
+   }
+  },
+  "base_ds_lr1e-4_s0": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.2523,
+     "mse": 0.07,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6719,
+     "mse": 0.0029,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0812,
+     "mse": 1.4248,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.5109,
+     "mse": 0.0129,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.2067,
+     "mse": 0.0185,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0778,
+     "mse": 0.0187,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": 0.0823,
+     "mse": 0.0859,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6591,
+     "mse": 0.003,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.008,
+     "mse": 1.3283,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.385,
+     "mse": 0.0162,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.1766,
+     "mse": 0.0192,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.046,
+     "mse": 0.0194,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "ds_lr1e-4",
+    "seed": 0
+   }
+  },
+  "base_ds_lr4e-3_s0": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": -0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": -0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "ds_lr4e-3",
+    "seed": 0
+   }
+  },
+  "base_dual_lr1e-4_s0": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": 0.2223,
+     "mse": 0.0728,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6429,
+     "mse": 0.0031,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.0918,
+     "mse": 1.4388,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.4533,
+     "mse": 0.0144,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.1652,
+     "mse": 0.0194,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.063,
+     "mse": 0.019,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": -0.1713,
+     "mse": 0.1097,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.6153,
+     "mse": 0.0034,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": -0.3085,
+     "mse": 1.7244,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.1573,
+     "mse": 0.0223,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": -0.0297,
+     "mse": 0.024,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": -0.1762,
+     "mse": 0.0239,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "dual_lr1e-4",
+    "seed": 0
+   }
+  },
+  "base_dual_lr4e-3_s0": {
+   "cell_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "cls_mean": {
+    "sigma_log_mean": {
+     "r2": -0.0,
+     "mse": 0.0936,
+     "n": 512
+    },
+    "edge_density": {
+     "r2": 0.0,
+     "mse": 0.0088,
+     "n": 512
+    },
+    "n_hidden": {
+     "r2": 0.0,
+     "mse": 1.3178,
+     "n": 512
+    },
+    "fam_mlp": {
+     "r2": 0.0,
+     "mse": 0.0264,
+     "n": 512
+    },
+    "fam_tree": {
+     "r2": 0.0,
+     "mse": 0.0233,
+     "n": 512
+    },
+    "fam_disc": {
+     "r2": 0.0,
+     "mse": 0.0203,
+     "n": 512
+    }
+   },
+   "meta": {
+    "group": "dual_lr4e-3",
+    "seed": 0
+   }
+  }
+ },
+ "floor": {
+  "cell_mean": {
+   "sigma_log_mean": {
+    "mean": -0.0118,
+    "draws": [
+     -0.0154,
+     -0.0127,
+     -0.0073
+    ]
+   },
+   "edge_density": {
+    "mean": 0.6228,
+    "draws": [
+     0.6203,
+     0.623,
+     0.6252
+    ]
+   },
+   "n_hidden": {
+    "mean": -0.012,
+    "draws": [
+     -0.0147,
+     -0.0126,
+     -0.0088
+    ]
+   },
+   "fam_mlp": {
+    "mean": -0.0069,
+    "draws": [
+     -0.019,
+     -0.006,
+     0.0044
+    ]
+   },
+   "fam_tree": {
+    "mean": -0.0022,
+    "draws": [
+     -0.018,
+     -0.0024,
+     0.0139
+    ]
+   },
+   "fam_disc": {
+    "mean": -0.0149,
+    "draws": [
+     -0.0182,
+     -0.0142,
+     -0.0123
+    ]
+   }
+  },
+  "cls_mean": {
+   "sigma_log_mean": {
+    "mean": -0.0172,
+    "draws": [
+     -0.019,
+     -0.0185,
+     -0.0142
+    ]
+   },
+   "edge_density": {
+    "mean": 0.6175,
+    "draws": [
+     0.6169,
+     0.6192,
+     0.6164
+    ]
+   },
+   "n_hidden": {
+    "mean": -0.0169,
+    "draws": [
+     -0.018,
+     -0.0166,
+     -0.0162
+    ]
+   },
+   "fam_mlp": {
+    "mean": -0.0358,
+    "draws": [
+     -0.0418,
+     -0.034,
+     -0.0316
+    ]
+   },
+   "fam_tree": {
+    "mean": -0.0264,
+    "draws": [
+     -0.0328,
+     -0.0235,
+     -0.0228
+    ]
+   },
+   "fam_disc": {
+    "mean": -0.0207,
+    "draws": [
+     -0.0208,
+     -0.0217,
+     -0.0196
+    ]
+   }
+  }
+ },
+ "verdict": {
+  "rule": "a latent group wins a target when every admitted seed's best read-out R^2 exceeds the admitted data-space seeds' mean AND 0 (constant map); clue = >= 2 wins among sigma_log_mean, edge_density, n_hidden",
+  "ds_runs": [
+   "base_ds_s0",
+   "base_ds_s1",
+   "base_ds_s2",
+   "base_ds_s3",
+   "base_ds_s4"
+  ],
+  "ds_mean_r2": {
+   "sigma_log_mean": 0.4545,
+   "edge_density": 0.6887,
+   "n_hidden": 0.02
+  },
+  "groups": {
+   "dual": {
+    "admitted": [
+     "base_dual_s1",
+     "base_dual_s2",
+     "base_dual_s3"
+    ],
+    "per_target": {
+     "sigma_log_mean": {
+      "latent_r2": {
+       "base_dual_s1": 0.2808,
+       "base_dual_s2": 0.2862,
+       "base_dual_s3": 0.1891
+      },
+      "ds_mean_r2": 0.4545,
+      "wins": false
+     },
+     "edge_density": {
+      "latent_r2": {
+       "base_dual_s1": 0.6416,
+       "base_dual_s2": 0.6055,
+       "base_dual_s3": 0.6116
+      },
+      "ds_mean_r2": 0.6887,
+      "wins": false
+     },
+     "n_hidden": {
+      "latent_r2": {
+       "base_dual_s1": -0.0411,
+       "base_dual_s2": -0.0524,
+       "base_dual_s3": -0.0359
+      },
+      "ds_mean_r2": 0.02,
+      "wins": false
+     }
+    },
+    "n_wins": 0,
+    "clue": false
+   },
+   "ema_nohead": {
+    "admitted": [
+     "base_ema_nohead_s1"
+    ],
+    "per_target": {
+     "sigma_log_mean": {
+      "latent_r2": {
+       "base_ema_nohead_s1": 0.0282
+      },
+      "ds_mean_r2": 0.4545,
+      "wins": false
+     },
+     "edge_density": {
+      "latent_r2": {
+       "base_ema_nohead_s1": 0.5979
+      },
+      "ds_mean_r2": 0.6887,
+      "wins": false
+     },
+     "n_hidden": {
+      "latent_r2": {
+       "base_ema_nohead_s1": 0.008
+      },
+      "ds_mean_r2": 0.02,
+      "wins": false
+     }
+    },
+    "n_wins": 0,
+    "clue": false
+   },
+   "lat": {
+    "admitted": [],
+    "per_target": {
+     "sigma_log_mean": {
+      "latent_r2": {},
+      "ds_mean_r2": 0.4545,
+      "wins": false
+     },
+     "edge_density": {
+      "latent_r2": {},
+      "ds_mean_r2": 0.6887,
+      "wins": false
+     },
+     "n_hidden": {
+      "latent_r2": {},
+      "ds_mean_r2": 0.02,
+      "wins": false
+     }
+    },
+    "n_wins": 0,
+    "clue": false
+   },
+   "dual_lewm": {
+    "admitted": [],
+    "per_target": {
+     "sigma_log_mean": {
+      "latent_r2": {},
+      "ds_mean_r2": 0.4545,
+      "wins": false
+     },
+     "edge_density": {
+      "latent_r2": {},
+      "ds_mean_r2": 0.6887,
+      "wins": false
+     },
+     "n_hidden": {
+      "latent_r2": {},
+      "ds_mean_r2": 0.02,
+      "wins": false
+     }
+    },
+    "n_wins": 0,
+    "clue": false
+   },
+   "dual_lr1e-4": {
+    "admitted": [
+     "base_dual_lr1e-4_s0"
+    ],
+    "per_target": {
+     "sigma_log_mean": {
+      "latent_r2": {
+       "base_dual_lr1e-4_s0": 0.2223
+      },
+      "ds_mean_r2": 0.4545,
+      "wins": false
+     },
+     "edge_density": {
+      "latent_r2": {
+       "base_dual_lr1e-4_s0": 0.6429
+      },
+      "ds_mean_r2": 0.6887,
+      "wins": false
+     },
+     "n_hidden": {
+      "latent_r2": {
+       "base_dual_lr1e-4_s0": -0.0918
+      },
+      "ds_mean_r2": 0.02,
+      "wins": false
+     }
+    },
+    "n_wins": 0,
+    "clue": false
+   }
+  },
+  "clue": false,
+  "ds_lr_controls": {
+   "base_ds_lr1e-4_s0": {
+    "sigma_log_mean": 0.2523,
+    "edge_density": 0.6719,
+    "n_hidden": -0.008
+   }
+  }
+ },
+ "_note": "Question: does a latent objective leave the table's GENERATOR-LEVEL variables more readable\nthan the value objective does? The cell-level read-outs in this repo all target f, a\nconditional of observed cells, which the value objective is by definition trained to\nrepresent. The targets here are properties of the sampled SCM that no single cell's\nconditional determines: the table's noise level, its graph density, the number of hidden\nconfounders, and the mechanism-family mix.",
+ "anchor_d_only": {
+  "sigma_log_mean": {
+   "r2": -0.0068,
+   "mse": 0.0943,
+   "n": 512
+  },
+  "edge_density": {
+   "r2": 0.62,
+   "mse": 0.0033,
+   "n": 512
+  },
+  "n_hidden": {
+   "r2": -0.0103,
+   "mse": 1.3314,
+   "n": 512
+  },
+  "fam_mlp": {
+   "r2": -0.011,
+   "mse": 0.0267,
+   "n": 512
+  },
+  "fam_tree": {
+   "r2": -0.0054,
+   "mse": 0.0234,
+   "n": 512
+  },
+  "fam_disc": {
+   "r2": -0.0146,
+   "mse": 0.0206,
+   "n": 512
+  }
+ }
+}

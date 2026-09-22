@@ -1,0 +1,8 @@
+{
+ "matched_L4_lat_s4": {
+  "step": 1000,
+  "dim_std": 1.1161,
+  "erank": 33.8,
+  "cos": 0.009
+ }
+}

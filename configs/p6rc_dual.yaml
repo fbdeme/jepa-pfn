@@ -1,0 +1,13 @@
+# Issue #20 follow-up (A): STACK the two partial closures. #20 rope removed the
+# address tax (slot_share 0.34->0.04, closed edge/fam); #19 CLS added compression
+# (closed mse_f). This is CLS latent target UNDER rope - do both closures add up?
+# Dual variant (+cell CE, lambda_ppd=0.1): the strongest #19 arm, now under rope.
+run_name: p6rc_dual
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+seed: 0
+steps: 20000
+lambda_ppd: 0.1

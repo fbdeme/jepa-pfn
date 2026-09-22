@@ -1,0 +1,142 @@
+{
+ "run": "v4_dual_split_ctx_tw4_diff_lam1_lr5e-4_mixed_cell_200k_s0_at180k",
+ "n_datasets": 147,
+ "vs": {
+  "v4_dual_split_ctx_tw4_diff_lam1_lr5e-4_mixed_cell_s0": {
+   "clf_acc": {
+    "n": 115,
+    "wins": 85,
+    "losses": 14,
+    "p_sign": 0.0,
+    "mean_run": 0.7125,
+    "mean_ref": 0.6676,
+    "mean_delta": 0.0449
+   },
+   "clf_auc": {
+    "n": 115,
+    "wins": 107,
+    "losses": 8,
+    "p_sign": 0.0,
+    "mean_run": 0.78,
+    "mean_ref": 0.7197,
+    "mean_delta": 0.0603
+   },
+   "reg_r2": {
+    "n": 32,
+    "wins": 30,
+    "losses": 2,
+    "p_sign": 0.0,
+    "mean_run": 0.5796,
+    "mean_ref": 0.4613,
+    "mean_delta": 0.1184
+   }
+  },
+  "real_ds_lr5e-4_s0": {
+   "clf_acc": {
+    "n": 115,
+    "wins": 82,
+    "losses": 9,
+    "p_sign": 0.0,
+    "mean_run": 0.7125,
+    "mean_ref": 0.655,
+    "mean_delta": 0.0575
+   },
+   "clf_auc": {
+    "n": 115,
+    "wins": 102,
+    "losses": 13,
+    "p_sign": 0.0,
+    "mean_run": 0.78,
+    "mean_ref": 0.6976,
+    "mean_delta": 0.0824
+   },
+   "reg_r2": {
+    "n": 32,
+    "wins": 30,
+    "losses": 2,
+    "p_sign": 0.0,
+    "mean_run": 0.5796,
+    "mean_ref": 0.4599,
+    "mean_delta": 0.1197
+   }
+  },
+  "v4_ds_none_lam0_lr5e-4_any_cell_bar32_40k_s0": {
+   "clf_acc": {
+    "n": 115,
+    "wins": 63,
+    "losses": 33,
+    "p_sign": 0.00288,
+    "mean_run": 0.7125,
+    "mean_ref": 0.7013,
+    "mean_delta": 0.0112
+   },
+   "clf_auc": {
+    "n": 115,
+    "wins": 82,
+    "losses": 32,
+    "p_sign": 0.0,
+    "mean_run": 0.78,
+    "mean_ref": 0.7592,
+    "mean_delta": 0.0208
+   },
+   "reg_r2": {
+    "n": 32,
+    "wins": 26,
+    "losses": 6,
+    "p_sign": 0.00054,
+    "mean_run": 0.5796,
+    "mean_ref": 0.523,
+    "mean_delta": 0.0567
+   }
+  },
+  "v4_ds_latinit_lam0_lr5e-4_any_cell_bar32_40k_s0": {
+   "clf_acc": {
+    "n": 115,
+    "wins": 55,
+    "losses": 43,
+    "p_sign": 0.26641,
+    "mean_run": 0.7125,
+    "mean_ref": 0.7151,
+    "mean_delta": -0.0026
+   },
+   "clf_auc": {
+    "n": 115,
+    "wins": 69,
+    "losses": 46,
+    "p_sign": 0.03975,
+    "mean_run": 0.78,
+    "mean_ref": 0.7743,
+    "mean_delta": 0.0057
+   },
+   "reg_r2": {
+    "n": 32,
+    "wins": 18,
+    "losses": 14,
+    "p_sign": 0.59661,
+    "mean_run": 0.5796,
+    "mean_ref": 0.5598,
+    "mean_delta": 0.0198
+   }
+  },
+  "histgb": {
+   "clf_acc": {
+    "n": 115,
+    "wins": 17,
+    "losses": 96,
+    "p_sign": 0.0,
+    "mean_run": 0.7125,
+    "mean_ref": 0.8424,
+    "mean_delta": -0.1298
+   },
+   "clf_auc": {
+    "n": 115,
+    "wins": 14,
+    "losses": 101,
+    "p_sign": 0.0,
+    "mean_run": 0.78,
+    "mean_ref": 0.8785,
+    "mean_delta": -0.0985
+   }
+  }
+ }
+}

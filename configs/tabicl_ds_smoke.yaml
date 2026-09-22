@@ -1,0 +1,20 @@
+# Plumbing smoke: ds arm on the TabICL-prior dump (tiny R=256 dump, few steps, CPU).
+# Predict the target column's VALUE (y_last). Real run = tabicl_ds.yaml (R=1024, 20k steps).
+run_name: tabicl_ds_smoke
+dump_path: data/tabicl_tiny.h5
+feat: 10
+policy: y_last
+seed: 0
+steps: 60
+batch_size: 8
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+n_cls: 4
+r_scheme: rope
+log_every: 15
+val_every: 30
+val_batches: 4

@@ -1,0 +1,43 @@
+{
+ "model": "TabPFN v2 regressor (public weights, frozen, inference only)",
+ "checkpoint": "tabpfn-v2-regressor.ckpt",
+ "n_estimators": 1,
+ "embedding_dim": 192,
+ "protocol": {
+  "source": "this paper: ridge on the frozen representation to the noiseless f of the target cell, alpha 1.0, clamp 3.05, fit on the first half of a table-major pooled stream and test on the second",
+  "hidden": "masked read-out: target column is the regression target only, never seen for the probed rows",
+  "visible": "unmasked read-out: SAME rows and model, observed target value appended as an extra feature column",
+  "role_query/role_context": "architecture-native analogue: query rows vs context rows, whose target value the model was given. Different rows, so an analogue not a replication",
+  "prior": "instrumented SCM prior, sigma 1.0, cols 4-32, non-ROOT targets",
+  "ctx": 128,
+  "n_query": 50,
+  "n_tables": 24,
+  "n_target_columns": 95
+ },
+ "readout": {
+  "hidden": {
+   "f_mse": 0.1545,
+   "const_map": 1.0013,
+   "n_cells": 4750
+  },
+  "visible": {
+   "f_mse": 0.0477,
+   "const_map": 1.0013,
+   "n_cells": 4750
+  },
+  "role_query": {
+   "f_mse": 0.1545,
+   "const_map": 1.0013,
+   "n_cells": 4750
+  },
+  "role_context": {
+   "f_mse": 0.1411,
+   "const_map": 0.9504,
+   "n_cells": 12160
+  }
+ },
+ "same_row_contrast": {
+  "visible_minus_hidden": -0.1068,
+  "reading": "negative means the unmasked read-out scores better on the same rows because the answer is in the input, not because more mechanism was recovered -- the pathology Section 3.3 names, on a model we did not train"
+ }
+}

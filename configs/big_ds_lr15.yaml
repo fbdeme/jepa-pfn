@@ -1,0 +1,17 @@
+# #24 Phase A refine: ds lr=1.5e-4. Bracket the sweet spot between 1e-4 and 2e-4. Throwaway.
+run_name: big_ds_lr15
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 1500
+batch_size: 2
+lr: 0.00015
+emb: 512
+heads: 16
+mlp: 2048
+layers: 8
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]

@@ -1,0 +1,18 @@
+{
+ "smoke_freshr_s0": {
+  "mse": 0.1207,
+  "r2_all": -0.0011,
+  "r2_content": -0.0013,
+  "r2_address": -0.0011,
+  "share_address": 0.7408,
+  "slot_share": 0.7612
+ },
+ "smoke_ctx_s0": {
+  "mse": 0.218,
+  "r2_all": 0.0276,
+  "r2_content": 0.0276,
+  "r2_address": 0.6786,
+  "share_address": 0.0,
+  "slot_share": 0.0007
+ }
+}

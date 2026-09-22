@@ -1,0 +1,33 @@
+{
+ "protocol": {
+  "prior": "run cfg (probe_prior)",
+  "policy": "any_cell",
+  "ctx": 128,
+  "n_batches": 8,
+  "batch": 8,
+  "seed": 30000,
+  "fit": "lstsq on half, R2 on the other half"
+ },
+ "runs": {
+  "v4_dual_ema_lam0_lr5e-4_mixed_cell_freshr_s0": {
+   "n": 32480,
+   "step": 6300,
+   "target": {
+    "col": -73.623,
+    "z": -67.354,
+    "f": -67.359
+   },
+   "pred": {
+    "col": -57.196,
+    "z": -52.345,
+    "f": -52.349
+   },
+   "reverse": {
+    "z_from_target": -0.0,
+    "z_from_pred": -0.0,
+    "f_from_target": -0.0,
+    "f_from_pred": -0.0
+   }
+  }
+ }
+}

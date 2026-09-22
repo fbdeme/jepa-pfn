@@ -1,0 +1,38 @@
+{
+ "big_lat_s_h": {
+  "slot_share": 0.8763,
+  "slot_share_sd": 0.0384,
+  "n_batches": 12,
+  "batch": 8,
+  "seed": 41000,
+  "note": "steelman (pure latent, SIGReg; encoder()==online)",
+  "recipe": "addr_grid.latent_slot_share (column-permutation, address_leak.slot_share) on load_any()"
+ },
+ "big_dual_lewm_h": {
+  "slot_share": 0.8324,
+  "slot_share_sd": 0.0473,
+  "n_batches": 12,
+  "batch": 8,
+  "seed": 41000,
+  "note": "steelman'd dual+LeWM (EMA; encoder()==target copy)",
+  "recipe": "addr_grid.latent_slot_share (column-permutation, address_leak.slot_share) on load_any()"
+ },
+ "big_ds": {
+  "slot_share": 0.0123,
+  "slot_share_sd": 0.0037,
+  "n_batches": 12,
+  "batch": 8,
+  "seed": 41000,
+  "note": "control (data-space CellPFN)",
+  "recipe": "addr_grid.latent_slot_share (column-permutation, address_leak.slot_share) on load_any()"
+ },
+ "big_dual": {
+  "slot_share": 0.0135,
+  "slot_share_sd": 0.0028,
+  "n_batches": 12,
+  "batch": 8,
+  "seed": 41000,
+  "note": "control (main dual, EMA; encoder()==target copy)",
+  "recipe": "addr_grid.latent_slot_share (column-permutation, address_leak.slot_share) on load_any()"
+ }
+}

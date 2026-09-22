@@ -1,0 +1,9 @@
+# Issue #6 (C6) — dual head: EMA-JEPA + auxiliary data-space bar-dist CE,
+# lambda_ppd=0.1. With p3b_mixed_tw2 (lambda_ppd=0, pure latent) and
+# p2_anycell (pure data-space CE) these trace the objective interpolation.
+run_name: p3d_ppd_01
+lambda_ppd: 0.1
+policy_main: mixed
+predictor: twoway-2
+seed: 0
+steps: 20000

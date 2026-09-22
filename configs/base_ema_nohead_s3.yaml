@@ -1,0 +1,25 @@
+# H2 (sec:hypotheses): EMA-target, NO value head — the un-run 2x2 cell. base_dual_s3 minus the head.
+save_steps: true
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.0
+run_name: base_ema_nohead_s3
+seed: 3
+steps: 20000
+batch_size: 8
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows:
+  - 128
+  - 384
+  n_cols:
+  - 4
+  - 32

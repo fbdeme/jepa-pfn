@@ -1,0 +1,16 @@
+{
+  "n_tables": 4000,
+  "n_mechanism_cells": 68549,
+  "n_root_cells": 6075,
+  "root_share_of_observed": 0.08140812607204116,
+  "nuisance_fraction_mechanism_cells": {
+    "mean": 0.012520742504619356,
+    "median": 0.0029041855596005917,
+    "p10": 0.00019295235106255859,
+    "p90": 0.04274577647447587,
+    "p99": 0.07829877138137818,
+    "max": 1.0
+  },
+  "structural_signal_fraction_mean": 0.9874792574953807,
+  "theoretical_sigma2_over_1plus_sigma2_mean": 0.01252822317807924
+}

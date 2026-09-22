@@ -1,0 +1,59 @@
+# Open-horizon pair (docs/prior_v2_plan.md 5.3, user decision 2026-09-14): TabularJEPA_v3_tabicl2_headenc_s0 recipe run until the
+# value curve plateaus (same stop rule as PFN_tabicl2_ds_conv_s0: stop_delta .002 / stop_patience 80 vals = 20k steps; train/plateau.py).
+# curriculum_steps pins the y_only phase at 4k steps (the 20k run's 20%) instead of 20% of the cap. Peak 79 GB (peak_smoke.json), so
+# it runs alone on the GPU; snapshots every 5k (SNAP_EVERY=5000), E9 on the GPU at 20k steps alongside training (4 GB).
+batch_size: 4
+cls_target: false
+ctx_only: true
+curriculum_frac: 0.2
+curriculum_steps: 4000
+diff_target: true
+dump_path: ''
+ema: 0.996
+emb: 256
+feat: 5
+head_on_pred: false
+heads: 8
+lambda_jepa: 1.0
+lambda_ppd: 1.0
+lambda_sig: 0.05
+layers: 6
+log_every: 25
+lr: 0.0005
+mlp: 1024
+mode: ema
+n_bins: 32
+n_classes: 0
+n_cls: 4
+n_reg_tokens: 0
+policy_main: mixed
+predictor: twoway-4
+prior:
+  filter_graphs: true
+  filter_unpredictable: true
+  max_cells: 65536
+  max_classes: 10
+  max_features: 100
+  min_features: 1
+  n_rows:
+  - 128
+  - 1024
+  p_cls: 0.7
+  p_missing_table: 0.3
+  prefetch: 8
+  prior_type: graph_scm
+  task: mixed
+  workers: 3
+prior_source: tabicl
+r_invariant: false
+r_scheme: rope
+run_name: TabularJEPA_v3_tabicl2_headenc_conv_s0
+seed: 0
+shuffle_target: false
+sig_proj: 128
+steps: 1000000
+stop_delta: 0.002
+stop_patience: 80
+val_batches: 16
+val_every: 250
+val_policy: any_cell

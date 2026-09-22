@@ -1,0 +1,263 @@
+{
+ "base_ds_s0": {
+  "slot_share": {
+   "mean": 0.0083,
+   "sd": 0.0022
+  },
+  "dim_std": {
+   "mean": 0.5464,
+   "sd": 0.0289
+  },
+  "erank": {
+   "mean": 78.0417,
+   "sd": 7.0608
+  },
+  "cos": {
+   "mean": 0.5618,
+   "sd": 0.0429
+  },
+  "n_batches": 12,
+  "group": "base",
+  "note": "data-space"
+ },
+ "base_dual_s0": {
+  "slot_share": {
+   "mean": 0.9464,
+   "sd": 0.0326
+  },
+  "dim_std": {
+   "mean": 0.0,
+   "sd": 0.0
+  },
+  "erank": {
+   "mean": 20.75,
+   "sd": 5.4216
+  },
+  "cos": {
+   "mean": 1.0,
+   "sd": 0.0
+  },
+  "n_batches": 12,
+  "group": "base",
+  "note": "EMA latent + head"
+ },
+ "base_lat_s_s0": {
+  "slot_share": {
+   "mean": 0.6202,
+   "sd": 0.0692
+  },
+  "dim_std": {
+   "mean": 0.0,
+   "sd": 0.0
+  },
+  "erank": {
+   "mean": 68.8667,
+   "sd": 2.6144
+  },
+  "cos": {
+   "mean": 1.0,
+   "sd": 0.0
+  },
+  "n_batches": 12,
+  "group": "base",
+  "note": "SIGReg latent (collapsed)"
+ },
+ "base_ema_nohead_s1": {
+  "slot_share": {
+   "mean": 0.0367,
+   "sd": 0.0062
+  },
+  "dim_std": {
+   "mean": 0.2471,
+   "sd": 0.0113
+  },
+  "erank": {
+   "mean": 50.9167,
+   "sd": 4.6407
+  },
+  "cos": {
+   "mean": 0.8742,
+   "sd": 0.0136
+  },
+  "n_batches": 12,
+  "group": "base",
+  "note": "EMA, no head (the surviving seed)"
+ },
+ "sw_ds_n1_s0": {
+  "slot_share": {
+   "mean": 0.0012,
+   "sd": 0.0003
+  },
+  "dim_std": {
+   "mean": 0.3378,
+   "sd": 0.0283
+  },
+  "erank": {
+   "mean": 42.0167,
+   "sd": 2.6094
+  },
+  "cos": {
+   "mean": 0.3717,
+   "sd": 0.0536
+  },
+  "n_batches": 12,
+  "group": "sigma-sweep",
+  "note": "data-space, noise 1"
+ },
+ "sw_lat_n1_s0": {
+  "slot_share": {
+   "mean": 0.8481,
+   "sd": 0.0692
+  },
+  "dim_std": {
+   "mean": 0.9937,
+   "sd": 0.0166
+  },
+  "erank": {
+   "mean": 27.725,
+   "sd": 2.8518
+  },
+  "cos": {
+   "mean": 0.476,
+   "sd": 0.0173
+  },
+  "n_batches": 12,
+  "group": "sigma-sweep",
+  "note": "SIGReg latent, noise 1"
+ },
+ "sw_ds_n10_s0": {
+  "slot_share": {
+   "mean": 0.0079,
+   "sd": 0.0023
+  },
+  "dim_std": {
+   "mean": 0.3616,
+   "sd": 0.0303
+  },
+  "erank": {
+   "mean": 39.7,
+   "sd": 3.4224
+  },
+  "cos": {
+   "mean": 0.4612,
+   "sd": 0.0614
+  },
+  "n_batches": 12,
+  "group": "sigma-sweep",
+  "note": "data-space, noise 10"
+ },
+ "sw_lat_n10_s0": {
+  "slot_share": {
+   "mean": 0.8651,
+   "sd": 0.0593
+  },
+  "dim_std": {
+   "mean": 1.0255,
+   "sd": 0.0107
+  },
+  "erank": {
+   "mean": 31.9833,
+   "sd": 4.2782
+  },
+  "cos": {
+   "mean": 0.4498,
+   "sd": 0.0103
+  },
+  "n_batches": 12,
+  "group": "sigma-sweep",
+  "note": "SIGReg latent, noise 10"
+ },
+ "big_ds": {
+  "slot_share": {
+   "mean": 0.0132,
+   "sd": 0.0053
+  },
+  "dim_std": {
+   "mean": 0.7422,
+   "sd": 0.0358
+  },
+  "erank": {
+   "mean": 99.0917,
+   "sd": 16.0955
+  },
+  "cos": {
+   "mean": 0.4245,
+   "sd": 0.0522
+  },
+  "n_batches": 12,
+  "group": "35M",
+  "note": "data-space"
+ },
+ "big_dual": {
+  "slot_share": {
+   "mean": 0.0127,
+   "sd": 0.0028
+  },
+  "dim_std": {
+   "mean": 0.6393,
+   "sd": 0.0407
+  },
+  "erank": {
+   "mean": 67.325,
+   "sd": 8.8341
+  },
+  "cos": {
+   "mean": 0.542,
+   "sd": 0.0555
+  },
+  "n_batches": 12,
+  "group": "35M",
+  "note": "EMA latent + head"
+ },
+ "big_lat_s_h": {
+  "slot_share": {
+   "mean": 0.8885,
+   "sd": 0.0509
+  },
+  "dim_std": {
+   "mean": 0.7292,
+   "sd": 0.0617
+  },
+  "erank": {
+   "mean": 11.3333,
+   "sd": 4.1638
+  },
+  "cos": {
+   "mean": 0.4473,
+   "sd": 0.0905
+  },
+  "n_batches": 12,
+  "group": "35M",
+  "note": "SIGReg latent, steelman"
+ },
+ "big_dual_lewm_h": {
+  "slot_share": {
+   "mean": 0.8337,
+   "sd": 0.064
+  },
+  "dim_std": {
+   "mean": 0.843,
+   "sd": 0.0082
+  },
+  "erank": {
+   "mean": 72.5333,
+   "sd": 19.0404
+  },
+  "cos": {
+   "mean": 0.3252,
+   "sd": 0.0142
+  },
+  "n_batches": 12,
+  "group": "35M",
+  "note": "SIGReg + head, steelman"
+ },
+ "_protocol": {
+  "slot_share": "eval/address_leak.slot_share -- permute column slots, un-permute the output, attribute what fails to return to the address",
+  "geometry": "model.jepa.collapse_stats on enc.encode(...) at the target cells, i.e. on the backbone the probes read (NOT the training-time target/projector output that the steelman geometry macros come from)",
+  "batches": 12,
+  "batch": 8,
+  "eval_seed": 41000,
+  "note": "arms are frozen; the same batches AND the same column permutations are reused across arms (the RNG is re-seeded per arm), so the comparison is paired",
+  "k_perm": "slot_share's default 8. The >0.5 classification is stable over k in {4,8,16} for every arm, but the absolute share is not protocol-free: it moves with k on the strongly dominated arms (sw_lat_n1_s0 reads .786, .875, .917 at k=4,8,16). Read the counts, not the third decimal."
+ }
+}

@@ -1,0 +1,1042 @@
+{
+ "run": "PFN_tabicl2_ds_s0_snap8000",
+ "n": 147,
+ "baseline_cells_mismatch": 0,
+ "max_abs_delta": 0.0,
+ "mean_abs_delta": 0.0,
+ "n_gt_005": 0,
+ "n_gt_01": 0,
+ "n_gt_02": 0,
+ "gpu_minus_cpu_mean": 0.0,
+ "rows": [
+  {
+   "key": "CC18|GesturePhaseSegmentationProcessed|clf",
+   "metric": "acc",
+   "cpu": 0.487,
+   "gpu": 0.487,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|MiceProtein|clf",
+   "metric": "acc",
+   "cpu": 0.5169,
+   "gpu": 0.5169,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|PhishingWebsites|clf",
+   "metric": "acc",
+   "cpu": 0.9173,
+   "gpu": 0.9173,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|adult|clf",
+   "metric": "acc",
+   "cpu": 0.8105,
+   "gpu": 0.8105,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|analcatdata_authorship|clf",
+   "metric": "acc",
+   "cpu": 0.9731,
+   "gpu": 0.9731,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|analcatdata_dmft|clf",
+   "metric": "acc",
+   "cpu": 0.2013,
+   "gpu": 0.2013,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|balance-scale|clf",
+   "metric": "acc",
+   "cpu": 0.7465,
+   "gpu": 0.7465,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|bank-marketing|clf",
+   "metric": "acc",
+   "cpu": 0.8835,
+   "gpu": 0.8835,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|banknote-authentication|clf",
+   "metric": "acc",
+   "cpu": 0.9609,
+   "gpu": 0.9609,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|blood-transfusion-service-center|clf",
+   "metric": "acc",
+   "cpu": 0.7692,
+   "gpu": 0.7692,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|breast-w|clf",
+   "metric": "acc",
+   "cpu": 0.9705,
+   "gpu": 0.9705,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|car|clf",
+   "metric": "acc",
+   "cpu": 0.7233,
+   "gpu": 0.7233,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|churn|clf",
+   "metric": "acc",
+   "cpu": 0.8763,
+   "gpu": 0.8763,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|climate-model-simulation-crashes|clf",
+   "metric": "acc",
+   "cpu": 0.9148,
+   "gpu": 0.9148,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|cmc|clf",
+   "metric": "acc",
+   "cpu": 0.4857,
+   "gpu": 0.4857,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|connect-4|clf",
+   "metric": "acc",
+   "cpu": 0.6641,
+   "gpu": 0.6641,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|credit-approval|clf",
+   "metric": "acc",
+   "cpu": 0.8551,
+   "gpu": 0.8551,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|credit-g|clf",
+   "metric": "acc",
+   "cpu": 0.7113,
+   "gpu": 0.7113,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|cylinder-bands|clf",
+   "metric": "acc",
+   "cpu": 0.6938,
+   "gpu": 0.6938,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|diabetes|clf",
+   "metric": "acc",
+   "cpu": 0.7483,
+   "gpu": 0.7483,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|dna|clf",
+   "metric": "acc",
+   "cpu": 0.7949,
+   "gpu": 0.7949,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|dresses-sales|clf",
+   "metric": "acc",
+   "cpu": 0.596,
+   "gpu": 0.596,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|electricity|clf",
+   "metric": "acc",
+   "cpu": 0.7148,
+   "gpu": 0.7148,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|eucalyptus|clf",
+   "metric": "acc",
+   "cpu": 0.5254,
+   "gpu": 0.5254,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|first-order-theorem-proving|clf",
+   "metric": "acc",
+   "cpu": 0.4818,
+   "gpu": 0.4818,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|ilpd|clf",
+   "metric": "acc",
+   "cpu": 0.7043,
+   "gpu": 0.7043,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|jm1|clf",
+   "metric": "acc",
+   "cpu": 0.804,
+   "gpu": 0.804,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|jungle_chess_2pcs_raw_endgame_complete|clf",
+   "metric": "acc",
+   "cpu": 0.623,
+   "gpu": 0.623,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|kc1|clf",
+   "metric": "acc",
+   "cpu": 0.8529,
+   "gpu": 0.8529,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|kc2|clf",
+   "metric": "acc",
+   "cpu": 0.8455,
+   "gpu": 0.8455,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|kr-vs-kp|clf",
+   "metric": "acc",
+   "cpu": 0.6081,
+   "gpu": 0.6081,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|mfeat-factors|clf",
+   "metric": "acc",
+   "cpu": 0.7402,
+   "gpu": 0.7402,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|mfeat-fourier|clf",
+   "metric": "acc",
+   "cpu": 0.6803,
+   "gpu": 0.6803,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|mfeat-karhunen|clf",
+   "metric": "acc",
+   "cpu": 0.5716,
+   "gpu": 0.5716,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|mfeat-morphological|clf",
+   "metric": "acc",
+   "cpu": 0.638,
+   "gpu": 0.638,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|mfeat-pixel|clf",
+   "metric": "acc",
+   "cpu": 0.6921,
+   "gpu": 0.6921,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|mfeat-zernike|clf",
+   "metric": "acc",
+   "cpu": 0.4766,
+   "gpu": 0.4766,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|nomao|clf",
+   "metric": "acc",
+   "cpu": 0.8926,
+   "gpu": 0.8926,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|numerai28.6|clf",
+   "metric": "acc",
+   "cpu": 0.4909,
+   "gpu": 0.4909,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|optdigits|clf",
+   "metric": "acc",
+   "cpu": 0.6426,
+   "gpu": 0.6426,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|ozone-level-8hr|clf",
+   "metric": "acc",
+   "cpu": 0.9297,
+   "gpu": 0.9297,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|pc1|clf",
+   "metric": "acc",
+   "cpu": 0.9336,
+   "gpu": 0.9336,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|pc3|clf",
+   "metric": "acc",
+   "cpu": 0.8835,
+   "gpu": 0.8835,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|pc4|clf",
+   "metric": "acc",
+   "cpu": 0.8743,
+   "gpu": 0.8743,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|pendigits|clf",
+   "metric": "acc",
+   "cpu": 0.7832,
+   "gpu": 0.7832,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|phoneme|clf",
+   "metric": "acc",
+   "cpu": 0.7917,
+   "gpu": 0.7917,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|qsar-biodeg|clf",
+   "metric": "acc",
+   "cpu": 0.7793,
+   "gpu": 0.7793,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|satimage|clf",
+   "metric": "acc",
+   "cpu": 0.8516,
+   "gpu": 0.8516,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|segment|clf",
+   "metric": "acc",
+   "cpu": 0.8255,
+   "gpu": 0.8255,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|semeion|clf",
+   "metric": "acc",
+   "cpu": 0.6237,
+   "gpu": 0.6237,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|sick|clf",
+   "metric": "acc",
+   "cpu": 0.9499,
+   "gpu": 0.9499,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|spambase|clf",
+   "metric": "acc",
+   "cpu": 0.8366,
+   "gpu": 0.8366,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|splice|clf",
+   "metric": "acc",
+   "cpu": 0.7012,
+   "gpu": 0.7012,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|steel-plates-fault|clf",
+   "metric": "acc",
+   "cpu": 0.5977,
+   "gpu": 0.5977,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|tic-tac-toe|clf",
+   "metric": "acc",
+   "cpu": 0.6806,
+   "gpu": 0.6806,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|vehicle|clf",
+   "metric": "acc",
+   "cpu": 0.5634,
+   "gpu": 0.5634,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|wall-robot-navigation|clf",
+   "metric": "acc",
+   "cpu": 0.6849,
+   "gpu": 0.6849,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|wdbc|clf",
+   "metric": "acc",
+   "cpu": 0.9357,
+   "gpu": 0.9357,
+   "delta": 0.0
+  },
+  {
+   "key": "CC18|wilt|clf",
+   "metric": "acc",
+   "cpu": 0.9447,
+   "gpu": 0.9447,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|Ailerons|reg",
+   "metric": "r2",
+   "cpu": 0.4576,
+   "gpu": 0.4576,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|Allstate_Claims_Severity|reg",
+   "metric": "r2",
+   "cpu": 0.3013,
+   "gpu": 0.3013,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|Bike_Sharing_Demand|reg",
+   "metric": "r2",
+   "cpu": 0.4206,
+   "gpu": 0.4206,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|Bioresponse|clf",
+   "metric": "acc",
+   "cpu": 0.6419,
+   "gpu": 0.6419,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|Brazilian_houses|reg",
+   "metric": "r2",
+   "cpu": 0.9484,
+   "gpu": 0.9484,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|Diabetes130US|clf",
+   "metric": "acc",
+   "cpu": 0.5352,
+   "gpu": 0.5352,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|MagicTelescope|clf",
+   "metric": "acc",
+   "cpu": 0.7682,
+   "gpu": 0.7682,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|Mercedes_Benz_Greener_Manufacturing|reg",
+   "metric": "r2",
+   "cpu": 0.4427,
+   "gpu": 0.4427,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|MiamiHousing2016|reg",
+   "metric": "r2",
+   "cpu": 0.7085,
+   "gpu": 0.7085,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|MiniBooNE|clf",
+   "metric": "acc",
+   "cpu": 0.791,
+   "gpu": 0.791,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|abalone|reg",
+   "metric": "r2",
+   "cpu": 0.425,
+   "gpu": 0.425,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|albert|clf",
+   "metric": "acc",
+   "cpu": 0.5749,
+   "gpu": 0.5749,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|analcatdata_supreme|clf",
+   "metric": "acc",
+   "cpu": 0.8158,
+   "gpu": 0.8158,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|bank-marketing|clf",
+   "metric": "acc",
+   "cpu": 0.7448,
+   "gpu": 0.7448,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|california|clf",
+   "metric": "acc",
+   "cpu": 0.7598,
+   "gpu": 0.7598,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|compas-two-years|clf",
+   "metric": "acc",
+   "cpu": 0.6133,
+   "gpu": 0.6133,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|cpu_act|reg",
+   "metric": "r2",
+   "cpu": 0.7999,
+   "gpu": 0.7999,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|credit|clf",
+   "metric": "acc",
+   "cpu": 0.5443,
+   "gpu": 0.5443,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|default-of-credit-card-clients|clf",
+   "metric": "acc",
+   "cpu": 0.6992,
+   "gpu": 0.6992,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|diamonds|reg",
+   "metric": "r2",
+   "cpu": 0.9378,
+   "gpu": 0.9378,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|electricity|clf",
+   "metric": "acc",
+   "cpu": 0.707,
+   "gpu": 0.707,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|elevators|reg",
+   "metric": "r2",
+   "cpu": 0.4177,
+   "gpu": 0.4177,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|eye_movements|clf",
+   "metric": "acc",
+   "cpu": 0.498,
+   "gpu": 0.498,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|heloc|clf",
+   "metric": "acc",
+   "cpu": 0.6706,
+   "gpu": 0.6706,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|house_16H|clf",
+   "metric": "acc",
+   "cpu": 0.7188,
+   "gpu": 0.7188,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|house_16H|reg",
+   "metric": "r2",
+   "cpu": 0.272,
+   "gpu": 0.272,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|house_sales|reg",
+   "metric": "r2",
+   "cpu": 0.5605,
+   "gpu": 0.5605,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|houses|reg",
+   "metric": "r2",
+   "cpu": 0.3189,
+   "gpu": 0.3189,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|jannis|clf",
+   "metric": "acc",
+   "cpu": 0.6758,
+   "gpu": 0.6758,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|medical_charges|reg",
+   "metric": "r2",
+   "cpu": 0.9733,
+   "gpu": 0.9733,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|pol|clf",
+   "metric": "acc",
+   "cpu": 0.8717,
+   "gpu": 0.8717,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|pol|reg",
+   "metric": "r2",
+   "cpu": 0.7356,
+   "gpu": 0.7356,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|road-safety|clf",
+   "metric": "acc",
+   "cpu": 0.5195,
+   "gpu": 0.5195,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|seattlecrime6|reg",
+   "metric": "r2",
+   "cpu": 0.1609,
+   "gpu": 0.1609,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|sulfur|reg",
+   "metric": "r2",
+   "cpu": 0.1625,
+   "gpu": 0.1625,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|superconduct|reg",
+   "metric": "r2",
+   "cpu": 0.7193,
+   "gpu": 0.7193,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|topo_2_1|reg",
+   "metric": "r2",
+   "cpu": -0.0046,
+   "gpu": -0.0046,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|visualizing_soil|reg",
+   "metric": "r2",
+   "cpu": 0.9616,
+   "gpu": 0.9616,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|wine_quality|clf",
+   "metric": "acc",
+   "cpu": 0.4948,
+   "gpu": 0.4948,
+   "delta": 0.0
+  },
+  {
+   "key": "Grinsztajn|yprop_4_1|reg",
+   "metric": "r2",
+   "cpu": 0.016,
+   "gpu": 0.016,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|APSFailure|clf",
+   "metric": "acc",
+   "cpu": 0.9818,
+   "gpu": 0.9818,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|Amazon_employee_access|clf",
+   "metric": "acc",
+   "cpu": 0.9479,
+   "gpu": 0.9479,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|Another-Dataset-on-used-Fiat-500|reg",
+   "metric": "r2",
+   "cpu": 0.8351,
+   "gpu": 0.8351,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|Bank_Customer_Churn|clf",
+   "metric": "acc",
+   "cpu": 0.8197,
+   "gpu": 0.8197,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|Diabetes130US|clf",
+   "metric": "acc",
+   "cpu": 0.903,
+   "gpu": 0.903,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|E-CommereShippingData|clf",
+   "metric": "acc",
+   "cpu": 0.6823,
+   "gpu": 0.6823,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|Fitness_Club|clf",
+   "metric": "acc",
+   "cpu": 0.7285,
+   "gpu": 0.7285,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|Food_Delivery_Time|reg",
+   "metric": "r2",
+   "cpu": 0.0991,
+   "gpu": 0.0991,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|GiveMeSomeCredit|clf",
+   "metric": "acc",
+   "cpu": 0.9336,
+   "gpu": 0.9336,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|HR_Analytics_Job_Change_of_Data_Scientists|clf",
+   "metric": "acc",
+   "cpu": 0.7493,
+   "gpu": 0.7493,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|Is-this-a-good-customer|clf",
+   "metric": "acc",
+   "cpu": 0.8926,
+   "gpu": 0.8926,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|MIC|clf",
+   "metric": "acc",
+   "cpu": 0.8698,
+   "gpu": 0.8698,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|Marketing_Campaign|clf",
+   "metric": "acc",
+   "cpu": 0.8548,
+   "gpu": 0.8548,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|NATICUSdroid|clf",
+   "metric": "acc",
+   "cpu": 0.8997,
+   "gpu": 0.8997,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|QSAR_fish_toxicity|reg",
+   "metric": "r2",
+   "cpu": 0.5246,
+   "gpu": 0.5246,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|SDSS17|clf",
+   "metric": "acc",
+   "cpu": 0.8451,
+   "gpu": 0.8451,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|airfoil_self_noise|reg",
+   "metric": "r2",
+   "cpu": 0.4913,
+   "gpu": 0.4913,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|anneal|clf",
+   "metric": "acc",
+   "cpu": 0.9057,
+   "gpu": 0.9057,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|bank-marketing|clf",
+   "metric": "acc",
+   "cpu": 0.8835,
+   "gpu": 0.8835,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|blood-transfusion-service-center|clf",
+   "metric": "acc",
+   "cpu": 0.7665,
+   "gpu": 0.7665,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|churn|clf",
+   "metric": "acc",
+   "cpu": 0.8802,
+   "gpu": 0.8802,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|coil2000_insurance_policies|clf",
+   "metric": "acc",
+   "cpu": 0.9447,
+   "gpu": 0.9447,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|concrete_compressive_strength|reg",
+   "metric": "r2",
+   "cpu": 0.4233,
+   "gpu": 0.4233,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|credit-g|clf",
+   "metric": "acc",
+   "cpu": 0.7007,
+   "gpu": 0.7007,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|credit_card_clients_default|clf",
+   "metric": "acc",
+   "cpu": 0.7871,
+   "gpu": 0.7871,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|customer_satisfaction_in_airline|clf",
+   "metric": "acc",
+   "cpu": 0.819,
+   "gpu": 0.819,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|diabetes|clf",
+   "metric": "acc",
+   "cpu": 0.6962,
+   "gpu": 0.6962,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|diamonds|reg",
+   "metric": "r2",
+   "cpu": 0.8458,
+   "gpu": 0.8458,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|hazelnut-spread-contaminant-detection|clf",
+   "metric": "acc",
+   "cpu": 0.8249,
+   "gpu": 0.8249,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|healthcare_insurance_expenses|reg",
+   "metric": "r2",
+   "cpu": 0.7017,
+   "gpu": 0.7017,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|heloc|clf",
+   "metric": "acc",
+   "cpu": 0.6634,
+   "gpu": 0.6634,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|houses|reg",
+   "metric": "r2",
+   "cpu": 0.3664,
+   "gpu": 0.3664,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|in_vehicle_coupon_recommendation|clf",
+   "metric": "acc",
+   "cpu": 0.5859,
+   "gpu": 0.5859,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|jm1|clf",
+   "metric": "acc",
+   "cpu": 0.8086,
+   "gpu": 0.8086,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|kddcup09_appetency|clf",
+   "metric": "acc",
+   "cpu": 0.9818,
+   "gpu": 0.9818,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|maternal_health_risk|clf",
+   "metric": "acc",
+   "cpu": 0.6272,
+   "gpu": 0.6272,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|miami_housing|reg",
+   "metric": "r2",
+   "cpu": 0.6552,
+   "gpu": 0.6552,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|online_shoppers_intention|clf",
+   "metric": "acc",
+   "cpu": 0.8477,
+   "gpu": 0.8477,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|physiochemical_protein|reg",
+   "metric": "r2",
+   "cpu": 0.2271,
+   "gpu": 0.2271,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|polish_companies_bankruptcy|clf",
+   "metric": "acc",
+   "cpu": 0.9408,
+   "gpu": 0.9408,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|qsar-biodeg|clf",
+   "metric": "acc",
+   "cpu": 0.793,
+   "gpu": 0.793,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|seismic-bumps|clf",
+   "metric": "acc",
+   "cpu": 0.9355,
+   "gpu": 0.9355,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|splice|clf",
+   "metric": "acc",
+   "cpu": 0.7207,
+   "gpu": 0.7207,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|students_dropout_and_academic_success|clf",
+   "metric": "acc",
+   "cpu": 0.7201,
+   "gpu": 0.7201,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|superconductivity|reg",
+   "metric": "r2",
+   "cpu": 0.6629,
+   "gpu": 0.6629,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|taiwanese_bankruptcy_prediction|clf",
+   "metric": "acc",
+   "cpu": 0.9688,
+   "gpu": 0.9688,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|website_phishing|clf",
+   "metric": "acc",
+   "cpu": 0.8281,
+   "gpu": 0.8281,
+   "delta": 0.0
+  },
+  {
+   "key": "TabArena|wine_quality|clf",
+   "metric": "acc",
+   "cpu": 0.4694,
+   "gpu": 0.4694,
+   "delta": 0.0
+  }
+ ]
+}

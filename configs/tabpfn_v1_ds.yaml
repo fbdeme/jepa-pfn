@@ -1,0 +1,24 @@
+# ds arm on the REVIVED TabPFN-v1 SCM/MLP prior (on-the-fly, vendor/tabpfn_v1). Small-table
+# regime (R=512, our model's comfort zone -- avoids the large-N attention collapse that killed
+# the TabICL path). Predict the target column's value (y_last). Fresh tables every step (13 ms
+# CPU gen), so no finite-pool overfitting. Goal: does a tuned-hyperprior SCM prior beat our own
+# +0.12 prior downstream vs GBM? (Its learnable headroom measured ~+0.12 -- comparable to ours.)
+run_name: tabpfn_v1_ds
+prior_source: tabpfn_v1
+v1_rows: 256
+feat: 10
+policy: any_cell
+seed: 0
+steps: 5000
+batch_size: 12
+lr: 0.0015
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+n_cls: 4
+r_scheme: rope
+log_every: 50
+val_every: 250
+val_batches: 8

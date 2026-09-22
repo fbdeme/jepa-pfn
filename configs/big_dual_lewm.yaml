@@ -1,0 +1,28 @@
+# #24 dual+LeWM ABLATION at emb512 scale (max rigor on the headline scale). big_dual
+# but with SIGReg/LeWM anti-collapse (mode: sigreg) instead of EMA target, value head KEPT.
+# See base_dual_lewm.yaml for the rationale (de-confound lat-vs-dual). Prefer base scale
+# unless the reviewer/paper needs the ablation directly on the emb512 headline numbers.
+# NOTE: sigreg runs the online encoder twice with grad = 2x-mem. big_dual (EMA, batch2)
+# used ~23GB; +value head +2x online pass may push toward lat_s's 40GB -> keep 48GB box,
+# memory-smoke before the full run.
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.5        # #24 TUNED (matched to big_dual)
+mode: sigreg           # LeWM/LeJEPA anti-collapse instead of EMA target
+lambda_sig: 0.4        # matched to big_lat_s; if head under-trains or collapse, sweep {0.25,0.4,0.6}
+run_name: big_dual_lewm
+seed: 0
+steps: 40000
+batch_size: 2          # matched to big trio (48GB); sigreg 2x-mem
+lr: 0.0002             # #24 TUNED (matched to big trio lr* 2e-4)
+emb: 512
+heads: 16
+mlp: 2048
+layers: 8
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]

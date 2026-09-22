@@ -1,0 +1,30 @@
+# C4 positive control: pure-latent SIGReg on the latent-favorable factor substrate.
+# base_lat_s settings, identical to matched_L4_lat except prior_source=factor.
+# save_steps: true -> step-tagged ckpts for eval/pick_steelman.py. On this substrate the latent
+# target is genuinely predictable (oracle R2_f .670), so the arm may NOT collapse -- that is itself
+# a result; steelman still available if it does.
+run_name: c4_factor_lat_s1
+prior_source: factor
+policy_main: mixed
+predictor: twoway-2
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.0
+mode: sigreg
+lambda_sig: 0.25
+save_steps: true
+r_scheme: rope
+seed: 1
+steps: 20000
+batch_size: 4
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [12, 12]
+  n_factors: 4
+  sigma: 1.0

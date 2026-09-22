@@ -1,0 +1,22 @@
+# C4 positive control (docs/c4_positive_control.md): data-space arm on the latent-FAVORABLE
+# factor substrate (shared K=4 latent factors, D=12 noisy views, sigma=1.0; oracle index +.398).
+# base_ds arch/regime, identical to matched_L4_ds except prior_source=factor.
+run_name: c4_factor_ds
+prior_source: factor
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 20000
+batch_size: 8
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [12, 12]
+  n_factors: 4
+  sigma: 1.0

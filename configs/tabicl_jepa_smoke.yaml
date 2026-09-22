@@ -1,0 +1,29 @@
+# Plumbing smoke: latent (JEPA/SIGReg) arm on the TabICL-prior dump. Same masking as the ds
+# arm (y_last, predict the target column) but predict its LATENT, not its value -- the clean
+# objective swap. cls_target=false so the target is the masked cell's own latent (matched to ds).
+# Real run = tabicl_jepa.yaml (R=1024, 20k steps).
+run_name: tabicl_jepa_smoke
+dump_path: data/tabicl_tiny.h5
+feat: 10
+policy_main: y_last
+val_policy: y_last
+curriculum_frac: 0.0
+mode: sigreg
+lambda_sig: 0.25
+lambda_ppd: 0.0
+predictor: twoway-2
+cls_target: false
+n_cls: 4
+r_scheme: rope
+seed: 0
+steps: 60
+batch_size: 4
+lr: 0.001
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+log_every: 15
+val_every: 30
+val_batches: 4

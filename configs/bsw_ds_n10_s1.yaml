@@ -1,0 +1,18 @@
+# base sigma-sweep ds arm, noise_scale=10 seed=1. Mirrors base_ds.
+run_name: bsw_ds_n10_s1
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+batch_size: 8
+lr: 0.001
+seed: 1
+steps: 20000
+emb: 256
+heads: 8
+mlp: 1024
+layers: 6
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]
+  noise_scale: 10

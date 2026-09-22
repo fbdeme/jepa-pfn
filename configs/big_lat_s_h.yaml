@@ -1,0 +1,30 @@
+# #24 STEELMAN: pure-latent arm STOPPED AT HEALTHY PLATEAU (step 13500), before
+# sigreg loses the anti-collapse battle. Identical to big_lat_s.yaml except steps.
+# Rationale: big_lat_s (40k) trains healthy through ~13.5k (val_jepa 0.56->0.25,
+# dim_std ~1.0, cos ~0.10, erank ~37) then collapses (dim_std->0.65, cos->0.45);
+# its val_jepa keeps dropping only because the target trivializes (JEPA collapse).
+# The 1500-step sweep never saw this (onset ~13k). Probing the 40k ckpt tests a
+# COLLAPSED encoder; probing THIS tests a genuinely healthy latent representation
+# = the stronger claim "even non-collapsed latent fails to encode SCM mechanism."
+# seed 0 deterministic -> reproduces the same healthy trajectory, saves at 13500.
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.0
+mode: sigreg
+lambda_sig: 0.4
+run_name: big_lat_s_h
+seed: 0
+steps: 13500          # STEELMAN stop: healthy plateau (lowest val_jepa while cos<=0.10, erank~32)
+batch_size: 2
+lr: 0.0002
+emb: 512
+heads: 16
+mlp: 2048
+layers: 8
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]

@@ -1,0 +1,71 @@
+{
+ "date": "2026-09-11",
+ "server": "RTX PRO 6000 Blackwell",
+ "gpu_total_mib": 97887,
+ "smoke": "40 steps, rows fixed 1024, max_cells 65536, batch 4 = worst-case table shape; nvidia-smi memory.used sampled 1 s (scripts/box/peak_arch.sh)",
+ "rows": [
+  {
+   "round": 1,
+   "run": "smoke_sigreg_headenc",
+   "arm": "sigreg_headenc",
+   "peak_mib": 97017,
+   "exit": 1,
+   "tracebacks": 1,
+   "ckpt_pass2": false,
+   "mode": "sigreg",
+   "trainable": 11423776
+  },
+  {
+   "round": 1,
+   "run": "smoke_dae_headenc",
+   "arm": "dae_headenc",
+   "peak_mib": 97041,
+   "exit": 1,
+   "tracebacks": 1,
+   "ckpt_pass2": false,
+   "mode": "dae",
+   "trainable": 17516608
+  },
+  {
+   "round": 1,
+   "run": "smoke_headenc",
+   "arm": "headenc",
+   "peak_mib": 79111,
+   "exit": 0,
+   "tracebacks": 0,
+   "ckpt_pass2": false,
+   "mode": "ema",
+   "trainable": 10898208,
+   "steps": 40
+  },
+  {
+   "round": 2,
+   "run": "smoke_sigreg_headenc",
+   "arm": "sigreg_headenc",
+   "peak_mib": 94681,
+   "exit": 0,
+   "tracebacks": 0,
+   "ckpt_pass2": true,
+   "mode": "sigreg",
+   "trainable": 11423776,
+   "steps": 40
+  },
+  {
+   "round": 2,
+   "run": "smoke_dae_headenc",
+   "arm": "dae_headenc",
+   "peak_mib": 86135,
+   "exit": 0,
+   "tracebacks": 0,
+   "ckpt_pass2": true,
+   "mode": "dae",
+   "trainable": 17516608,
+   "steps": 40
+  }
+ ],
+ "verdict": {
+  "headenc": "OK",
+  "dae_headenc": "OK",
+  "sigreg_headenc": "OK"
+ }
+}

@@ -1,0 +1,22 @@
+# #2-final scale-up: JEPA arm (latent target + value head, emb512 L8, ~35M).
+# Scaled base_dual. Matched to big_ds on EVERY hyperparameter except the
+# objective -> the headline comparison at the largest scale.
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+lambda_ppd: 0.5        # #24 TUNED: head-eff-lr = lambda_ppd*lr = base's 1e-4 at lr* 2e-4. Sweep {0.2,0.35,0.5}: all train head (CE->1.99), 0.5 best pred-erank + latent intact
+run_name: big_dual
+seed: 0
+steps: 40000          # over-provision; mid-ckpt saves latest -> stop at val plateau
+batch_size: 2          # matched to big_ds (48GB)
+lr: 0.0002           # #24 TUNED: matched to big_ds's lr* 2e-4
+emb: 512
+heads: 16
+mlp: 2048
+layers: 8
+n_bins: 32
+prior:
+  n_rows: [128, 384]
+  n_cols: [4, 32]

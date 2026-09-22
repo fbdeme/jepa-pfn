@@ -1,0 +1,96 @@
+{
+ "snapshot": "v4_dual_split_ctx_tw4_diff_lam1_lr5e-4_mixed_cell_200k_s0_at180k",
+ "same_115_clf": {
+  "snapshot_180k": {
+   "mean_acc": 0.7125,
+   "n": 115
+  },
+  "logreg_this_pass": {
+   "mean_acc": 0.795,
+   "n": 115
+  },
+  "histgb_this_pass": {
+   "mean_acc": 0.8424,
+   "n": 115
+  },
+  "base_ds_paper_prior_20k": {
+   "mean_acc": 0.7784,
+   "n": 115
+  },
+  "base_dual_paper_prior_20k": {
+   "mean_acc": 0.7244,
+   "n": 115
+  },
+  "logreg_paper_pass": {
+   "mean_acc": 0.7915,
+   "n": 115
+  },
+  "histgb_paper_pass": {
+   "mean_acc": 0.8393,
+   "n": 115
+  },
+  "note": "paper pass = K_FEAT 32 / CTX 512 (eval/results_suite_full.json); this pass = K_FEAT 64 / CTX 1024; logreg and histgb agree across passes"
+ },
+ "big_vs_base_shared": {
+  "n_datasets": 9,
+  "big_ds": {
+   "mean_acc": 0.7181,
+   "n": 9
+  },
+  "big_dual": {
+   "mean_acc": 0.7048,
+   "n": 9
+  },
+  "base_ds": {
+   "mean_acc": 0.7196,
+   "n": 9
+  },
+  "base_dual": {
+   "mean_acc": 0.6732,
+   "n": 9
+  },
+  "histgb": {
+   "mean_acc": 0.7656,
+   "n": 9
+  },
+  "big_config": "emb 512 / 8 layers / mlp 2048 (configs/big_ds.yaml), <= 40k steps at batch 2"
+ },
+ "gap_to_histgb": {
+  "largest": [
+   {
+    "dataset": "CC18|mfeat-karhunen|clf",
+    "gap": 0.7402
+   },
+   {
+    "dataset": "CC18|MiceProtein|clf",
+    "gap": 0.6758
+   },
+   {
+    "dataset": "CC18|pendigits|clf",
+    "gap": 0.636
+   },
+   {
+    "dataset": "CC18|mfeat-factors|clf",
+    "gap": 0.6347
+   },
+   {
+    "dataset": "CC18|optdigits|clf",
+    "gap": 0.6172
+   },
+   {
+    "dataset": "CC18|mfeat-fourier|clf",
+    "gap": 0.5632
+   },
+   {
+    "dataset": "CC18|mfeat-pixel|clf",
+    "gap": 0.5391
+   },
+   {
+    "dataset": "CC18|semeion|clf",
+    "gap": 0.5384
+   }
+  ],
+  "snapshot_wins": 17,
+  "n": 115
+ }
+}

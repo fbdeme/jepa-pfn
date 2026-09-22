@@ -1,0 +1,271 @@
+{
+ "classification": {
+  "iris|p6rc_ds": {
+   "acc": 0.968,
+   "acc_std": 0.016,
+   "auc": null
+  },
+  "iris|p6rc_dual": {
+   "acc": 0.9627,
+   "acc_std": 0.0155,
+   "auc": null
+  },
+  "iris|p6rc_lat": {
+   "acc": 0.456,
+   "acc_std": 0.0053,
+   "auc": null
+  },
+  "iris|p2_yonly": {
+   "acc": 0.9627,
+   "acc_std": 0.0177,
+   "auc": null
+  },
+  "iris|p2_anycell": {
+   "acc": 0.9653,
+   "acc_std": 0.0136,
+   "auc": null
+  },
+  "iris|p3d_ppd_01": {
+   "acc": 0.9547,
+   "acc_std": 0.0181,
+   "auc": null
+  },
+  "iris|p3d_ppd_10": {
+   "acc": 0.9707,
+   "acc_std": 0.01,
+   "auc": null
+  },
+  "iris|p3b_mixed_tw2": {
+   "acc": 0.3653,
+   "acc_std": 0.0275,
+   "auc": null
+  },
+  "iris|logreg": {
+   "acc": 0.976,
+   "acc_std": 0.0155,
+   "auc": null
+  },
+  "iris|histgb": {
+   "acc": 0.9573,
+   "acc_std": 0.0131,
+   "auc": null
+  },
+  "wine|p6rc_ds": {
+   "acc": 0.9596,
+   "acc_std": 0.0135,
+   "auc": null
+  },
+  "wine|p6rc_dual": {
+   "acc": 0.9438,
+   "acc_std": 0.0225,
+   "auc": null
+  },
+  "wine|p6rc_lat": {
+   "acc": 0.3371,
+   "acc_std": 0.0,
+   "auc": null
+  },
+  "wine|p2_yonly": {
+   "acc": 0.9753,
+   "acc_std": 0.0165,
+   "auc": null
+  },
+  "wine|p2_anycell": {
+   "acc": 0.9685,
+   "acc_std": 0.0131,
+   "auc": null
+  },
+  "wine|p3d_ppd_01": {
+   "acc": 0.9596,
+   "acc_std": 0.0231,
+   "auc": null
+  },
+  "wine|p3d_ppd_10": {
+   "acc": 0.9528,
+   "acc_std": 0.0131,
+   "auc": null
+  },
+  "wine|p3b_mixed_tw2": {
+   "acc": 0.3371,
+   "acc_std": 0.0,
+   "auc": null
+  },
+  "wine|logreg": {
+   "acc": 0.964,
+   "acc_std": 0.011,
+   "auc": null
+  },
+  "wine|histgb": {
+   "acc": 0.964,
+   "acc_std": 0.0131,
+   "auc": null
+  },
+  "breast_cancer|p6rc_ds": {
+   "acc": 0.906,
+   "acc_std": 0.0249,
+   "auc": 0.9773
+  },
+  "breast_cancer|p6rc_dual": {
+   "acc": 0.9263,
+   "acc_std": 0.0158,
+   "auc": 0.9808
+  },
+  "breast_cancer|p6rc_lat": {
+   "acc": 0.5712,
+   "acc_std": 0.0484,
+   "auc": 0.5175
+  },
+  "breast_cancer|p2_yonly": {
+   "acc": 0.9411,
+   "acc_std": 0.0072,
+   "auc": 0.9846
+  },
+  "breast_cancer|p2_anycell": {
+   "acc": 0.9312,
+   "acc_std": 0.0138,
+   "auc": 0.9824
+  },
+  "breast_cancer|p3d_ppd_01": {
+   "acc": 0.9333,
+   "acc_std": 0.0165,
+   "auc": 0.983
+  },
+  "breast_cancer|p3d_ppd_10": {
+   "acc": 0.9207,
+   "acc_std": 0.0195,
+   "auc": 0.9811
+  },
+  "breast_cancer|p3b_mixed_tw2": {
+   "acc": 0.6281,
+   "acc_std": 0.0,
+   "auc": 0.4162
+  },
+  "breast_cancer|logreg": {
+   "acc": 0.9446,
+   "acc_std": 0.0105,
+   "auc": 0.9822
+  },
+  "breast_cancer|histgb": {
+   "acc": 0.9453,
+   "acc_std": 0.0096,
+   "auc": 0.9814
+  },
+  "diabetes|p6rc_ds": {
+   "acc": 0.7068,
+   "acc_std": 0.0104,
+   "auc": 0.7732
+  },
+  "diabetes|p6rc_dual": {
+   "acc": 0.6953,
+   "acc_std": 0.0241,
+   "auc": 0.7622
+  },
+  "diabetes|p6rc_lat": {
+   "acc": 0.651,
+   "acc_std": 0.0,
+   "auc": 0.6499
+  },
+  "diabetes|p2_yonly": {
+   "acc": 0.6917,
+   "acc_std": 0.0361,
+   "auc": 0.7591
+  },
+  "diabetes|p2_anycell": {
+   "acc": 0.7333,
+   "acc_std": 0.0457,
+   "auc": 0.808
+  },
+  "diabetes|p3d_ppd_01": {
+   "acc": 0.6969,
+   "acc_std": 0.0371,
+   "auc": 0.7771
+  },
+  "diabetes|p3d_ppd_10": {
+   "acc": 0.6937,
+   "acc_std": 0.0309,
+   "auc": 0.7661
+  },
+  "diabetes|p3b_mixed_tw2": {
+   "acc": 0.651,
+   "acc_std": 0.0,
+   "auc": 0.4955
+  },
+  "diabetes|logreg": {
+   "acc": 0.7625,
+   "acc_std": 0.0142,
+   "auc": 0.8245
+  },
+  "diabetes|histgb": {
+   "acc": 0.7396,
+   "acc_std": 0.0204,
+   "auc": 0.8028
+  },
+  "blood|p6rc_ds": {
+   "acc": 0.7487,
+   "acc_std": 0.0113,
+   "auc": 0.6922
+  },
+  "blood|p6rc_dual": {
+   "acc": 0.7385,
+   "acc_std": 0.0354,
+   "auc": 0.6546
+  },
+  "blood|p6rc_lat": {
+   "acc": 0.762,
+   "acc_std": 0.0,
+   "auc": 0.4834
+  },
+  "blood|p2_yonly": {
+   "acc": 0.7241,
+   "acc_std": 0.0362,
+   "auc": 0.6953
+  },
+  "blood|p2_anycell": {
+   "acc": 0.738,
+   "acc_std": 0.0164,
+   "auc": 0.6889
+  },
+  "blood|p3d_ppd_01": {
+   "acc": 0.7385,
+   "acc_std": 0.0257,
+   "auc": 0.654
+  },
+  "blood|p3d_ppd_10": {
+   "acc": 0.7305,
+   "acc_std": 0.039,
+   "auc": 0.6823
+  },
+  "blood|p3b_mixed_tw2": {
+   "acc": 0.762,
+   "acc_std": 0.0,
+   "auc": 0.5316
+  },
+  "blood|logreg": {
+   "acc": 0.7679,
+   "acc_std": 0.0074,
+   "auc": 0.7377
+  },
+  "blood|histgb": {
+   "acc": 0.7524,
+   "acc_std": 0.0105,
+   "auc": 0.6831
+  }
+ },
+ "imputation": {
+  "iris|pfn_anycell": 0.5064,
+  "iris|column_mean": 1.0032,
+  "iris|knn": 0.6293,
+  "wine|pfn_anycell": 0.9005,
+  "wine|column_mean": 1.0115,
+  "wine|knn": 0.7579,
+  "breast_cancer|pfn_anycell": 0.367,
+  "breast_cancer|column_mean": 1.0067,
+  "breast_cancer|knn": 0.5783,
+  "diabetes|pfn_anycell": 0.9359,
+  "diabetes|column_mean": 0.9998,
+  "diabetes|knn": 1.0078,
+  "blood|pfn_anycell": 0.9764,
+  "blood|column_mean": 1.0043,
+  "blood|knn": 0.8938
+ }
+}

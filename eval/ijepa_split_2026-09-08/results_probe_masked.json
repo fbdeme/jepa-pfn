@@ -1,0 +1,160 @@
+{
+ "post": {
+  "arms": {
+   "v4_dual_ema_lam0_lr5e-4_mixed_cell_ctx_s0": {
+    "meta": {
+     "group": "dual",
+     "prior_source": "real"
+    },
+    "any_cell": {
+     "cell": {
+      "mse_f": 0.9787,
+      "mse_x": 1.0025,
+      "dim": 256,
+      "n": 24000
+     },
+     "cls_mean": {
+      "mse_f": 0.9664,
+      "mse_x": 0.9881,
+      "dim": 256,
+      "n": 24000
+     },
+     "pred": {
+      "mse_f": 0.9758,
+      "mse_x": 0.9986,
+      "dim": 256,
+      "n": 24000
+     }
+    },
+    "mixed": {
+     "cell": {
+      "mse_f": 0.9792,
+      "mse_x": 0.9897,
+      "dim": 256,
+      "n": 24000
+     },
+     "cls_mean": {
+      "mse_f": 0.965,
+      "mse_x": 0.975,
+      "dim": 256,
+      "n": 24000
+     },
+     "pred": {
+      "mse_f": 0.9743,
+      "mse_x": 0.9868,
+      "dim": 256,
+      "n": 24000
+     }
+    }
+   },
+   "v4_dual_ema_lam0_lr5e-4_mixed_cell_s0": {
+    "meta": {
+     "group": "dual",
+     "prior_source": "real"
+    },
+    "any_cell": {
+     "cell": {
+      "mse_f": 0.9033,
+      "mse_x": 0.9248,
+      "dim": 256,
+      "n": 24000
+     },
+     "cls_mean": {
+      "mse_f": 0.9719,
+      "mse_x": 0.9938,
+      "dim": 256,
+      "n": 24000
+     }
+    },
+    "mixed": {
+     "cell": {
+      "mse_f": 0.967,
+      "mse_x": 0.9782,
+      "dim": 256,
+      "n": 24000
+     },
+     "cls_mean": {
+      "mse_f": 0.9716,
+      "mse_x": 0.9808,
+      "dim": 256,
+      "n": 24000
+     }
+    }
+   },
+   "v4_ds_none_lam0_lr5e-4_any_cell_bar32_40k_s0": {
+    "meta": {
+     "group": "ds",
+     "prior_source": "real"
+    },
+    "any_cell": {
+     "cell": {
+      "mse_f": 0.6336,
+      "mse_x": 0.6548,
+      "dim": 256,
+      "n": 24000
+     },
+     "cls_mean": {
+      "mse_f": 0.9789,
+      "mse_x": 1.0021,
+      "dim": 256,
+      "n": 24000
+     }
+    },
+    "mixed": {
+     "cell": {
+      "mse_f": 0.7721,
+      "mse_x": 0.7804,
+      "dim": 256,
+      "n": 24000
+     },
+     "cls_mean": {
+      "mse_f": 0.9819,
+      "mse_x": 0.9936,
+      "dim": 256,
+      "n": 24000
+     }
+    }
+   }
+  },
+  "protocol": {
+   "ctx": 128,
+   "n_batches": 8,
+   "batch": 8,
+   "eval_seed": 30000,
+   "policies": [
+    "any_cell",
+    "mixed"
+   ],
+   "floor_ref_arch": "v4_ds_none_lam0_lr5e-4_any_cell_bar32_40k_s0",
+   "n_floor": 3,
+   "protocol_key": "post"
+  },
+  "const_map_mse_f": {
+   "any_cell": 0.9663,
+   "mixed": 0.9646
+  },
+  "floor": {
+   "any_cell": {
+    "mean": 0.9677,
+    "sd": 0.0015,
+    "n": 3,
+    "draws": [
+     0.966,
+     0.9686,
+     0.9685
+    ]
+   },
+   "mixed": {
+    "mean": 0.9755,
+    "sd": 0.0046,
+    "n": 3,
+    "draws": [
+     0.9757,
+     0.9709,
+     0.98
+    ]
+   }
+  }
+ },
+ "_note": "Masked-cell read-out for the arms behind tab_recipe_grid, tab_sigma, tab_addr_body(a) and tab_substrate. Each family mirrors the protocol its own unmasked table was scored under, changing only: target cells hidden before encoding, f read at those hidden cells, CLS columns kept. Both masking policies are reported -- any_cell is the data-space arms' training policy and mixed is the latent arms', so neither alone is a neutral test. tab_nonlinear is absent: the matched_L4_* checkpoints are not on this machine."
+}

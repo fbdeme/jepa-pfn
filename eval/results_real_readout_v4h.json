@@ -1,0 +1,270 @@
+{
+ "protocol": {
+  "rows": [
+   16,
+   64,
+   128,
+   384,
+   1024
+  ],
+  "select_rows": [
+   64,
+   128,
+   384,
+   1024
+  ],
+  "val_batches": 8,
+  "batch": 8,
+  "val_seed": "10000+seed",
+  "policy": "each arm under its own training policy",
+  "const_map": "MSE of predicting 0 (context-standardised cells)",
+  "prior": "run cfg prior_source/prior with n_rows pinned to R (cell budget in force)",
+  "learned_rule": "val_mse < const_map - 0.1"
+ },
+ "runs": {
+  "v4_ds_dsinit20000_lam0_lr5e-4_any_cell_bar32_5k_s0": {
+   "lr": 0.0005,
+   "seed": 0,
+   "batch_size": 4,
+   "policy": "any_cell",
+   "by_R": {
+    "16": {
+     "val_mse": 1.3263,
+     "const_map": 1.5172,
+     "n_cells": 2134,
+     "learned": true
+    },
+    "64": {
+     "val_mse": 0.7368,
+     "const_map": 1.0751,
+     "n_cells": 5913,
+     "learned": true
+    },
+    "128": {
+     "val_mse": 0.6739,
+     "const_map": 1.0329,
+     "n_cells": 22826,
+     "learned": true
+    },
+    "384": {
+     "val_mse": 0.4636,
+     "const_map": 1.0242,
+     "n_cells": 71526,
+     "learned": true
+    },
+    "1024": {
+     "val_mse": 0.6485,
+     "const_map": 0.9778,
+     "n_cells": 162672,
+     "learned": true
+    }
+   },
+   "select_mean": 0.6307
+  },
+  "v4_ds_dsinit40000_lam0_lr5e-4_any_cell_bar32_5k_s0": {
+   "lr": 0.0005,
+   "seed": 0,
+   "batch_size": 4,
+   "policy": "any_cell",
+   "by_R": {
+    "16": {
+     "val_mse": 1.3113,
+     "const_map": 1.5172,
+     "n_cells": 2134,
+     "learned": true
+    },
+    "64": {
+     "val_mse": 0.7111,
+     "const_map": 1.0751,
+     "n_cells": 5913,
+     "learned": true
+    },
+    "128": {
+     "val_mse": 0.6632,
+     "const_map": 1.0329,
+     "n_cells": 22826,
+     "learned": true
+    },
+    "384": {
+     "val_mse": 0.4262,
+     "const_map": 1.0242,
+     "n_cells": 71526,
+     "learned": true
+    },
+    "1024": {
+     "val_mse": 0.6186,
+     "const_map": 0.9778,
+     "n_cells": 162672,
+     "learned": true
+    }
+   },
+   "select_mean": 0.6048
+  },
+  "v4_ds_dsinit20000_lam0_lr5e-4_any_cell_bar32_5k_s1": {
+   "lr": 0.0005,
+   "seed": 1,
+   "batch_size": 4,
+   "policy": "any_cell",
+   "by_R": {
+    "16": {
+     "val_mse": 1.148,
+     "const_map": 1.425,
+     "n_cells": 2784,
+     "learned": true
+    },
+    "64": {
+     "val_mse": 0.9057,
+     "const_map": 1.1427,
+     "n_cells": 11429,
+     "learned": true
+    },
+    "128": {
+     "val_mse": 0.7924,
+     "const_map": 1.0185,
+     "n_cells": 45126,
+     "learned": true
+    },
+    "384": {
+     "val_mse": 0.6964,
+     "const_map": 1.0009,
+     "n_cells": 79120,
+     "learned": true
+    },
+    "1024": {
+     "val_mse": 0.7101,
+     "const_map": 0.9761,
+     "n_cells": 190457,
+     "learned": true
+    }
+   },
+   "select_mean": 0.7761
+  },
+  "v4_ds_dsinit40000_lam0_lr5e-4_any_cell_bar32_5k_s1": {
+   "lr": 0.0005,
+   "seed": 1,
+   "batch_size": 4,
+   "policy": "any_cell",
+   "by_R": {
+    "16": {
+     "val_mse": 1.1173,
+     "const_map": 1.425,
+     "n_cells": 2784,
+     "learned": true
+    },
+    "64": {
+     "val_mse": 0.8963,
+     "const_map": 1.1427,
+     "n_cells": 11429,
+     "learned": true
+    },
+    "128": {
+     "val_mse": 0.7723,
+     "const_map": 1.0185,
+     "n_cells": 45126,
+     "learned": true
+    },
+    "384": {
+     "val_mse": 0.6691,
+     "const_map": 1.0009,
+     "n_cells": 79120,
+     "learned": true
+    },
+    "1024": {
+     "val_mse": 0.6978,
+     "const_map": 0.9761,
+     "n_cells": 190457,
+     "learned": true
+    }
+   },
+   "select_mean": 0.7589
+  },
+  "v4_ds_dsinit20000_lam0_lr5e-4_any_cell_bar32_5k_s2": {
+   "lr": 0.0005,
+   "seed": 2,
+   "batch_size": 4,
+   "policy": "any_cell",
+   "by_R": {
+    "16": {
+     "val_mse": 1.2243,
+     "const_map": 1.4796,
+     "n_cells": 4974,
+     "learned": true
+    },
+    "64": {
+     "val_mse": 0.9176,
+     "const_map": 1.1217,
+     "n_cells": 20583,
+     "learned": true
+    },
+    "128": {
+     "val_mse": 0.7613,
+     "const_map": 1.054,
+     "n_cells": 18407,
+     "learned": true
+    },
+    "384": {
+     "val_mse": 0.6739,
+     "const_map": 0.9813,
+     "n_cells": 52209,
+     "learned": true
+    },
+    "1024": {
+     "val_mse": 0.5594,
+     "const_map": 0.9684,
+     "n_cells": 114411,
+     "learned": true
+    }
+   },
+   "select_mean": 0.7281
+  },
+  "v4_ds_dsinit40000_lam0_lr5e-4_any_cell_bar32_5k_s2": {
+   "lr": 0.0005,
+   "seed": 2,
+   "batch_size": 4,
+   "policy": "any_cell",
+   "by_R": {
+    "16": {
+     "val_mse": 1.2207,
+     "const_map": 1.4796,
+     "n_cells": 4974,
+     "learned": true
+    },
+    "64": {
+     "val_mse": 0.8932,
+     "const_map": 1.1217,
+     "n_cells": 20583,
+     "learned": true
+    },
+    "128": {
+     "val_mse": 0.7413,
+     "const_map": 1.054,
+     "n_cells": 18407,
+     "learned": true
+    },
+    "384": {
+     "val_mse": 0.6508,
+     "const_map": 0.9813,
+     "n_cells": 52209,
+     "learned": true
+    },
+    "1024": {
+     "val_mse": 0.5356,
+     "const_map": 0.9684,
+     "n_cells": 114411,
+     "learned": true
+    }
+   },
+   "select_mean": 0.7052
+  }
+ },
+ "selection": {
+  "ds": {
+   "candidates": {
+    "5e-4": 0.6048
+   },
+   "best_lr": "5e-4",
+   "at_grid_edge": true,
+   "edge_rule": "add lr x3 above"
+  }
+ }
+}

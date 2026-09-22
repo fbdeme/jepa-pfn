@@ -1,0 +1,128 @@
+{
+ "k=0": {
+  "ds": {
+   "mse_f": 0.0941,
+   "mse_x": 0.0928,
+   "edge_auc": 0.664,
+   "fam_acc": 0.6567,
+   "deg_mse": 1.2754
+  },
+  "lat": {
+   "mse_f": 0.243,
+   "mse_x": 0.2363,
+   "edge_auc": 0.6105,
+   "fam_acc": 0.4216,
+   "deg_mse": 1.2605
+  },
+  "gap": {
+   "mse_f": 0.1489,
+   "mse_x": 0.1435,
+   "edge_auc": 0.0535,
+   "fam_acc": 0.2351,
+   "deg_mse": -0.0149
+  },
+  "latent_wins": {
+   "fam_acc": false,
+   "mse_f": false,
+   "edge_auc": false
+  }
+ },
+ "k=1": {
+  "ds": {
+   "mse_f": 0.0984,
+   "mse_x": 0.0968,
+   "edge_auc": 0.665,
+   "fam_acc": 0.6627,
+   "deg_mse": 1.2428
+  },
+  "lat": {
+   "mse_f": 0.1587,
+   "mse_x": 0.1436,
+   "edge_auc": 0.5711,
+   "fam_acc": 0.496,
+   "deg_mse": 1.4174
+  },
+  "gap": {
+   "mse_f": 0.0603,
+   "mse_x": 0.0468,
+   "edge_auc": 0.0939,
+   "fam_acc": 0.1667,
+   "deg_mse": 0.1746
+  },
+  "latent_wins": {
+   "fam_acc": false,
+   "mse_f": false,
+   "edge_auc": false
+  }
+ },
+ "k=4": {
+  "ds": {
+   "mse_f": 0.1047,
+   "mse_x": 0.105,
+   "edge_auc": 0.6712,
+   "fam_acc": 0.6627,
+   "deg_mse": 1.2356
+  },
+  "lat": {
+   "mse_f": 0.1377,
+   "mse_x": 0.1166,
+   "edge_auc": 0.6175,
+   "fam_acc": 0.5605,
+   "deg_mse": 1.2874
+  },
+  "gap": {
+   "mse_f": 0.033,
+   "mse_x": 0.0116,
+   "edge_auc": 0.0537,
+   "fam_acc": 0.1022,
+   "deg_mse": 0.0518
+  },
+  "latent_wins": {
+   "fam_acc": false,
+   "mse_f": false,
+   "edge_auc": false
+  }
+ },
+ "p6cls_dual_k4": {
+  "lat": {
+   "mse_f": 0.0615,
+   "mse_x": 0.0495,
+   "edge_auc": 0.6704,
+   "fam_acc": 0.629,
+   "deg_mse": 1.1234
+  },
+  "gap": {
+   "mse_f": -0.0432,
+   "mse_x": -0.0555,
+   "edge_auc": 0.0008,
+   "fam_acc": 0.0337,
+   "deg_mse": -0.1122
+  },
+  "latent_wins": {
+   "fam_acc": false,
+   "mse_f": true,
+   "edge_auc": false
+  }
+ },
+ "p6cls_dual10_k4": {
+  "lat": {
+   "mse_f": 0.0748,
+   "mse_x": 0.0674,
+   "edge_auc": 0.6627,
+   "fam_acc": 0.6508,
+   "deg_mse": 1.2058
+  },
+  "gap": {
+   "mse_f": -0.0299,
+   "mse_x": -0.0376,
+   "edge_auc": 0.0085,
+   "fam_acc": 0.0119,
+   "deg_mse": -0.0298
+  },
+  "latent_wins": {
+   "fam_acc": false,
+   "mse_f": true,
+   "edge_auc": false
+  }
+ }
+}

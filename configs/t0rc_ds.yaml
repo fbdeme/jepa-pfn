@@ -1,0 +1,13 @@
+# Issue #23 T0: matched DATA-SPACE control (= p6rc_ds) on the TEMPORAL prior.
+# rope + CLS present, data-space CE objective. Isolates the objective on temporal
+# data — the p6rc_ds role for the #22 paired gap test, now over s_0..s_T chains.
+run_name: t0rc_ds
+policy: any_cell
+r_scheme: rope
+n_cls: 4
+seed: 0
+steps: 20000
+batch_size: 16          # 8GB box: two arms concurrent (p6rc used 32; paired dual-vs-ds unaffected)
+prior:
+  temporal: [3, 6]        # V state vars x (T+1) slices, weight-shared transition
+  p_missing_table: 0.0    # clean pilot: no MCAR dropout (n_hidden=0 by construction)

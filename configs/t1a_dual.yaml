@@ -1,0 +1,19 @@
+# Issue #23 T1a: single-step consumption training, DUAL (JEPA) arm.
+# = t0rc_dual + tail-stabilized prior + consumption loss (docs/temporal_design.md S12.3).
+# Question: does training the inject path close the oracle_latent - oracle_value gap?
+run_name: t1a_dual
+base: jepa
+policy_main: mixed
+predictor: twoway-2
+r_scheme: rope
+n_cls: 4
+cls_target: true
+seed: 0
+steps: 20000
+batch_size: 8       # 8GB box: T1a's extra consume encodes OOM at 16 concurrent
+lambda_ppd: 0.1
+consume_weight: 1.0
+prior:
+  temporal: [3, 6]
+  temporal_squash: true    # tail-stabilized (T1)
+  p_missing_table: 0.0

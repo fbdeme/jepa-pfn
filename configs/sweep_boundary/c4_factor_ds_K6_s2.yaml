@@ -1,0 +1,28 @@
+batch_size: 8
+dump_path: ''
+emb: 256
+feat: 5
+heads: 8
+layers: 6
+log_every: 25
+lr: 0.001
+mlp: 1024
+n_bins: 32
+n_cls: 4
+policy: any_cell
+prior:
+  n_cols:
+  - 12
+  - 12
+  n_factors: 6
+  n_rows:
+  - 128
+  - 384
+  sigma: 1.0
+prior_source: factor
+r_scheme: rope
+run_name: c4_factor_ds_K6_s2
+seed: 2
+steps: 20000
+val_batches: 8
+val_every: 250
